@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.18)
 project(main)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
-add_executable(main src/main.cpp src/extern.h)
+add_executable(main src/main.cpp)
 
 set(GLFW_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/dep/glfw3/include")
 
