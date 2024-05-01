@@ -2,22 +2,31 @@ cmake_minimum_required(VERSION 3.18)
 
 project(main)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
-
-add_executable(main src/main.cpp)
-
-set(GLFW_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/dep/glfw3/include")
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
 
 if (CMAKE_SYSTEM_NAME MATCHES "Darwin")
     find_package(glfw3 REQUIRED)
     set(GLFW_LIB glfw)
 elseif (CMAKE_SYSTEM_NAME MATCHES "Windows")
-    set(GLFW_LIBRARY_DIR "${CMAKE_SOURCE_DIR}/dep/glfw3/lib-vc2022")
+    set(GLFW_LIBRARY_DIR "${CMAKE_SOURCE_DIR}/dep/libglfw3/lib-vc2022")
     set(GLFW_LIB glfw3dll)
 endif()
 
-include_directories(${GLFW_INCLUDE_DIR})
+set(INCLUDE_DIR "${CMAKE_SOURCE_DIR}/dep")
+include_directories(${INCLUDE_DIR})
 link_directories(${GLFW_LIBRARY_DIR})
 
 find_package(OpenGL REQUIRED)
 
+add_executable(main src/main.cpp src/glad/glad.c)
 target_link_libraries(main ${GLFW_LIB} OpenGL::GL)
+
+target_compile_options(main PRIVATE 
+    -O3
+    -Wall
+    -Wextra
+    -Wpedantic
+    -Wconversion -Wsign-conversion
+    -Wno-deprecated-declarations
+)
