@@ -5,7 +5,23 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
 
-add_executable(main src/main.cpp src/glad/glad.c)
+# --------------------------------
+# ADD NEW FOLDERS BELOW LIKE THIS
+# --------------------------------
+# "src/folder/subfolder/etc/*.h"
+# "src/folder/subfolder/etc/*.cpp"
+# --------------------------------
+
+file(GLOB_RECURSE files
+    "src/*.h"
+    "src/*.cpp"
+    "src/engine/*.h"
+    "src/engine/*.cpp"
+    "src/engine/rendering/*.h"
+    "src/engine/rendering/*.cpp"
+)
+
+add_executable(main ${files} src/glad/glad.c)
 
 if (CMAKE_SYSTEM_NAME MATCHES "Darwin")
     find_package(glfw3 REQUIRED)
@@ -25,6 +41,7 @@ elseif (CMAKE_SYSTEM_NAME MATCHES "Windows")
 
     set(CMAKE_CXX_COMPILER "cl")
 
+    # TODO get "/O2" working for performance
     target_compile_options(main PRIVATE 
         "/W3"
     )

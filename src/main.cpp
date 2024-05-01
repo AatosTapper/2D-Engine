@@ -1,91 +1,68 @@
 #include "config.h"
+#include "engine/window.h"
+#include "engine/rendering/VertexBuffer.h"
+#include "engine/rendering/VertexArray.h"
+#include "engine/rendering/IndexBuffer.h"
+#include "engine/rendering/VertexBufferLayout.h"
+#include "engine/rendering/Shader.h"
 
-#include <iostream>
-
-void framebuffer_size_callback(GLFWwindow* window, int width, int height);
-void process_input(GLFWwindow *window);
-
-// TODO: get device window to pixel ratio and multiply the values by it
 // settings
-constexpr unsigned int SCR_WIDTH = 1280;
-constexpr unsigned int SCR_HEIGHT = 720;
+constexpr int SCR_WIDTH = 1280;
+constexpr int SCR_HEIGHT = 720;
 
 int main()
 {
-    // glfw: initialize and configure
-    // ------------------------------
-    glfwInit();
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-    glfwWindowHint(GLFW_SCALE_TO_MONITOR, GLFW_TRUE);
+    Window engine_window(SCR_WIDTH, SCR_HEIGHT);
 
-#ifdef __APPLE__
-    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
-#endif
+    // TODO: move these into a renderer class
+    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+    glEnable(GL_DEPTH_TEST);
+    glEnable(GL_MULTISAMPLE);
+    //glEnable(GL_CULL_FACE);
+    glEnable(GL_FRAMEBUFFER_SRGB);
+    
+    float vertices[] = {
+        0.5f,  0.5f, 0.0f, 0.0f, 0.0f, 1.0f,  // top right
+        0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f,  // bottom right
+        -0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f,  // bottom left
+        -0.5f,  0.5f, 0.0f, 0.5f, 0.5f, 0.5f,  // top left 
+    };
+    unsigned int indices[] = {
+        0, 1, 3,   // first triangle
+        1, 2, 3    // second triangle
+    }; 
 
-    // glfw window creation
-    // --------------------
-    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "2D-Engine", NULL, NULL);
-    if (window == NULL)
-    {
-        std::cout << "Failed to create GLFW window" << std::endl;
-        glfwTerminate();
-        return -1;
-    }
+    VertexBuffer vbo;
+    vbo.set_data(vertices, sizeof(vertices));
+    IndexBuffer ebo;
+    ebo.set_data(indices, 6);
 
-    glfwMakeContextCurrent(window);
-    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+    VertexBufferLayout layout;
+    layout.push<float>(3); // pos
+    layout.push<float>(3); // col
 
-    // glad: load all OpenGL function pointers
-    // ---------------------------------------
-    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
-    {
-        std::cout << "Failed to initialize GLAD" << std::endl;
-        return -1;
-    }
+    VertexArray vao;
+    vao.add_buffer(vbo, layout);
 
-    int fb_width = 0, fb_height = 0;
-    glfwGetFramebufferSize(window, &fb_width, &fb_height);
-    glViewport(0, 0, fb_width, fb_height);
-
+    Shader shader("../res/shaders/default.vert", "../res/shaders/default.frag");
+    
     // render loop
-    // -----------
-    while (!glfwWindowShouldClose(window))
+    while (engine_window.is_open())
     {
-        // input
-        // -----
-        process_input(window);
+        // render here
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        // render
-        // ------
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
+        glClearColor((sin(glfwGetTime()) + 1.0f) * 0.25f, 
+                    (cos(glfwGetTime()) + 1.0f) * 0.25f, 
+                    (sin(glfwGetTime()) - 1.0f) * (-0.25f), 1.0f);
 
-        // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
-        // -------------------------------------------------------------------------------
-        glfwSwapBuffers(window);
-        glfwPollEvents();
+        shader.use();
+        vao.bind();
+        ebo.bind();
+        glDrawElements(GL_TRIANGLES, ebo.get_elements(), GL_UNSIGNED_INT, 0);     
+
+        engine_window.end_frame();
     }
 
-    // glfw: terminate, clearing all previously allocated GLFW resources.
-    // ------------------------------------------------------------------
-    glfwTerminate();
     return 0;
-}
-
-// process all input: query GLFW whether relevant keys are pressed/released this frame and react accordingly
-// ---------------------------------------------------------------------------------------------------------
-void process_input(GLFWwindow *window)
-{
-    if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-        glfwSetWindowShouldClose(window, true);
-}
-
-// glfw: whenever the window size changed (by OS or user resize) this callback function executes
-// ---------------------------------------------------------------------------------------------
-void framebuffer_size_callback(GLFWwindow* window, int width, int height)
-{
-    (void)window; // this silences the warning about "unused parameter"
-    glViewport(0, 0, width, height);
 }

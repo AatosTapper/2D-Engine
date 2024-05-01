@@ -1,5 +1,8 @@
 #pragma once
 
+// if a file needs access to OpenGL or GLFW,
+// include this
+
 #define GL_SILENCE_DEPR
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
