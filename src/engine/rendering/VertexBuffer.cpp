@@ -29,7 +29,7 @@ VertexBuffer::~VertexBuffer()
         glDeleteBuffers(1, &m_id);
 }
 
-void VertexBuffer::set_data(void *data, unsigned int size)
+void VertexBuffer::set_data(const void *data, unsigned int size)
 {
     glGenBuffers(1, &m_id);
     glBindBuffer(GL_ARRAY_BUFFER, m_id);

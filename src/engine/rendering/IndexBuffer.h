@@ -6,7 +6,7 @@ public:
     IndexBuffer();
     ~IndexBuffer();
 
-    void set_data(unsigned int *data, unsigned int count);
+    void set_data(const unsigned int *data, unsigned int count);
     void bind() const;
     void unbind() const;
     void free();

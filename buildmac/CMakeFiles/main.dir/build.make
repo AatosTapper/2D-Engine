@@ -139,10 +139,24 @@ CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexBuffer.cpp -o CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.s
 
+CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/sprite.cpp
+CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.o -MF CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.o.d -o CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/sprite.cpp
+
+CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/sprite.cpp > CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.i
+
+CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/sprite.cpp -o CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.s
+
 CMakeFiles/main.dir/src/engine/window.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/engine/window.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/window.cpp
 CMakeFiles/main.dir/src/engine/window.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/engine/window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/src/engine/window.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/window.cpp.o -MF CMakeFiles/main.dir/src/engine/window.cpp.o.d -o CMakeFiles/main.dir/src/engine/window.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/window.cpp
 
 CMakeFiles/main.dir/src/engine/window.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/main.dir/src/engine/window.cpp.s: cmake_force
 CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/main.cpp
 CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.cpp.o -MF CMakeFiles/main.dir/src/main.cpp.o.d -o CMakeFiles/main.dir/src/main.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/main.cpp
 
 CMakeFiles/main.dir/src/main.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/main.dir/src/main.cpp.s: cmake_force
 CMakeFiles/main.dir/src/glad/glad.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/glad/glad.c.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/glad/glad.c
 CMakeFiles/main.dir/src/glad/glad.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/main.dir/src/glad/glad.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/main.dir/src/glad/glad.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/glad/glad.c.o -MF CMakeFiles/main.dir/src/glad/glad.c.o.d -o CMakeFiles/main.dir/src/glad/glad.c.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/glad/glad.c
 
 CMakeFiles/main.dir/src/glad/glad.c.i: cmake_force
@@ -188,6 +202,7 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.o" \
 "CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.o" \
 "CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o" \
+"CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.o" \
 "CMakeFiles/main.dir/src/engine/window.cpp.o" \
 "CMakeFiles/main.dir/src/main.cpp.o" \
 "CMakeFiles/main.dir/src/glad/glad.c.o"
@@ -200,6 +215,7 @@ main: CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.o
 main: CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.o
 main: CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.o
 main: CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o
+main: CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.o
 main: CMakeFiles/main.dir/src/engine/window.cpp.o
 main: CMakeFiles/main.dir/src/main.cpp.o
 main: CMakeFiles/main.dir/src/glad/glad.c.o
@@ -207,7 +223,7 @@ main: CMakeFiles/main.dir/build.make
 main: /opt/homebrew/lib/libglfw.3.4.dylib
 main: /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/OpenGL.framework
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

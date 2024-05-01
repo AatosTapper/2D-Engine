@@ -249,6 +249,30 @@ src/engine/rendering/VertexBuffer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.s
 .PHONY : src/engine/rendering/VertexBuffer.cpp.s
 
+src/engine/rendering/sprite.o: src/engine/rendering/sprite.cpp.o
+.PHONY : src/engine/rendering/sprite.o
+
+# target to build an object file
+src/engine/rendering/sprite.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.o
+.PHONY : src/engine/rendering/sprite.cpp.o
+
+src/engine/rendering/sprite.i: src/engine/rendering/sprite.cpp.i
+.PHONY : src/engine/rendering/sprite.i
+
+# target to preprocess a source file
+src/engine/rendering/sprite.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.i
+.PHONY : src/engine/rendering/sprite.cpp.i
+
+src/engine/rendering/sprite.s: src/engine/rendering/sprite.cpp.s
+.PHONY : src/engine/rendering/sprite.s
+
+# target to generate assembly for a file
+src/engine/rendering/sprite.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.s
+.PHONY : src/engine/rendering/sprite.cpp.s
+
 src/engine/window.o: src/engine/window.cpp.o
 .PHONY : src/engine/window.o
 
@@ -345,6 +369,9 @@ help:
 	@echo "... src/engine/rendering/VertexBuffer.o"
 	@echo "... src/engine/rendering/VertexBuffer.i"
 	@echo "... src/engine/rendering/VertexBuffer.s"
+	@echo "... src/engine/rendering/sprite.o"
+	@echo "... src/engine/rendering/sprite.i"
+	@echo "... src/engine/rendering/sprite.s"
 	@echo "... src/engine/window.o"
 	@echo "... src/engine/window.i"
 	@echo "... src/engine/window.s"

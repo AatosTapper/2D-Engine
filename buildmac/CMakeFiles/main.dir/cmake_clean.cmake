@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.o.d"
   "CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o"
   "CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o.d"
+  "CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.o"
+  "CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.o.d"
   "CMakeFiles/main.dir/src/engine/window.cpp.o"
   "CMakeFiles/main.dir/src/engine/window.cpp.o.d"
   "CMakeFiles/main.dir/src/glad/glad.c.o"

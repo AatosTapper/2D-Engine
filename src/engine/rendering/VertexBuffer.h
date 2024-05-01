@@ -7,7 +7,7 @@ public:
     VertexBuffer(const VertexBuffer &old);
     ~VertexBuffer();
 
-    void set_data(void *data, unsigned int size);
+    void set_data(const void *data, unsigned int size);
     void bind() const;
     void unbind() const;
     void free();

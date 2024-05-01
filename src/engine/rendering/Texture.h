@@ -11,8 +11,8 @@ public:
     Texture(const std::string &file, bool flip = false); // flip parameter is for certain file formats
     ~Texture();
 
-    void bind();
-    void unbind();
+    void bind() const;
+    void unbind() const;
     void free();
 
 private:

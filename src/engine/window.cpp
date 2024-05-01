@@ -68,6 +68,14 @@ void Window::end_frame()
     glfwPollEvents();
 }
 
+glm::vec2 Window::get_dimensions() const
+{
+    int fb_width = 0, fb_height = 0;
+    glfwGetFramebufferSize(window, &fb_width, &fb_height);
+
+    return glm::vec2((float)fb_width, (float)fb_height);
+}
+
 // glfw: whenever the window size changed (by OS or user resize) this callback function executes
 // ---------------------------------------------------------------------------------------------
 static void framebuffer_size_callback(GLFWwindow* window, int width, int height)

@@ -14,6 +14,8 @@ public:
     inline bool is_open() { return !glfwWindowShouldClose(window); }
     void end_frame();
 
+    glm::vec2 get_dimensions() const;
+
 private:
     GLFWwindow *window;
 };

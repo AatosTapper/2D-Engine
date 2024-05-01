@@ -55,6 +55,7 @@
         "variant": "cpp",
         "vector": "cpp",
         "algorithm": "cpp",
-        "chrono": "cpp"
+        "chrono": "cpp",
+        "fstream": "cpp"
     }
 }

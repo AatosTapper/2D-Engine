@@ -46,6 +46,7 @@ private:
 template<typename T>
 inline void VertexBufferLayout::push(unsigned int count)
 {
+    (void)count;
     std::runtime_error("Type not implemented");
 }
 

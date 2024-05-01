@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.cpp" "CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexArray.cpp" "CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexBuffer.cpp" "CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o.d"
+  "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/sprite.cpp" "CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/window.cpp" "CMakeFiles/main.dir/src/engine/window.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/window.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/main.cpp" "CMakeFiles/main.dir/src/main.cpp.o" "gcc" "CMakeFiles/main.dir/src/main.cpp.o.d"
   )
