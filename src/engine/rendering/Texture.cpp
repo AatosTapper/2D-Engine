@@ -4,9 +4,9 @@
 #include "../../util.h"
 
 #ifndef STB_IMAGE_INCLUDE_H
-#define STB_IMAGE_INCLUDE_H
-#define STB_IMAGE_IMPLEMENTATION // This can be only defined once
-#include <STB/stb_image.h>
+    #define STB_IMAGE_INCLUDE_H
+    #define STB_IMAGE_IMPLEMENTATION // This can be only defined once
+    #include <STB/stb_image.h>
 #endif
 
 Texture::Texture(const std::string &file, bool flip) : m_freed(false)

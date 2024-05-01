@@ -1,4 +1,2 @@
-C:\Users\gr277128\Documents\GitHub\2D-Engine\build\Debug\glfw3.dll
-C:\Users\gr277128\Documents\GitHub\2D-Engine\build\main.dir\Debug\main.vcxproj.CopyComplete
 C:\Users\gr277128\Documents\GitHub\2D-Engine\buildwin\Debug\glfw3.dll
 C:\Users\gr277128\Documents\GitHub\2D-Engine\buildwin\main.dir\Debug\main.vcxproj.CopyComplete

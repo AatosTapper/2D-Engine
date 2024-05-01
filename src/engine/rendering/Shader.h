@@ -14,6 +14,7 @@ public:
     inline unsigned int get_id() const { return m_id; }
     void free();
 
+    // uniform setting
     int get_location(const std::string &name) const;
     void set_int(const std::string &name, int value) const;
     void set_uint(const std::string &name, unsigned int value) const;

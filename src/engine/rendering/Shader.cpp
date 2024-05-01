@@ -95,7 +95,7 @@ std::string Shader::m_read_shader(const std::string &filename) const
         while (std::getline(file, line))
         {
             source.append(line);
-            source.push_back(' ');
+            source.push_back('\n'); // windows will freak out without this...
         }
         file.close();
     }
