@@ -4,19 +4,14 @@
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\extern.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\glad\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{E29ADE07-BC02-33E9-B18B-13DF5CDC01DC}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{0B07639C-9750-3818-BE93-2DEFD2C035B5}</UniqueIdentifier>
     </Filter>
