@@ -4,10 +4,10 @@
 
 #include <iostream>
 
-VertexArray Sprite::vao;
-IndexBuffer Sprite::ebo;
-VertexBuffer Sprite::vbo;
-bool Sprite::mesh_initialized = false;
+static bool mesh_created = false;
+static std::unique_ptr<VertexArray> vao_memory = nullptr;
+static std::unique_ptr<IndexBuffer> ebo_memory = nullptr;
+static std::unique_ptr<VertexBuffer> vbo_memory = nullptr;
 
 // each sprite has the exact same vertices and indices
 static constexpr float vertices[] = {
@@ -24,20 +24,26 @@ static constexpr uint32_t indices[] = {
 
 Sprite::Sprite(float width, float height) : dimension({ width, height })
 {
-    if (!mesh_initialized)
+    if (!mesh_created)
     {
-        mesh_initialized = true;
+        mesh_created = true;
+
+        vao_memory = std::make_unique<VertexArray>();
+        vbo_memory = std::make_unique<VertexBuffer>();
+        ebo_memory = std::make_unique<IndexBuffer>();
 
         VertexBufferLayout layout;
         layout.push<float>(3); // position
         layout.push<float>(2); // texture coordinates
 
-        vbo.set_data(vertices, sizeof(vertices));
-        ebo.set_data(indices, 6);
-        vao.add_buffer(vbo, layout);
-
-        std::cout << "Created the mesh for sprites\n";
+        vbo_memory->set_data(vertices, sizeof(vertices));
+        ebo_memory->set_data(indices, 6);
+        vao_memory->add_buffer(*vbo_memory, layout);
     }
+
+    vao = vao_memory.get();
+    vbo = vbo_memory.get();
+    ebo = ebo_memory.get();
 }
 
 void Sprite::add_texture(const std::string &filepath)

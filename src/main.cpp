@@ -33,17 +33,14 @@ int main()
     Sprite sp1(1.0f);
     sp1.add_texture(tex);
     sp1.position = { 2.0f, 0.0f, 0.0f };
-    std::cout << "Got here\n";
 
     Sprite sp2(1.0f);
     sp2.add_texture(tex);
     sp2.position = { -4.0f, -1.0f, 0.0f };
-    std::cout << "Got here\n";
 
     Sprite sp3(1.0f);
     sp3.add_texture(tex);
     sp3.position = { 0.0f, 2.0f, 0.0f };
-    std::cout << "Got here\n";
     
     std::vector<Sprite*> sprites = { &sp1, &sp2, &sp3 };
 
@@ -70,12 +67,12 @@ int main()
             shader.set_mat4f("u_view", view_mat);
             shader.set_mat4f("u_transform", sprite->get_transform_matrix());
 
-            sprite->vao.bind();
-            sprite->ebo.bind();
-            glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(sprite->ebo.get_elements()), GL_UNSIGNED_INT, 0);
+            sprite->vao->bind();
+            sprite->ebo->bind();
+            glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(sprite->ebo->get_elements()), GL_UNSIGNED_INT, 0);
 
-            sprite->vao.unbind();
-            sprite->ebo.unbind();
+            sprite->vao->unbind();
+            sprite->ebo->unbind();
         }
         engine_window.end_frame();
     }
