@@ -24,7 +24,7 @@ events:
       The output was:
       0
       MSBuild version 17.3.0+f67e3d35e for .NET Framework
-      Build started 1.5.2024 16.21.56.
+      Build started 2.5.2024 8.48.01.
       Project "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\3.28.0-rc3\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
@@ -59,7 +59,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.93
+      Time Elapsed 00:00:01.88
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -85,7 +85,7 @@ events:
       The output was:
       0
       MSBuild version 17.3.0+f67e3d35e for .NET Framework
-      Build started 1.5.2024 16.21.58.
+      Build started 2.5.2024 8.48.03.
       Project "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\3.28.0-rc3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
@@ -120,7 +120,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.63
+      Time Elapsed 00:00:01.93
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -139,8 +139,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/gr277128/Documents/GitHub/2D-Engine/buildwin/CMakeFiles/CMakeScratch/TryCompile-8kvr5x"
-      binary: "C:/Users/gr277128/Documents/GitHub/2D-Engine/buildwin/CMakeFiles/CMakeScratch/TryCompile-8kvr5x"
+      source: "C:/Users/gr277128/Documents/GitHub/2D-Engine/buildwin/CMakeFiles/CMakeScratch/TryCompile-c44cgc"
+      binary: "C:/Users/gr277128/Documents/GitHub/2D-Engine/buildwin/CMakeFiles/CMakeScratch/TryCompile-c44cgc"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -149,46 +149,46 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/gr277128/Documents/GitHub/2D-Engine/buildwin/CMakeFiles/CMakeScratch/TryCompile-8kvr5x'
+        Change Dir: 'C:/Users/gr277128/Documents/GitHub/2D-Engine/buildwin/CMakeFiles/CMakeScratch/TryCompile-c44cgc'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f18e0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_549a0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.3.0+f67e3d35e for .NET Framework
-        Build started 1.5.2024 16.22.00.
-        Project "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-8kvr5x\\cmTC_f18e0.vcxproj" on node 1 (default targets).
+        Build started 2.5.2024 8.48.06.
+        Project "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-c44cgc\\cmTC_549a0.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_f18e0.dir\\Debug\\".
-          Creating directory "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-8kvr5x\\Debug\\".
-          Creating directory "cmTC_f18e0.dir\\Debug\\cmTC_f18e0.tlog\\".
+          Creating directory "cmTC_549a0.dir\\Debug\\".
+          Creating directory "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-c44cgc\\Debug\\".
+          Creating directory "cmTC_549a0.dir\\Debug\\cmTC_549a0.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_f18e0.dir\\Debug\\cmTC_f18e0.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_549a0.dir\\Debug\\cmTC_549a0.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Release"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f18e0.dir\\Debug\\\\" /Fd"cmTC_f18e0.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_549a0.dir\\Debug\\\\" /Fd"cmTC_549a0.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31629 for x64
           CMakeCCompilerABI.c
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /I"C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f18e0.dir\\Debug\\\\" /Fd"cmTC_f18e0.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
+          cl /c /I"C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_549a0.dir\\Debug\\\\" /Fd"cmTC_549a0.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-8kvr5x\\Debug\\cmTC_f18e0.exe" /INCREMENTAL /ILK:"cmTC_f18e0.dir\\Debug\\cmTC_f18e0.ilk" /NOLOGO /LIBPATH:"C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/gr277128/Documents/GitHub/2D-Engine/buildwin/CMakeFiles/CMakeScratch/TryCompile-8kvr5x/Debug/cmTC_f18e0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/gr277128/Documents/GitHub/2D-Engine/buildwin/CMakeFiles/CMakeScratch/TryCompile-8kvr5x/Debug/cmTC_f18e0.lib" /MACHINE:X64  /machine:x64 cmTC_f18e0.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_f18e0.vcxproj -> C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-8kvr5x\\Debug\\cmTC_f18e0.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-c44cgc\\Debug\\cmTC_549a0.exe" /INCREMENTAL /ILK:"cmTC_549a0.dir\\Debug\\cmTC_549a0.ilk" /NOLOGO /LIBPATH:"C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/gr277128/Documents/GitHub/2D-Engine/buildwin/CMakeFiles/CMakeScratch/TryCompile-c44cgc/Debug/cmTC_549a0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/gr277128/Documents/GitHub/2D-Engine/buildwin/CMakeFiles/CMakeScratch/TryCompile-c44cgc/Debug/cmTC_549a0.lib" /MACHINE:X64  /machine:x64 cmTC_549a0.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_549a0.vcxproj -> C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-c44cgc\\Debug\\cmTC_549a0.exe
         AppLocalFromInstalled:
-          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-8kvr5x\\Debug\\cmTC_f18e0.exe" "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "cmTC_f18e0.dir\\Debug\\cmTC_f18e0.tlog\\cmTC_f18e0.write.1u.tlog" "cmTC_f18e0.dir\\Debug\\vcpkg.applocal.log"
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-c44cgc\\Debug\\cmTC_549a0.exe" "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "cmTC_549a0.dir\\Debug\\cmTC_549a0.tlog\\cmTC_549a0.write.1u.tlog" "cmTC_549a0.dir\\Debug\\vcpkg.applocal.log"
           'pwsh.exe' is not recognized as an internal or external command,
           operable program or batch file.
-          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-8kvr5x\\Debug\\cmTC_f18e0.exe" "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "cmTC_f18e0.dir\\Debug\\cmTC_f18e0.tlog\\cmTC_f18e0.write.1u.tlog" "cmTC_f18e0.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
-          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-8kvr5x\\Debug\\cmTC_f18e0.exe" "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "cmTC_f18e0.dir\\Debug\\cmTC_f18e0.tlog\\cmTC_f18e0.write.1u.tlog" "cmTC_f18e0.dir\\Debug\\vcpkg.applocal.log"
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-c44cgc\\Debug\\cmTC_549a0.exe" "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "cmTC_549a0.dir\\Debug\\cmTC_549a0.tlog\\cmTC_549a0.write.1u.tlog" "cmTC_549a0.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-c44cgc\\Debug\\cmTC_549a0.exe" "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "cmTC_549a0.dir\\Debug\\cmTC_549a0.tlog\\cmTC_549a0.write.1u.tlog" "cmTC_549a0.dir\\Debug\\vcpkg.applocal.log"
         FinalizeBuildStatus:
-          Deleting file "cmTC_f18e0.dir\\Debug\\cmTC_f18e0.tlog\\unsuccessfulbuild".
-          Touching "cmTC_f18e0.dir\\Debug\\cmTC_f18e0.tlog\\cmTC_f18e0.lastbuildstate".
-        Done Building Project "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-8kvr5x\\cmTC_f18e0.vcxproj" (default targets).
+          Deleting file "cmTC_549a0.dir\\Debug\\cmTC_549a0.tlog\\unsuccessfulbuild".
+          Touching "cmTC_549a0.dir\\Debug\\cmTC_549a0.tlog\\cmTC_549a0.lastbuildstate".
+        Done Building Project "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-c44cgc\\cmTC_549a0.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.60
+        Time Elapsed 00:00:01.88
         
       exitCode: 0
   -
@@ -200,8 +200,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/gr277128/Documents/GitHub/2D-Engine/buildwin/CMakeFiles/CMakeScratch/TryCompile-sb0sai"
-      binary: "C:/Users/gr277128/Documents/GitHub/2D-Engine/buildwin/CMakeFiles/CMakeScratch/TryCompile-sb0sai"
+      source: "C:/Users/gr277128/Documents/GitHub/2D-Engine/buildwin/CMakeFiles/CMakeScratch/TryCompile-313kex"
+      binary: "C:/Users/gr277128/Documents/GitHub/2D-Engine/buildwin/CMakeFiles/CMakeScratch/TryCompile-313kex"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -210,46 +210,46 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/gr277128/Documents/GitHub/2D-Engine/buildwin/CMakeFiles/CMakeScratch/TryCompile-sb0sai'
+        Change Dir: 'C:/Users/gr277128/Documents/GitHub/2D-Engine/buildwin/CMakeFiles/CMakeScratch/TryCompile-313kex'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_419b1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d6940.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.3.0+f67e3d35e for .NET Framework
-        Build started 1.5.2024 16.22.03.
-        Project "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-sb0sai\\cmTC_419b1.vcxproj" on node 1 (default targets).
+        Build started 2.5.2024 8.48.08.
+        Project "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-313kex\\cmTC_d6940.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_419b1.dir\\Debug\\".
-          Creating directory "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-sb0sai\\Debug\\".
-          Creating directory "cmTC_419b1.dir\\Debug\\cmTC_419b1.tlog\\".
+          Creating directory "cmTC_d6940.dir\\Debug\\".
+          Creating directory "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-313kex\\Debug\\".
+          Creating directory "cmTC_d6940.dir\\Debug\\cmTC_d6940.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_419b1.dir\\Debug\\cmTC_419b1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_d6940.dir\\Debug\\cmTC_d6940.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Release"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_419b1.dir\\Debug\\\\" /Fd"cmTC_419b1.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_d6940.dir\\Debug\\\\" /Fd"cmTC_d6940.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31629 for x64
           CMakeCXXCompilerABI.cpp
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /I"C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_419b1.dir\\Debug\\\\" /Fd"cmTC_419b1.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /I"C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_d6940.dir\\Debug\\\\" /Fd"cmTC_d6940.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-sb0sai\\Debug\\cmTC_419b1.exe" /INCREMENTAL /ILK:"cmTC_419b1.dir\\Debug\\cmTC_419b1.ilk" /NOLOGO /LIBPATH:"C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/gr277128/Documents/GitHub/2D-Engine/buildwin/CMakeFiles/CMakeScratch/TryCompile-sb0sai/Debug/cmTC_419b1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/gr277128/Documents/GitHub/2D-Engine/buildwin/CMakeFiles/CMakeScratch/TryCompile-sb0sai/Debug/cmTC_419b1.lib" /MACHINE:X64  /machine:x64 cmTC_419b1.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_419b1.vcxproj -> C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-sb0sai\\Debug\\cmTC_419b1.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-313kex\\Debug\\cmTC_d6940.exe" /INCREMENTAL /ILK:"cmTC_d6940.dir\\Debug\\cmTC_d6940.ilk" /NOLOGO /LIBPATH:"C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/gr277128/Documents/GitHub/2D-Engine/buildwin/CMakeFiles/CMakeScratch/TryCompile-313kex/Debug/cmTC_d6940.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/gr277128/Documents/GitHub/2D-Engine/buildwin/CMakeFiles/CMakeScratch/TryCompile-313kex/Debug/cmTC_d6940.lib" /MACHINE:X64  /machine:x64 cmTC_d6940.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_d6940.vcxproj -> C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-313kex\\Debug\\cmTC_d6940.exe
         AppLocalFromInstalled:
-          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-sb0sai\\Debug\\cmTC_419b1.exe" "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "cmTC_419b1.dir\\Debug\\cmTC_419b1.tlog\\cmTC_419b1.write.1u.tlog" "cmTC_419b1.dir\\Debug\\vcpkg.applocal.log"
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-313kex\\Debug\\cmTC_d6940.exe" "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "cmTC_d6940.dir\\Debug\\cmTC_d6940.tlog\\cmTC_d6940.write.1u.tlog" "cmTC_d6940.dir\\Debug\\vcpkg.applocal.log"
           'pwsh.exe' is not recognized as an internal or external command,
           operable program or batch file.
-          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-sb0sai\\Debug\\cmTC_419b1.exe" "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "cmTC_419b1.dir\\Debug\\cmTC_419b1.tlog\\cmTC_419b1.write.1u.tlog" "cmTC_419b1.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
-          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-sb0sai\\Debug\\cmTC_419b1.exe" "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "cmTC_419b1.dir\\Debug\\cmTC_419b1.tlog\\cmTC_419b1.write.1u.tlog" "cmTC_419b1.dir\\Debug\\vcpkg.applocal.log"
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-313kex\\Debug\\cmTC_d6940.exe" "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "cmTC_d6940.dir\\Debug\\cmTC_d6940.tlog\\cmTC_d6940.write.1u.tlog" "cmTC_d6940.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-313kex\\Debug\\cmTC_d6940.exe" "C:\\Users\\gr277128\\Documents\\Dev\\vcpkg\\vcpkg\\installed\\x64-windows\\bin" "cmTC_d6940.dir\\Debug\\cmTC_d6940.tlog\\cmTC_d6940.write.1u.tlog" "cmTC_d6940.dir\\Debug\\vcpkg.applocal.log"
         FinalizeBuildStatus:
-          Deleting file "cmTC_419b1.dir\\Debug\\cmTC_419b1.tlog\\unsuccessfulbuild".
-          Touching "cmTC_419b1.dir\\Debug\\cmTC_419b1.tlog\\cmTC_419b1.lastbuildstate".
-        Done Building Project "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-sb0sai\\cmTC_419b1.vcxproj" (default targets).
+          Deleting file "cmTC_d6940.dir\\Debug\\cmTC_d6940.tlog\\unsuccessfulbuild".
+          Touching "cmTC_d6940.dir\\Debug\\cmTC_d6940.tlog\\cmTC_d6940.lastbuildstate".
+        Done Building Project "C:\\Users\\gr277128\\Documents\\GitHub\\2D-Engine\\buildwin\\CMakeFiles\\CMakeScratch\\TryCompile-313kex\\cmTC_d6940.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.61
+        Time Elapsed 00:00:01.77
         
       exitCode: 0
 ...

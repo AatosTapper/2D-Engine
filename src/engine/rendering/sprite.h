@@ -23,8 +23,8 @@ public:
     float rotation_radians{};
 
     // rendering variables
-    VertexArray vao;
-    IndexBuffer ebo;
+    static VertexArray vao;
+    static IndexBuffer ebo;
     std::shared_ptr<Texture> texture{}; 
 
     void add_texture(const std::string &filepath);
@@ -33,5 +33,6 @@ public:
     glm::mat4 get_transform_matrix() const;
 
 private:
-    VertexBuffer vbo;
+    static VertexBuffer vbo;
+    static bool mesh_initialized;
 };

@@ -329,6 +329,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\VertexBuffer.cpp" />
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\VertexBuffer.h" />
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\VertexBufferLayout.h" />
+    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\sprite.cpp" />
+    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\sprite.h" />
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\window.cpp" />
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\window.h" />
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\main.cpp" />

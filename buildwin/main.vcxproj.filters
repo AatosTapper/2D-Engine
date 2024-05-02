@@ -16,6 +16,9 @@
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\VertexBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -46,6 +49,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\VertexBufferLayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\sprite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\window.h">
