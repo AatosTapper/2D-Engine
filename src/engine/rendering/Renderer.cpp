@@ -2,11 +2,11 @@
 
 #include "Sprite.h"
 #include "Shader.h"
-#include "../../config.h"
 
 #include <cassert>
 
 static Shader *selected_shader = nullptr;
+static glm::mat4 selected_vpm;
 
 void Renderer::init()
 {
@@ -33,22 +33,20 @@ void Renderer::set_shader(Shader *shader)
     selected_shader = shader;
 }
 
+void Renderer::set_view_proj_matrix(const glm::mat4 &vp_mat)
+{
+    selected_vpm = vp_mat;
+}
+
 void Renderer::draw_sprite(const Sprite &sprite)
 {
     assert(selected_shader && "Cannot draw a sprite without a shader being selected");
 
-    glm::mat4 view_mat(1.0f);
-    view_mat = glm::translate(view_mat, glm::vec3(0.0f, 0.0f, -10.0f));
-
-    //glm::vec2 camera_dimensions = engine_window.get_dimensions();
-    //glm::mat4 proj_mat = glm::perspective(glm::radians(45.0f), camera_dimensions.x / camera_dimensions.y, 0.1f, 100.0f);
-    glm::mat4 proj_mat = glm::perspective(glm::radians(45.0f), 1280.0f / 720.0f, 0.1f, 100.0f);
-
     selected_shader->use();
     glActiveTexture(GL_TEXTURE0);
     sprite.texture->bind();
-    selected_shader->set_mat4f("u_proj", proj_mat);
-    selected_shader->set_mat4f("u_view", view_mat);
+
+    selected_shader->set_mat4f("u_view_proj", selected_vpm);
     selected_shader->set_mat4f("u_transform", sprite.get_transform_matrix());
 
     sprite.vao->bind();

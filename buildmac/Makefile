@@ -153,6 +153,30 @@ src/engine/Window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Window.cpp.s
 .PHONY : src/engine/Window.cpp.s
 
+src/engine/rendering/Camera.o: src/engine/rendering/Camera.cpp.o
+.PHONY : src/engine/rendering/Camera.o
+
+# target to build an object file
+src/engine/rendering/Camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o
+.PHONY : src/engine/rendering/Camera.cpp.o
+
+src/engine/rendering/Camera.i: src/engine/rendering/Camera.cpp.i
+.PHONY : src/engine/rendering/Camera.i
+
+# target to preprocess a source file
+src/engine/rendering/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.i
+.PHONY : src/engine/rendering/Camera.cpp.i
+
+src/engine/rendering/Camera.s: src/engine/rendering/Camera.cpp.s
+.PHONY : src/engine/rendering/Camera.s
+
+# target to generate assembly for a file
+src/engine/rendering/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.s
+.PHONY : src/engine/rendering/Camera.cpp.s
+
 src/engine/rendering/IndexBuffer.o: src/engine/rendering/IndexBuffer.cpp.o
 .PHONY : src/engine/rendering/IndexBuffer.o
 
@@ -381,6 +405,9 @@ help:
 	@echo "... src/engine/Window.o"
 	@echo "... src/engine/Window.i"
 	@echo "... src/engine/Window.s"
+	@echo "... src/engine/rendering/Camera.o"
+	@echo "... src/engine/rendering/Camera.i"
+	@echo "... src/engine/rendering/Camera.s"
 	@echo "... src/engine/rendering/IndexBuffer.o"
 	@echo "... src/engine/rendering/IndexBuffer.i"
 	@echo "... src/engine/rendering/IndexBuffer.s"

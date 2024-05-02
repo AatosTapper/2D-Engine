@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/engine/Window.cpp.o"
   "CMakeFiles/main.dir/src/engine/Window.cpp.o.d"
+  "CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o"
+  "CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o.d"
   "CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o"
   "CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o.d"
   "CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o"

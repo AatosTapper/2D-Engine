@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/glad/glad.c" "CMakeFiles/main.dir/src/glad/glad.c.o" "gcc" "CMakeFiles/main.dir/src/glad/glad.c.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Window.cpp" "CMakeFiles/main.dir/src/engine/Window.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/Window.cpp.o.d"
+  "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Camera.cpp" "CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/IndexBuffer.cpp" "CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Renderer.cpp" "CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Shader.cpp" "CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.o.d"
