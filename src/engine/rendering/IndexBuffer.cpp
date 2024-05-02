@@ -2,7 +2,7 @@
 
 #include "../../config.h"
 
-IndexBuffer::IndexBuffer() : m_freed(false), m_elements(0)
+IndexBuffer::IndexBuffer() : m_elements(0), m_freed(false)
 {
      
 }

@@ -1,6 +1,6 @@
-CMakeFiles/main.dir/src/engine/window.cpp.o: \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/window.cpp \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/window.h \
+CMakeFiles/main.dir/src/engine/Window.cpp.o: \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Window.cpp \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Window.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/../config.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glad/glad.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/KHR/khrplatform.h \

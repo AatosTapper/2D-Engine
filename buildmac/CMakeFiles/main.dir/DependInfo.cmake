@@ -9,13 +9,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/glad/glad.c" "CMakeFiles/main.dir/src/glad/glad.c.o" "gcc" "CMakeFiles/main.dir/src/glad/glad.c.o.d"
+  "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Window.cpp" "CMakeFiles/main.dir/src/engine/Window.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/Window.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/IndexBuffer.cpp" "CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o.d"
+  "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Renderer.cpp" "CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Shader.cpp" "CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.o.d"
+  "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Sprite.cpp" "CMakeFiles/main.dir/src/engine/rendering/Sprite.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/Sprite.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.cpp" "CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexArray.cpp" "CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexBuffer.cpp" "CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o.d"
-  "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/sprite.cpp" "CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.o.d"
-  "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/window.cpp" "CMakeFiles/main.dir/src/engine/window.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/window.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/main.cpp" "CMakeFiles/main.dir/src/main.cpp.o" "gcc" "CMakeFiles/main.dir/src/main.cpp.o.d"
   )
 

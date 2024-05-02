@@ -27,8 +27,10 @@ if (CMAKE_SYSTEM_NAME MATCHES "Darwin")
     find_package(glfw3 REQUIRED)
     set(GLFW_LIB glfw)
 
+    set(CMAKE_CXX_COMPILER clang++) # seems a bit faster
+
     target_compile_options(main PRIVATE 
-        -O3
+        -O2
         -Wall
         -Wextra
         -Wpedantic

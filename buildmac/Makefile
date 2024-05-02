@@ -129,6 +129,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+src/engine/Window.o: src/engine/Window.cpp.o
+.PHONY : src/engine/Window.o
+
+# target to build an object file
+src/engine/Window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Window.cpp.o
+.PHONY : src/engine/Window.cpp.o
+
+src/engine/Window.i: src/engine/Window.cpp.i
+.PHONY : src/engine/Window.i
+
+# target to preprocess a source file
+src/engine/Window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Window.cpp.i
+.PHONY : src/engine/Window.cpp.i
+
+src/engine/Window.s: src/engine/Window.cpp.s
+.PHONY : src/engine/Window.s
+
+# target to generate assembly for a file
+src/engine/Window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Window.cpp.s
+.PHONY : src/engine/Window.cpp.s
+
 src/engine/rendering/IndexBuffer.o: src/engine/rendering/IndexBuffer.cpp.o
 .PHONY : src/engine/rendering/IndexBuffer.o
 
@@ -153,6 +177,30 @@ src/engine/rendering/IndexBuffer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.s
 .PHONY : src/engine/rendering/IndexBuffer.cpp.s
 
+src/engine/rendering/Renderer.o: src/engine/rendering/Renderer.cpp.o
+.PHONY : src/engine/rendering/Renderer.o
+
+# target to build an object file
+src/engine/rendering/Renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o
+.PHONY : src/engine/rendering/Renderer.cpp.o
+
+src/engine/rendering/Renderer.i: src/engine/rendering/Renderer.cpp.i
+.PHONY : src/engine/rendering/Renderer.i
+
+# target to preprocess a source file
+src/engine/rendering/Renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.i
+.PHONY : src/engine/rendering/Renderer.cpp.i
+
+src/engine/rendering/Renderer.s: src/engine/rendering/Renderer.cpp.s
+.PHONY : src/engine/rendering/Renderer.s
+
+# target to generate assembly for a file
+src/engine/rendering/Renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.s
+.PHONY : src/engine/rendering/Renderer.cpp.s
+
 src/engine/rendering/Shader.o: src/engine/rendering/Shader.cpp.o
 .PHONY : src/engine/rendering/Shader.o
 
@@ -176,6 +224,30 @@ src/engine/rendering/Shader.s: src/engine/rendering/Shader.cpp.s
 src/engine/rendering/Shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.s
 .PHONY : src/engine/rendering/Shader.cpp.s
+
+src/engine/rendering/Sprite.o: src/engine/rendering/Sprite.cpp.o
+.PHONY : src/engine/rendering/Sprite.o
+
+# target to build an object file
+src/engine/rendering/Sprite.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Sprite.cpp.o
+.PHONY : src/engine/rendering/Sprite.cpp.o
+
+src/engine/rendering/Sprite.i: src/engine/rendering/Sprite.cpp.i
+.PHONY : src/engine/rendering/Sprite.i
+
+# target to preprocess a source file
+src/engine/rendering/Sprite.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Sprite.cpp.i
+.PHONY : src/engine/rendering/Sprite.cpp.i
+
+src/engine/rendering/Sprite.s: src/engine/rendering/Sprite.cpp.s
+.PHONY : src/engine/rendering/Sprite.s
+
+# target to generate assembly for a file
+src/engine/rendering/Sprite.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Sprite.cpp.s
+.PHONY : src/engine/rendering/Sprite.cpp.s
 
 src/engine/rendering/Texture.o: src/engine/rendering/Texture.cpp.o
 .PHONY : src/engine/rendering/Texture.o
@@ -249,54 +321,6 @@ src/engine/rendering/VertexBuffer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.s
 .PHONY : src/engine/rendering/VertexBuffer.cpp.s
 
-src/engine/rendering/sprite.o: src/engine/rendering/sprite.cpp.o
-.PHONY : src/engine/rendering/sprite.o
-
-# target to build an object file
-src/engine/rendering/sprite.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.o
-.PHONY : src/engine/rendering/sprite.cpp.o
-
-src/engine/rendering/sprite.i: src/engine/rendering/sprite.cpp.i
-.PHONY : src/engine/rendering/sprite.i
-
-# target to preprocess a source file
-src/engine/rendering/sprite.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.i
-.PHONY : src/engine/rendering/sprite.cpp.i
-
-src/engine/rendering/sprite.s: src/engine/rendering/sprite.cpp.s
-.PHONY : src/engine/rendering/sprite.s
-
-# target to generate assembly for a file
-src/engine/rendering/sprite.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.s
-.PHONY : src/engine/rendering/sprite.cpp.s
-
-src/engine/window.o: src/engine/window.cpp.o
-.PHONY : src/engine/window.o
-
-# target to build an object file
-src/engine/window.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/window.cpp.o
-.PHONY : src/engine/window.cpp.o
-
-src/engine/window.i: src/engine/window.cpp.i
-.PHONY : src/engine/window.i
-
-# target to preprocess a source file
-src/engine/window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/window.cpp.i
-.PHONY : src/engine/window.cpp.i
-
-src/engine/window.s: src/engine/window.cpp.s
-.PHONY : src/engine/window.s
-
-# target to generate assembly for a file
-src/engine/window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/window.cpp.s
-.PHONY : src/engine/window.cpp.s
-
 src/glad/glad.o: src/glad/glad.c.o
 .PHONY : src/glad/glad.o
 
@@ -354,12 +378,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... src/engine/Window.o"
+	@echo "... src/engine/Window.i"
+	@echo "... src/engine/Window.s"
 	@echo "... src/engine/rendering/IndexBuffer.o"
 	@echo "... src/engine/rendering/IndexBuffer.i"
 	@echo "... src/engine/rendering/IndexBuffer.s"
+	@echo "... src/engine/rendering/Renderer.o"
+	@echo "... src/engine/rendering/Renderer.i"
+	@echo "... src/engine/rendering/Renderer.s"
 	@echo "... src/engine/rendering/Shader.o"
 	@echo "... src/engine/rendering/Shader.i"
 	@echo "... src/engine/rendering/Shader.s"
+	@echo "... src/engine/rendering/Sprite.o"
+	@echo "... src/engine/rendering/Sprite.i"
+	@echo "... src/engine/rendering/Sprite.s"
 	@echo "... src/engine/rendering/Texture.o"
 	@echo "... src/engine/rendering/Texture.i"
 	@echo "... src/engine/rendering/Texture.s"
@@ -369,12 +402,6 @@ help:
 	@echo "... src/engine/rendering/VertexBuffer.o"
 	@echo "... src/engine/rendering/VertexBuffer.i"
 	@echo "... src/engine/rendering/VertexBuffer.s"
-	@echo "... src/engine/rendering/sprite.o"
-	@echo "... src/engine/rendering/sprite.i"
-	@echo "... src/engine/rendering/sprite.s"
-	@echo "... src/engine/window.o"
-	@echo "... src/engine/window.i"
-	@echo "... src/engine/window.s"
 	@echo "... src/glad/glad.o"
 	@echo "... src/glad/glad.i"
 	@echo "... src/glad/glad.s"

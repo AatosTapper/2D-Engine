@@ -86,6 +86,6 @@ static void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 
 static void check_for_key_close(GLFWwindow *window)
 {
-    if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
 }

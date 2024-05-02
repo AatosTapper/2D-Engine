@@ -1,6 +1,6 @@
-CMakeFiles/main.dir/src/engine/rendering/sprite.cpp.o: \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/sprite.cpp \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/sprite.h \
+CMakeFiles/main.dir/src/engine/rendering/Sprite.cpp.o: \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Sprite.cpp \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Sprite.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/memory \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__config \
