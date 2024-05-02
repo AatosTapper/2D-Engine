@@ -1,5 +1,5 @@
 #include "config.h"
-#include "engine/window.h"
+#include "engine/Window.h"
 #include "engine/rendering/VertexBuffer.h"
 #include "engine/rendering/VertexArray.h"
 #include "engine/rendering/IndexBuffer.h"
@@ -7,24 +7,23 @@
 #include "engine/rendering/Shader.h"
 #include "engine/rendering/Texture.h"
 
-#include "engine/rendering/sprite.h"
+#include "engine/rendering/Sprite.h"
+#include "engine/rendering/Renderer.h"
 
 #include <vector>
 #include <memory>
+#include <chrono>
+#include <thread>
 
 // settings
 constexpr int SCR_WIDTH = 1280;
 constexpr int SCR_HEIGHT = 720;
+constexpr double target_frame_duration = 1.0 / 60.0; // Targeting 60 FPS
 
 int main()
 {
     Window engine_window(SCR_WIDTH, SCR_HEIGHT);
-
-    // TODO: move these into a renderer class
-    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
-    glEnable(GL_DEPTH_TEST);
-    glEnable(GL_MULTISAMPLE);
-    glEnable(GL_FRAMEBUFFER_SRGB);
+    Renderer::init();
 
     Shader shader("../res/shaders/default.vert", "../res/shaders/default.frag");
 
@@ -43,37 +42,47 @@ int main()
     sp3.position = { 0.0f, 2.0f, 0.0f };
     
     std::vector<Sprite*> sprites = { &sp1, &sp2, &sp3 };
-
-    glm::mat4 view_mat(1.0f);
-    view_mat = glm::translate(view_mat, glm::vec3(0.0f, 0.0f, -10.0f));
     
+    uint32_t frame_counter = 0;
+    double frame_time_accumulator = 0.0;
     // render loop
     while (engine_window.is_open())
     {
-        // render here
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-        glClearColor(0.01f, 0.01f, 0.01f, 1.0f);
+        frame_counter++;
+        double frame_start_time = glfwGetTime();
 
-        glm::vec2 camera_dimensions = engine_window.get_dimensions();
-        glm::mat4 proj_mat = glm::perspective(glm::radians(45.0f), camera_dimensions.x / camera_dimensions.y, 0.1f, 100.0f);
+        Renderer::start_frame();
 
         for (auto sprite : sprites)
         {
+            // TODO: Renderer::set_camera();
+            // RIGHT NOW THE RENDERER CREATES BOTH
+            // VIEW AND PROJECTION MATRICIES EACH FRAME...
             sprite->rotation_radians += 0.005f;
-            shader.use();
-            glActiveTexture(GL_TEXTURE0);
-            sprite->texture->bind();
-            shader.set_mat4f("u_proj", proj_mat);
-            shader.set_mat4f("u_view", view_mat);
-            shader.set_mat4f("u_transform", sprite->get_transform_matrix());
-
-            sprite->vao->bind();
-            sprite->ebo->bind();
-            glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(sprite->ebo->get_elements()), GL_UNSIGNED_INT, 0);
-
-            sprite->vao->unbind();
-            sprite->ebo->unbind();
+            Renderer::set_shader(&shader);
+            Renderer::draw_sprite(*sprite);
         }
+
+        Renderer::end_frame();
+
+        // Cap the frame rate
+        const double frame_duration = glfwGetTime() - frame_start_time;
+        if (frame_duration < target_frame_duration)
+        {
+            const double sleep_time = (target_frame_duration - frame_duration) * 1000.0; // Convert to milliseconds
+            std::this_thread::sleep_for(std::chrono::milliseconds(static_cast<uint64_t>(sleep_time)));
+        }
+
+        frame_time_accumulator += frame_duration;
+        if (frame_counter == 59u * 2)
+        {
+            frame_counter = 0u;
+            frame_time_accumulator /= 59.0 * 2; // take the average
+            std::cout << "Frametime (capped): " 
+                << static_cast<uint32_t>(frame_time_accumulator * 1000000.0) / 1000.0f << "ms = " 
+                << static_cast<uint32_t>(1000 / frame_time_accumulator) << " FPS\n";
+        }
+
         engine_window.end_frame();
     }
 

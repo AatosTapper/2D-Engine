@@ -1,4 +1,4 @@
-#include "sprite.h"
+#include "Sprite.h"
 
 #include "VertexBufferLayout.h"
 
