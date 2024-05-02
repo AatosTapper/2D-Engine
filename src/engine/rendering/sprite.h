@@ -25,7 +25,7 @@ public:
     // rendering variables
     VertexArray *vao;
     IndexBuffer *ebo;
-    std::shared_ptr<Texture> texture{}; 
+    std::shared_ptr<Texture> texture{};
 
     void add_texture(const std::string &filepath);
     void add_texture(std::shared_ptr<Texture> &ptr);

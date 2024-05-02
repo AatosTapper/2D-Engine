@@ -39,14 +39,14 @@ int main()
     std::shared_ptr<Texture> dirt = std::make_shared<Texture>("../res/textures/dirt.jpg");
 
     Sprite sp1(1.0f);
-    sp1.add_texture(tex);
+    sp1.add_texture(dirt);
     sp1.position = { 2.0f, 0.0f, 0.0f };
 
     Sprite sp2(1.0f);
     sp2.add_texture(dirt);
     sp2.position = { -4.0f, -1.0f, 0.0f };
 
-    Sprite sp3(1.2f, 0.7f);
+    Sprite sp3(1.2f, 0.8f);
     sp3.add_texture(tex);
     sp3.position = { 0.0f, 2.0f, 0.0f };
     
@@ -57,7 +57,7 @@ int main()
     // render loop
     while (engine_window.is_open())
     {
-        sp1.position.z = sin(glfwGetTime()) * 5;
+        sp1.position.z = sin(glfwGetTime() * 2) * 5;
         sp2.position.z = cos(glfwGetTime()) * 5;
         sp3.position.z = cos(glfwGetTime() * 0.5) * 2;
 

@@ -1,7 +1,11 @@
 cmake_minimum_required(VERSION 3.18)
 
 project(main)
+
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
 
@@ -37,19 +41,19 @@ if (CMAKE_SYSTEM_NAME MATCHES "Darwin")
         -Wconversion -Wsign-conversion
         -Wno-deprecated-declarations
     )
-elseif (CMAKE_SYSTEM_NAME MATCHES "Windows")
-    set(GLFW_LIBRARY_DIR "${CMAKE_SOURCE_DIR}/dep/libglfw3/lib-vc2022")
+else () # windows (no linux here so else is enough)
+    set(GLFW_LIBRARY_DIR "${main_SOURCE_DIR}/dep/libglfw3/lib-vc2022")
     set(GLFW_LIB glfw3dll)
 
     set(CMAKE_CXX_COMPILER "cl")
 
     # TODO get "/O2" working for performance
     target_compile_options(main PRIVATE 
-        "/W3"
+        "/W3" "/O2" "/DNDEBUG" "/Zi" "/Gy"
     )
 endif()
 
-set(INCLUDE_DIR "${CMAKE_SOURCE_DIR}/dep")
+set(INCLUDE_DIR "${main_SOURCE_DIR}/dep")
 include_directories(${INCLUDE_DIR})
 link_directories(${GLFW_LIBRARY_DIR})
 
