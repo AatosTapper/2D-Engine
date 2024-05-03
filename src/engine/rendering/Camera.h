@@ -8,7 +8,7 @@
 class Camera
 {
 public:
-    Camera(const float aspect_ratio, const float field_of_view);
+    Camera(const float aspect_ratio, const float field_of_view, bool ortho = false);
 
     float pitch;
     float yaw;
@@ -37,6 +37,8 @@ private:
     glm::vec3 m_up;
     glm::vec3 m_delta_pos;
     std::unique_ptr<glm::mat4> m_vp_mat;
+
+    const bool m_ortho;
 
     void m_update_direction();
 };

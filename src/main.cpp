@@ -33,8 +33,8 @@ int main()
 {
     Window engine_window(SCR_WIDTH, SCR_HEIGHT);
     Renderer::init();
-    Camera camera(engine_window.get_aspect_ratio(), 30.0f);
-    camera.back(15.0f);
+    Camera camera(engine_window.get_aspect_ratio(), 45.0f);
+    camera.back(10.0f);
 
     Shader shader("../res/shaders/default.vert", "../res/shaders/default.frag");
 
@@ -48,7 +48,7 @@ int main()
     sp1.position = { 2.0f, 0.0f, 0.0f };
 
     Sprite sp2(1.0f);
-    sp2.add_texture(dirt);
+    sp2.add_texture(tex);
     sp2.position = { -4.0f, -1.0f, 0.0f };
 
     Sprite sp3(1.2f, 0.8f);

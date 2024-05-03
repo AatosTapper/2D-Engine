@@ -38,6 +38,7 @@ void Renderer::set_view_proj_matrix(const glm::mat4 &vp_mat)
     selected_vpm = vp_mat;
 }
 
+// TODO: push sprite to queue and render all latere
 void Renderer::draw_sprite(const Sprite &sprite)
 {
     assert(selected_shader && "Cannot draw a sprite without a shader being selected");
