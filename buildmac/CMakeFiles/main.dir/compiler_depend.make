@@ -8968,6 +8968,7 @@ CMakeFiles/main.dir/src/main.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-E
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Scene.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Window.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/GameObject.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Renderer.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Sprite.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/ImageGameObject.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h \

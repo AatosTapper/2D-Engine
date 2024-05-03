@@ -1,18 +1,7 @@
 #include "config.h"
 
-//
-//
-//
-//
-// THIS FILE IS A FUCKING MESS RN
-//
-//
-//
-//
-
 #include "engine/Window.h"
 #include "engine/rendering/Shader.h"
-#include "engine/rendering/Texture.h"
 #include "engine/rendering/Sprite.h"
 #include "engine/rendering/Renderer.h"
 #include "engine/rendering/Camera.h"
@@ -31,31 +20,26 @@
 // settings
 constexpr int SCR_WIDTH = 1280;
 constexpr int SCR_HEIGHT = 720;
-
 constexpr double target_frame_duration = 1.0 / 60.0; // Targeting 60 FPS
 
 int main()
 {
+    // initing the engine and graphics stuff
     Window engine_window(SCR_WIDTH, SCR_HEIGHT);
     Renderer::init();
+
+    // creating a camera
     Camera camera(engine_window.get_aspect_ratio(), 45.0f, PROJ_3D);
     camera.back(10.0f);
-
+    
+    // creating a shader (obviously)
     Shader shader("../res/shaders/default.vert", "../res/shaders/default.frag");
 
-    // creating shared textures to be used by multiple sprites
-    std::shared_ptr<Texture> tex = std::make_shared<Texture>("../res/textures/wood-texture.jpg");
-    std::shared_ptr<Texture> dirt = std::make_shared<Texture>("../res/textures/dirt.jpg");
-
+    // creating a scene
     Scene main_scene;
-
-    std::unique_ptr<ImageGameObject> kuutio = std::make_unique<ImageGameObject>();
-    kuutio->sprite.dimension = { 1.5f, 1.5f };
-    kuutio->sprite.add_texture(tex);
-
-    GameObject::id_t kuutio_id = kuutio->get_id();
-
-    std::unique_ptr<GameObject> scene_object = std::move(kuutio);
+    
+    // creating a game object of type ImageGameObject and putting it into the scene
+    std::unique_ptr<GameObject> scene_object = std::make_unique<ImageGameObject>();
     main_scene.add_game_object(scene_object);
 
     uint32_t frame_counter = 0;
@@ -67,26 +51,16 @@ int main()
         double frame_start_time = glfwGetTime();
         frame_counter++;
 
-        auto kuutio_from_scene = main_scene.get_game_object(kuutio_id);
-        // this is just for the animation, it won't stay
-        if (auto* image_game_object_ptr = dynamic_cast<ImageGameObject*>(kuutio_from_scene.value())) 
-        {
-            image_game_object_ptr->sprite.rotation_radians += 0.005f;
-            image_game_object_ptr->sprite.position.z = (float)sin(glfwGetTime() * 2) * 5;
-            image_game_object_ptr->sprite.position.x = (float)sin(glfwGetTime() * (-0.5f)) * 2;
-        }
-
+        // game logic
+        main_scene.update();
         camera.update(engine_window.get_aspect_ratio());
-        Renderer::start_frame();
 
+        Renderer::start_frame();
         Renderer::set_view_proj_matrix(camera.get_vp_matrix());
         Renderer::set_shader(&shader);
-        if (auto* image_game_object_ptr = dynamic_cast<ImageGameObject*>(kuutio_from_scene.value())) 
-        {
-            Renderer::draw_sprite(image_game_object_ptr->sprite);
-        }
-
+        Renderer::draw_sprites();
         Renderer::end_frame();
+
         engine_window.end_frame();
 
         // Cap the frame rate

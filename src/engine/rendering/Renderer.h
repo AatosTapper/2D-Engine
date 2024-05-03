@@ -15,5 +15,6 @@ public:
     static void end_frame();
     static void set_shader(Shader *shader);
     static void set_view_proj_matrix(const glm::mat4 &vp_mat);
-    static void draw_sprite(const Sprite &sprite);
+    static void queue_sprite(const Sprite *sprite);
+    static void draw_sprites();
 };

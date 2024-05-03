@@ -4,9 +4,11 @@
 #include "Shader.h"
 
 #include <cassert>
+#include <vector>
 
 static Shader *selected_shader = nullptr;
 static glm::mat4 selected_vpm;
+static std::vector<const Sprite*> sprite_queue;
 
 void Renderer::init()
 {
@@ -25,6 +27,7 @@ void Renderer::start_frame()
 void Renderer::end_frame()
 {
     selected_shader = nullptr;
+    sprite_queue.clear();
 }
 
 void Renderer::set_shader(Shader *shader)
@@ -39,20 +42,28 @@ void Renderer::set_view_proj_matrix(const glm::mat4 &vp_mat)
 }
 
 // TODO: push sprite to queue and render all latere
-void Renderer::draw_sprite(const Sprite &sprite)
+void Renderer::queue_sprite(const Sprite *sprite)
 {
-    assert(selected_shader && "Cannot draw a sprite without a shader being selected");
+    assert(sprite && "Cannot queue an empty sprite");
+    sprite_queue.push_back(sprite);    
+}
 
-    selected_shader->use();
-    glActiveTexture(GL_TEXTURE0);
-    sprite.texture->bind();
+void Renderer::draw_sprites()
+{
+    assert(selected_shader && "Cannot draw sprites without a shader being selected");
+    for (auto sprite : sprite_queue)
+    {
+        selected_shader->use();
+        glActiveTexture(GL_TEXTURE0);
+        sprite->texture->bind();
 
-    selected_shader->set_mat4f("u_view_proj", selected_vpm);
-    selected_shader->set_mat4f("u_transform", sprite.get_transform_matrix());
+        selected_shader->set_mat4f("u_view_proj", selected_vpm);
+        selected_shader->set_mat4f("u_transform", sprite->get_transform_matrix());
 
-    sprite.vao->bind();
-    sprite.ebo->bind();
-    glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(sprite.ebo->get_elements()), GL_UNSIGNED_INT, 0);
-    sprite.vao->unbind();
-    sprite.ebo->unbind();
+        sprite->vao->bind();
+        sprite->ebo->bind();
+        glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(sprite->ebo->get_elements()), GL_UNSIGNED_INT, 0);
+        sprite->vao->unbind();
+        sprite->ebo->unbind();
+    }
 }

@@ -13,14 +13,13 @@ public:
 
     // override these functions to add custom behaviour to inherited game objects
     // each function is ran automatically when:
-    virtual void on_create() {}   // object is created
+    virtual void on_create() {}   // object is added to a scene
     virtual void on_update() {}   // object is updated in the gameloop
-    virtual void on_destroy() {}  // object is destroyed
-
-protected:
-    const id_t id;
+    virtual void on_destroy() {}  // object is deleted from a scene
 
 private:
+    const id_t id;
+
     id_t create_id()
     {
         static id_t cur_id = 0u;

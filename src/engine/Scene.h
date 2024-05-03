@@ -19,6 +19,9 @@ public:
 
     void delete_game_object(GameObject::id_t id);
 
+    void update();
+
 private:
     std::unordered_map<GameObject::id_t, std::unique_ptr<GameObject>> game_object_storage;
+    std::vector<GameObject::id_t> current_game_objects;
 };
