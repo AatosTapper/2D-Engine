@@ -23,6 +23,8 @@ file(GLOB_RECURSE files
     "src/engine/*.cpp"
     "src/engine/rendering/*.h"
     "src/engine/rendering/*.cpp"
+    "src/engine/gameobjects/*.h"
+    "src/engine/gameobjects/*.cpp"
 )
 
 add_executable(main ${files} src/glad/glad.c)
@@ -47,7 +49,6 @@ else () # windows (no linux here so else is enough)
 
     set(CMAKE_CXX_COMPILER "cl")
 
-    # TODO get "/O2" working for performance
     target_compile_options(main PRIVATE 
         "/W3" "/O2" "/DNDEBUG" "/Zi" "/Gy"
     )

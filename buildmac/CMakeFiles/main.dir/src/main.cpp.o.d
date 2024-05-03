@@ -945,4 +945,9 @@ CMakeFiles/main.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/year_month_weekday.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/file_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/literals.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Scene.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/GameObject.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/ImageGameObject.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../GameObject.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../rendering/Sprite.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/thread

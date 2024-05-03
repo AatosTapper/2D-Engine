@@ -129,6 +129,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+src/engine/Scene.o: src/engine/Scene.cpp.o
+.PHONY : src/engine/Scene.o
+
+# target to build an object file
+src/engine/Scene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Scene.cpp.o
+.PHONY : src/engine/Scene.cpp.o
+
+src/engine/Scene.i: src/engine/Scene.cpp.i
+.PHONY : src/engine/Scene.i
+
+# target to preprocess a source file
+src/engine/Scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Scene.cpp.i
+.PHONY : src/engine/Scene.cpp.i
+
+src/engine/Scene.s: src/engine/Scene.cpp.s
+.PHONY : src/engine/Scene.s
+
+# target to generate assembly for a file
+src/engine/Scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Scene.cpp.s
+.PHONY : src/engine/Scene.cpp.s
+
 src/engine/Window.o: src/engine/Window.cpp.o
 .PHONY : src/engine/Window.o
 
@@ -402,6 +426,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... src/engine/Scene.o"
+	@echo "... src/engine/Scene.i"
+	@echo "... src/engine/Scene.s"
 	@echo "... src/engine/Window.o"
 	@echo "... src/engine/Window.i"
 	@echo "... src/engine/Window.s"

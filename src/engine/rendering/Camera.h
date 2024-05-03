@@ -5,10 +5,13 @@
 
 #include <memory>
 
+#define PROJ_2D true
+#define PROJ_3D false
+
 class Camera
 {
 public:
-    Camera(const float aspect_ratio, const float field_of_view, bool ortho = false);
+    Camera(const float aspect_ratio, const float field_of_view, bool ortho);
 
     float pitch;
     float yaw;

@@ -1,12 +1,14 @@
 #include "config.h"
 
-// ---------------------------------------------------------------
-// ---------------------------------------------------------------
-// ---------------------------------------------------------------
-// THIS FILE WILL BE ALMOST EMPTY AFTER I'VE DONE SOME REFACTORING
-// ---------------------------------------------------------------
-// ---------------------------------------------------------------
-// ---------------------------------------------------------------
+//
+//
+//
+//
+// THIS FILE IS A FUCKING MESS RN
+//
+//
+//
+//
 
 #include "engine/Window.h"
 #include "engine/rendering/Shader.h"
@@ -14,6 +16,9 @@
 #include "engine/rendering/Sprite.h"
 #include "engine/rendering/Renderer.h"
 #include "engine/rendering/Camera.h"
+
+#include "engine/Scene.h"
+#include "engine/gameobjects/ImageGameObject.h"
 
 //useless comment 
 
@@ -33,7 +38,7 @@ int main()
 {
     Window engine_window(SCR_WIDTH, SCR_HEIGHT);
     Renderer::init();
-    Camera camera(engine_window.get_aspect_ratio(), 45.0f);
+    Camera camera(engine_window.get_aspect_ratio(), 45.0f, PROJ_3D);
     camera.back(10.0f);
 
     Shader shader("../res/shaders/default.vert", "../res/shaders/default.frag");
@@ -42,22 +47,17 @@ int main()
     std::shared_ptr<Texture> tex = std::make_shared<Texture>("../res/textures/wood-texture.jpg");
     std::shared_ptr<Texture> dirt = std::make_shared<Texture>("../res/textures/dirt.jpg");
 
-    // creating three sprites
-    Sprite sp1(1.0f);
-    sp1.add_texture(dirt);
-    sp1.position = { 2.0f, 0.0f, 0.0f };
+    Scene main_scene;
 
-    Sprite sp2(1.0f);
-    sp2.add_texture(tex);
-    sp2.position = { -4.0f, -1.0f, 0.0f };
+    std::unique_ptr<ImageGameObject> kuutio = std::make_unique<ImageGameObject>();
+    kuutio->sprite.dimension = { 1.5f, 1.5f };
+    kuutio->sprite.add_texture(tex);
 
-    Sprite sp3(1.2f, 0.8f);
-    sp3.add_texture(tex);
-    sp3.position = { 0.0f, 2.0f, 0.0f };
-    
-    // putting them in a list so it's easier to render
-    std::vector<Sprite*> sprites = { &sp1, &sp2, &sp3 };
-    
+    GameObject::id_t kuutio_id = kuutio->get_id();
+
+    std::unique_ptr<GameObject> scene_object = std::move(kuutio);
+    main_scene.add_game_object(scene_object);
+
     uint32_t frame_counter = 0;
     double frame_time_accumulator = 0.0;
     
@@ -67,21 +67,23 @@ int main()
         double frame_start_time = glfwGetTime();
         frame_counter++;
 
+        auto kuutio_from_scene = main_scene.get_game_object(kuutio_id);
         // this is just for the animation, it won't stay
-        sp1.position.z = (float)sin(glfwGetTime() * 2) * 5;
-        sp2.position.z = (float)cos(glfwGetTime()) * 5;
-        sp3.position.z = (float)cos(glfwGetTime() * 0.5) * 2;
+        if (auto* image_game_object_ptr = dynamic_cast<ImageGameObject*>(kuutio_from_scene.value())) 
+        {
+            image_game_object_ptr->sprite.rotation_radians += 0.005f;
+            image_game_object_ptr->sprite.position.z = (float)sin(glfwGetTime() * 2) * 5;
+            image_game_object_ptr->sprite.position.x = (float)sin(glfwGetTime() * (-0.5f)) * 2;
+        }
 
         camera.update(engine_window.get_aspect_ratio());
         Renderer::start_frame();
 
-        for (auto sprite : sprites)
+        Renderer::set_view_proj_matrix(camera.get_vp_matrix());
+        Renderer::set_shader(&shader);
+        if (auto* image_game_object_ptr = dynamic_cast<ImageGameObject*>(kuutio_from_scene.value())) 
         {
-            sprite->rotation_radians += 0.005f; // animation too
-
-            Renderer::set_view_proj_matrix(camera.get_vp_matrix());
-            Renderer::set_shader(&shader);
-            Renderer::draw_sprite(*sprite);
+            Renderer::draw_sprite(image_game_object_ptr->sprite);
         }
 
         Renderer::end_frame();

@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/glad/glad.c" "CMakeFiles/main.dir/src/glad/glad.c.o" "gcc" "CMakeFiles/main.dir/src/glad/glad.c.o.d"
+  "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Scene.cpp" "CMakeFiles/main.dir/src/engine/Scene.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/Scene.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Window.cpp" "CMakeFiles/main.dir/src/engine/Window.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/Window.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Camera.cpp" "CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/IndexBuffer.cpp" "CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o.d"

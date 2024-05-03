@@ -3,11 +3,11 @@
 #define WORLD_UP glm::vec3(0.0f, 1.0f, 0.0f)
 
 Camera::Camera(const float aspect_ratio, const float field_of_view, bool ortho) : 
+    pitch(0.0f), yaw(-90.0f),
     fov(field_of_view),
     m_position(glm::vec3(0.0f)), 
     m_front(glm::vec3(0.0f, 0.0f, -1.0f)), 
     m_delta_pos(glm::vec3(0.0f)),
-    pitch(0.0f), yaw(-90.0f),
     m_vp_mat(std::make_unique<glm::mat4>(1.0f)),
     m_ortho(ortho)
 {
