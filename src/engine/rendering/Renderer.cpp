@@ -8,7 +8,7 @@
 
 static Shader *selected_shader = nullptr;
 static glm::mat4 selected_vpm;
-static std::vector<const Sprite*> sprite_queue;
+static std::vector<std::tuple<const Sprite*, glm::mat4>> sprite_queue;
 
 void Renderer::init()
 {
@@ -42,23 +42,26 @@ void Renderer::set_view_proj_matrix(const glm::mat4 &vp_mat)
 }
 
 // TODO: push sprite to queue and render all latere
-void Renderer::queue_sprite(const Sprite *sprite)
+void Renderer::queue_sprite(std::tuple<const Sprite*, glm::mat4> sprite)
 {
-    assert(sprite && "Cannot queue an empty sprite");
+    assert(std::get<0>(sprite) && "Cannot queue an empty sprite");
     sprite_queue.push_back(sprite);    
 }
 
 void Renderer::draw_sprites()
 {
     assert(selected_shader && "Cannot draw sprites without a shader being selected");
-    for (auto sprite : sprite_queue)
+    for (auto sprite_pair : sprite_queue)
     {
+        auto sprite = std::get<0>(sprite_pair);
+        auto transform = std::get<1>(sprite_pair);
+
         selected_shader->use();
         glActiveTexture(GL_TEXTURE0);
         sprite->texture->bind();
 
         selected_shader->set_mat4f("u_view_proj", selected_vpm);
-        selected_shader->set_mat4f("u_transform", sprite->get_transform_matrix());
+        selected_shader->set_mat4f("u_transform", transform);
 
         sprite->vao->bind();
         sprite->ebo->bind();

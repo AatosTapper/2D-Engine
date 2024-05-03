@@ -129,6 +129,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+dep/glad/glad.o: dep/glad/glad.c.o
+.PHONY : dep/glad/glad.o
+
+# target to build an object file
+dep/glad/glad.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/dep/glad/glad.c.o
+.PHONY : dep/glad/glad.c.o
+
+dep/glad/glad.i: dep/glad/glad.c.i
+.PHONY : dep/glad/glad.i
+
+# target to preprocess a source file
+dep/glad/glad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/dep/glad/glad.c.i
+.PHONY : dep/glad/glad.c.i
+
+dep/glad/glad.s: dep/glad/glad.c.s
+.PHONY : dep/glad/glad.s
+
+# target to generate assembly for a file
+dep/glad/glad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/dep/glad/glad.c.s
+.PHONY : dep/glad/glad.c.s
+
 src/engine/Scene.o: src/engine/Scene.cpp.o
 .PHONY : src/engine/Scene.o
 
@@ -176,6 +200,54 @@ src/engine/Window.s: src/engine/Window.cpp.s
 src/engine/Window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Window.cpp.s
 .PHONY : src/engine/Window.cpp.s
+
+src/engine/components/TransformComponent.o: src/engine/components/TransformComponent.cpp.o
+.PHONY : src/engine/components/TransformComponent.o
+
+# target to build an object file
+src/engine/components/TransformComponent.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o
+.PHONY : src/engine/components/TransformComponent.cpp.o
+
+src/engine/components/TransformComponent.i: src/engine/components/TransformComponent.cpp.i
+.PHONY : src/engine/components/TransformComponent.i
+
+# target to preprocess a source file
+src/engine/components/TransformComponent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.i
+.PHONY : src/engine/components/TransformComponent.cpp.i
+
+src/engine/components/TransformComponent.s: src/engine/components/TransformComponent.cpp.s
+.PHONY : src/engine/components/TransformComponent.s
+
+# target to generate assembly for a file
+src/engine/components/TransformComponent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.s
+.PHONY : src/engine/components/TransformComponent.cpp.s
+
+src/engine/gameobjects/ImageGameObject.o: src/engine/gameobjects/ImageGameObject.cpp.o
+.PHONY : src/engine/gameobjects/ImageGameObject.o
+
+# target to build an object file
+src/engine/gameobjects/ImageGameObject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o
+.PHONY : src/engine/gameobjects/ImageGameObject.cpp.o
+
+src/engine/gameobjects/ImageGameObject.i: src/engine/gameobjects/ImageGameObject.cpp.i
+.PHONY : src/engine/gameobjects/ImageGameObject.i
+
+# target to preprocess a source file
+src/engine/gameobjects/ImageGameObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.i
+.PHONY : src/engine/gameobjects/ImageGameObject.cpp.i
+
+src/engine/gameobjects/ImageGameObject.s: src/engine/gameobjects/ImageGameObject.cpp.s
+.PHONY : src/engine/gameobjects/ImageGameObject.s
+
+# target to generate assembly for a file
+src/engine/gameobjects/ImageGameObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.s
+.PHONY : src/engine/gameobjects/ImageGameObject.cpp.s
 
 src/engine/rendering/Camera.o: src/engine/rendering/Camera.cpp.o
 .PHONY : src/engine/rendering/Camera.o
@@ -369,30 +441,6 @@ src/engine/rendering/VertexBuffer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.s
 .PHONY : src/engine/rendering/VertexBuffer.cpp.s
 
-src/glad/glad.o: src/glad/glad.c.o
-.PHONY : src/glad/glad.o
-
-# target to build an object file
-src/glad/glad.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/glad/glad.c.o
-.PHONY : src/glad/glad.c.o
-
-src/glad/glad.i: src/glad/glad.c.i
-.PHONY : src/glad/glad.i
-
-# target to preprocess a source file
-src/glad/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/glad/glad.c.i
-.PHONY : src/glad/glad.c.i
-
-src/glad/glad.s: src/glad/glad.c.s
-.PHONY : src/glad/glad.s
-
-# target to generate assembly for a file
-src/glad/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/glad/glad.c.s
-.PHONY : src/glad/glad.c.s
-
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -426,12 +474,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... dep/glad/glad.o"
+	@echo "... dep/glad/glad.i"
+	@echo "... dep/glad/glad.s"
 	@echo "... src/engine/Scene.o"
 	@echo "... src/engine/Scene.i"
 	@echo "... src/engine/Scene.s"
 	@echo "... src/engine/Window.o"
 	@echo "... src/engine/Window.i"
 	@echo "... src/engine/Window.s"
+	@echo "... src/engine/components/TransformComponent.o"
+	@echo "... src/engine/components/TransformComponent.i"
+	@echo "... src/engine/components/TransformComponent.s"
+	@echo "... src/engine/gameobjects/ImageGameObject.o"
+	@echo "... src/engine/gameobjects/ImageGameObject.i"
+	@echo "... src/engine/gameobjects/ImageGameObject.s"
 	@echo "... src/engine/rendering/Camera.o"
 	@echo "... src/engine/rendering/Camera.i"
 	@echo "... src/engine/rendering/Camera.s"
@@ -456,9 +513,6 @@ help:
 	@echo "... src/engine/rendering/VertexBuffer.o"
 	@echo "... src/engine/rendering/VertexBuffer.i"
 	@echo "... src/engine/rendering/VertexBuffer.s"
-	@echo "... src/glad/glad.o"
-	@echo "... src/glad/glad.i"
-	@echo "... src/glad/glad.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -25,9 +25,11 @@ file(GLOB_RECURSE files
     "src/engine/rendering/*.cpp"
     "src/engine/gameobjects/*.h"
     "src/engine/gameobjects/*.cpp"
+    "src/engine/components/*.h"
+    "src/engine/components/*.cpp"
 )
 
-add_executable(main ${files} src/glad/glad.c)
+add_executable(main ${files} dep/glad/glad.c)
 
 if (CMAKE_SYSTEM_NAME MATCHES "Darwin")
     find_package(glfw3 REQUIRED)
