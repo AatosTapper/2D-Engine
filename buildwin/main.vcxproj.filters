@@ -1,6 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\components\TransformComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\gameobjects\ImageGameObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\Camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -31,12 +40,24 @@
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\glad\glad.c">
+    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\dep\glad\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\GameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\components\TransformComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\gameobjects\ImageGameObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\Camera.h">

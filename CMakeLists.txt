@@ -46,7 +46,9 @@ if (CMAKE_SYSTEM_NAME MATCHES "Darwin")
         -Wno-deprecated-declarations
     )
 else () # windows (no linux here so else is enough)
-    set(GLFW_LIBRARY_DIR "${main_SOURCE_DIR}/dep/libglfw3/lib-vc2022")
+    set(GLFW_LIBRARY_DIR "C:/Program Files/glfw-3.4/glfw-3.4.bin.WIN64")
+
+    #find_package(glfw3 REQUIRED)
     set(GLFW_LIB glfw3dll)
 
     set(CMAKE_CXX_COMPILER "cl")

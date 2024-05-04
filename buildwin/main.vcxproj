@@ -320,6 +320,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\config.h" />
+    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\GameObject.h" />
+    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\Scene.cpp" />
+    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\Scene.h" />
+    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\components\TransformComponent.cpp" />
+    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\components\TransformComponent.h" />
+    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\gameobjects\ImageGameObject.cpp" />
+    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\gameobjects\ImageGameObject.h" />
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\Camera.cpp" />
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\Camera.h" />
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\IndexBuffer.cpp" />
@@ -341,7 +348,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\window.h" />
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\main.cpp" />
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\util.h" />
-    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\glad\glad.c" />
+    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\dep\glad\glad.c" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\buildwin\ZERO_CHECK.vcxproj">
