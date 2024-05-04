@@ -16,8 +16,8 @@ public:
     Sprite sprite;
     Transform3DComponent transform;
 
-    void on_attach(Scene *scene) override;
-    void on_update(Scene *scene) override;
-    void on_destroy(Scene *scene) override;
+    void on_attach() override;
+    void on_update() override;
+    void on_destroy() override;
 };
 

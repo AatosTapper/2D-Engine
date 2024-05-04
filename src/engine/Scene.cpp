@@ -13,7 +13,7 @@ void Scene::add_game_object(std::unique_ptr<GameObject> obj)
         current_game_objects.push_back(id);
     }
 
-    game_object_storage.at(id)->on_attach(this);
+    game_object_storage.at(id)->on_attach();
 }
 
 std::optional<GameObject*> Scene::get_game_object(GameObject::id_t id) const
@@ -38,7 +38,7 @@ void Scene::update()
     handle_deletions();
     for (auto id : current_game_objects)
     {
-        game_object_storage.at(id)->on_update(this);
+        game_object_storage.at(id)->on_update();
     }
 }
 
@@ -47,7 +47,7 @@ void Scene::handle_deletions()
     // first run all on_destroy()s
     for (auto id : delete_queue)
     {
-        game_object_storage.at(id)->on_destroy(this);
+        game_object_storage.at(id)->on_destroy();
     }
 
     // only after running them all can we delete them

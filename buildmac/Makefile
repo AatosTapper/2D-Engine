@@ -153,6 +153,30 @@ dep/glad/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/dep/glad/glad.c.s
 .PHONY : dep/glad/glad.c.s
 
+src/engine/Engine.o: src/engine/Engine.cpp.o
+.PHONY : src/engine/Engine.o
+
+# target to build an object file
+src/engine/Engine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Engine.cpp.o
+.PHONY : src/engine/Engine.cpp.o
+
+src/engine/Engine.i: src/engine/Engine.cpp.i
+.PHONY : src/engine/Engine.i
+
+# target to preprocess a source file
+src/engine/Engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Engine.cpp.i
+.PHONY : src/engine/Engine.cpp.i
+
+src/engine/Engine.s: src/engine/Engine.cpp.s
+.PHONY : src/engine/Engine.s
+
+# target to generate assembly for a file
+src/engine/Engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Engine.cpp.s
+.PHONY : src/engine/Engine.cpp.s
+
 src/engine/Scene.o: src/engine/Scene.cpp.o
 .PHONY : src/engine/Scene.o
 
@@ -477,6 +501,9 @@ help:
 	@echo "... dep/glad/glad.o"
 	@echo "... dep/glad/glad.i"
 	@echo "... dep/glad/glad.s"
+	@echo "... src/engine/Engine.o"
+	@echo "... src/engine/Engine.i"
+	@echo "... src/engine/Engine.s"
 	@echo "... src/engine/Scene.o"
 	@echo "... src/engine/Scene.i"
 	@echo "... src/engine/Scene.s"

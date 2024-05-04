@@ -16,9 +16,9 @@ public:
 
     // override these functions to add custom behaviour to inherited game objects
     // each function is ran automatically when:
-    virtual void on_attach(Scene *scene) {(void)scene;}   // object is added to a scene
-    virtual void on_update(Scene *scene) {(void)scene;}   // object is updated in the gameloop
-    virtual void on_destroy(Scene *scene) {(void)scene;}  // object is deleted from a scene
+    virtual void on_attach() {}   // object is added to a scene
+    virtual void on_update() {}   // object is updated in the gameloop
+    virtual void on_destroy() {}  // object is deleted from a scene
 
 private:
     const id_t id;
@@ -48,9 +48,9 @@ public:
     bool other_enemy_variable;
     glm::vec2 another_enemy_variable_with_arbitary_name;
 
-    void on_attach(Scene *scene) override;
-    void on_update(Scene *scene) override;
-    void on_destroy(Scene *scene) override;
+    void on_attach() override;
+    void on_update() override;
+    void on_destroy() override;
 };
 
 
@@ -68,17 +68,17 @@ EnemyGameObject::~EnemyGameObject()
 
 }
 
-void EnemyGameObject::on_attach(Scene *scene)
+void EnemyGameObject::on_attach()
 {
     // some functionality
 }
 
-void EnemyGameObject::on_update(Scene *scene)
+void EnemyGameObject::on_update()
 {
     // some functionality
 }
 
-void EnemyGameObject::on_destroy(Scene *scene)
+void EnemyGameObject::on_destroy()
 {
     // some functionality
 }

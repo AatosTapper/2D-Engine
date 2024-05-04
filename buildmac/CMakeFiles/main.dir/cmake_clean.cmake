@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/main.dir/dep/glad/glad.c.o"
   "CMakeFiles/main.dir/dep/glad/glad.c.o.d"
+  "CMakeFiles/main.dir/src/engine/Engine.cpp.o"
+  "CMakeFiles/main.dir/src/engine/Engine.cpp.o.d"
   "CMakeFiles/main.dir/src/engine/Scene.cpp.o"
   "CMakeFiles/main.dir/src/engine/Scene.cpp.o.d"
   "CMakeFiles/main.dir/src/engine/Window.cpp.o"

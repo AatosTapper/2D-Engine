@@ -1,5 +1,7 @@
 #include "ImageGameObject.h"
 
+#include "../Engine.h"
+
 ImageGameObject::ImageGameObject(const char *texture_path)
 {
     sprite.scale = glm::vec2(2.0f);
@@ -7,15 +9,13 @@ ImageGameObject::ImageGameObject(const char *texture_path)
     sprite.texture->filter_nearest();
 }
 
-void ImageGameObject::on_attach(Scene *scene)
+void ImageGameObject::on_attach()
 {
-    (void)scene;
     // nothing here now
 }
 
-void ImageGameObject::on_update(Scene *scene)
+void ImageGameObject::on_update()
 {
-    (void)scene;
     // THIS IS FOR TESTING
     
     transform.scale_x = 1.0f + (float)sin(glfwGetTime() * 1.5f) * 0.05f;
@@ -65,8 +65,7 @@ void ImageGameObject::on_update(Scene *scene)
     Renderer::queue_sprite({ &sprite, full_transform });
 }
 
-void ImageGameObject::on_destroy(Scene *scene)
+void ImageGameObject::on_destroy()
 {
-    (void)scene;
     // nothing here now
 }
