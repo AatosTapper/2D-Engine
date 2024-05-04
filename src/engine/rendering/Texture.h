@@ -8,12 +8,15 @@
 class Texture
 {
 public:
-    Texture(const std::string &file, bool flip = false); // flip parameter is for certain file formats
+    Texture(const std::string &file); // flip parameter is for certain file formats
     ~Texture();
 
     void bind() const;
     void unbind() const;
     void free();
+
+    void filter_nearest(); // pixelated look
+    void filter_linear();  // normal filtering
 
 private:
     unsigned int m_id;

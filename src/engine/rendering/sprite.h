@@ -19,7 +19,7 @@ public:
     
     // transforms
     glm::vec3 position{};
-    glm::vec2 dimension{};
+    glm::vec2 scale{};
     float rotation_radians{};
 
     // rendering variables

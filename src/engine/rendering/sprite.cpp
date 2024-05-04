@@ -22,7 +22,7 @@ static constexpr uint32_t indices[] = {
     1, 2, 3    // second triangle
 };
 
-Sprite::Sprite(float width, float height) : dimension({ width, height })
+Sprite::Sprite(float width, float height) : scale({ width, height })
 {
     if (!mesh_created)
     {
@@ -48,7 +48,7 @@ Sprite::Sprite(float width, float height) : dimension({ width, height })
 
 void Sprite::add_texture(const std::string &filepath)
 {
-    texture = std::make_shared<Texture>(filepath, false);
+    texture = std::make_shared<Texture>(filepath);
 }
 
 void Sprite::add_texture(std::shared_ptr<Texture> &ptr)
@@ -61,6 +61,6 @@ glm::mat4 Sprite::get_transform_matrix() const
     glm::mat4 output(1.0f);
     output = glm::translate(output, position);
     output = glm::rotate(output, rotation_radians, glm::vec3(0.0f, 0.0f, -1.0f));
-    output = glm::scale(output, glm::vec3(dimension, 1.0f)); 
+    output = glm::scale(output, glm::vec3(scale, 1.0f)); 
     return output;
 }

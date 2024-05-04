@@ -1,6 +1,7 @@
 #pragma once
 
-#include <stdint.h>
+#include <iostream>
+#include "../config.h"
 
 class Scene;
 
@@ -15,7 +16,7 @@ public:
 
     // override these functions to add custom behaviour to inherited game objects
     // each function is ran automatically when:
-    virtual void on_create(Scene *scene) {(void)scene;}   // object is added to a scene
+    virtual void on_attach(Scene *scene) {(void)scene;}   // object is added to a scene
     virtual void on_update(Scene *scene) {(void)scene;}   // object is updated in the gameloop
     virtual void on_destroy(Scene *scene) {(void)scene;}  // object is deleted from a scene
 
@@ -47,7 +48,7 @@ public:
     bool other_enemy_variable;
     glm::vec2 another_enemy_variable_with_arbitary_name;
 
-    void on_create(Scene *scene) override;
+    void on_attach(Scene *scene) override;
     void on_update(Scene *scene) override;
     void on_destroy(Scene *scene) override;
 };
@@ -67,7 +68,7 @@ EnemyGameObject::~EnemyGameObject()
 
 }
 
-void EnemyGameObject::on_create(Scene *scene)
+void EnemyGameObject::on_attach(Scene *scene)
 {
     // some functionality
 }

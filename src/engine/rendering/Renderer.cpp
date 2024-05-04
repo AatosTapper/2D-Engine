@@ -21,7 +21,7 @@ void Renderer::init()
 void Renderer::start_frame()
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    glClearColor(0.01f, 0.01f, 0.01f, 1.0f);
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 }
 
 void Renderer::end_frame()
@@ -57,6 +57,7 @@ void Renderer::draw_sprites()
         auto transform = std::get<1>(sprite_pair);
 
         selected_shader->use();
+
         glActiveTexture(GL_TEXTURE0);
         sprite->texture->bind();
 

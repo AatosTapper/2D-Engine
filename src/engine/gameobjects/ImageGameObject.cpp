@@ -1,19 +1,25 @@
 #include "ImageGameObject.h"
 
-void ImageGameObject::on_create(Scene *scene)
+ImageGameObject::ImageGameObject(const char *texture_path)
+{
+    sprite.scale = glm::vec2(2.0f);
+    sprite.add_texture(texture_path);
+    sprite.texture->filter_nearest();
+}
+
+void ImageGameObject::on_attach(Scene *scene)
 {
     (void)scene;
-    sprite.add_texture("../res/textures/dirt.jpg");
+    // nothing here now
 }
 
 void ImageGameObject::on_update(Scene *scene)
 {
     (void)scene;
-    // THIS IS FOR TESTING, PLAYER WON'T BE ABLE TO CONTROL THIS OBJECT
-
-    sprite.position.z = (float)sin(glfwGetTime() / 2) * 3.0f;
-    sprite.position.x = (float)cos(glfwGetTime() * 2) * 0.3f;
-    sprite.position.y = (float)cos(glfwGetTime()    ) * 0.2f;
+    // THIS IS FOR TESTING
+    
+    transform.scale_x = 1.0f + (float)sin(glfwGetTime() * 1.5f) * 0.05f;
+    transform.scale_y = 1.0f + (float)sin(glfwGetTime() * 1.5f) * -0.05f;
 
     if (glfwGetKey(Window::get_window(), GLFW_KEY_W) == GLFW_PRESS)
     {
@@ -33,6 +39,26 @@ void ImageGameObject::on_update(Scene *scene)
     if (glfwGetKey(Window::get_window(), GLFW_KEY_D) == GLFW_PRESS)
     {
         transform.x += 0.1f;
+    }
+
+    if (glfwGetKey(Window::get_window(), GLFW_KEY_LEFT) == GLFW_PRESS)
+    {
+        transform.rotation_rad_y -= 0.03f;
+    }
+
+    if (glfwGetKey(Window::get_window(), GLFW_KEY_RIGHT) == GLFW_PRESS)
+    {
+        transform.rotation_rad_y += 0.03f;
+    }
+
+    if (glfwGetKey(Window::get_window(), GLFW_KEY_UP) == GLFW_PRESS)
+    {
+        transform.rotation_rad_x += 0.03f;
+    }
+
+    if (glfwGetKey(Window::get_window(), GLFW_KEY_DOWN) == GLFW_PRESS)
+    {
+        transform.rotation_rad_x -= 0.03f;
     }
 
     glm::mat4 full_transform = transform.get_matrix() * sprite.get_transform_matrix();

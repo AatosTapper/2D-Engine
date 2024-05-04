@@ -11,10 +11,12 @@
 class ImageGameObject : public GameObject
 {
 public:
-    Sprite sprite;
-    Transform2DComponent transform;
+    ImageGameObject(const char *texture_path);
 
-    void on_create(Scene *scene) override;
+    Sprite sprite;
+    Transform3DComponent transform;
+
+    void on_attach(Scene *scene) override;
     void on_update(Scene *scene) override;
     void on_destroy(Scene *scene) override;
 };

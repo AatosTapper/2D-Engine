@@ -13,7 +13,7 @@ void Scene::add_game_object(std::unique_ptr<GameObject> obj)
         current_game_objects.push_back(id);
     }
 
-    game_object_storage.at(id)->on_create(this);
+    game_object_storage.at(id)->on_attach(this);
 }
 
 std::optional<GameObject*> Scene::get_game_object(GameObject::id_t id) const

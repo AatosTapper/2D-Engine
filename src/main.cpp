@@ -29,17 +29,19 @@ int main()
     Renderer::init();
 
     // creating a camera
-    Camera camera(engine_window.get_aspect_ratio(), 45.0f, PROJ_3D);
-    camera.back(10.0f);
+    Camera camera(engine_window.get_aspect_ratio(), 60.0f, PROJ_3D);
+    camera.back(12.0f);
     
-    // creating a shader (obviously)
+    // creating a shader
     Shader shader("../res/shaders/default.vert", "../res/shaders/default.frag");
 
     // creating a scene
     Scene main_scene;
     
     // creating a game object of type ImageGameObject and putting it into the scene
-    main_scene.add_game_object(CREATE_GAME_OBJECT(ImageGameObject));
+    main_scene.add_game_object(
+        CREATE_GAME_OBJECT_WITH_ARGS(ImageGameObject, "../res/textures/rock.png")
+    );
 
     uint32_t frame_counter = 0;
     double frame_time_accumulator = 0.0;
