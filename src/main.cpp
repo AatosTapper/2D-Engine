@@ -39,8 +39,7 @@ int main()
     Scene main_scene;
     
     // creating a game object of type ImageGameObject and putting it into the scene
-    std::unique_ptr<GameObject> scene_object = std::make_unique<ImageGameObject>();
-    main_scene.add_game_object(scene_object);
+    main_scene.add_game_object(CREATE_GAME_OBJECT(ImageGameObject));
 
     uint32_t frame_counter = 0;
     double frame_time_accumulator = 0.0;

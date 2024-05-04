@@ -9,7 +9,7 @@ void ImageGameObject::on_create(Scene *scene)
 void ImageGameObject::on_update(Scene *scene)
 {
     (void)scene;
-    // THIS IS FOR TESTING, PLAYER WON'T BE ABLE TO CONTROL THIS TRANSFORM
+    // THIS IS FOR TESTING, PLAYER WON'T BE ABLE TO CONTROL THIS OBJECT
 
     sprite.position.z = (float)sin(glfwGetTime() / 2) * 3.0f;
     sprite.position.x = (float)cos(glfwGetTime() * 2) * 0.3f;
@@ -17,22 +17,22 @@ void ImageGameObject::on_update(Scene *scene)
 
     if (glfwGetKey(Window::get_window(), GLFW_KEY_W) == GLFW_PRESS)
     {
-        transform.position.y += 0.1f;
+        transform.y += 0.1f;
     }
 
     if (glfwGetKey(Window::get_window(), GLFW_KEY_S) == GLFW_PRESS)
     {
-        transform.position.y -= 0.1f;
+        transform.y -= 0.1f;
     }
 
     if (glfwGetKey(Window::get_window(), GLFW_KEY_A) == GLFW_PRESS)
     {
-        transform.position.x -= 0.1f;
+        transform.x -= 0.1f;
     }
 
     if (glfwGetKey(Window::get_window(), GLFW_KEY_D) == GLFW_PRESS)
     {
-        transform.position.x += 0.1f;
+        transform.x += 0.1f;
     }
 
     glm::mat4 full_transform = transform.get_matrix() * sprite.get_transform_matrix();

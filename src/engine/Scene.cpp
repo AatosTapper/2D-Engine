@@ -2,7 +2,7 @@
 
 #include <cassert>
 
-void Scene::add_game_object(std::unique_ptr<GameObject> &obj)
+void Scene::add_game_object(std::unique_ptr<GameObject> obj)
 {
     assert(obj && "Cannot add an invalid game object to a scene");
     const GameObject::id_t id = obj->get_id();
@@ -36,7 +36,6 @@ void Scene::delete_game_object(GameObject::id_t id)
 void Scene::update()
 {
     handle_deletions();
-    // WARNING, this doesn't work if something get's deleted
     for (auto id : current_game_objects)
     {
         game_object_storage.at(id)->on_update(this);
