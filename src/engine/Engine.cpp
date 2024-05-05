@@ -63,8 +63,6 @@ namespace Engine
         
         Renderer::instance().init();
 
-        Shader shader("../res/shaders/default.vert", "../res/shaders/default.frag");
-
         uint32_t frame_counter = 0;
         double frame_time_accumulator = 0.0;
         const double target_frame_duration = 1.0 / fps_cap;
@@ -80,7 +78,6 @@ namespace Engine
 
             Renderer::instance().start_frame();
             Renderer::instance().set_view_proj_matrix(camera->get_vp_matrix());
-            Renderer::instance().set_shader(&shader);
             Renderer::instance().draw_sprites();
             Renderer::instance().end_frame();
 

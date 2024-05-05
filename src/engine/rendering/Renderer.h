@@ -1,9 +1,11 @@
 #pragma once
 
 #include "../../config.h"
+#include "Shader.h"
 
 #include <tuple>
 #include <vector>
+#include <memory>
 
 // To access functions, call like this:
 
@@ -16,7 +18,9 @@ class Shader;
 class Renderer
 {
 public:
-    Renderer() : selected_shader(nullptr) {}
+    Renderer()
+      : sprite_shader(std::make_unique<Shader>("../res/shaders/default.vert", "../res/shaders/default.frag")), 
+        selected_shader(nullptr) {}
 
     void init();
     void start_frame();
@@ -27,6 +31,8 @@ public:
     void draw_sprites();
 
 private:
+    std::unique_ptr<Shader> sprite_shader;
+    
     Shader *selected_shader;
     glm::mat4 selected_vpm;
     std::vector<std::tuple<const SpriteComponent*, glm::mat4>> sprite_queue;

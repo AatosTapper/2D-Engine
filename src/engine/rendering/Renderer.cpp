@@ -1,7 +1,6 @@
 #include "Renderer.h"
 
 #include "../components/SpriteComponent.h"
-#include "Shader.h"
 #include "VertexArray.h"
 #include "VertexBuffer.h"
 #include "IndexBuffer.h"
@@ -48,7 +47,11 @@ void Renderer::queue_sprite(std::tuple<const SpriteComponent*, glm::mat4> sprite
 
 void Renderer::draw_sprites()
 {
-    assert(selected_shader && "Cannot draw sprites without a shader being selected");
+    if (selected_shader == nullptr)
+    {
+        selected_shader = sprite_shader.get();
+    }
+
     for (auto sprite_pair : sprite_queue)
     {
         auto sprite = std::get<0>(sprite_pair);

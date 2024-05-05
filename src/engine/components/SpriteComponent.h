@@ -20,7 +20,6 @@ public:
     SpriteComponent() : SpriteComponent(1.0f, 1.0f) {} // inits with default dimensions of 1.0f 
     
     Transform2DComponent transform;
-
     std::shared_ptr<Texture> texture{};
 
     void add_texture(const std::string &filepath);
