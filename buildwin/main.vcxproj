@@ -117,7 +117,7 @@
     </Midl>
     <Link>
       <AdditionalDependencies>glfw3dll.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:/Program Files/glfw-3.4/glfw-3.4.bin.WIN64;C:/Program Files/glfw-3.4/glfw-3.4.bin.WIN64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -161,7 +161,7 @@
     </Midl>
     <Link>
       <AdditionalDependencies>glfw3dll.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:/Program Files/glfw-3.4/glfw-3.4.bin.WIN64;C:/Program Files/glfw-3.4/glfw-3.4.bin.WIN64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -205,7 +205,7 @@
     </Midl>
     <Link>
       <AdditionalDependencies>glfw3dll.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:/Program Files/glfw-3.4/glfw-3.4.bin.WIN64;C:/Program Files/glfw-3.4/glfw-3.4.bin.WIN64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -249,7 +249,7 @@
     </Midl>
     <Link>
       <AdditionalDependencies>glfw3dll.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:/Program Files/glfw-3.4/glfw-3.4.bin.WIN64;C:/Program Files/glfw-3.4/glfw-3.4.bin.WIN64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -320,6 +320,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\config.h" />
+    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\Engine.cpp" />
+    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\Engine.h" />
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\GameObject.h" />
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\Scene.cpp" />
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\Scene.h" />
@@ -335,8 +337,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\Renderer.h" />
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\Shader.cpp" />
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\Shader.h" />
-    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\Sprite.cpp" />
-    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\Sprite.h" />
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\Texture.cpp" />
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\Texture.h" />
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\VertexArray.cpp" />
@@ -344,6 +344,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\VertexBuffer.cpp" />
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\VertexBuffer.h" />
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\VertexBufferLayout.h" />
+    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\sprite.cpp" />
+    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\sprite.h" />
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\window.cpp" />
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\window.h" />
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\main.cpp" />

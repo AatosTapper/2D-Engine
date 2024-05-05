@@ -4,7 +4,7 @@
 
 ImageGameObject::ImageGameObject(const char *texture_path)
 {
-    sprite.scale = glm::vec2(2.0f);
+    sprite.scale = glm::vec2(4.0f);
     sprite.add_texture(texture_path);
     sprite.texture->filter_nearest();
 }

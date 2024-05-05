@@ -60,7 +60,7 @@ endif()
 
 set(INCLUDE_DIR "${main_SOURCE_DIR}/dep")
 include_directories(${INCLUDE_DIR})
-link_directories(${GLFW_LIBRARY_DIR})
+target_link_directories(main PUBLIC ${GLFW_LIBRARY_DIR})
 
 find_package(OpenGL REQUIRED)
 
