@@ -1,3 +1,0 @@
-this is here so github doesn't remove the directory
-
-github removes empty folders (directories)

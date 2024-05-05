@@ -7,11 +7,6 @@
 #include "IndexBuffer.h"
 
 #include <cassert>
-#include <vector>
-
-static Shader *selected_shader = nullptr;
-static glm::mat4 selected_vpm;
-static std::vector<std::tuple<const SpriteComponent*, glm::mat4>> sprite_queue;
 
 void Renderer::init()
 {
@@ -67,10 +62,10 @@ void Renderer::draw_sprites()
         selected_shader->set_mat4f("u_view_proj", selected_vpm);
         selected_shader->set_mat4f("u_transform", transform);
 
-        sprite->vao->bind();
-        sprite->ebo->bind();
-        glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(sprite->ebo->get_elements()), GL_UNSIGNED_INT, 0);
-        sprite->vao->unbind();
-        sprite->ebo->unbind();
+        sprite->get_vao()->bind();
+        sprite->get_ebo()->bind();
+        glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(sprite->get_ebo()->get_elements()), GL_UNSIGNED_INT, 0);
+        sprite->get_vao()->unbind();
+        sprite->get_ebo()->unbind();
     }
 }

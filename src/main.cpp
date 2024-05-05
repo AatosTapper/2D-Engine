@@ -18,24 +18,23 @@ constexpr bool CAM_PROJECTION = PROJ_3D;
 
 int main()
 {
-    Engine engine(FPS_CAP);
+    Engine::init(FPS_CAP);
     Window window(SCR_WIDTH, SCR_HEIGHT);
-
     Camera camera(window.get_aspect_ratio(), CAM_FOV, CAM_PROJECTION);
-    camera.back(12.0f);
-
     Scene main_scene;
+
+    camera.back(12.0f);
     
     // creating a game object of type ImageGameObject and putting it into the scene
     main_scene.add_game_object(
         CREATE_GAME_OBJECT_WITH_ARGS(ImageGameObject, "../res/textures/rock.png")
     );
 
-    engine.set_window(&window);
-    engine.set_camera(&camera);
-    engine.set_scene(&main_scene);
+    Engine::set_window(&window);
+    Engine::set_camera(&camera);
+    Engine::set_scene(&main_scene);
 
-    engine.run();
+    Engine::run();
 
     return 0;
 }

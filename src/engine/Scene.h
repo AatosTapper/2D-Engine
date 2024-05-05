@@ -16,8 +16,7 @@ public:
     // the ownership of "obj" is moved to the Scene
     void add_game_object(std::unique_ptr<GameObject> obj);
 
-    // THIS POINTER BECOMES INVALID AFTER CURRENT FRAME
-    // DON'T STORE IT ANYWHERE PERSISTANT
+    // this pointer becomes invalid after current frame
     std::optional<GameObject*> get_game_object(GameObject::id_t id) const;
 
     // defers the delete until the start of the next frame

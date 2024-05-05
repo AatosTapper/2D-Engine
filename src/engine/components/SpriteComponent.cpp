@@ -7,6 +7,7 @@
 #include "../rendering/VertexBuffer.h"
 #include "../rendering/IndexBuffer.h"
 
+// this is probably an anti-pattern but it should work fine
 static bool mesh_created = false;
 static std::unique_ptr<VertexArray> vao_memory = nullptr;
 static std::unique_ptr<IndexBuffer> ebo_memory = nullptr;

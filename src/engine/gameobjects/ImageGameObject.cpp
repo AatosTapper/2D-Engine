@@ -15,6 +15,12 @@ void ImageGameObject::on_attach()
     // nothing here now
 }
 
+void ImageGameObject::update_components()
+{
+    glm::mat4 full_transform = transform.get_matrix() * sprite.transform.get_matrix();
+    Renderer::instance().queue_sprite({ &sprite, full_transform });
+}
+
 void ImageGameObject::on_update()
 {
     // THIS IS FOR TESTING
@@ -63,9 +69,6 @@ void ImageGameObject::on_update()
     {
         transform.rotation_rad_x -= 0.03f;
     }
-
-    glm::mat4 full_transform = transform.get_matrix() * sprite.transform.get_matrix();
-    Renderer::queue_sprite({ &sprite, full_transform });
 }
 
 void ImageGameObject::on_destroy()

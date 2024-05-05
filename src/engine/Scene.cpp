@@ -36,10 +36,18 @@ void Scene::delete_game_object(GameObject::id_t id)
 void Scene::update()
 {
     handle_deletions();
+    
     for (auto id : current_game_objects)
     {
         game_object_storage.at(id)->on_update();
     }
+
+    for (auto id : current_game_objects)
+    {
+        game_object_storage.at(id)->update_components();
+    }
+
+    // TODO: update systems (think of a good spot where)
 }
 
 void Scene::handle_deletions()
@@ -50,7 +58,7 @@ void Scene::handle_deletions()
         game_object_storage.at(id)->on_destroy();
     }
 
-    // only after running them all can we delete them
+    // only after that can we delete them
     for (auto id : delete_queue)
     {   
         game_object_storage.erase(id);

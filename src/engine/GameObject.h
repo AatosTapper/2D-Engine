@@ -15,11 +15,13 @@ public:
     virtual ~GameObject() {}
 
     // override these functions to add custom behaviour to inherited game objects
-    // each function is ran automatically when:
-    virtual void on_attach() {}   // object is added to a scene
-    virtual void on_update() {}   // object is updated in the gameloop
-    virtual void on_destroy() {}  // object is deleted from a scene
-
+    // each function is ran automatically:
+    virtual void on_attach() {}   // when object is added to a scene
+    virtual void on_update() {}   // when object is updated in the gameloop
+    virtual void on_destroy() {}  // when object is deleted from a scene
+    // override this to call component update/queue functions
+    virtual void update_components() {}; // after all objects are updated in the gameloop    
+    
 private:
     const id_t id;
 
@@ -44,9 +46,12 @@ public:
     EnemyGameObject();
     ~EnemyGameObject() override;
 
+    EnemyControllerComponent some_component;
     int some_enemy_variable;
     bool other_enemy_variable;
     glm::vec2 another_enemy_variable_with_arbitary_name;
+
+    void update_components() override;
 
     void on_attach() override;
     void on_update() override;
@@ -66,6 +71,15 @@ EnemyGameObject::EnemyGameObject()
 EnemyGameObject::~EnemyGameObject()
 {
 
+}
+
+void EnemyGameObject::update_components()
+{
+    some_component.update(); // calling the component's update function
+
+    // sending the component to it's corresponding system if needed
+    EnemyControllerSystem::instance().queue_contorller(&some_component);
+    Renderer::instance().queue_sprite({ &sprite, transform.get_matrix() });
 }
 
 void EnemyGameObject::on_attach()
