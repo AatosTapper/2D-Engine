@@ -943,7 +943,7 @@ CMakeFiles/main.dir/src/main.cpp.o: \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/GameObject.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/ImageGameObject.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../GameObject.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/Sprite.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/SpriteComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/../../config.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/TransformComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/../rendering/Texture.h \

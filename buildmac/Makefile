@@ -225,29 +225,29 @@ src/engine/Window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Window.cpp.s
 .PHONY : src/engine/Window.cpp.s
 
-src/engine/components/Sprite.o: src/engine/components/Sprite.cpp.o
-.PHONY : src/engine/components/Sprite.o
+src/engine/components/SpriteComponent.o: src/engine/components/SpriteComponent.cpp.o
+.PHONY : src/engine/components/SpriteComponent.o
 
 # target to build an object file
-src/engine/components/Sprite.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/Sprite.cpp.o
-.PHONY : src/engine/components/Sprite.cpp.o
+src/engine/components/SpriteComponent.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o
+.PHONY : src/engine/components/SpriteComponent.cpp.o
 
-src/engine/components/Sprite.i: src/engine/components/Sprite.cpp.i
-.PHONY : src/engine/components/Sprite.i
+src/engine/components/SpriteComponent.i: src/engine/components/SpriteComponent.cpp.i
+.PHONY : src/engine/components/SpriteComponent.i
 
 # target to preprocess a source file
-src/engine/components/Sprite.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/Sprite.cpp.i
-.PHONY : src/engine/components/Sprite.cpp.i
+src/engine/components/SpriteComponent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.i
+.PHONY : src/engine/components/SpriteComponent.cpp.i
 
-src/engine/components/Sprite.s: src/engine/components/Sprite.cpp.s
-.PHONY : src/engine/components/Sprite.s
+src/engine/components/SpriteComponent.s: src/engine/components/SpriteComponent.cpp.s
+.PHONY : src/engine/components/SpriteComponent.s
 
 # target to generate assembly for a file
-src/engine/components/Sprite.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/Sprite.cpp.s
-.PHONY : src/engine/components/Sprite.cpp.s
+src/engine/components/SpriteComponent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.s
+.PHONY : src/engine/components/SpriteComponent.cpp.s
 
 src/engine/components/TransformComponent.o: src/engine/components/TransformComponent.cpp.o
 .PHONY : src/engine/components/TransformComponent.o
@@ -510,9 +510,9 @@ help:
 	@echo "... src/engine/Window.o"
 	@echo "... src/engine/Window.i"
 	@echo "... src/engine/Window.s"
-	@echo "... src/engine/components/Sprite.o"
-	@echo "... src/engine/components/Sprite.i"
-	@echo "... src/engine/components/Sprite.s"
+	@echo "... src/engine/components/SpriteComponent.o"
+	@echo "... src/engine/components/SpriteComponent.i"
+	@echo "... src/engine/components/SpriteComponent.s"
 	@echo "... src/engine/components/TransformComponent.o"
 	@echo "... src/engine/components/TransformComponent.i"
 	@echo "... src/engine/components/TransformComponent.s"

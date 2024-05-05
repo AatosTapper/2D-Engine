@@ -12,7 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Engine.cpp" "CMakeFiles/main.dir/src/engine/Engine.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/Engine.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Scene.cpp" "CMakeFiles/main.dir/src/engine/Scene.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/Scene.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Window.cpp" "CMakeFiles/main.dir/src/engine/Window.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/Window.cpp.o.d"
-  "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/Sprite.cpp" "CMakeFiles/main.dir/src/engine/components/Sprite.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/components/Sprite.cpp.o.d"
+  "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.cpp" "CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/TransformComponent.cpp" "CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/ImageGameObject.cpp" "CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Camera.cpp" "CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o.d"

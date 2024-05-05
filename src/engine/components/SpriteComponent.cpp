@@ -1,4 +1,4 @@
-#include "Sprite.h"
+#include "SpriteComponent.h"
 
 #include <iostream>
 
@@ -25,7 +25,7 @@ static constexpr uint32_t indices[] = {
     1, 2, 3    // second triangle
 };
 
-Sprite::Sprite(float width, float height)
+SpriteComponent::SpriteComponent(float width, float height)
 {
     transform.scale_x = width;
     transform.scale_y = height;
@@ -52,12 +52,12 @@ Sprite::Sprite(float width, float height)
     ebo = ebo_memory.get();
 }
 
-void Sprite::add_texture(const std::string &filepath)
+void SpriteComponent::add_texture(const std::string &filepath)
 {
     texture = std::make_shared<Texture>(filepath);
 }
 
-void Sprite::add_texture(std::shared_ptr<Texture> &ptr)
+void SpriteComponent::add_texture(std::shared_ptr<Texture> &ptr)
 {
     texture = ptr;
 }

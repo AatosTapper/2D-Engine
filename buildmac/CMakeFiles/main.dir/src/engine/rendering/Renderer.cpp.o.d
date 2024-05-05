@@ -482,7 +482,7 @@ CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__utility/to_underlying.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__utility/unreachable.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/initializer_list \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/../components/Sprite.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/../components/SpriteComponent.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/memory \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__memory/align.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__memory/allocate_at_least.h \

@@ -13,12 +13,12 @@ class VertexBuffer;
 class IndexBuffer;
 class Texture;
 
-class Sprite
+class SpriteComponent
 {
 public:
-    Sprite(float width, float height);
-    Sprite(float size) : Sprite(size, size) {}
-    Sprite() : Sprite(1.0f, 1.0f) {} // inits with default dimensions of 1.0f 
+    SpriteComponent(float width, float height);
+    SpriteComponent(float size) : SpriteComponent(size, size) {}
+    SpriteComponent() : SpriteComponent(1.0f, 1.0f) {} // inits with default dimensions of 1.0f 
     
     // transforms
     Transform2DComponent transform;

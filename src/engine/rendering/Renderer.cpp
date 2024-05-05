@@ -1,6 +1,6 @@
 #include "Renderer.h"
 
-#include "../components/Sprite.h"
+#include "../components/SpriteComponent.h"
 #include "Shader.h"
 #include "VertexArray.h"
 #include "VertexBuffer.h"
@@ -11,7 +11,7 @@
 
 static Shader *selected_shader = nullptr;
 static glm::mat4 selected_vpm;
-static std::vector<std::tuple<const Sprite*, glm::mat4>> sprite_queue;
+static std::vector<std::tuple<const SpriteComponent*, glm::mat4>> sprite_queue;
 
 void Renderer::init()
 {
@@ -45,7 +45,7 @@ void Renderer::set_view_proj_matrix(const glm::mat4 &vp_mat)
 }
 
 // TODO: push sprite to queue and render all latere
-void Renderer::queue_sprite(std::tuple<const Sprite*, glm::mat4> sprite)
+void Renderer::queue_sprite(std::tuple<const SpriteComponent*, glm::mat4> sprite)
 {
     assert(std::get<0>(sprite) && "Cannot queue an empty sprite");
     sprite_queue.push_back(sprite);    

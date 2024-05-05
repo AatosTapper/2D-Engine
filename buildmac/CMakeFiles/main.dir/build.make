@@ -111,19 +111,19 @@ CMakeFiles/main.dir/src/engine/Window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/Window.cpp.s"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Window.cpp -o CMakeFiles/main.dir/src/engine/Window.cpp.s
 
-CMakeFiles/main.dir/src/engine/components/Sprite.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/engine/components/Sprite.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/Sprite.cpp
-CMakeFiles/main.dir/src/engine/components/Sprite.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/engine/components/Sprite.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/components/Sprite.cpp.o -MF CMakeFiles/main.dir/src/engine/components/Sprite.cpp.o.d -o CMakeFiles/main.dir/src/engine/components/Sprite.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/Sprite.cpp
+CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.cpp
+CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o -MF CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o.d -o CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.cpp
 
-CMakeFiles/main.dir/src/engine/components/Sprite.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/components/Sprite.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/Sprite.cpp > CMakeFiles/main.dir/src/engine/components/Sprite.cpp.i
+CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.cpp > CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.i
 
-CMakeFiles/main.dir/src/engine/components/Sprite.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/components/Sprite.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/Sprite.cpp -o CMakeFiles/main.dir/src/engine/components/Sprite.cpp.s
+CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.cpp -o CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.s
 
 CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/TransformComponent.cpp
@@ -284,7 +284,7 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/src/engine/Engine.cpp.o" \
 "CMakeFiles/main.dir/src/engine/Scene.cpp.o" \
 "CMakeFiles/main.dir/src/engine/Window.cpp.o" \
-"CMakeFiles/main.dir/src/engine/components/Sprite.cpp.o" \
+"CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o" \
 "CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o" \
 "CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o" \
 "CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o" \
@@ -303,7 +303,7 @@ main_EXTERNAL_OBJECTS =
 main: CMakeFiles/main.dir/src/engine/Engine.cpp.o
 main: CMakeFiles/main.dir/src/engine/Scene.cpp.o
 main: CMakeFiles/main.dir/src/engine/Window.cpp.o
-main: CMakeFiles/main.dir/src/engine/components/Sprite.cpp.o
+main: CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o
 main: CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o
 main: CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o
 main: CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o
