@@ -5,10 +5,13 @@
 #include <glm/glm.hpp>
 
 #include "../../config.h"
-#include "VertexArray.h"
-#include "VertexBuffer.h"
-#include "IndexBuffer.h"
-#include "Texture.h"
+#include "TransformComponent.h"
+#include "../rendering/Texture.h"
+
+class VertexArray;
+class VertexBuffer;
+class IndexBuffer;
+class Texture;
 
 class Sprite
 {
@@ -18,9 +21,7 @@ public:
     Sprite() : Sprite(1.0f, 1.0f) {} // inits with default dimensions of 1.0f 
     
     // transforms
-    glm::vec3 position{};
-    glm::vec2 scale{};
-    float rotation_radians{};
+    Transform2DComponent transform;
 
     // rendering variables
     VertexArray *vao;
@@ -29,8 +30,6 @@ public:
 
     void add_texture(const std::string &filepath);
     void add_texture(std::shared_ptr<Texture> &ptr);
-
-    glm::mat4 get_transform_matrix() const;
 
 private:
     VertexBuffer *vbo;  

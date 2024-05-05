@@ -1,7 +1,10 @@
 #include "Renderer.h"
 
-#include "Sprite.h"
+#include "../components/Sprite.h"
 #include "Shader.h"
+#include "VertexArray.h"
+#include "VertexBuffer.h"
+#include "IndexBuffer.h"
 
 #include <cassert>
 #include <vector>

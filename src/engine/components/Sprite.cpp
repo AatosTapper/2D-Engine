@@ -1,8 +1,11 @@
 #include "Sprite.h"
 
-#include "VertexBufferLayout.h"
-
 #include <iostream>
+
+#include "../rendering/VertexBufferLayout.h"
+#include "../rendering/VertexArray.h"
+#include "../rendering/VertexBuffer.h"
+#include "../rendering/IndexBuffer.h"
 
 static bool mesh_created = false;
 static std::unique_ptr<VertexArray> vao_memory = nullptr;
@@ -22,8 +25,11 @@ static constexpr uint32_t indices[] = {
     1, 2, 3    // second triangle
 };
 
-Sprite::Sprite(float width, float height) : scale({ width, height })
+Sprite::Sprite(float width, float height)
 {
+    transform.scale_x = width;
+    transform.scale_y = height;
+
     if (!mesh_created)
     {
         mesh_created = true;
@@ -54,13 +60,4 @@ void Sprite::add_texture(const std::string &filepath)
 void Sprite::add_texture(std::shared_ptr<Texture> &ptr)
 {
     texture = ptr;
-}
-
-glm::mat4 Sprite::get_transform_matrix() const
-{
-    glm::mat4 output(1.0f);
-    output = glm::translate(output, position);
-    output = glm::rotate(output, rotation_radians, glm::vec3(0.0f, 0.0f, -1.0f));
-    output = glm::scale(output, glm::vec3(scale, 1.0f)); 
-    return output;
 }

@@ -1,9 +1,7 @@
 #pragma once
 
 #include "../GameObject.h"
-#include "../rendering/Sprite.h"
-#include "../rendering/Renderer.h"
-#include "../Window.h"
+#include "../components/Sprite.h"
 #include "../components/TransformComponent.h"
 
 #include "../Scene.h"

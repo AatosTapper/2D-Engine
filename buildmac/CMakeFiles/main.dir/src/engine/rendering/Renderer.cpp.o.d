@@ -482,7 +482,7 @@ CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__utility/to_underlying.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__utility/unreachable.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/initializer_list \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Sprite.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/../components/Sprite.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/memory \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__memory/align.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__memory/allocate_at_least.h \
@@ -861,8 +861,10 @@ CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__functional/unary_negate.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/../components/../../config.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/../components/TransformComponent.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/../components/../rendering/Texture.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Shader.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexArray.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexBuffer.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/IndexBuffer.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Shader.h
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/IndexBuffer.h

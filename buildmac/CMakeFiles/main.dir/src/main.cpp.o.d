@@ -943,13 +943,8 @@ CMakeFiles/main.dir/src/main.cpp.o: \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/GameObject.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/ImageGameObject.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../GameObject.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../rendering/Sprite.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexArray.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexBuffer.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/IndexBuffer.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../rendering/Renderer.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../Window.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/TransformComponent.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/Sprite.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/../../config.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/TransformComponent.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/../rendering/Texture.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../Scene.h

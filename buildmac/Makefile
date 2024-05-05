@@ -225,6 +225,30 @@ src/engine/Window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Window.cpp.s
 .PHONY : src/engine/Window.cpp.s
 
+src/engine/components/Sprite.o: src/engine/components/Sprite.cpp.o
+.PHONY : src/engine/components/Sprite.o
+
+# target to build an object file
+src/engine/components/Sprite.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/Sprite.cpp.o
+.PHONY : src/engine/components/Sprite.cpp.o
+
+src/engine/components/Sprite.i: src/engine/components/Sprite.cpp.i
+.PHONY : src/engine/components/Sprite.i
+
+# target to preprocess a source file
+src/engine/components/Sprite.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/Sprite.cpp.i
+.PHONY : src/engine/components/Sprite.cpp.i
+
+src/engine/components/Sprite.s: src/engine/components/Sprite.cpp.s
+.PHONY : src/engine/components/Sprite.s
+
+# target to generate assembly for a file
+src/engine/components/Sprite.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/Sprite.cpp.s
+.PHONY : src/engine/components/Sprite.cpp.s
+
 src/engine/components/TransformComponent.o: src/engine/components/TransformComponent.cpp.o
 .PHONY : src/engine/components/TransformComponent.o
 
@@ -369,30 +393,6 @@ src/engine/rendering/Shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.s
 .PHONY : src/engine/rendering/Shader.cpp.s
 
-src/engine/rendering/Sprite.o: src/engine/rendering/Sprite.cpp.o
-.PHONY : src/engine/rendering/Sprite.o
-
-# target to build an object file
-src/engine/rendering/Sprite.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Sprite.cpp.o
-.PHONY : src/engine/rendering/Sprite.cpp.o
-
-src/engine/rendering/Sprite.i: src/engine/rendering/Sprite.cpp.i
-.PHONY : src/engine/rendering/Sprite.i
-
-# target to preprocess a source file
-src/engine/rendering/Sprite.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Sprite.cpp.i
-.PHONY : src/engine/rendering/Sprite.cpp.i
-
-src/engine/rendering/Sprite.s: src/engine/rendering/Sprite.cpp.s
-.PHONY : src/engine/rendering/Sprite.s
-
-# target to generate assembly for a file
-src/engine/rendering/Sprite.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Sprite.cpp.s
-.PHONY : src/engine/rendering/Sprite.cpp.s
-
 src/engine/rendering/Texture.o: src/engine/rendering/Texture.cpp.o
 .PHONY : src/engine/rendering/Texture.o
 
@@ -510,6 +510,9 @@ help:
 	@echo "... src/engine/Window.o"
 	@echo "... src/engine/Window.i"
 	@echo "... src/engine/Window.s"
+	@echo "... src/engine/components/Sprite.o"
+	@echo "... src/engine/components/Sprite.i"
+	@echo "... src/engine/components/Sprite.s"
 	@echo "... src/engine/components/TransformComponent.o"
 	@echo "... src/engine/components/TransformComponent.i"
 	@echo "... src/engine/components/TransformComponent.s"
@@ -528,9 +531,6 @@ help:
 	@echo "... src/engine/rendering/Shader.o"
 	@echo "... src/engine/rendering/Shader.i"
 	@echo "... src/engine/rendering/Shader.s"
-	@echo "... src/engine/rendering/Sprite.o"
-	@echo "... src/engine/rendering/Sprite.i"
-	@echo "... src/engine/rendering/Sprite.s"
 	@echo "... src/engine/rendering/Texture.o"
 	@echo "... src/engine/rendering/Texture.i"
 	@echo "... src/engine/rendering/Texture.s"
