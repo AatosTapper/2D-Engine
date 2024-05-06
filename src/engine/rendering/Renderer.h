@@ -26,7 +26,7 @@ public:
 
     void init();
     void start_frame();
-    void end_frame();
+    void clear_queues();
     void set_shader(Shader *shader);
     void set_view_proj_matrix(const glm::mat4 &vp_mat);
     void queue_sprite(std::tuple<const SpriteComponent*, glm::mat4> sprite);

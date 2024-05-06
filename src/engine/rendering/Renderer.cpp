@@ -21,7 +21,7 @@ void Renderer::start_frame()
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 }
 
-void Renderer::end_frame()
+void Renderer::clear_queues()
 {
     selected_shader = nullptr;
     sprite_queue.clear();
@@ -59,7 +59,7 @@ void Renderer::draw_sprites()
         selected_shader->use();
 
         glActiveTexture(GL_TEXTURE0);
-        sprite->texture->bind();
+        sprite->get_texture()->bind();
 
         selected_shader->set_mat4f("u_view_proj", selected_vpm);
         selected_shader->set_mat4f("u_transform", transform);

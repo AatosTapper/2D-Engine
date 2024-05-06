@@ -26,7 +26,6 @@ int main()
     
     std::shared_ptr<Texture> rock_bro = std::make_shared<Texture>("../res/textures/rock.png");
 
-    
     // creating a game object of type ImageGameObject and putting it into the scene
     auto image = CREATE_GAME_OBJECT(ImageGameObject);
     image->sprite.add_texture(rock_bro);
@@ -37,7 +36,6 @@ int main()
     player->sprite.add_texture(rock_bro);
     main_scene.add_game_object(std::move(player));
     
-
     main_scene.add_system(&CollisionSystem::get_base_instance());
 
     Engine::run();

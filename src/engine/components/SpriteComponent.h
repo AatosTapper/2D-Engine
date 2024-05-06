@@ -20,10 +20,10 @@ public:
     SpriteComponent() : SpriteComponent(1.0f, 1.0f) {} // inits with default dimensions of 1.0f 
     
     Transform2DComponent transform;
-    std::shared_ptr<Texture> texture{};
-
+    
     void add_texture(const std::string &filepath);
     void add_texture(std::shared_ptr<Texture> &ptr);
+    std::shared_ptr<Texture> get_texture() const; // also checks if the texture exists yet
 
     VertexArray *get_vao() const { return vao; }
     IndexBuffer *get_ebo() const { return ebo; }
@@ -31,5 +31,6 @@ public:
 private:
     VertexArray *vao;
     IndexBuffer *ebo;
-    VertexBuffer *vbo;  
+    VertexBuffer *vbo;
+    std::shared_ptr<Texture> texture = nullptr;
 };

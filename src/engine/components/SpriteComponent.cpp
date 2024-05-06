@@ -1,6 +1,7 @@
 #include "SpriteComponent.h"
 
 #include <iostream>
+#include <cassert>
 
 #include "../rendering/VertexBufferLayout.h"
 #include "../rendering/VertexArray.h"
@@ -61,4 +62,10 @@ void SpriteComponent::add_texture(const std::string &filepath)
 void SpriteComponent::add_texture(std::shared_ptr<Texture> &ptr)
 {
     texture = ptr;
+}
+
+std::shared_ptr<Texture> SpriteComponent::get_texture() const
+{
+    assert(texture && "Cannot get a texture that isn't initialized yet");
+    return texture;
 }

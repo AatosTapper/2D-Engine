@@ -12,17 +12,22 @@
 #include <thread>
 #include <iostream>
 
+static void log_frametime(double frametime)
+{
+    std::cout << "Frametime (capped): " 
+        << static_cast<uint32_t>(frametime * 1000000.0) / 1000.0f << "ms = " 
+        << static_cast<uint32_t>(1 / frametime) << " FPS\n";
+}
+
 namespace Engine
 {
     std::unique_ptr<Window> window = nullptr;
     Camera *camera = nullptr;
     Scene *current_scene = nullptr;
-    int fps_cap = 60;
 
     void init()
     {
-        window =  std::make_unique<Window>(Settings::SCR_WIDTH, Settings::SCR_HEIGHT);
-        fps_cap = Settings::FPS_CAP;
+        window = std::make_unique<Window>(Settings::SCR_WIDTH, Settings::SCR_HEIGHT);
     }
 
     void set_camera(Camera *_camera)
@@ -61,45 +66,43 @@ namespace Engine
         Renderer::instance().init();
 
         uint32_t frame_counter = 0;
-        double frame_time_accumulator = 0.0;
-        const double target_frame_duration = 1.0 / fps_cap;
-
-        Shader blanck_shader("../res/shaders/blank_sprite.vert", "../res/shaders/blank_sprite.frag");
+        double frametime_accumulator = 0.0;
+        double last_update = glfwGetTime();
+        double update_time = 1.0 / Settings::UPDATES_PER_SEC;
+        double fps_log_accumulator = 0.0;
 
         while (window->is_open())
         {   
             double frame_start_time = glfwGetTime();
+            double delta_time = frame_start_time - last_update;
+            last_update += delta_time;
+            frametime_accumulator += delta_time;
+            fps_log_accumulator += delta_time;
+
             frame_counter++;
 
-            // game logic
-            current_scene->update();
-            camera->update(window->get_aspect_ratio());
+            while (frametime_accumulator > update_time)
+            {
+                Renderer::instance().clear_queues();
+                
+                current_scene->update();
+                camera->update(window->get_aspect_ratio());
+
+                frametime_accumulator -= update_time;
+            }
 
             Renderer::instance().start_frame();
             Renderer::instance().set_view_proj_matrix(camera->get_vp_matrix());
-            //Renderer::instance().set_shader(&blanck_shader);
             Renderer::instance().draw_sprites();
-            Renderer::instance().end_frame();
-
             window->end_frame();
-
-            // Cap the frame rate
-            const double frame_duration = glfwGetTime() - frame_start_time;
-            if (frame_duration < target_frame_duration)
-            {
-                const double sleep_time = (target_frame_duration - frame_duration) * 1000.0; // Convert to milliseconds
-                std::this_thread::sleep_for(std::chrono::milliseconds(static_cast<uint64_t>(sleep_time)));
-            }
-
-            // printing out the frame time approximately every two seconds
-            frame_time_accumulator += frame_duration;
-            if (frame_counter == 59u * 2)
+            
+            // logging
+            if (frame_counter == 59u)
             {
                 frame_counter = 0u;
-                frame_time_accumulator /= 59.0 * 2; // take the average
-                std::cout << "Frametime (capped): " 
-                    << static_cast<uint32_t>(frame_time_accumulator * 1000000.0) / 1000.0f << "ms = " 
-                    << static_cast<uint32_t>(1 / frame_time_accumulator) << " FPS\n";
+                fps_log_accumulator /= 59.0;
+                log_frametime(fps_log_accumulator);
+                fps_log_accumulator = 0.0;
             }
         }
     }

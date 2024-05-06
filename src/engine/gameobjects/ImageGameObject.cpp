@@ -17,7 +17,7 @@ ImageGameObject::ImageGameObject(const char *texture_path)
 
 void ImageGameObject::on_attach()
 {
-    sprite.texture->filter_nearest();
+    sprite.get_texture()->filter_nearest();
 }
 
 void ImageGameObject::update_components()
