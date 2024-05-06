@@ -3,6 +3,8 @@
 #include "rendering/Renderer.h"
 #include "rendering/Shader.h"
 
+#include "../settings.h"
+
 #include <cassert>
 #include <vector>
 #include <memory>
@@ -12,20 +14,15 @@
 
 namespace Engine
 {
-    Window *window = nullptr;
+    std::unique_ptr<Window> window = nullptr;
     Camera *camera = nullptr;
     Scene *current_scene = nullptr;
     int fps_cap = 60;
 
-    void init(int _fps_cap)
+    void init()
     {
-        fps_cap = _fps_cap;
-    }
-
-    void set_window(Window *_window)
-    {
-        assert(_window);
-        window = _window;
+        window =  std::make_unique<Window>(Settings::SCR_WIDTH, Settings::SCR_HEIGHT);
+        fps_cap = Settings::FPS_CAP;
     }
 
     void set_camera(Camera *_camera)
@@ -42,7 +39,7 @@ namespace Engine
 
     Window *get_window()
     {
-        return window;
+        return window.get();
     }
 
     Camera *get_camera()
@@ -67,6 +64,8 @@ namespace Engine
         double frame_time_accumulator = 0.0;
         const double target_frame_duration = 1.0 / fps_cap;
 
+        Shader blanck_shader("../res/shaders/blank_sprite.vert", "../res/shaders/blank_sprite.frag");
+
         while (window->is_open())
         {   
             double frame_start_time = glfwGetTime();
@@ -78,6 +77,7 @@ namespace Engine
 
             Renderer::instance().start_frame();
             Renderer::instance().set_view_proj_matrix(camera->get_vp_matrix());
+            //Renderer::instance().set_shader(&blanck_shader);
             Renderer::instance().draw_sprites();
             Renderer::instance().end_frame();
 

@@ -7,6 +7,12 @@
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\Scene.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\components\SpriteComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\components\TransformComponent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -34,10 +40,7 @@
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\VertexBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\sprite.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\window.cpp">
+    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\systems\CollisionSystem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\main.cpp">
@@ -58,6 +61,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\System.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\components\ColliderComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\components\SpriteComponent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\components\TransformComponent.h">
@@ -90,10 +105,10 @@
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\VertexBufferLayout.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\sprite.h">
+    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\systems\CollisionSystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\window.h">
+    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\settings.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\util.h">

@@ -38,7 +38,6 @@ void Renderer::set_view_proj_matrix(const glm::mat4 &vp_mat)
     selected_vpm = vp_mat;
 }
 
-// TODO: push sprite to queue and render all latere
 void Renderer::queue_sprite(std::tuple<const SpriteComponent*, glm::mat4> sprite)
 {
     assert(std::get<0>(sprite) && "Cannot queue an empty sprite");
@@ -49,7 +48,7 @@ void Renderer::draw_sprites()
 {
     if (selected_shader == nullptr)
     {
-        selected_shader = sprite_shader.get();
+        selected_shader = &sprite_shader;
     }
 
     for (auto sprite_pair : sprite_queue)

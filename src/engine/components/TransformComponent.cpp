@@ -19,3 +19,9 @@ glm::mat4 Transform3DComponent::get_matrix() const
     output = glm::scale(output, glm::vec3(scale_x * scale, scale_y * scale, scale_z * scale));
     return output;
 }
+
+glm::mat4 TransformPositionComponent::get_matrix() const
+{
+    glm::mat4 output(1.0f);
+    return glm::translate(output, glm::vec3(static_cast<glm::vec2>(*this), 0.0f));
+}

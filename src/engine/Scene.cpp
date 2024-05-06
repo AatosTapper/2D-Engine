@@ -1,6 +1,7 @@
 #include "Scene.h"
 
 #include <cassert>
+#include <stdexcept>
 
 void Scene::add_game_object(std::unique_ptr<GameObject> obj)
 {
@@ -47,7 +48,23 @@ void Scene::update()
         game_object_storage.at(id)->update_components();
     }
 
-    // TODO: update systems (think of a good spot where)
+    for (auto system : game_systems)
+    {
+        system->update();
+    }
+}
+
+void Scene::add_system(System *system)
+{
+    assert(system);
+
+    if (std::find(game_systems.begin(), game_systems.end(), system) != game_systems.end()) 
+    {
+        std::runtime_error("Tried to add an already existing game system to a scene");;
+        return;
+    }
+
+    game_systems.push_back(system);
 }
 
 void Scene::handle_deletions()

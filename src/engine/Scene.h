@@ -6,6 +6,7 @@
 #include <optional> // google this if you intend to use "get_game_object()""
 
 #include "GameObject.h"
+#include "System.h"
 
 #define CREATE_GAME_OBJECT(T) std::make_unique<T>()
 #define CREATE_GAME_OBJECT_WITH_ARGS(T, args) std::make_unique<T>(args)
@@ -24,10 +25,14 @@ public:
 
     void update();
 
+    void add_system(System *system);
+
 private:
     std::unordered_map<GameObject::id_t, std::unique_ptr<GameObject>> game_object_storage;
     std::vector<GameObject::id_t> current_game_objects;
     std::vector<GameObject::id_t> delete_queue;
+
+    std::vector<System*> game_systems;
 
     void handle_deletions();
 };

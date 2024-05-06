@@ -12,6 +12,8 @@
 // Renderer::instance().init();
 // Renderer::instance().queue_sprite(...);
 
+// This class acts like a system for a component type, but it is more integrated to the core gameloop
+
 class SpriteComponent;
 class Shader;
 
@@ -19,7 +21,7 @@ class Renderer
 {
 public:
     Renderer()
-      : sprite_shader(std::make_unique<Shader>("../res/shaders/default.vert", "../res/shaders/default.frag")), 
+      : sprite_shader(Shader("../res/shaders/sprite.vert", "../res/shaders/sprite.frag")), 
         selected_shader(nullptr) {}
 
     void init();
@@ -31,7 +33,7 @@ public:
     void draw_sprites();
 
 private:
-    std::unique_ptr<Shader> sprite_shader;
+    Shader sprite_shader;
     
     Shader *selected_shader;
     glm::mat4 selected_vpm;

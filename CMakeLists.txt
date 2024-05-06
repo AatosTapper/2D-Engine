@@ -27,6 +27,8 @@ file(GLOB_RECURSE files
     "src/engine/gameobjects/*.cpp"
     "src/engine/components/*.h"
     "src/engine/components/*.cpp"
+    "src/engine/systems/*.h"
+    "src/engine/systems/*.cpp"
 )
 
 add_executable(main ${files} dep/glad/glad.c)

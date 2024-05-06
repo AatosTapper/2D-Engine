@@ -14,9 +14,8 @@
 
 namespace Engine
 {
-    void init(int _fps_cap);
+    void init();
 
-    void set_window(Window *_window);
     void set_camera(Camera *_camera);
     void set_scene(Scene *_scene);
 

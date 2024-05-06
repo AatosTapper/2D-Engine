@@ -2,10 +2,16 @@
 
 #include "TransformComponent.h"
 
-class ColliderComponent
+class BoxCollider2DComponent
 {
 public:
     Transform2DComponent transform;
+};
 
-    // TODO
+// not implemented
+class CircleCollider2DComponent
+{
+public:
+    TransformPositionComponent transform;
+    float radius{1.0f};
 };
