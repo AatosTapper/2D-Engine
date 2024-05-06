@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.cpp" "CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/TransformComponent.cpp" "CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/ImageGameObject.cpp" "CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o.d"
+  "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/PlayerGameObject.cpp" "CMakeFiles/main.dir/src/engine/gameobjects/PlayerGameObject.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/gameobjects/PlayerGameObject.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Camera.cpp" "CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/IndexBuffer.cpp" "CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Renderer.cpp" "CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o.d"
@@ -22,6 +23,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.cpp" "CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexArray.cpp" "CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexBuffer.cpp" "CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o.d"
+  "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/CollisionSystem.cpp" "CMakeFiles/main.dir/src/engine/systems/CollisionSystem.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/systems/CollisionSystem.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/main.cpp" "CMakeFiles/main.dir/src/main.cpp.o" "gcc" "CMakeFiles/main.dir/src/main.cpp.o.d"
   )
 

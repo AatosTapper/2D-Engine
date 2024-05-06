@@ -5,13 +5,13 @@
 #include "../components/TransformComponent.h"
 #include "../components/ColliderComponent.h"
 
-class ImageGameObject : public GameObject
+class PlayerGameObject : public GameObject
 {
 public:
-    ImageGameObject(const char *texture_path);
-    ImageGameObject();
-
-    Transform3DComponent transform;
+    PlayerGameObject();
+    
+    Transform2DComponent transform;
+    BoxCollider2DComponent collider;
     SpriteComponent sprite;
 
     void update_components() override;

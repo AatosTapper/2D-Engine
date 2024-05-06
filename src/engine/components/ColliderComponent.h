@@ -12,6 +12,6 @@ public:
 class CircleCollider2DComponent
 {
 public:
-    TransformPositionComponent transform;
+    glm::vec2 transform{0.0f};
     float radius{1.0f};
 };

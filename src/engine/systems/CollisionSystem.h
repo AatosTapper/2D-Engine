@@ -15,20 +15,18 @@
 
 
 
-class CollisionSystem : System
+class CollisionSystem : public System
 {
 public:
     void update() override;
     // 1. box collider, 2. parent position
-    void queue_collider(std::pair<BoxCollider2DComponent*, TransformPositionComponent> box);
+    void queue_collider(std::pair<BoxCollider2DComponent*, glm::vec2> box);
 
-    static System *get_base_instance();
-    static CollisionSystem *get_instance();
+    static System &get_base_instance();
+    static CollisionSystem &instance();
 
 private:
-    static CollisionSystem *instance;
-
-    std::vector<BoxCollider2DComponent*> box_queue;
+    std::vector<std::pair<BoxCollider2DComponent*, glm::vec2>> box_queue;
 
     void solve_AABB(BoxCollider2DComponent *box1, BoxCollider2DComponent *box2) const;
 };

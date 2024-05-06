@@ -29,13 +29,13 @@ and new variables etc. This way the system will work as intended in all places.
 -----------------------------------------------------------
 CollisionSystem.h file:
 
-class CollisionSystem : System
+class CollisionSystem : public System
 {
 public:
     void update() override;
 
     static System *get_base_instance();     // notice this
-    static CollisionSystem *get_instance(); // this
+    static CollisionSystem *instance(); // this
 
 private:
     static CollisionSystem *instance;       // and this
@@ -46,7 +46,7 @@ CollisionSystem.cpp file:
 
 CollisionSystem *CollisionSystem::instance = nullptr; // we need to init the instance variable like this
 
-System *CollisionSystem::get_base_instance()          // then implement the get_instance function like this
+System *CollisionSystem::get_base_instance()          // then implement the instance function like this
 {
     if (instance == nullptr)
     {
@@ -55,7 +55,7 @@ System *CollisionSystem::get_base_instance()          // then implement the get_
     return dynamic_cast<System*>(instance);
 }
 
-CollisionSystem *CollisionSystem::get_instance()      // and this one like this
+CollisionSystem *CollisionSystem::instance()      // and this one like this
 {
     if (instance == nullptr)
     {
