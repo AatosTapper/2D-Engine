@@ -5,5 +5,4 @@
 - Physics engine
 - Rendering improvements ( post-processing )
 - Animation sprites
-- Timer system
 - Possibly more components and game objects

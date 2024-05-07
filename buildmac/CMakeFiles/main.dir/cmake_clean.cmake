@@ -31,6 +31,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o.d"
   "CMakeFiles/main.dir/src/engine/systems/CollisionSystem.cpp.o"
   "CMakeFiles/main.dir/src/engine/systems/CollisionSystem.cpp.o.d"
+  "CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o"
+  "CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o.d"
   "CMakeFiles/main.dir/src/main.cpp.o"
   "CMakeFiles/main.dir/src/main.cpp.o.d"
   "main"

@@ -513,6 +513,30 @@ src/engine/systems/CollisionSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/CollisionSystem.cpp.s
 .PHONY : src/engine/systems/CollisionSystem.cpp.s
 
+src/engine/systems/TimerSystem.o: src/engine/systems/TimerSystem.cpp.o
+.PHONY : src/engine/systems/TimerSystem.o
+
+# target to build an object file
+src/engine/systems/TimerSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o
+.PHONY : src/engine/systems/TimerSystem.cpp.o
+
+src/engine/systems/TimerSystem.i: src/engine/systems/TimerSystem.cpp.i
+.PHONY : src/engine/systems/TimerSystem.i
+
+# target to preprocess a source file
+src/engine/systems/TimerSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.i
+.PHONY : src/engine/systems/TimerSystem.cpp.i
+
+src/engine/systems/TimerSystem.s: src/engine/systems/TimerSystem.cpp.s
+.PHONY : src/engine/systems/TimerSystem.s
+
+# target to generate assembly for a file
+src/engine/systems/TimerSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.s
+.PHONY : src/engine/systems/TimerSystem.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -594,6 +618,9 @@ help:
 	@echo "... src/engine/systems/CollisionSystem.o"
 	@echo "... src/engine/systems/CollisionSystem.i"
 	@echo "... src/engine/systems/CollisionSystem.s"
+	@echo "... src/engine/systems/TimerSystem.o"
+	@echo "... src/engine/systems/TimerSystem.i"
+	@echo "... src/engine/systems/TimerSystem.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
