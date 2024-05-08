@@ -14,6 +14,7 @@
 class Scene
 {
 public:
+    Scene();
     // the ownership of "obj" is moved to the Scene
     void add_game_object(std::unique_ptr<GameObject> obj);
 

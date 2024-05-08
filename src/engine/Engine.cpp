@@ -16,7 +16,7 @@ static void log_frametime(double frametime)
 {
     std::cout << "Frametime (capped): " 
         << static_cast<uint32_t>(frametime * 1000000.0) / 1000.0f << "ms = " 
-        << static_cast<uint32_t>(1 / frametime) << " FPS\n";
+        << static_cast<uint32_t>(std::round(1.0 / frametime)) << " FPS\n";
 }
 
 namespace Engine
@@ -57,6 +57,21 @@ namespace Engine
         return current_scene;
     }
 
+    static void render()
+    {
+        Renderer::instance().start_frame();
+        Renderer::instance().set_view_proj_matrix(camera->get_vp_matrix());
+        Renderer::instance().draw_sprites();
+        window->end_frame();
+    }
+
+    static void update_logic()
+    {
+        Renderer::instance().clear_queues();
+        current_scene->update();
+        camera->update(window->get_aspect_ratio());
+    }
+
     void run()
     {
         assert(window && "Cannot run game without a window selected");
@@ -66,6 +81,7 @@ namespace Engine
         Renderer::instance().init();
 
         uint32_t frame_counter = 0;
+        uint32_t update_counter = 0;
         double frametime_accumulator = 0.0;
         double last_update = glfwGetTime();
         double update_time = 1.0 / Settings::UPDATES_PER_SEC;
@@ -78,31 +94,25 @@ namespace Engine
             last_update += delta_time;
             frametime_accumulator += delta_time;
             fps_log_accumulator += delta_time;
-
             frame_counter++;
 
             while (frametime_accumulator > update_time)
             {
-                Renderer::instance().clear_queues();
-                
-                current_scene->update();
-                camera->update(window->get_aspect_ratio());
-
+                update_logic();
+                update_counter++;
                 frametime_accumulator -= update_time;
             }
 
-            Renderer::instance().start_frame();
-            Renderer::instance().set_view_proj_matrix(camera->get_vp_matrix());
-            Renderer::instance().draw_sprites();
-            window->end_frame();
+            render();
             
             // logging
-            if (frame_counter == 59u)
+            if (update_counter == static_cast<uint32_t>(Settings::UPDATES_PER_SEC))
             {
-                frame_counter = 0u;
-                fps_log_accumulator /= 59.0;
+                fps_log_accumulator /= static_cast<double>(frame_counter);
                 log_frametime(fps_log_accumulator);
                 fps_log_accumulator = 0.0;
+                update_counter = 0u;
+                frame_counter = 0u;
             }
         }
     }

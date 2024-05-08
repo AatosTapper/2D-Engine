@@ -1,5 +1,7 @@
 #include "TimerSystem.h"
 
+#include <iostream>
+
 System &TimerSystem::get_base_instance()
 {
     return dynamic_cast<System&>(instance());
@@ -11,40 +13,52 @@ TimerSystem &TimerSystem::instance()
     return instance;
 }
 
-SignalFunction TimerSystem::set_timer(uint32_t ticks)
+TimerRef TimerSystem::set_timer(uint32_t ticks)
 {
-    auto timer = std::make_unique<Timer>(ticks);
-    Timer *ptr = timer.get();
-    timers.push_back(std::move(timer));
+    auto timer = std::make_shared<Timer>(ticks);
+    bool found_slot = false;
+    for (auto &slot : timer_storage)
+    {
+        if (slot == nullptr)
+        {
+            slot = timer;
+            found_slot = true;
+            break;
+        }
+    }
+    if (!found_slot)
+    {
+        timer_storage.push_back(timer);
+    }
 
-    return [ptr]() -> Timer::STATUS {
-        if (ptr == nullptr) return Timer::STATUS::DONE;
-        return ptr->status;
-    };
+    return timer;
 }
 
 void TimerSystem::update()
 {
-    for (auto &timer : timers)
+    for (auto &timer : timer_storage)
     {
-        if (timer->status == Timer::STATUS::DONE)
+        if (timer == nullptr) continue;
+
+        if (timer->status == TIMER_STATUS::DELETE)
         {
-            timer.reset(); // WARNING THIS DOESN'T CLEAR THE POINTER FROM THE VECTOR
+            timer = nullptr;
+            continue;
+        }
+        if (timer->status == TIMER_STATUS::DONE)
+        {
+            timer->status = TIMER_STATUS::DELETE;
         }
         if (timer->length_ticks > 0u)
         {
-            timer->status = Timer::STATUS::RUNNING;
+            timer->status = TIMER_STATUS::RUNNING;
         }
-        else
-        {
-            timer->status = Timer::STATUS::WAITING;
-        }
-        if (timer->status == Timer::STATUS::RUNNING)
+        if (timer->status == TIMER_STATUS::RUNNING)
         {
             timer->length_ticks--;
             if (timer->length_ticks == 0u)
             {
-                timer->status = Timer::STATUS::DONE;
+                timer->status = TIMER_STATUS::DONE;
             }
         }
     }

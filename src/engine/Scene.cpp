@@ -3,6 +3,13 @@
 #include <cassert>
 #include <stdexcept>
 
+#include "systems/TimerSystem.h"
+
+Scene::Scene()
+{
+    add_system(&TimerSystem::get_base_instance());
+}
+
 void Scene::add_game_object(std::unique_ptr<GameObject> obj)
 {
     assert(obj && "Cannot add an invalid game object to a scene");

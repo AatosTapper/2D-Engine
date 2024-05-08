@@ -35,8 +35,6 @@ int main()
     player->transform.x = -5.0;
     player->sprite.add_texture(rock_bro);
     main_scene.add_game_object(std::move(player));
-    
-    main_scene.add_system(&CollisionSystem::get_base_instance());
 
     Engine::run();
 

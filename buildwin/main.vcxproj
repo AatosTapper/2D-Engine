@@ -335,6 +335,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\components\TransformComponent.h" />
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\gameobjects\ImageGameObject.cpp" />
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\gameobjects\ImageGameObject.h" />
+    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\gameobjects\PlayerGameObject.cpp" />
+    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\gameobjects\PlayerGameObject.h" />
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\Camera.cpp" />
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\Camera.h" />
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\IndexBuffer.cpp" />
@@ -352,6 +354,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\VertexBufferLayout.h" />
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\systems\CollisionSystem.cpp" />
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\systems\CollisionSystem.h" />
+    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\systems\TimerSystem.cpp" />
+    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\systems\TimerSystem.h" />
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\main.cpp" />
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\settings.h" />
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\util.h" />

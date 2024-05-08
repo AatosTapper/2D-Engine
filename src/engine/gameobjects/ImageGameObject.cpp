@@ -2,7 +2,6 @@
 
 #include "../Engine.h"
 #include "../rendering/Renderer.h"
-#include "../systems/CollisionSystem.h"
 
 ImageGameObject::ImageGameObject()
 {
