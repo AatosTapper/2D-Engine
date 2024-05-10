@@ -2,9 +2,6 @@
 
 #include <string>
 
-// TODO: resizing
-// TODO: selectable texture filtering
-
 class Texture
 {
 public:

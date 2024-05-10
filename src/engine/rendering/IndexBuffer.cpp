@@ -1,6 +1,6 @@
 #include "IndexBuffer.h"
 
-#include "../../config.h"
+#include "config.h"
 
 IndexBuffer::IndexBuffer() : m_elements(0), m_freed(false)
 {

@@ -774,7 +774,7 @@ CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cstdarg \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../../config.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glad/glad.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/KHR/khrplatform.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/GLFW/glfw3.h \
@@ -917,17 +917,17 @@ CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o: \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/gtc/../mat4x3.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/gtc/type_ptr.inl \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/SpriteComponent.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/../../config.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/TransformComponent.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/TransformComponent.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/../rendering/Texture.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/ColliderComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../Engine.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../Scene.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../System.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../Window.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../rendering/Camera.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/../rendering/../../config.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/../rendering/../../util.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Scene.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/GameObject.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/System.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Window.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Camera.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/util.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/calendar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/convert_to_tm.h \
@@ -948,9 +948,5 @@ CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/file_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/literals.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../rendering/Renderer.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/../rendering/Shader.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../systems/CollisionSystem.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../systems/../System.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../systems/../components/ColliderComponent.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../systems/../components/TransformComponent.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../systems/../../config.h
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Shader.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.h

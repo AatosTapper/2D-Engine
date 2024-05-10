@@ -29,6 +29,12 @@ file(GLOB_RECURSE files
     "src/engine/components/*.cpp"
     "src/engine/systems/*.h"
     "src/engine/systems/*.cpp"
+    "src/game/gameobjects/*.h"
+    "src/game/gameobjects/*.cpp"
+    "src/game/components/*.h"
+    "src/game/components/*.cpp"
+    "src/game/systems/*.h"
+    "src/game/systems/*.cpp"
 )
 
 add_executable(main ${files} dep/glad/glad.c)
@@ -61,7 +67,8 @@ else () # windows (no linux here so else is enough)
 endif()
 
 set(INCLUDE_DIR "${main_SOURCE_DIR}/dep")
-include_directories(${INCLUDE_DIR})
+target_include_directories(main PUBLIC ${INCLUDE_DIR})
+target_include_directories(main PRIVATE src)
 target_link_directories(main PUBLIC ${GLFW_LIBRARY_DIR})
 
 find_package(OpenGL REQUIRED)

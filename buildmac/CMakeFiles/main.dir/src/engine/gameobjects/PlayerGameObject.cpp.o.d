@@ -921,6 +921,8 @@ CMakeFiles/main.dir/src/engine/gameobjects/PlayerGameObject.cpp.o: \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/TransformComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/../rendering/Texture.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/ColliderComponent.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../systems/TimerSystem.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../systems/../System.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../Engine.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../Scene.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../System.h \
@@ -948,9 +950,4 @@ CMakeFiles/main.dir/src/engine/gameobjects/PlayerGameObject.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/file_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/literals.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../rendering/Renderer.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/../rendering/Shader.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../systems/CollisionSystem.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../systems/../System.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../systems/../components/ColliderComponent.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../systems/../components/TransformComponent.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../systems/../../config.h
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/../rendering/Shader.h

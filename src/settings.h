@@ -11,4 +11,6 @@ namespace Settings
     
     constexpr float CAM_FOV = 60.0f;
     constexpr bool CAM_PROJECTION = PROJ_3D;
+
+    constexpr bool HDR = true;
 }

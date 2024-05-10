@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../../config.h"
-#include "../../util.h"
+#include "config.h"
+#include "util.h"
 
 #include <vector>
 #include <stdexcept>

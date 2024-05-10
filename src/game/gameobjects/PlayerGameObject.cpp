@@ -1,7 +1,7 @@
 #include "PlayerGameObject.h"
 
-#include "../Engine.h"
-#include "../rendering/Renderer.h"
+#include "engine/Engine.h"
+#include "engine/rendering/Renderer.h"
 
 PlayerGameObject::PlayerGameObject()
 {

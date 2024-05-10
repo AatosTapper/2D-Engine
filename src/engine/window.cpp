@@ -1,9 +1,13 @@
 #include "Window.h"
 
+#include "engine/rendering/Renderer.h"
+
 #include <iostream>
 #include <cassert>
 static void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 static void check_for_key_close(GLFWwindow *window);
+
+static bool window_resized = false;
 
 Window::Window(int width, int height)
 {
@@ -75,12 +79,23 @@ glm::vec2 Window::get_dimensions() const
     return glm::vec2((float)fb_width, (float)fb_height);
 }
 
+bool Window::did_resize() const
+{
+    return window_resized;
+}
+
+void Window::reset_resize_flag() const
+{
+    window_resized = false;
+}
+
 // glfw: whenever the window size changed (by OS or user resize) this callback function executes
 // ---------------------------------------------------------------------------------------------
 static void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
     (void)window; // this silences the warning about "unused parameter"
     glViewport(0, 0, width, height);
+    window_resized = true;
 }
 
 static void check_for_key_close(GLFWwindow *window)

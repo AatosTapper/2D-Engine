@@ -297,30 +297,6 @@ src/engine/gameobjects/ImageGameObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.s
 .PHONY : src/engine/gameobjects/ImageGameObject.cpp.s
 
-src/engine/gameobjects/PlayerGameObject.o: src/engine/gameobjects/PlayerGameObject.cpp.o
-.PHONY : src/engine/gameobjects/PlayerGameObject.o
-
-# target to build an object file
-src/engine/gameobjects/PlayerGameObject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/gameobjects/PlayerGameObject.cpp.o
-.PHONY : src/engine/gameobjects/PlayerGameObject.cpp.o
-
-src/engine/gameobjects/PlayerGameObject.i: src/engine/gameobjects/PlayerGameObject.cpp.i
-.PHONY : src/engine/gameobjects/PlayerGameObject.i
-
-# target to preprocess a source file
-src/engine/gameobjects/PlayerGameObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/gameobjects/PlayerGameObject.cpp.i
-.PHONY : src/engine/gameobjects/PlayerGameObject.cpp.i
-
-src/engine/gameobjects/PlayerGameObject.s: src/engine/gameobjects/PlayerGameObject.cpp.s
-.PHONY : src/engine/gameobjects/PlayerGameObject.s
-
-# target to generate assembly for a file
-src/engine/gameobjects/PlayerGameObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/gameobjects/PlayerGameObject.cpp.s
-.PHONY : src/engine/gameobjects/PlayerGameObject.cpp.s
-
 src/engine/rendering/Camera.o: src/engine/rendering/Camera.cpp.o
 .PHONY : src/engine/rendering/Camera.o
 
@@ -489,30 +465,6 @@ src/engine/rendering/VertexBuffer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.s
 .PHONY : src/engine/rendering/VertexBuffer.cpp.s
 
-src/engine/systems/CollisionSystem.o: src/engine/systems/CollisionSystem.cpp.o
-.PHONY : src/engine/systems/CollisionSystem.o
-
-# target to build an object file
-src/engine/systems/CollisionSystem.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/CollisionSystem.cpp.o
-.PHONY : src/engine/systems/CollisionSystem.cpp.o
-
-src/engine/systems/CollisionSystem.i: src/engine/systems/CollisionSystem.cpp.i
-.PHONY : src/engine/systems/CollisionSystem.i
-
-# target to preprocess a source file
-src/engine/systems/CollisionSystem.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/CollisionSystem.cpp.i
-.PHONY : src/engine/systems/CollisionSystem.cpp.i
-
-src/engine/systems/CollisionSystem.s: src/engine/systems/CollisionSystem.cpp.s
-.PHONY : src/engine/systems/CollisionSystem.s
-
-# target to generate assembly for a file
-src/engine/systems/CollisionSystem.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/CollisionSystem.cpp.s
-.PHONY : src/engine/systems/CollisionSystem.cpp.s
-
 src/engine/systems/TimerSystem.o: src/engine/systems/TimerSystem.cpp.o
 .PHONY : src/engine/systems/TimerSystem.o
 
@@ -536,6 +488,30 @@ src/engine/systems/TimerSystem.s: src/engine/systems/TimerSystem.cpp.s
 src/engine/systems/TimerSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.s
 .PHONY : src/engine/systems/TimerSystem.cpp.s
+
+src/game/gameobjects/PlayerGameObject.o: src/game/gameobjects/PlayerGameObject.cpp.o
+.PHONY : src/game/gameobjects/PlayerGameObject.o
+
+# target to build an object file
+src/game/gameobjects/PlayerGameObject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o
+.PHONY : src/game/gameobjects/PlayerGameObject.cpp.o
+
+src/game/gameobjects/PlayerGameObject.i: src/game/gameobjects/PlayerGameObject.cpp.i
+.PHONY : src/game/gameobjects/PlayerGameObject.i
+
+# target to preprocess a source file
+src/game/gameobjects/PlayerGameObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.i
+.PHONY : src/game/gameobjects/PlayerGameObject.cpp.i
+
+src/game/gameobjects/PlayerGameObject.s: src/game/gameobjects/PlayerGameObject.cpp.s
+.PHONY : src/game/gameobjects/PlayerGameObject.s
+
+# target to generate assembly for a file
+src/game/gameobjects/PlayerGameObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.s
+.PHONY : src/game/gameobjects/PlayerGameObject.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -591,9 +567,6 @@ help:
 	@echo "... src/engine/gameobjects/ImageGameObject.o"
 	@echo "... src/engine/gameobjects/ImageGameObject.i"
 	@echo "... src/engine/gameobjects/ImageGameObject.s"
-	@echo "... src/engine/gameobjects/PlayerGameObject.o"
-	@echo "... src/engine/gameobjects/PlayerGameObject.i"
-	@echo "... src/engine/gameobjects/PlayerGameObject.s"
 	@echo "... src/engine/rendering/Camera.o"
 	@echo "... src/engine/rendering/Camera.i"
 	@echo "... src/engine/rendering/Camera.s"
@@ -615,12 +588,12 @@ help:
 	@echo "... src/engine/rendering/VertexBuffer.o"
 	@echo "... src/engine/rendering/VertexBuffer.i"
 	@echo "... src/engine/rendering/VertexBuffer.s"
-	@echo "... src/engine/systems/CollisionSystem.o"
-	@echo "... src/engine/systems/CollisionSystem.i"
-	@echo "... src/engine/systems/CollisionSystem.s"
 	@echo "... src/engine/systems/TimerSystem.o"
 	@echo "... src/engine/systems/TimerSystem.i"
 	@echo "... src/engine/systems/TimerSystem.s"
+	@echo "... src/game/gameobjects/PlayerGameObject.o"
+	@echo "... src/game/gameobjects/PlayerGameObject.i"
+	@echo "... src/game/gameobjects/PlayerGameObject.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

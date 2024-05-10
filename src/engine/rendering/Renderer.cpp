@@ -1,24 +1,43 @@
 #include "Renderer.h"
 
-#include "../components/SpriteComponent.h"
-#include "VertexArray.h"
-#include "VertexBuffer.h"
-#include "IndexBuffer.h"
+#include "engine/Engine.h"
+
+#include "engine/rendering/VertexArray.h"
+#include "engine/rendering/VertexBuffer.h"
+#include "engine/rendering/IndexBuffer.h"
+#include "settings.h"
 
 #include <cassert>
+#include <stdexcept>
+
+Renderer::Renderer()
+  : sprite_shader(Shader("../res/shaders/sprite.vert", "../res/shaders/sprite.frag")), 
+    post_process_shader(Shader("../res/shaders/post_process.vert", "../res/shaders/post_process.frag")),
+    selected_shader(nullptr)
+{
+    
+}
 
 void Renderer::init()
 {
     glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
-    glEnable(GL_DEPTH_TEST);
     glEnable(GL_MULTISAMPLE);
-    //glEnable(GL_FRAMEBUFFER_SRGB);
+
+    create_framebuffer();
 }
 
 void Renderer::start_frame()
 {
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    if (Engine::get_window()->did_resize())
+    {
+        regenerate_framebuffer();
+        Engine::get_window()->reset_resize_flag();
+    }
+
+    glBindFramebuffer(GL_FRAMEBUFFER, framebuffer);
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glEnable(GL_DEPTH_TEST);
 }
 
 void Renderer::clear_queues()
@@ -42,6 +61,25 @@ void Renderer::queue_sprite(std::tuple<const SpriteComponent*, glm::mat4> sprite
 {
     assert(std::get<0>(sprite) && "Cannot queue an empty sprite");
     sprite_queue.push_back(sprite);    
+}
+
+void Renderer::draw_frame()
+{
+    draw_sprites();
+
+    glBindFramebuffer(GL_FRAMEBUFFER, 0);
+    glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
+
+    post_process_shader.use();
+    screen_quad.get_vao()->bind();
+    glDisable(GL_DEPTH_TEST);
+    glBindTexture(GL_TEXTURE_2D, texture_color_buffer);
+    screen_quad.get_vao()->bind();
+    screen_quad.get_ebo()->bind();
+    glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(screen_quad.get_ebo()->get_elements()), GL_UNSIGNED_INT, 0);
+    screen_quad.get_vao()->unbind();
+    screen_quad.get_ebo()->unbind();
 }
 
 void Renderer::draw_sprites()
@@ -70,4 +108,46 @@ void Renderer::draw_sprites()
         sprite->get_vao()->unbind();
         sprite->get_ebo()->unbind();
     }
+}
+
+void Renderer::create_framebuffer()
+{
+    glGenFramebuffers(1, &framebuffer);
+    glBindFramebuffer(GL_FRAMEBUFFER, framebuffer);
+
+    glGenTextures(1, &texture_color_buffer);
+    glBindTexture(GL_TEXTURE_2D, texture_color_buffer);
+
+    auto tex_format = Settings::HDR ? GL_RGBA16F : GL_RGBA;
+    
+    glTexImage2D(GL_TEXTURE_2D, 0, tex_format, 
+        Engine::get_window()->get_width(), Engine::get_window()->get_height(), 0,
+        GL_RGBA, GL_UNSIGNED_BYTE, NULL);
+
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glBindTexture(GL_TEXTURE_2D, 0);
+
+    glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, texture_color_buffer, 0);
+
+    glGenRenderbuffers(1, &rbo);
+    glBindRenderbuffer(GL_RENDERBUFFER, rbo);
+    glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH24_STENCIL8, 
+        Engine::get_window()->get_width(), Engine::get_window()->get_height());
+    glBindRenderbuffer(GL_RENDERBUFFER, 0);
+
+    glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT, GL_RENDERBUFFER, rbo);
+    
+    if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
+    {
+        std::runtime_error("ERROR::FRAMEBUFFER:: Framebuffer is not complete!");
+    }
+}
+
+void Renderer::regenerate_framebuffer()
+{
+    glDeleteRenderbuffers(1, &rbo);
+    glDeleteTextures(1, &texture_color_buffer);
+    glDeleteFramebuffers(1, &framebuffer);
+    create_framebuffer();
 }

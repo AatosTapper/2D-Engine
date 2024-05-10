@@ -1,9 +1,9 @@
 #include "Engine.h"
 
-#include "rendering/Renderer.h"
-#include "rendering/Shader.h"
+#include "engine/rendering/Renderer.h"
+#include "engine/rendering/Shader.h"
 
-#include "../settings.h"
+#include "settings.h"
 
 #include <cassert>
 #include <vector>
@@ -61,7 +61,7 @@ namespace Engine
     {
         Renderer::instance().start_frame();
         Renderer::instance().set_view_proj_matrix(camera->get_vp_matrix());
-        Renderer::instance().draw_sprites();
+        Renderer::instance().draw_frame();
         window->end_frame();
     }
 

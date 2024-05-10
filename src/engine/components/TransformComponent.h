@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../../config.h"
+#include "config.h"
 
 // all rotations are in radians
 

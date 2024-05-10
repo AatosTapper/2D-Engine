@@ -1,7 +1,7 @@
 CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o: \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/TransformComponent.cpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/TransformComponent.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/../../config.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glad/glad.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/KHR/khrplatform.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/stdint.h \

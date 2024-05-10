@@ -830,7 +830,7 @@ CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o: \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/detail/func_integer.inl \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/detail/func_integer_simd.inl \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/detail/../simd/integer.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/../../config.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glad/glad.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/KHR/khrplatform.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/GLFW/glfw3.h \
@@ -861,7 +861,7 @@ CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o: \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/gtc/../mat4x3.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/gtc/type_ptr.inl \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/TransformComponent.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/../rendering/Texture.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__locale \
@@ -917,9 +917,8 @@ CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cstdarg \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/../rendering/VertexBufferLayout.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/../rendering/../../config.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/../rendering/../../util.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexBufferLayout.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/util.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/calendar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/convert_to_tm.h \
@@ -939,6 +938,6 @@ CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/year_month_weekday.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/file_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/literals.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/../rendering/VertexArray.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/../rendering/VertexBuffer.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/../rendering/IndexBuffer.h
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexArray.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexBuffer.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/IndexBuffer.h

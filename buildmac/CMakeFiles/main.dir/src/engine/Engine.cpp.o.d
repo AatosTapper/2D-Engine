@@ -775,7 +775,7 @@ CMakeFiles/main.dir/src/engine/Engine.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cstdarg \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/../config.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glad/glad.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/KHR/khrplatform.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/GLFW/glfw3.h \
@@ -920,8 +920,7 @@ CMakeFiles/main.dir/src/engine/Engine.cpp.o: \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/System.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Window.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Camera.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/../../config.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/../../util.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/util.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/calendar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/convert_to_tm.h \
@@ -943,6 +942,8 @@ CMakeFiles/main.dir/src/engine/Engine.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/literals.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Renderer.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Shader.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/../settings.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/../engine/rendering/Camera.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/TransformComponent.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/settings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/thread

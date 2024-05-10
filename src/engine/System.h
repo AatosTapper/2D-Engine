@@ -1,11 +1,7 @@
 #pragma once
 
 /*
-A system is responsible for handling cross-component logic for a component type
-
-(For example: a physics engine needs to access all colliders and physics components
-to calculate the interactions. This means that the logic can't be implemented in a single component
-or a game object, so we need a System.)
+    a definition of a system is in the docs document
 */
 
 class System
@@ -35,7 +31,7 @@ public:
     void update() override;
 
     static System *get_base_instance();     // notice this
-    static CollisionSystem *instance(); // this
+    static CollisionSystem *instance();     // this
 
 private:
     static CollisionSystem *instance;       // and this

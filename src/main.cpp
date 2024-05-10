@@ -5,8 +5,8 @@
 #include "engine/Engine.h"
 #include "engine/Scene.h"
 #include "engine/gameobjects/ImageGameObject.h"
-#include "engine/gameobjects/PlayerGameObject.h"
-#include "engine/systems/CollisionSystem.h"
+
+#include "game/gameobjects/PlayerGameObject.h"
 
 #include "settings.h"
 
@@ -26,7 +26,6 @@ int main()
     
     std::shared_ptr<Texture> rock_bro = std::make_shared<Texture>("../res/textures/rock.png");
 
-    // creating a game object of type ImageGameObject and putting it into the scene
     auto image = CREATE_GAME_OBJECT(ImageGameObject);
     image->sprite.add_texture(rock_bro);
     main_scene.add_game_object(std::move(image));

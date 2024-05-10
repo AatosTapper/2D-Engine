@@ -1,7 +1,7 @@
 #include "Texture.h"
 
-#include "../../config.h"
-#include "../../util.h"
+#include "config.h"
+#include "util.h"
 
 #include <algorithm>
 

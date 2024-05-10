@@ -1,8 +1,8 @@
 #include "VertexArray.h"
 
-#include "../../config.h"
-#include "VertexBuffer.h"
-#include "VertexBufferLayout.h"
+#include "config.h"
+#include "engine/rendering/VertexBuffer.h"
+#include "engine/rendering/VertexBufferLayout.h"
 
 VertexArray::VertexArray() : m_freed(false)
 {

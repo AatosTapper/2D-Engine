@@ -5,8 +5,6 @@
 
     THIS FILE IS FOR LOGGING AND OTHER DEBUGGING STUFF
 
-    don't worry about this
-
 
 */
 

@@ -2,9 +2,9 @@
 
 #include <memory>
 
-#include "Scene.h"
-#include "Window.h"
-#include "rendering/Camera.h"
+#include "engine/Scene.h"
+#include "engine/Window.h"
+#include "engine/rendering/Camera.h"
 
 
 // Use like this:

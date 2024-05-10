@@ -4,9 +4,9 @@
 #include <string>
 #include <glm/glm.hpp>
 
-#include "../../config.h"
-#include "TransformComponent.h"
-#include "../rendering/Texture.h"
+#include "config.h"
+#include "engine/components/TransformComponent.h"
+#include "engine/rendering/Texture.h"
 
 class VertexArray;
 class VertexBuffer;
@@ -25,8 +25,8 @@ public:
     void add_texture(std::shared_ptr<Texture> &ptr);
     std::shared_ptr<Texture> get_texture() const; // also checks if the texture exists yet
 
-    VertexArray *get_vao() const { return vao; }
-    IndexBuffer *get_ebo() const { return ebo; }
+    [[nodiscard]] VertexArray *get_vao() const { return vao; }
+    [[nodiscard]] IndexBuffer *get_ebo() const { return ebo; }
 
 private:
     VertexArray *vao;

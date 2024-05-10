@@ -3,10 +3,10 @@
 #include <iostream>
 #include <cassert>
 
-#include "../rendering/VertexBufferLayout.h"
-#include "../rendering/VertexArray.h"
-#include "../rendering/VertexBuffer.h"
-#include "../rendering/IndexBuffer.h"
+#include "engine/rendering/VertexBufferLayout.h"
+#include "engine/rendering/VertexArray.h"
+#include "engine/rendering/VertexBuffer.h"
+#include "engine/rendering/IndexBuffer.h"
 
 // this is probably an anti-pattern but it should work fine
 static bool mesh_created = false;
