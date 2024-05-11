@@ -10,10 +10,12 @@
 class AnimSpriteComponent : public QuadMesh
 {
 public:
+    AnimSpriteComponent(bool pixelated = true) : filter_nearest(pixelated) {}
     ~AnimSpriteComponent() override {}
 
-    enum class PlaybackType : uint8_t
+    enum class PlaybackType  : uint8_t
     {
+        HIDDEN,
         NOT_PLAYING,
         ONE_SHOT,           // play once and stop
         LOOP,               // play continuously until someone calls stop()
@@ -22,17 +24,37 @@ public:
         REVERSE_LOOP        // same as LOOP but reverse
     };
 
-    void update(); // call every frame in update_components() function
+    enum class StopBehavior : uint8_t
+    {
+        RESET,              // return back to the first frame
+        STAY,               // stay where stopped
+        END                 // jump to the last frame even if stopped in the middle
+    };
 
-    void add_frames(const std::string &folder); // the frames need to be named in a certain way
+    void update(const glm::mat4 &parent_transform); // call every frame in update_components() function
+
+    // Pass in a folder that contains all of the animation images. (It also can't have anything else)
+    // The images must be named like this: frame1.png, frame2.png ... frame194.png
+    void add_folder_as_frames(const std::string &folder);
+
     void push_frame(const std::string &filepath);
-    void push_frame(Texture &frame);
+    void push_frame(std::shared_ptr<Texture> &frame);
 
     void play(PlaybackType type);
-    void stop();
+    void stop() { playback_type = PlaybackType::NOT_PLAYING; end_animation(); };
+    void hide() { playback_type = PlaybackType::HIDDEN; }
+
+    void set_stop_behavior(StopBehavior behavior) { stop_behavior = behavior; }
+
+    std::shared_ptr<Texture> get_texture() const override { return frames.at(curr_frame); };
 
 private:
-    std::vector<Texture> frames;
-    uint32_t curr_frame{};
+    std::vector<std::shared_ptr<Texture>> frames;
+    uint32_t curr_frame{0};
     PlaybackType playback_type = PlaybackType::NOT_PLAYING;
+    StopBehavior stop_behavior = StopBehavior::RESET;
+    bool filter_nearest;
+    bool curr_direction = true; // used for boomerang true: forward, false: backward
+
+    void end_animation();
 };

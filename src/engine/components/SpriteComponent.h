@@ -3,6 +3,7 @@
 #include <memory>
 #include <string>
 #include <glm/glm.hpp>
+#include <cassert>
 
 #include "config.h"
 #include "engine/components/TransformComponent.h"
@@ -27,6 +28,8 @@ public:
     [[nodiscard]] VertexArray *get_vao() const { return vao; }
     [[nodiscard]] IndexBuffer *get_ebo() const { return ebo; }
 
+    virtual std::shared_ptr<Texture> get_texture() const { assert(false); return nullptr; };
+
 private:
     VertexArray *vao;
     IndexBuffer *ebo;
@@ -40,7 +43,7 @@ public:
 
     void add_texture(const std::string &filepath);
     void add_texture(std::shared_ptr<Texture> &ptr);
-    std::shared_ptr<Texture> get_texture() const; // also checks if the texture exists yet
+    std::shared_ptr<Texture> get_texture() const override; // also checks if the texture exists yet
 
 private:
     std::shared_ptr<Texture> texture = nullptr;

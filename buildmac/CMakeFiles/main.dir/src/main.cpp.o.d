@@ -950,5 +950,6 @@ CMakeFiles/main.dir/src/main.cpp.o: \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/gameobjects/PlayerGameObject.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/ColliderComponent.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/AnimSpriteComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/TimerSystem.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/settings.h

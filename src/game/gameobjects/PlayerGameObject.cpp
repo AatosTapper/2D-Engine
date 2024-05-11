@@ -10,18 +10,26 @@ PlayerGameObject::PlayerGameObject()
 
 void PlayerGameObject::update_components()
 {
-    glm::mat4 full_transform = transform.get_matrix() * sprite.transform.get_matrix();
-    Renderer::instance().queue_sprite({ &sprite, full_transform });
+    //glm::mat4 full_transform = transform.get_matrix() * sprite.transform.get_matrix();
+    //Renderer::instance().queue_sprite({ &sprite, full_transform });
+    animation.update(transform.get_matrix());
 }
 
 void PlayerGameObject::on_attach()
 {
     sprite.get_texture()->filter_nearest();
+
+    animation.add_folder_as_frames("../res/animations/test_anim");
 }
 
 void PlayerGameObject::on_update()
 {
     auto window = Engine::get_window()->get_glfw_window();
+
+    if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS)
+    {
+        animation.play(AnimSpriteComponent::PlaybackType::ONE_SHOT);
+    }
 
     if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
     {

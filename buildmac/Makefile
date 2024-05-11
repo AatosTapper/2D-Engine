@@ -225,6 +225,30 @@ src/engine/Window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Window.cpp.s
 .PHONY : src/engine/Window.cpp.s
 
+src/engine/components/AnimSpriteComponent.o: src/engine/components/AnimSpriteComponent.cpp.o
+.PHONY : src/engine/components/AnimSpriteComponent.o
+
+# target to build an object file
+src/engine/components/AnimSpriteComponent.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.o
+.PHONY : src/engine/components/AnimSpriteComponent.cpp.o
+
+src/engine/components/AnimSpriteComponent.i: src/engine/components/AnimSpriteComponent.cpp.i
+.PHONY : src/engine/components/AnimSpriteComponent.i
+
+# target to preprocess a source file
+src/engine/components/AnimSpriteComponent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.i
+.PHONY : src/engine/components/AnimSpriteComponent.cpp.i
+
+src/engine/components/AnimSpriteComponent.s: src/engine/components/AnimSpriteComponent.cpp.s
+.PHONY : src/engine/components/AnimSpriteComponent.s
+
+# target to generate assembly for a file
+src/engine/components/AnimSpriteComponent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.s
+.PHONY : src/engine/components/AnimSpriteComponent.cpp.s
+
 src/engine/components/SpriteComponent.o: src/engine/components/SpriteComponent.cpp.o
 .PHONY : src/engine/components/SpriteComponent.o
 
@@ -582,6 +606,9 @@ help:
 	@echo "... src/engine/Window.o"
 	@echo "... src/engine/Window.i"
 	@echo "... src/engine/Window.s"
+	@echo "... src/engine/components/AnimSpriteComponent.o"
+	@echo "... src/engine/components/AnimSpriteComponent.i"
+	@echo "... src/engine/components/AnimSpriteComponent.s"
 	@echo "... src/engine/components/SpriteComponent.o"
 	@echo "... src/engine/components/SpriteComponent.i"
 	@echo "... src/engine/components/SpriteComponent.s"
