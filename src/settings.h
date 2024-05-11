@@ -1,6 +1,7 @@
 #pragma once
 
 #include "engine/rendering/Camera.h"
+#include "config.h"
 
 namespace Settings
 {
@@ -13,4 +14,5 @@ namespace Settings
     constexpr bool CAM_PROJECTION = PROJ_3D;
 
     constexpr bool HDR = true;
+    constexpr glm::vec3 BG_COL = { 0.0f, 0.0f, 0.0f };
 }

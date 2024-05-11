@@ -265,10 +265,24 @@ CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.s"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/TimerSystem.cpp -o CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.s
 
+CMakeFiles/main.dir/src/engine/utils/Random.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/engine/utils/Random.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/utils/Random.cpp
+CMakeFiles/main.dir/src/engine/utils/Random.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/main.dir/src/engine/utils/Random.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/utils/Random.cpp.o -MF CMakeFiles/main.dir/src/engine/utils/Random.cpp.o.d -o CMakeFiles/main.dir/src/engine/utils/Random.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/utils/Random.cpp
+
+CMakeFiles/main.dir/src/engine/utils/Random.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/utils/Random.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/utils/Random.cpp > CMakeFiles/main.dir/src/engine/utils/Random.cpp.i
+
+CMakeFiles/main.dir/src/engine/utils/Random.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/utils/Random.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/utils/Random.cpp -o CMakeFiles/main.dir/src/engine/utils/Random.cpp.s
+
 CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/gameobjects/PlayerGameObject.cpp
 CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o -MF CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o.d -o CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/gameobjects/PlayerGameObject.cpp
 
 CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.i: cmake_force
@@ -282,7 +296,7 @@ CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.s: cmake_force
 CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/main.cpp
 CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.cpp.o -MF CMakeFiles/main.dir/src/main.cpp.o.d -o CMakeFiles/main.dir/src/main.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/main.cpp
 
 CMakeFiles/main.dir/src/main.cpp.i: cmake_force
@@ -296,7 +310,7 @@ CMakeFiles/main.dir/src/main.cpp.s: cmake_force
 CMakeFiles/main.dir/dep/glad/glad.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/dep/glad/glad.c.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glad/glad.c
 CMakeFiles/main.dir/dep/glad/glad.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/main.dir/dep/glad/glad.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/main.dir/dep/glad/glad.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/dep/glad/glad.c.o -MF CMakeFiles/main.dir/dep/glad/glad.c.o.d -o CMakeFiles/main.dir/dep/glad/glad.c.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glad/glad.c
 
 CMakeFiles/main.dir/dep/glad/glad.c.i: cmake_force
@@ -323,6 +337,7 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.o" \
 "CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o" \
 "CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o" \
+"CMakeFiles/main.dir/src/engine/utils/Random.cpp.o" \
 "CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o" \
 "CMakeFiles/main.dir/src/main.cpp.o" \
 "CMakeFiles/main.dir/dep/glad/glad.c.o"
@@ -344,6 +359,7 @@ main: CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.o
 main: CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.o
 main: CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o
 main: CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o
+main: CMakeFiles/main.dir/src/engine/utils/Random.cpp.o
 main: CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o
 main: CMakeFiles/main.dir/src/main.cpp.o
 main: CMakeFiles/main.dir/dep/glad/glad.c.o
@@ -351,7 +367,7 @@ main: CMakeFiles/main.dir/build.make
 main: /opt/homebrew/lib/libglfw.3.4.dylib
 main: /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/OpenGL.framework
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

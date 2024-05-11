@@ -39,7 +39,7 @@
 #define ASSERT(condition, message) \
     do { \
         if (!(condition)) { \
-            ERR("[Assertion failed]" << message); \
+            ERR("[Assertion failed] " << message); \
             std::terminate(); \
         } \
     } while (0)

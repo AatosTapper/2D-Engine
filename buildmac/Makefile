@@ -489,6 +489,30 @@ src/engine/systems/TimerSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.s
 .PHONY : src/engine/systems/TimerSystem.cpp.s
 
+src/engine/utils/Random.o: src/engine/utils/Random.cpp.o
+.PHONY : src/engine/utils/Random.o
+
+# target to build an object file
+src/engine/utils/Random.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/utils/Random.cpp.o
+.PHONY : src/engine/utils/Random.cpp.o
+
+src/engine/utils/Random.i: src/engine/utils/Random.cpp.i
+.PHONY : src/engine/utils/Random.i
+
+# target to preprocess a source file
+src/engine/utils/Random.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/utils/Random.cpp.i
+.PHONY : src/engine/utils/Random.cpp.i
+
+src/engine/utils/Random.s: src/engine/utils/Random.cpp.s
+.PHONY : src/engine/utils/Random.s
+
+# target to generate assembly for a file
+src/engine/utils/Random.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/utils/Random.cpp.s
+.PHONY : src/engine/utils/Random.cpp.s
+
 src/game/gameobjects/PlayerGameObject.o: src/game/gameobjects/PlayerGameObject.cpp.o
 .PHONY : src/game/gameobjects/PlayerGameObject.o
 
@@ -591,6 +615,9 @@ help:
 	@echo "... src/engine/systems/TimerSystem.o"
 	@echo "... src/engine/systems/TimerSystem.i"
 	@echo "... src/engine/systems/TimerSystem.s"
+	@echo "... src/engine/utils/Random.o"
+	@echo "... src/engine/utils/Random.i"
+	@echo "... src/engine/utils/Random.s"
 	@echo "... src/game/gameobjects/PlayerGameObject.o"
 	@echo "... src/game/gameobjects/PlayerGameObject.i"
 	@echo "... src/game/gameobjects/PlayerGameObject.s"

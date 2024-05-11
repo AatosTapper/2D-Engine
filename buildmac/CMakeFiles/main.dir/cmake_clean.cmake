@@ -29,6 +29,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o.d"
   "CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o"
   "CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o.d"
+  "CMakeFiles/main.dir/src/engine/utils/Random.cpp.o"
+  "CMakeFiles/main.dir/src/engine/utils/Random.cpp.o.d"
   "CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o"
   "CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o.d"
   "CMakeFiles/main.dir/src/main.cpp.o"

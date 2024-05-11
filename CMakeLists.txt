@@ -29,6 +29,8 @@ file(GLOB_RECURSE files
     "src/engine/components/*.cpp"
     "src/engine/systems/*.h"
     "src/engine/systems/*.cpp"
+    "src/engine/utils/*.h"
+    "src/engine/utils/*.cpp"
     "src/game/gameobjects/*.h"
     "src/game/gameobjects/*.cpp"
     "src/game/components/*.h"

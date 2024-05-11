@@ -2,6 +2,7 @@
 
 #include "engine/Engine.h"
 
+#include "engine/Window.h"
 #include "engine/rendering/VertexArray.h"
 #include "engine/rendering/VertexBuffer.h"
 #include "engine/rendering/IndexBuffer.h"
@@ -15,7 +16,12 @@ Renderer::Renderer()
     post_process_shader(Shader("../res/shaders/post_process.vert", "../res/shaders/post_process.frag")),
     selected_shader(nullptr)
 {
-    
+
+}
+
+Renderer::~Renderer()
+{
+    delete_framebuffers();
 }
 
 void Renderer::init()
@@ -23,7 +29,7 @@ void Renderer::init()
     glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
     glEnable(GL_MULTISAMPLE);
 
-    create_framebuffer();
+    create_framebuffers();
 }
 
 void Renderer::start_frame()
@@ -35,7 +41,7 @@ void Renderer::start_frame()
     }
 
     glBindFramebuffer(GL_FRAMEBUFFER, framebuffer);
-    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+    glClearColor(Settings::BG_COL.r, Settings::BG_COL.g, Settings::BG_COL.b, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glEnable(GL_DEPTH_TEST);
 }
@@ -67,19 +73,7 @@ void Renderer::draw_frame()
 {
     draw_sprites();
 
-    glBindFramebuffer(GL_FRAMEBUFFER, 0);
-    glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
-    glClear(GL_COLOR_BUFFER_BIT);
-
-    post_process_shader.use();
-    screen_quad.get_vao()->bind();
-    glDisable(GL_DEPTH_TEST);
-    glBindTexture(GL_TEXTURE_2D, texture_color_buffer);
-    screen_quad.get_vao()->bind();
-    screen_quad.get_ebo()->bind();
-    glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(screen_quad.get_ebo()->get_elements()), GL_UNSIGNED_INT, 0);
-    screen_quad.get_vao()->unbind();
-    screen_quad.get_ebo()->unbind();
+    render_framebuffer();
 }
 
 void Renderer::draw_sprites()
@@ -110,7 +104,24 @@ void Renderer::draw_sprites()
     }
 }
 
-void Renderer::create_framebuffer()
+void Renderer::render_framebuffer()
+{
+    glBindFramebuffer(GL_FRAMEBUFFER, 0);
+    glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
+
+    post_process_shader.use();
+    screen_quad.get_vao()->bind();
+    glDisable(GL_DEPTH_TEST);
+    glBindTexture(GL_TEXTURE_2D, texture_color_buffer);
+    screen_quad.get_vao()->bind();
+    screen_quad.get_ebo()->bind();
+    glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(screen_quad.get_ebo()->get_elements()), GL_UNSIGNED_INT, 0);
+    screen_quad.get_vao()->unbind();
+    screen_quad.get_ebo()->unbind();
+}
+
+void Renderer::create_framebuffers()
 {
     glGenFramebuffers(1, &framebuffer);
     glBindFramebuffer(GL_FRAMEBUFFER, framebuffer);
@@ -119,13 +130,14 @@ void Renderer::create_framebuffer()
     glBindTexture(GL_TEXTURE_2D, texture_color_buffer);
 
     auto tex_format = Settings::HDR ? GL_RGBA16F : GL_RGBA;
-    
+
     glTexImage2D(GL_TEXTURE_2D, 0, tex_format, 
         Engine::get_window()->get_width(), Engine::get_window()->get_height(), 0,
         GL_RGBA, GL_UNSIGNED_BYTE, NULL);
 
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
     glBindTexture(GL_TEXTURE_2D, 0);
 
     glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, texture_color_buffer, 0);
@@ -144,10 +156,15 @@ void Renderer::create_framebuffer()
     }
 }
 
-void Renderer::regenerate_framebuffer()
+void Renderer::delete_framebuffers()
 {
     glDeleteRenderbuffers(1, &rbo);
     glDeleteTextures(1, &texture_color_buffer);
     glDeleteFramebuffers(1, &framebuffer);
-    create_framebuffer();
+}
+
+void Renderer::regenerate_framebuffer()
+{
+    delete_framebuffers();
+    create_framebuffers();
 }

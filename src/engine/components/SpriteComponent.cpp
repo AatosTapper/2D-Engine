@@ -27,7 +27,7 @@ static constexpr uint32_t indices[] = {
     1, 2, 3    // second triangle
 };
 
-SpriteComponent::SpriteComponent(float width, float height)
+QuadMesh::QuadMesh(float width, float height)
 {
     transform.scale_x = width;
     transform.scale_y = height;

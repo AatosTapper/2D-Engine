@@ -21,6 +21,7 @@ class Renderer
 {
 public:
     Renderer();
+    ~Renderer();
 
     void init();
     void start_frame();
@@ -41,11 +42,13 @@ private:
     uint32_t framebuffer{};
     uint32_t texture_color_buffer{};
     uint32_t rbo{};
-    SpriteComponent screen_quad; // a bit stupid but we can access the quad mesh with this
+    QuadMesh screen_quad;
 
-    void create_framebuffer();
+    void create_framebuffers();
+    void delete_framebuffers();
     void regenerate_framebuffer();
     void draw_sprites();
+    void render_framebuffer();
 
 public:
     static Renderer &instance()
