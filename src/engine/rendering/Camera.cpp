@@ -25,7 +25,7 @@ void Camera::update(const float aspect_ratio)
     m_view = glm::lookAt(m_position, m_position + m_front, m_up);
     
     glm::mat4 projection;
-    if (m_ortho) projection = glm::ortho(-fov * aspect_ratio, fov * aspect_ratio, -fov, fov, 0.1f, 100.0f);
+    if (m_ortho) projection = glm::ortho(-fov * aspect_ratio, fov * aspect_ratio, -fov, fov, 0.1f, 1000.0f);
     else projection = glm::perspective(glm::radians(fov), aspect_ratio, 0.1f, 1000.0f);
 
     *m_vp_mat = projection * m_view;

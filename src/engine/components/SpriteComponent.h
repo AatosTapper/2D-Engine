@@ -8,6 +8,8 @@
 #include "engine/components/TransformComponent.h"
 #include "engine/rendering/Texture.h"
 
+// Instructions for how to use are below
+
 class VertexArray;
 class VertexBuffer;
 class IndexBuffer;
@@ -25,7 +27,7 @@ public:
     [[nodiscard]] VertexArray *get_vao() const { return vao; }
     [[nodiscard]] IndexBuffer *get_ebo() const { return ebo; }
 
-protected:
+private:
     VertexArray *vao;
     IndexBuffer *ebo;
     VertexBuffer *vbo;  
@@ -43,3 +45,56 @@ public:
 private:
     std::shared_ptr<Texture> texture = nullptr;
 };
+
+/*
+How to use?
+
+---------------------------------------------------------------------
+Create a sprite:
+---------------------------------------------------------------------
+
+SpriteComponent my_sprite;
+
+---------------------------------------------------------------------
+You can also init it with scale variables:
+---------------------------------------------------------------------
+
+SpriteComponent my_sprite(my_width, my_heighth);
+
+or
+
+SpriteComponent my_sprite(my_size);
+
+---------------------------------------------------------------------
+Then add a texture with a filepath or a shared pointer:
+---------------------------------------------------------------------
+
+my_sprite.add_texture("../res/textures/texture_name.png");
+
+or
+
+std::shared_ptr<Texture> my_texture = std::make_shared<Texture>("../res/textures/texture_name.png");
+my_sprite.add_texture(my_texture);
+
+---------------------------------------------------------------------
+You can change the texture filtering or transforms of the sprite now
+---------------------------------------------------------------------
+
+my_sprite.get_texture()->filter_nearest();
+
+or
+
+my_sprite.transform.x = 5.0;
+
+etc.
+
+---------------------------------------------------------------------
+Then in the update_components() function of a GameObject, 
+send the sprite and a transform matrix to renderer:
+---------------------------------------------------------------------
+
+//                        game object's transform     sprite's transform
+glm::mat4 full_transform = transform.get_matrix() * my_sprite.transform.get_matrix();
+Renderer::instance().queue_sprite({ &my_sprite, full_transform });
+
+*/

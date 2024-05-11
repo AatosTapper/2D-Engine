@@ -107,13 +107,21 @@ void Renderer::draw_sprites()
 void Renderer::render_framebuffer()
 {
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
-    glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
 
     post_process_shader.use();
     screen_quad.get_vao()->bind();
     glDisable(GL_DEPTH_TEST);
+
+    glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, texture_color_buffer);
+    glUniform1i(glGetUniformLocation(post_process_shader.get_id(), "tex_col"), 0);
+
+    glActiveTexture(GL_TEXTURE0 + 1);
+    glBindTexture(GL_TEXTURE_2D, texture_depth_buffer);
+    glUniform1i(glGetUniformLocation(post_process_shader.get_id(), "tex_dep"), 1);
+
     screen_quad.get_vao()->bind();
     screen_quad.get_ebo()->bind();
     glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(screen_quad.get_ebo()->get_elements()), GL_UNSIGNED_INT, 0);
@@ -126,11 +134,12 @@ void Renderer::create_framebuffers()
     glGenFramebuffers(1, &framebuffer);
     glBindFramebuffer(GL_FRAMEBUFFER, framebuffer);
 
-    glGenTextures(1, &texture_color_buffer);
-    glBindTexture(GL_TEXTURE_2D, texture_color_buffer);
+    // color buffer
 
     auto tex_format = Settings::HDR ? GL_RGBA16F : GL_RGBA;
 
+    glGenTextures(1, &texture_color_buffer);
+    glBindTexture(GL_TEXTURE_2D, texture_color_buffer);
     glTexImage2D(GL_TEXTURE_2D, 0, tex_format, 
         Engine::get_window()->get_width(), Engine::get_window()->get_height(), 0,
         GL_RGBA, GL_UNSIGNED_BYTE, NULL);
@@ -139,26 +148,46 @@ void Renderer::create_framebuffers()
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
     glBindTexture(GL_TEXTURE_2D, 0);
-
     glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, texture_color_buffer, 0);
+
+    // depth buffer
+
+    glGenTextures(1, &texture_depth_buffer);
+    glBindTexture(GL_TEXTURE_2D, texture_depth_buffer);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_DEPTH_COMPONENT32,
+        Engine::get_window()->get_width(), Engine::get_window()->get_height(), 0,
+        GL_DEPTH_COMPONENT, GL_FLOAT, NULL);
+
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+
+    glBindTexture(GL_TEXTURE_2D, 0);
+    glFramebufferTexture2D(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_TEXTURE_2D, texture_depth_buffer, 0);
+    
+    // stencil renderbuffer
 
     glGenRenderbuffers(1, &rbo);
     glBindRenderbuffer(GL_RENDERBUFFER, rbo);
-    glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH24_STENCIL8, 
+    glRenderbufferStorage(GL_RENDERBUFFER, GL_STENCIL_INDEX8, 
         Engine::get_window()->get_width(), Engine::get_window()->get_height());
     glBindRenderbuffer(GL_RENDERBUFFER, 0);
 
-    glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT, GL_RENDERBUFFER, rbo);
+    glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_STENCIL_ATTACHMENT, GL_RENDERBUFFER, rbo);
     
     if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
     {
         std::runtime_error("ERROR::FRAMEBUFFER:: Framebuffer is not complete!");
     }
+
+    glBindFramebuffer(GL_FRAMEBUFFER, 0);
 }
 
 void Renderer::delete_framebuffers()
 {
     glDeleteRenderbuffers(1, &rbo);
+    glDeleteTextures(1, &texture_depth_buffer);
     glDeleteTextures(1, &texture_color_buffer);
     glDeleteFramebuffers(1, &framebuffer);
 }

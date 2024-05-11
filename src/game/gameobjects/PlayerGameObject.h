@@ -15,13 +15,9 @@ public:
     BoxCollider2DComponent collider;
     SpriteComponent sprite;
 
-    TimerRef timer = nullptr; // this is for testing the timer system
-
     void update_components() override;
     void on_attach() override;
     void on_update() override;
     void on_destroy() override;
-
-    void run_timer();
 };
 

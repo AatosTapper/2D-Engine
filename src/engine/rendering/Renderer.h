@@ -41,6 +41,7 @@ private:
 
     uint32_t framebuffer{};
     uint32_t texture_color_buffer{};
+    uint32_t texture_depth_buffer{};
     uint32_t rbo{};
     QuadMesh screen_quad;
 

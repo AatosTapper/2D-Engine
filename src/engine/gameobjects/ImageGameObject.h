@@ -16,7 +16,5 @@ public:
 
     void update_components() override;
     void on_attach() override;
-    void on_update() override;
-    void on_destroy() override;
 };
 
