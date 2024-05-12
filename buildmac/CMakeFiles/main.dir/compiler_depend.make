@@ -1037,6 +1037,7 @@ CMakeFiles/main.dir/src/engine/Engine.cpp.o: /Users/aatostapper/Documents/Dev/Op
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Shader.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/settings.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/singleton.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/util.h
 
 CMakeFiles/main.dir/src/engine/Scene.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Scene.cpp \
@@ -1953,6 +1954,7 @@ CMakeFiles/main.dir/src/engine/Scene.cpp.o: /Users/aatostapper/Documents/Dev/Ope
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec3.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec4.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vector_relational.hpp \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Singleton.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/GameObject.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Scene.h \
@@ -2879,7 +2881,8 @@ CMakeFiles/main.dir/src/engine/Window.cpp.o: /Users/aatostapper/Documents/Dev/Op
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/TransformComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Renderer.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Shader.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.h
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/singleton.h
 
 CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/AnimSpriteComponent.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/Availability.h \
@@ -3820,7 +3823,8 @@ CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.o: /Users/aato
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/TransformComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Renderer.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Shader.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.h
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/singleton.h
 
 CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/Availability.h \
@@ -6087,6 +6091,7 @@ CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o: /Users/aatosta
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Camera.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Shader.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/singleton.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/util.h
 
 CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Camera.cpp \
@@ -8347,6 +8352,7 @@ CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o: /Users/aatostapper/Docu
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexArray.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexBuffer.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/settings.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/singleton.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/util.h
 
 CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Shader.cpp \
@@ -12335,6 +12341,7 @@ CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o: /Users/aatostapper/Doc
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Singleton.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/System.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/TimerSystem.h
 
@@ -14039,6 +14046,7 @@ CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o: /Users/aatostap
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec3.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec4.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vector_relational.hpp \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Singleton.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Engine.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/GameObject.h \
@@ -14055,6 +14063,7 @@ CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o: /Users/aatostap
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/TimerSystem.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/gameobjects/PlayerGameObject.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/singleton.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/util.h
 
 CMakeFiles/main.dir/src/main.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/main.cpp \
@@ -14990,6 +14999,7 @@ CMakeFiles/main.dir/src/main.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-E
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec3.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec4.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vector_relational.hpp \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Singleton.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Engine.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/GameObject.h \
@@ -15428,6 +15438,8 @@ CMakeFiles/main.dir/src/main.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-E
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/limits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/ctype.h:
+
+/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/singleton.h:
 
 /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/detail/type_float.hpp:
 
@@ -16946,6 +16958,8 @@ CMakeFiles/main.dir/src/main.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-E
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_pthread/_pthread_types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_posix_availability.h:
+
+/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Singleton.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__iterator/permutable.h:
 

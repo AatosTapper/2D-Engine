@@ -3,6 +3,7 @@
 #include "config.h"
 #include "engine/rendering/Shader.h"
 #include "engine/components/SpriteComponent.h"
+#include "singleton.h"
 
 #include <tuple>
 #include <vector>
@@ -22,6 +23,8 @@ class Renderer
 public:
     Renderer();
     ~Renderer();
+
+    IMPL_SINGLETON_DISPATCHER(Renderer)
 
     void init();
     void start_frame();
@@ -50,11 +53,4 @@ private:
     void regenerate_framebuffer();
     void draw_sprites();
     void render_framebuffer();
-
-public:
-    static Renderer &instance()
-    {
-        static Renderer instance;
-        return instance;
-    }
 };

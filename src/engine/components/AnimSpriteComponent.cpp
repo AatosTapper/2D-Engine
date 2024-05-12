@@ -72,6 +72,7 @@ void AnimSpriteComponent::update(const glm::mat4 &parent_transform)
 
 void AnimSpriteComponent::add_folder_as_frames(const std::string &folder)
 {
+    if (frames.size() == 0) { playback_type = PlaybackType::NOT_PLAYING; }
     // find how many frames are stored in the directory
     auto dir_iter = std::filesystem::directory_iterator(folder);
     uint32_t file_count = 0;
@@ -102,6 +103,7 @@ void AnimSpriteComponent::add_folder_as_frames(const std::string &folder)
 
 void AnimSpriteComponent::push_frame(const std::string &filepath)
 {
+    if (frames.size() == 0) { playback_type = PlaybackType::NOT_PLAYING; }
     frames.push_back(std::make_shared<Texture>(filepath));
     auto &added_frame = frames.at(frames.size() - 1);
     filter_nearest ? added_frame->filter_nearest() : added_frame->filter_linear();
@@ -109,6 +111,7 @@ void AnimSpriteComponent::push_frame(const std::string &filepath)
 
 void AnimSpriteComponent::push_frame(std::shared_ptr<Texture> &frame)
 {
+    if (frames.size() == 0) { playback_type = PlaybackType::NOT_PLAYING; }
     filter_nearest ? frame->filter_nearest() : frame->filter_linear();
     frames.push_back(frame);
 }

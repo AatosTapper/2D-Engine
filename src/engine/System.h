@@ -1,9 +1,5 @@
 #pragma once
 
-/*
-    a definition of a system is in the docs document
-*/
-
 class System
 {
 public:
@@ -13,8 +9,15 @@ public:
 
 protected:
     System() {}
+public:
+    // deleting these to enforce singleton pattern
+    System(System const&) = delete;
+    void operator=(System const&) = delete;
 };
 
+/*
+    a definition of a system is in the docs document
+*/
 
 /*
 How to create a system:
@@ -25,42 +28,20 @@ and new variables etc. This way the system will work as intended in all places.
 -----------------------------------------------------------
 CollisionSystem.h file:
 
+#include "singleton.h"              // notice this include!
+
 class CollisionSystem : public System
 {
 public:
     void update() override;
 
-    static System *get_base_instance();     // notice this
-    static CollisionSystem *instance();     // this
-
-private:
-    static CollisionSystem *instance;       // and this
+    IMPL_VIRTUAL_SINGLETON_DISPATCHER(CollisionSystem, System)      // and this macro!
 };
 
 -----------------------------------------------------------
 CollisionSystem.cpp file:
 
-CollisionSystem *CollisionSystem::instance = nullptr; // we need to init the instance variable like this
-
-System *CollisionSystem::get_base_instance()          // then implement the instance function like this
-{
-    if (instance == nullptr)
-    {
-        instance = new CollisionSystem();
-    }
-    return dynamic_cast<System*>(instance);
-}
-
-CollisionSystem *CollisionSystem::instance()      // and this one like this
-{
-    if (instance == nullptr)
-    {
-        instance = new CollisionSystem();
-    }
-    return instance;
-}
-
-void CollisionSystem::update()                         // now add custom logic can go here
+void CollisionSystem::update()
 {
     // update logic here
 }

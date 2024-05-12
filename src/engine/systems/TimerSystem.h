@@ -1,6 +1,7 @@
 #pragma once
 
 #include "engine/System.h"
+#include "singleton.h"
 
 #include <functional>
 #include <vector>
@@ -64,8 +65,7 @@ public:
 
     [[nodiscard]] TimerRef set_timer(uint32_t ticks);
     
-    static System &get_base_instance();
-    static TimerSystem &instance();
+    IMPL_VIRTUAL_SINGLETON_DISPATCHER(TimerSystem, System)
 
 private:
     std::vector<std::shared_ptr<Timer>> timer_storage; // timer slots aren't cleared but they are reused

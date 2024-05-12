@@ -18,4 +18,12 @@ public:
 private:
     unsigned int m_id;
     bool m_freed;
+
+public:
+    Texture(const Texture&) = delete;
+    Texture(Texture&& other) 
+    {
+        other.m_id = m_id;
+        other.m_freed = m_freed;
+    }
 };

@@ -22,3 +22,4 @@ do { \
         fprintf(stderr, "OpenGL Error (%s:%d): %d\n", __FILE__, __LINE__, error); \
     } \
 } while (false)
+

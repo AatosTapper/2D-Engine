@@ -2,17 +2,6 @@
 
 #include <iostream>
 
-System &TimerSystem::get_base_instance()
-{
-    return dynamic_cast<System&>(instance());
-}
-
-TimerSystem &TimerSystem::instance()
-{
-    static TimerSystem instance;
-    return instance;
-}
-
 TimerRef TimerSystem::set_timer(uint32_t ticks)
 {
     auto timer = std::make_shared<Timer>(ticks);

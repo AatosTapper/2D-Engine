@@ -48,12 +48,11 @@ if (CMAKE_SYSTEM_NAME MATCHES "Darwin")
     set(CMAKE_CXX_COMPILER clang++) # seems a bit faster
 
     target_compile_options(main PRIVATE 
-        -O2
+        -O3
         -Wall
         -Wextra
         -Wpedantic
         -Wconversion -Wsign-conversion
-        -Wno-deprecated-declarations
     )
 else () # windows (no linux here so else is enough)
     set(GLFW_LIBRARY_DIR "C:/Program Files/glfw-3.4/glfw-3.4.bin.WIN64")

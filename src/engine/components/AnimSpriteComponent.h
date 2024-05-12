@@ -51,7 +51,7 @@ public:
 private:
     std::vector<std::shared_ptr<Texture>> frames;
     uint32_t curr_frame{0};
-    PlaybackType playback_type = PlaybackType::NOT_PLAYING;
+    PlaybackType playback_type = PlaybackType::HIDDEN;
     StopBehavior stop_behavior = StopBehavior::RESET;
     bool filter_nearest;
     bool curr_direction = true; // used for boomerang true: forward, false: backward
