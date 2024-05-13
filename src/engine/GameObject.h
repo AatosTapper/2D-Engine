@@ -16,11 +16,11 @@ public:
     GameObject() : id(create_id()) {}
     virtual ~GameObject() {}
 
-    // override these functions to add custom behaviour to inherited game objects
     // each function is ran automatically:
     virtual void on_attach() {}   // when object is added to a scene
     virtual void on_update() {}   // when object is updated in the gameloop
     virtual void on_destroy() {}  // when object is deleted from a scene
+
     // override this to call component update/queue functions
     virtual void update_components() {}; // after all objects are updated in the gameloop    
     

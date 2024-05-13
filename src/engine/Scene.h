@@ -15,12 +15,14 @@ public:
     Scene();
 
     void add_game_object(std::unique_ptr<GameObject> obj);
-    std::optional<Ptr<GameObject>> get_game_object(GameObject::id_t id) const; // this reference becomes invalid after current frame
+    void add_system(Ptr<System> system);
+
+    [[nodiscard]] std::optional<Ptr<GameObject>> get_game_object(GameObject::id_t id) const; // this reference becomes invalid after current frame
+    [[nodiscard]] std::vector<Ptr<GameObject>> get_all_game_objects() const;
+
     void delete_game_object(GameObject::id_t id); // defers the delete until the start of the next frame
 
     void update();
-
-    void add_system(Ptr<System> system);
 
 private:
     std::unordered_map<GameObject::id_t, std::unique_ptr<GameObject>> game_object_storage;

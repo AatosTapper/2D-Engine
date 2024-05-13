@@ -24,6 +24,17 @@ void Scene::add_game_object(std::unique_ptr<GameObject> obj)
     game_object_storage.at(id)->on_attach();
 }
 
+void Scene::add_system(Ptr<System> system)
+{
+    if (std::find(game_systems.begin(), game_systems.end(), system) != game_systems.end()) 
+    {
+        std::runtime_error("Tried to add an already existing game system to a scene");;
+        return;
+    }
+
+    game_systems.push_back(system);
+}
+
 std::optional<Ptr<GameObject>> Scene::get_game_object(GameObject::id_t id) const
 {
     if (game_object_storage.find(id) == game_object_storage.end())
@@ -31,6 +42,16 @@ std::optional<Ptr<GameObject>> Scene::get_game_object(GameObject::id_t id) const
         return std::nullopt;
     }
     return Ptr<GameObject>(game_object_storage.at(id).get());
+}
+
+std::vector<Ptr<GameObject>> Scene::get_all_game_objects() const
+{
+    std::vector<Ptr<GameObject>> output;
+    for (const auto &it : game_object_storage)
+    {
+        output.push_back(it.second.get());
+    }
+    return output;
 }
 
 void Scene::delete_game_object(GameObject::id_t id)
@@ -59,17 +80,6 @@ void Scene::update()
     {
         system->update();
     }
-}
-
-void Scene::add_system(Ptr<System> system)
-{
-    if (std::find(game_systems.begin(), game_systems.end(), system) != game_systems.end()) 
-    {
-        std::runtime_error("Tried to add an already existing game system to a scene");;
-        return;
-    }
-
-    game_systems.push_back(system);
 }
 
 void Scene::handle_deletions()
