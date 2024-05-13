@@ -5,6 +5,7 @@
 #include "engine/Scene.h"
 #include "engine/Window.h"
 #include "engine/rendering/Camera.h"
+#include "Ref.h"
 
 
 // Use like this:
@@ -21,7 +22,7 @@ namespace Engine
 
     void run();
 
-    Window *get_window();
-    Camera *get_camera();
-    Scene *get_scene();
+    Ptr<Window> get_window();
+    Ptr<Camera> get_camera();
+    Ptr<Scene> get_scene();
 };

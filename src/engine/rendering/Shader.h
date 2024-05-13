@@ -11,7 +11,7 @@ public:
     ~Shader();
 
     void use() const;
-    inline unsigned int get_id() const { return m_id; }
+    unsigned int get_id() const { return m_id; }
     void free();
 
     // uniform setting

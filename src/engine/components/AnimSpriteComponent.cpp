@@ -67,10 +67,10 @@ void AnimSpriteComponent::update(const glm::mat4 &parent_transform)
     } break;
     }
 
-    Renderer::instance().queue_sprite({ this, transform.get_matrix() * parent_transform });
+    Renderer::instance().queue_sprite({ *this, transform.get_matrix() * parent_transform });
 }
 
-void AnimSpriteComponent::add_folder_as_frames(const std::string &folder)
+void AnimSpriteComponent::push_folder_as_frames(const std::string &folder)
 {
     if (frames.size() == 0) { playback_type = PlaybackType::NOT_PLAYING; }
     // find how many frames are stored in the directory

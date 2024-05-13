@@ -11,12 +11,10 @@ static bool window_resized = false;
 
 Window::Window(int width, int height)
 {
-    // glfw: initialize and configure
-    // ------------------------------
     if (!glfwInit())
     {
         std::cout << "Failed to init GLFW\n";
-        assert(false); // this just crashes the program on purpose
+        assert(false);
     }
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
@@ -30,8 +28,6 @@ Window::Window(int width, int height)
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
 
-    // glfw window creation
-    // --------------------
     window = glfwCreateWindow(width, height, "2D-Engine", NULL, NULL);
     if (window == NULL)
     {
@@ -43,8 +39,6 @@ Window::Window(int width, int height)
     glfwMakeContextCurrent(window);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
-    // glad: load all OpenGL function pointers
-    // ---------------------------------------
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {
         std::cout << "Failed to initialize GLAD\n";
@@ -58,7 +52,6 @@ Window::Window(int width, int height)
 
 Window::~Window()
 {
-    // glfw: terminate, clearing all previously allocated GLFW resources.
     glfwTerminate();
 }
 
@@ -89,8 +82,6 @@ void Window::reset_resize_flag() const
     window_resized = false;
 }
 
-// glfw: whenever the window size changed (by OS or user resize) this callback function executes
-// ---------------------------------------------------------------------------------------------
 static void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
     (void)window; // this silences the warning about "unused parameter"

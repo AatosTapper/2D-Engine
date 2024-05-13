@@ -19,7 +19,7 @@ void PlayerGameObject::on_attach()
 {
     sprite.get_texture()->filter_nearest();
 
-    animation.add_folder_as_frames("../res/animations/test_anim");
+    animation.push_folder_as_frames("../res/animations/test_anim");
 }
 
 void PlayerGameObject::on_update()
@@ -28,7 +28,7 @@ void PlayerGameObject::on_update()
 
     if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS)
     {
-        animation.play(AnimSpriteComponent::PlaybackType::ONE_SHOT);
+        animation.play(AnimSpriteComponent::PlaybackType::REVERSE_ONE_SHOT);
     }
 
     if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)

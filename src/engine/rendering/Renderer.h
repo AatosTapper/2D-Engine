@@ -4,10 +4,12 @@
 #include "engine/rendering/Shader.h"
 #include "engine/components/SpriteComponent.h"
 #include "singleton.h"
+#include "Ref.h"
 
 #include <tuple>
 #include <vector>
 #include <memory>
+#include <functional>
 
 // To access functions, call like this:
 
@@ -29,9 +31,9 @@ public:
     void init();
     void start_frame();
     void clear_queues();
-    void set_shader(Shader *shader);
+    void set_shader(Ptr<Shader> shader);
     void set_view_proj_matrix(const glm::mat4 &vp_mat);
-    void queue_sprite(std::tuple<const QuadMesh*, glm::mat4> sprite);
+    void queue_sprite(std::tuple<Ref<const QuadMesh>, glm::mat4> sprite);
     void draw_frame();
 
 private:
@@ -40,7 +42,7 @@ private:
     
     Shader *selected_shader;
     glm::mat4 selected_vpm;
-    std::vector<std::tuple<const QuadMesh*, glm::mat4>> sprite_queue;
+    std::vector<std::tuple<Ref<const QuadMesh>, glm::mat4>> sprite_queue;
 
     uint32_t framebuffer{};
     uint32_t texture_color_buffer{};

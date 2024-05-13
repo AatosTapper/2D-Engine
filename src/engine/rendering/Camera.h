@@ -18,9 +18,9 @@ public:
     float fov;
 
     void update(const float aspect_ratio);
-    inline glm::mat4 get_vp_matrix() const { return *m_vp_mat; }
-    inline const glm::vec3 &get_position() const { return m_position; }
-    inline void set_position(const glm::vec3 &new_pos) { m_position = new_pos; }
+    glm::mat4 get_vp_matrix() const { return *m_vp_mat; }
+    const glm::vec3 &get_position() const { return m_position; }
+    void set_position(const glm::vec3 &new_pos) { m_position = new_pos; }
 
     // move
     void forward(const float amount);

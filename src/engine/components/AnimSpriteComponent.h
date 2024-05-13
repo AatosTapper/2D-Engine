@@ -35,7 +35,7 @@ public:
 
     // Pass in a folder that contains all of the animation images. (It also can't have anything else)
     // The images must be named like this: frame1.png, frame2.png ... frame194.png
-    void add_folder_as_frames(const std::string &folder);
+    void push_folder_as_frames(const std::string &folder);
 
     void push_frame(const std::string &filepath);
     void push_frame(std::shared_ptr<Texture> &frame);

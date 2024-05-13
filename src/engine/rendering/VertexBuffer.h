@@ -12,7 +12,7 @@ public:
     void unbind() const;
     void free();
 
-    inline unsigned int get_id() const { return m_id; }
+    unsigned int get_id() const { return m_id; }
 
 private:
     unsigned int m_id;

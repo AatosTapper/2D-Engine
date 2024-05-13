@@ -11,7 +11,7 @@ public:
     void unbind() const;
     void free();
 
-    inline unsigned int get_elements() const { return m_elements; }
+    unsigned int get_elements() const { return m_elements; }
 
 private:
     unsigned int m_id;

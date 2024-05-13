@@ -27,7 +27,7 @@ and new variables etc. This way the system will work as intended in all places.
 
 -----------------------------------------------------------
 CollisionSystem.h file:
-
+#include "engine/System.h"
 #include "singleton.h"              // notice this include!
 
 class CollisionSystem : public System

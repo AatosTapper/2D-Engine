@@ -9,6 +9,7 @@
 #include "game/gameobjects/PlayerGameObject.h"
 
 #include "settings.h"
+#include "Ref.h"
 
 #include <memory>
 #include <iostream>

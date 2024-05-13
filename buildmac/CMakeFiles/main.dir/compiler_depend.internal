@@ -1026,6 +1026,7 @@ CMakeFiles/main.dir/src/engine/Engine.cpp.o
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec3.hpp
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec4.hpp
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vector_relational.hpp
+ /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Engine.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/GameObject.h
@@ -1957,12 +1958,13 @@ CMakeFiles/main.dir/src/engine/Scene.cpp.o
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec3.hpp
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec4.hpp
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vector_relational.hpp
- /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Singleton.h
+ /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/GameObject.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Scene.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/System.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/TimerSystem.h
+ /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/singleton.h
 
 CMakeFiles/main.dir/src/engine/Window.cpp.o
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Window.cpp
@@ -2879,6 +2881,7 @@ CMakeFiles/main.dir/src/engine/Window.cpp.o
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec3.hpp
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec4.hpp
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vector_relational.hpp
+ /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Window.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.h
@@ -3822,6 +3825,7 @@ CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.o
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec3.hpp
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec4.hpp
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vector_relational.hpp
+ /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/AnimSpriteComponent.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.h
@@ -4765,6 +4769,7 @@ CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec3.hpp
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec4.hpp
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vector_relational.hpp
+ /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/TransformComponent.h
@@ -6082,6 +6087,7 @@ CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec3.hpp
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec4.hpp
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vector_relational.hpp
+ /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/GameObject.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Scene.h
@@ -8347,6 +8353,7 @@ CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec3.hpp
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec4.hpp
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vector_relational.hpp
+ /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Engine.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/GameObject.h
@@ -12357,9 +12364,9 @@ CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
- /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Singleton.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/System.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/TimerSystem.h
+ /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/singleton.h
 
 CMakeFiles/main.dir/src/engine/utils/Random.cpp.o
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/utils/Random.cpp
@@ -14064,7 +14071,7 @@ CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec3.hpp
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec4.hpp
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vector_relational.hpp
- /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Singleton.h
+ /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Engine.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/GameObject.h
@@ -15018,7 +15025,7 @@ CMakeFiles/main.dir/src/main.cpp.o
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec3.hpp
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec4.hpp
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vector_relational.hpp
- /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Singleton.h
+ /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Engine.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/GameObject.h
@@ -15039,5 +15046,6 @@ CMakeFiles/main.dir/src/main.cpp.o
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/TimerSystem.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/gameobjects/PlayerGameObject.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/settings.h
+ /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/singleton.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/util.h
 

@@ -52,7 +52,7 @@ void Renderer::clear_queues()
     sprite_queue.clear();
 }
 
-void Renderer::set_shader(Shader *shader)
+void Renderer::set_shader(Ptr<Shader> shader)
 {
     assert(shader && "Cannot select a null shader");
     selected_shader = shader;
@@ -63,9 +63,8 @@ void Renderer::set_view_proj_matrix(const glm::mat4 &vp_mat)
     selected_vpm = vp_mat;
 }
 
-void Renderer::queue_sprite(std::tuple<const QuadMesh*, glm::mat4> sprite)
+void Renderer::queue_sprite(std::tuple<Ref<const QuadMesh>, glm::mat4> sprite)
 {
-    assert(std::get<0>(sprite) && "Cannot queue an empty sprite");
     sprite_queue.push_back(sprite);    
 }
 
@@ -91,16 +90,16 @@ void Renderer::draw_sprites()
         selected_shader->use();
 
         glActiveTexture(GL_TEXTURE0);
-        sprite->get_texture()->bind();
+        sprite.get().get_texture()->bind();
 
         selected_shader->set_mat4f("u_view_proj", selected_vpm);
         selected_shader->set_mat4f("u_transform", transform);
 
-        sprite->get_vao()->bind();
-        sprite->get_ebo()->bind();
-        glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(sprite->get_ebo()->get_elements()), GL_UNSIGNED_INT, 0);
-        sprite->get_vao()->unbind();
-        sprite->get_ebo()->unbind();
+        sprite.get().get_vao()->bind();
+        sprite.get().get_ebo()->bind();
+        glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(sprite.get().get_ebo()->get_elements()), GL_UNSIGNED_INT, 0);
+        sprite.get().get_vao()->unbind();
+        sprite.get().get_ebo()->unbind();
     }
 }
 

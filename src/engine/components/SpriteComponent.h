@@ -8,6 +8,7 @@
 #include "config.h"
 #include "engine/components/TransformComponent.h"
 #include "engine/rendering/Texture.h"
+#include "Ref.h"
 
 // Instructions for how to use are below
 

@@ -42,17 +42,17 @@ namespace Engine
         current_scene = _scene;
     }
 
-    Window *get_window()
+    Ptr<Window> get_window()
     {
         return window.get();
     }
 
-    Camera *get_camera()
+    Ptr<Camera> get_camera()
     {
         return camera;
     }
 
-    Scene *get_scene()
+    Ptr<Scene> get_scene()
     {
         return current_scene;
     }

@@ -1,9 +1,11 @@
 #pragma once
 
 #include <iostream>
+#include <memory>
 #include "config.h"
 
-class Scene;
+#define CREATE_GAME_OBJECT(T) std::make_unique<T>()
+#define CREATE_GAME_OBJECT_WITH_ARGS(T, args) std::make_unique<T>(args)
 
 class GameObject
 {
