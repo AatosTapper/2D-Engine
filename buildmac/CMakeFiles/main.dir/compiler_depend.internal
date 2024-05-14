@@ -3132,13 +3132,27 @@ CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__bit/rotate.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__bit_reference
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__bsd_locale_defaults.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/calendar.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/convert_to_timespec.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/convert_to_tm.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/day.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/duration.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/file_clock.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/hh_mm_ss.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/high_resolution_clock.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/literals.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/month.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/month_weekday.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/monthday.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/statically_widen.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/steady_clock.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/system_clock.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/time_point.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/weekday.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/year.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/year_month.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/year_month_day.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/year_month_weekday.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__compare/common_comparison_category.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__compare/compare_partial_order_fallback.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__compare/compare_strong_order_fallback.h
@@ -3195,8 +3209,11 @@ CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__filesystem/space_info.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__filesystem/u8path.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__format/concepts.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__format/enable_insertable.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__format/format_error.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__format/format_fwd.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__format/format_parse_context.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__format/formatter.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__functional/binary_function.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__functional/binary_negate.h
@@ -3500,6 +3517,7 @@ CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cctype
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cerrno
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cfloat
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/chrono
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/climits
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cmath
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/compare
@@ -3523,6 +3541,7 @@ CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/iomanip
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/ios
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/iosfwd
+ /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/iostream
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/istream
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/iterator
  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/limits
@@ -3830,10 +3849,13 @@ CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.o
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/AnimSpriteComponent.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/TransformComponent.h
+ /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Camera.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Renderer.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Shader.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.h
+ /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/settings.h
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/singleton.h
+ /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/util.h
 
 CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o
  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.cpp

@@ -25,18 +25,29 @@ float get_brightness(vec4 col)
 
 const float near = 0.1;
 const float far = 1000.0;
+const float fog_density = 0.003;
+const vec3 fog_color = vec3(0.92, 0.96, 0.99);
 
-float linearize_depth(float depth) 
+float linearize_depth(float d)
 {
-    float z = depth * 2.0 - 1.0; // back to NDC 
-    return (2.0 * near * far) / (far + near - z * (far - near));	
+    float z_n = 2.0 * d - 1.0;
+    return 2.0 * near * far / (far + near - z_n * (far - near));
+}
+
+float calc_fog_factor() 
+{
+    float depth = linearize_depth(texture(tex_dep, tex_coord).r);
+    float power = fog_density * depth;
+    return 1.0 / exp(power * power);
+}
+
+vec4 combine_output()
+{
+    vec4 col = texture(tex_col, tex_coord);
+    return mix(vec4(fog_color, 1.0), col, calc_fog_factor());
 }
 
 void main()
 {
-    vec4 col = texture(tex_col, tex_coord);
-    float depth = linearize_depth(texture(tex_dep, tex_coord).r) / far;
-    vec4 depth_vec = vec4(vec3(pow(depth, 1.4)), 1.0);
-
-    frag_color = aces(col * (1 - depth_vec) + depth_vec);
+    frag_color = aces(combine_output());
 }

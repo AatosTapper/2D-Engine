@@ -5,69 +5,81 @@
 #include <stdexcept>
 
 #include "engine/rendering/Renderer.h"
+#include "settings.h"
+
+static constexpr double global_update_time = 1.0 / Settings::UPDATES_PER_SEC;
 
 void AnimSpriteComponent::update(const glm::mat4 &parent_transform)
 {
-    switch (playback_type)
+    bool render = true;
+    elapsed_time += global_update_time;
+    while (elapsed_time >= frame_factor)
     {
-    case PlaybackType::HIDDEN: return;
-    case PlaybackType::NOT_PLAYING: break;
-    case PlaybackType::ONE_SHOT: 
-    {
-        if (curr_frame < frames.size() - 1)
+        switch (playback_type)
+        {
+        case PlaybackType::HIDDEN: { render = false; } break;
+        case PlaybackType::NOT_PLAYING: break;
+        case PlaybackType::ONE_SHOT: 
+        {
+            if (curr_frame < frames.size() - 1)
+            {
+                curr_frame++;
+                break;
+            }
+            end_animation();
+        } break;
+        case PlaybackType::LOOP: 
         {
             curr_frame++;
-            break;
-        }
-        end_animation();
-    } break;
-    case PlaybackType::LOOP: 
-    {
-        curr_frame++;
-        curr_frame = curr_frame % (frames.size() - 1);
-    } break;
-    case PlaybackType::BOOMERANG: 
-    {
-        if (curr_frame < frames.size() - 1 && curr_direction == true)
+            curr_frame = curr_frame % (frames.size() - 1);
+        } break;
+        case PlaybackType::BOOMERANG: 
         {
-            curr_frame++;
-            if (curr_frame == frames.size() - 1)
+            if (curr_frame < frames.size() - 1 && curr_direction == true)
             {
-                curr_direction = false;
+                curr_frame++;
+                if (curr_frame == frames.size() - 1)
+                {
+                    curr_direction = false;
+                }
+                break;
             }
-            break;
-        }
-        else if (curr_frame > 0 && curr_direction == false)
-        {
-            curr_frame--;
-            if (curr_frame == 0)
+            else if (curr_frame > 0 && curr_direction == false)
             {
-                curr_direction = true;
+                curr_frame--;
+                if (curr_frame == 0)
+                {
+                    curr_direction = true;
+                }
+                break;
             }
-            break;
-        }
-    } break;
-    case PlaybackType::REVERSE_ONE_SHOT: 
-    {
-        if (curr_frame > 0)
+        } break;
+        case PlaybackType::REVERSE_ONE_SHOT: 
         {
-            curr_frame--;
-            break;
-        }
-        end_animation();
-    } break;
-    case PlaybackType::REVERSE_LOOP: 
-    {
-        if (curr_frame > 0)
+            if (curr_frame > 0)
+            {
+                curr_frame--;
+                break;
+            }
+            end_animation();
+        } break;
+        case PlaybackType::REVERSE_LOOP: 
         {
-            curr_frame--;
-            break;
+            if (curr_frame > 0)
+            {
+                curr_frame--;
+                break;
+            }
+            curr_frame = static_cast<uint32_t>(frames.size()) - 1;
+        } break;
         }
-        curr_frame = static_cast<uint32_t>(frames.size()) - 1;
-    } break;
-    }
 
-    Renderer::instance().queue_sprite({ *this, transform.get_matrix() * parent_transform });
+        elapsed_time -= frame_factor;
+    }
+    if (render)
+    {
+        Renderer::instance().queue_sprite({ *this, transform.get_matrix() * parent_transform });
+    }
 }
 
 void AnimSpriteComponent::push_folder_as_frames(const std::string &folder)
@@ -146,4 +158,10 @@ void AnimSpriteComponent::end_animation()
         curr_direction = false;
         break;
     }
+}
+
+void AnimSpriteComponent::set_fps(uint32_t new_fps)
+{
+    fps = new_fps;
+    frame_factor = 1.0 / static_cast<double>(fps);
 }

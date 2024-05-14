@@ -6,6 +6,7 @@
 PlayerGameObject::PlayerGameObject()
 {
     set_flags(PLAYER);
+    animation.set_fps(60); // optional because 60 is the default but this allows anything
 }
 
 void PlayerGameObject::update_components()
@@ -28,7 +29,7 @@ void PlayerGameObject::on_update()
 
     if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS)
     {
-        animation.play(AnimSpriteComponent::PlaybackType::REVERSE_ONE_SHOT);
+        animation.play(AnimSpriteComponent::PlaybackType::ONE_SHOT);
     }
 
     if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)

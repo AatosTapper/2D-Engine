@@ -44,6 +44,7 @@ public:
     void stop() { playback_type = PlaybackType::NOT_PLAYING; end_animation(); };
     void hide() { playback_type = PlaybackType::HIDDEN; }
 
+    void set_fps(uint32_t new_fps);
     void set_stop_behavior(StopBehavior behavior) { stop_behavior = behavior; }
 
     std::shared_ptr<Texture> get_texture() const override { return frames.at(curr_frame); };
@@ -51,10 +52,13 @@ public:
 private:
     std::vector<std::shared_ptr<Texture>> frames;
     uint32_t curr_frame{0};
+    uint32_t fps{60};
+    double frame_factor{1.0 / static_cast<double>(fps)};
+    double elapsed_time{0.0f};
     PlaybackType playback_type = PlaybackType::HIDDEN;
     StopBehavior stop_behavior = StopBehavior::RESET;
     bool filter_nearest;
-    bool curr_direction = true; // used for boomerang true: forward, false: backward
+    bool curr_direction{true}; // used for boomerang true: forward, false: backward
 
     void end_animation();
 };

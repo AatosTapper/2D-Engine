@@ -10,9 +10,8 @@ namespace Settings
 
     constexpr double UPDATES_PER_SEC = 60.0; // this doesn't cap the fps, only gamelogic
     
-    constexpr float CAM_FOV = 60.0f;
+    constexpr float CAM_FOV = 30.0f;
     constexpr bool CAM_PROJECTION = PROJ_3D;
 
     constexpr bool HDR = true;
-    const glm::vec3 BG_COL = { 0.0f, 0.0f, 0.0f };
 }
