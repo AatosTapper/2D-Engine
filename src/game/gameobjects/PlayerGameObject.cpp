@@ -25,7 +25,7 @@ void PlayerGameObject::on_attach()
 
 void PlayerGameObject::on_update()
 {
-    auto window = Engine::get_window()->get_glfw_window();
+    auto window = Engine::instance().get_window()->get_glfw_window();
 
     if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS)
     {

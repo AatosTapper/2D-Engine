@@ -941,6 +941,7 @@ CMakeFiles/main.dir/src/main.cpp.o: \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/GameObject.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/System.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/singleton.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/ImageGameObject.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../GameObject.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/SpriteComponent.h \
@@ -948,10 +949,10 @@ CMakeFiles/main.dir/src/main.cpp.o: \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/TransformComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/ColliderComponent.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/SceneManager.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/gameobjects/PlayerGameObject.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/ColliderComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/AnimSpriteComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/TimerSystem.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/singleton.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/settings.h

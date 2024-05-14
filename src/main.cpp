@@ -5,6 +5,7 @@
 #include "engine/Engine.h"
 #include "engine/Scene.h"
 #include "engine/gameobjects/ImageGameObject.h"
+#include "engine/SceneManager.h"
 
 #include "game/gameobjects/PlayerGameObject.h"
 
@@ -16,50 +17,16 @@
 
 int main()
 {
-    Engine::init();
+    Engine::instance().init();
     
-    Camera camera(Engine::get_window()->get_aspect_ratio(), Settings::CAM_FOV, Settings::CAM_PROJECTION);
+    Camera camera(Engine::instance().get_window()->get_aspect_ratio(), Settings::CAM_FOV, Settings::CAM_PROJECTION);
     camera.back(20.0f);
-    Engine::set_camera(&camera);
+    Engine::instance().set_camera(&camera);
 
-    Scene main_scene;
-    Engine::set_scene(&main_scene);
-    
-    std::shared_ptr<Texture> rock_bro = std::make_shared<Texture>("../res/textures/rock.png");
+    SceneManager::instance().load_scene("TestLevel");
 
-    auto image = CREATE_GAME_OBJECT(ImageGameObject);
-    image->sprite.add_texture(rock_bro);
-    image->transform.scale = 4.0f;
-    image->transform.z = -60.0f;
-    main_scene.add_game_object(std::move(image));
+    Engine::instance().run();
 
-    auto image2 = CREATE_GAME_OBJECT(ImageGameObject);
-    image2->sprite.add_texture(rock_bro);
-    image2->transform.scale = 4.0f;
-    image2->transform.z = -30.0f;
-    image2->transform.x = 4.0f;
-    image2->transform.y = 4.0f;
-    main_scene.add_game_object(std::move(image2));
-
-    auto image3 = CREATE_GAME_OBJECT(ImageGameObject);
-    image3->sprite.add_texture(rock_bro);
-    image3->transform.scale = 4.0f;
-    image3->transform.z = -10.0f;
-    image3->transform.x = -5.0f;
-    image3->transform.y = -4.0f;
-    main_scene.add_game_object(std::move(image3));
-    
-    auto player = CREATE_GAME_OBJECT(PlayerGameObject);
-    player->sprite.add_texture(rock_bro);
-    main_scene.add_game_object(std::move(player));
-
-    const auto objects = Engine::get_scene()->get_all_game_objects_except_flags(PLAYER);
-    for (auto &obj : objects)
-    {
-        std::cout << "GameObject " << obj->get_id() << "\n";
-    }
-
-    Engine::run();
-
+    SceneManager::instance().unload_current_scene();
     return 0;
 }

@@ -941,11 +941,12 @@ CMakeFiles/main.dir/src/engine/Engine.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/year_month_weekday.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/file_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/literals.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/singleton.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Renderer.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Shader.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/TransformComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/singleton.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/SceneManager.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/settings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/thread

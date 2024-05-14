@@ -201,6 +201,30 @@ src/engine/Scene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Scene.cpp.s
 .PHONY : src/engine/Scene.cpp.s
 
+src/engine/SceneManager.o: src/engine/SceneManager.cpp.o
+.PHONY : src/engine/SceneManager.o
+
+# target to build an object file
+src/engine/SceneManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/SceneManager.cpp.o
+.PHONY : src/engine/SceneManager.cpp.o
+
+src/engine/SceneManager.i: src/engine/SceneManager.cpp.i
+.PHONY : src/engine/SceneManager.i
+
+# target to preprocess a source file
+src/engine/SceneManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/SceneManager.cpp.i
+.PHONY : src/engine/SceneManager.cpp.i
+
+src/engine/SceneManager.s: src/engine/SceneManager.cpp.s
+.PHONY : src/engine/SceneManager.s
+
+# target to generate assembly for a file
+src/engine/SceneManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/SceneManager.cpp.s
+.PHONY : src/engine/SceneManager.cpp.s
+
 src/engine/Window.o: src/engine/Window.cpp.o
 .PHONY : src/engine/Window.o
 
@@ -561,6 +585,30 @@ src/game/gameobjects/PlayerGameObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.s
 .PHONY : src/game/gameobjects/PlayerGameObject.cpp.s
 
+src/game/scenes/TestLevel.o: src/game/scenes/TestLevel.cpp.o
+.PHONY : src/game/scenes/TestLevel.o
+
+# target to build an object file
+src/game/scenes/TestLevel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.o
+.PHONY : src/game/scenes/TestLevel.cpp.o
+
+src/game/scenes/TestLevel.i: src/game/scenes/TestLevel.cpp.i
+.PHONY : src/game/scenes/TestLevel.i
+
+# target to preprocess a source file
+src/game/scenes/TestLevel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.i
+.PHONY : src/game/scenes/TestLevel.cpp.i
+
+src/game/scenes/TestLevel.s: src/game/scenes/TestLevel.cpp.s
+.PHONY : src/game/scenes/TestLevel.s
+
+# target to generate assembly for a file
+src/game/scenes/TestLevel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.s
+.PHONY : src/game/scenes/TestLevel.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -603,6 +651,9 @@ help:
 	@echo "... src/engine/Scene.o"
 	@echo "... src/engine/Scene.i"
 	@echo "... src/engine/Scene.s"
+	@echo "... src/engine/SceneManager.o"
+	@echo "... src/engine/SceneManager.i"
+	@echo "... src/engine/SceneManager.s"
 	@echo "... src/engine/Window.o"
 	@echo "... src/engine/Window.i"
 	@echo "... src/engine/Window.s"
@@ -648,6 +699,9 @@ help:
 	@echo "... src/game/gameobjects/PlayerGameObject.o"
 	@echo "... src/game/gameobjects/PlayerGameObject.i"
 	@echo "... src/game/gameobjects/PlayerGameObject.s"
+	@echo "... src/game/scenes/TestLevel.o"
+	@echo "... src/game/scenes/TestLevel.i"
+	@echo "... src/game/scenes/TestLevel.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

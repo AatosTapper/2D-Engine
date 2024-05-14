@@ -15,7 +15,7 @@ class Ptr
 {   
 public:
     constexpr Ptr(T *ptr) : pointer(ptr) { assert(ptr && "Ptr cannot be initialised with a nullptr"); }
-    constexpr Ptr(const Ptr &other) : pointer(other.pointer) {}
+    constexpr Ptr(const Ptr &other) : pointer(other.pointer) { assert(other.pointer && "Ptr cannot be initialised with a nullptr"); }
     template<typename U> constexpr Ptr(const Ptr<U> &other) : pointer(other.get()) {}
 
     constexpr operator T*() const { return pointer; }

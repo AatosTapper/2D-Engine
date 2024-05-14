@@ -6,23 +6,31 @@
 #include "engine/Window.h"
 #include "engine/rendering/Camera.h"
 #include "Ref.h"
-
+#include "singleton.h"
 
 // Use like this:
 
 // Engine::set_window(...);
 // Engine::run();
 
-namespace Engine
+class Engine
 {
+public:
     void init();
 
+    IMPL_SINGLETON_DISPATCHER(Engine)
+
     void set_camera(Camera *_camera);
-    void set_scene(Scene *_scene);
 
     void run();
 
     Ptr<Window> get_window();
     Ptr<Camera> get_camera();
-    Ptr<Scene> get_scene();
+
+private:
+    std::unique_ptr<Window> window = nullptr;
+    Camera *camera = nullptr;
+
+    void render();
+    void update_logic();
 };

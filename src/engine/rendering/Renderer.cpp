@@ -34,10 +34,10 @@ void Renderer::init()
 
 void Renderer::start_frame()
 {
-    if (Engine::get_window()->did_resize())
+    if (Engine::instance().get_window()->did_resize())
     {
         regenerate_framebuffer();
-        Engine::get_window()->reset_resize_flag();
+        Engine::instance().get_window()->reset_resize_flag();
     }
 
     glBindFramebuffer(GL_FRAMEBUFFER, framebuffer);
@@ -140,7 +140,7 @@ void Renderer::create_framebuffers()
     glGenTextures(1, &texture_color_buffer);
     glBindTexture(GL_TEXTURE_2D, texture_color_buffer);
     glTexImage2D(GL_TEXTURE_2D, 0, tex_format, 
-        Engine::get_window()->get_width(), Engine::get_window()->get_height(), 0,
+        Engine::instance().get_window()->get_width(), Engine::instance().get_window()->get_height(), 0,
         GL_RGBA, GL_UNSIGNED_BYTE, NULL);
 
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
@@ -154,7 +154,7 @@ void Renderer::create_framebuffers()
     glGenTextures(1, &texture_depth_buffer);
     glBindTexture(GL_TEXTURE_2D, texture_depth_buffer);
     glTexImage2D(GL_TEXTURE_2D, 0, GL_DEPTH_COMPONENT32,
-        Engine::get_window()->get_width(), Engine::get_window()->get_height(), 0,
+        Engine::instance().get_window()->get_width(), Engine::instance().get_window()->get_height(), 0,
         GL_DEPTH_COMPONENT, GL_FLOAT, NULL);
 
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
@@ -170,7 +170,7 @@ void Renderer::create_framebuffers()
     glGenRenderbuffers(1, &rbo);
     glBindRenderbuffer(GL_RENDERBUFFER, rbo);
     glRenderbufferStorage(GL_RENDERBUFFER, GL_STENCIL_INDEX8, 
-        Engine::get_window()->get_width(), Engine::get_window()->get_height());
+        Engine::instance().get_window()->get_width(), Engine::instance().get_window()->get_height());
     glBindRenderbuffer(GL_RENDERBUFFER, 0);
 
     glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_STENCIL_ATTACHMENT, GL_RENDERBUFFER, rbo);
