@@ -47,9 +47,36 @@ std::optional<Ptr<GameObject>> Scene::get_game_object(GameObject::id_t id) const
 std::vector<Ptr<GameObject>> Scene::get_all_game_objects() const
 {
     std::vector<Ptr<GameObject>> output;
+    output.reserve(game_object_storage.size());
     for (const auto &it : game_object_storage)
     {
         output.push_back(it.second.get());
+    }
+    return output;
+}
+
+std::vector<Ptr<GameObject>> Scene::get_all_game_objects_with_flags(ObjectFlags flag) const
+{
+    std::vector<Ptr<GameObject>> output;
+    for (const auto &it : game_object_storage)
+    {
+        if (it.second->has_flags(flag))
+        {
+            output.push_back(it.second.get());
+        }
+    }
+    return output;
+}
+
+std::vector<Ptr<GameObject>> Scene::get_all_game_objects_except_flags(ObjectFlags flag) const
+{
+    std::vector<Ptr<GameObject>> output;
+    for (const auto &it : game_object_storage)
+    {
+        if (!it.second->has_flags(flag))
+        {
+            output.push_back(it.second.get());
+        }
     }
     return output;
 }

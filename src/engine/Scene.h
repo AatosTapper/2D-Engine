@@ -19,6 +19,8 @@ public:
 
     [[nodiscard]] std::optional<Ptr<GameObject>> get_game_object(GameObject::id_t id) const; // this reference becomes invalid after current frame
     [[nodiscard]] std::vector<Ptr<GameObject>> get_all_game_objects() const;
+    [[nodiscard]] std::vector<Ptr<GameObject>> get_all_game_objects_with_flags(ObjectFlags flag) const;
+    [[nodiscard]] std::vector<Ptr<GameObject>> get_all_game_objects_except_flags(ObjectFlags flag) const;
 
     void delete_game_object(GameObject::id_t id); // defers the delete until the start of the next frame
 

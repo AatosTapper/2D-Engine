@@ -7,31 +7,53 @@
 #define CREATE_GAME_OBJECT(T) std::make_unique<T>()
 #define CREATE_GAME_OBJECT_WITH_ARGS(T, args) std::make_unique<T>(args)
 
+using Bitflag = uint64_t;
+
+// Flags for gameobjects, represented with each bit being a single flag like this: 0000 0011 0001 1010
+// Add new ones like this: NEW_FLAG = LAST_FLAG << 1
+// You can combine flags with bitwise OR like this: ObjectFlags::NPC | ObjectFlags::FRIENDLY | etc
+enum ObjectFlags : Bitflag
+{
+    PLAYER      = 1u,
+    NPC         = PLAYER << 1,
+    FRIENDLY    = NPC << 1,
+    HOSTILE     = FRIENDLY << 1
+};
+
 class GameObject
 {
 public:
     using id_t = uint64_t;
-    id_t get_id() const { return id; }
 
-    GameObject() : id(create_id()) {}
-    virtual ~GameObject() {}
+    [[nodiscard]] id_t get_id() const       { return id; }
+    
+    // flags
+    void set_flags(ObjectFlags flag)        { flags |= flag; }
+    void remove_flags(ObjectFlags flag)     { flags &= ~flag; }
+    [[nodiscard]] bool has_flags(ObjectFlags flag) const { return 0 != (flags & flag); }
 
-    // each function is ran automatically:
-    virtual void on_attach() {}   // when object is added to a scene
-    virtual void on_update() {}   // when object is updated in the gameloop
-    virtual void on_destroy() {}  // when object is deleted from a scene
+    // overridable functions
+    virtual void on_attach()                {}  // is ran when object is added to a scene
+    virtual void on_update()                {}  // is ran when object is updated in the gameloop
+    virtual void on_destroy()               {}  // is ran when object is deleted from a scene
 
     // override this to call component update/queue functions
-    virtual void update_components() {}; // after all objects are updated in the gameloop    
+    virtual void update_components()        {}; // after all objects are updated in the gameloop    
     
 private:
     const id_t id;
+    Bitflag flags{0};
 
     id_t create_id()
     {
         static id_t cur_id = 0u;
         return cur_id++;
     }
+
+public:
+    // constructor and destructor, just implementation stuff
+    GameObject() : id(create_id())          {}
+    virtual ~GameObject()                   {}
 };
 
 
@@ -67,7 +89,8 @@ EnemyGameObject.cpp file:
 
 EnemyGameObject::EnemyGameObject()
 {
-    
+    // you can set flags here (or elsewhere too):
+    set_flag(ObjectFlags::NPC | ObjectFlags::HOSTILE);
 }
 
 EnemyGameObject::~EnemyGameObject()

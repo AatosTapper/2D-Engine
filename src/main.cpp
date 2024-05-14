@@ -53,7 +53,7 @@ int main()
     player->sprite.add_texture(rock_bro);
     main_scene.add_game_object(std::move(player));
 
-    const auto objects = Engine::get_scene()->get_all_game_objects();
+    const auto objects = Engine::get_scene()->get_all_game_objects_except_flags(PLAYER);
     for (auto &obj : objects)
     {
         std::cout << "GameObject " << obj->get_id() << "\n";

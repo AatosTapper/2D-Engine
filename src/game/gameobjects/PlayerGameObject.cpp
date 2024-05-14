@@ -5,7 +5,7 @@
 
 PlayerGameObject::PlayerGameObject()
 {
-
+    set_flags(PLAYER);
 }
 
 void PlayerGameObject::update_components()
