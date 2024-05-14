@@ -25,20 +25,20 @@ class GameObject
 public:
     using id_t = uint64_t;
 
-    [[nodiscard]] id_t get_id() const       { return id; }
+    [[nodiscard]] id_t get_id() const { return id; }
     
     // flags
-    void set_flags(ObjectFlags flag)        { flags |= flag; }
-    void remove_flags(ObjectFlags flag)     { flags &= ~flag; }
-    [[nodiscard]] bool has_flags(ObjectFlags flag) const { return 0 != (flags & flag); }
+    constexpr void set_flags(ObjectFlags flag) { flags |= flag; }
+    constexpr void remove_flags(ObjectFlags flag) { flags &= ~flag; }
+    [[nodiscard]] constexpr bool has_flags(ObjectFlags flag) const { return 0 != (flags & flag); }
 
     // overridable functions
-    virtual void on_attach()                {}  // is ran when object is added to a scene
-    virtual void on_update()                {}  // is ran when object is updated in the gameloop
-    virtual void on_destroy()               {}  // is ran when object is deleted from a scene
+    virtual void on_attach() {}  // is ran when object is added to a scene
+    virtual void on_update() {}  // is ran when object is updated in the gameloop
+    virtual void on_destroy() {}  // is ran when object is deleted from a scene
 
     // override this to call component update/queue functions
-    virtual void update_components()        {}; // after all objects are updated in the gameloop    
+    virtual void update_components() {}; // after all objects are updated in the gameloop    
     
 private:
     const id_t id;
