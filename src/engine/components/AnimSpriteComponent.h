@@ -7,7 +7,7 @@
 #include <vector>
 #include <string>
 
-class AnimSpriteComponent : public QuadMesh
+class AnimSpriteComponent : public QuadMeshComponent
 {
 public:
     AnimSpriteComponent(bool pixelated = true) : filter_nearest(pixelated) {}

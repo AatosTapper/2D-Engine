@@ -926,6 +926,7 @@ CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.o: \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/ColliderComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/entities/PlayerEntity.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/PhysicsComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/AnimSpriteComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/TimerSystem.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Engine.h \

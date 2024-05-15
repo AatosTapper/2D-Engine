@@ -9,6 +9,7 @@ namespace Settings
     constexpr int SCR_HEIGHT = 720;
 
     constexpr double UPDATES_PER_SEC = 60.0; // this doesn't cap the fps, only gamelogic
+    constexpr double UPDATE_TIME_MS = 1.0 / UPDATES_PER_SEC;
     
     constexpr float CAM_FOV = 30.0f;
     constexpr bool CAM_PROJECTION = PROJ_3D;

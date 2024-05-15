@@ -1,7 +1,9 @@
 #include "PlayerEntity.h"
 
+#include "settings.h"
 #include "engine/Engine.h"
 #include "engine/rendering/Renderer.h"
+#include "engine/systems/PhysicsSystem.h"
 
 PlayerEntity::PlayerEntity()
 {
@@ -14,6 +16,7 @@ void PlayerEntity::update_components()
     //glm::mat4 full_transform = transform.get_matrix() * sprite.transform.get_matrix();
     //Renderer::instance().queue_sprite({ &sprite, full_transform });
     animation.update(transform.get_matrix());
+    PhysicsSystem::instance().queue_entity({ physics, NULL_COLLIDER, transform });
 }
 
 void PlayerEntity::on_attach()
@@ -32,22 +35,22 @@ void PlayerEntity::on_update()
 
     if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
     {
-        transform.y += 0.1f;
+        physics.forces.y += 10.0f * Settings::UPDATE_TIME_MS;
     }
 
     if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
     {
-        transform.y -= 0.1f;
+        physics.forces.y -= 10.0f * Settings::UPDATE_TIME_MS;
     }
 
     if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
     {
-        transform.x -= 0.1f;
+        physics.forces.x -= 10.0f * Settings::UPDATE_TIME_MS;
     }
 
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
     {
-        transform.x += 0.1f;
+        physics.forces.x += 10.0f * Settings::UPDATE_TIME_MS;
     }
 }
 

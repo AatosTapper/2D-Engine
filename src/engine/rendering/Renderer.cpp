@@ -63,7 +63,7 @@ void Renderer::set_view_proj_matrix(const glm::mat4 &vp_mat)
     selected_vpm = vp_mat;
 }
 
-void Renderer::queue_sprite(std::tuple<Ref<const QuadMesh>, glm::mat4> sprite)
+void Renderer::queue_sprite(std::tuple<Ref<const QuadMeshComponent>, glm::mat4> sprite)
 {
     sprite_queue.push_back(sprite);    
 }

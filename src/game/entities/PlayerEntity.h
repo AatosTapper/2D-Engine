@@ -1,9 +1,9 @@
 #pragma once
 
 #include "engine/Entity.h"
-#include "engine/components/SpriteComponent.h"
 #include "engine/components/TransformComponent.h"
 #include "engine/components/ColliderComponent.h"
+#include "engine/components/PhysicsComponent.h"
 #include "engine/components/AnimSpriteComponent.h"
 #include "engine/systems/TimerSystem.h"
 
@@ -13,6 +13,7 @@ public:
     PlayerEntity();
     
     Transform2DComponent transform;
+    PhysicsComponent physics;
     BoxCollider2DComponent collider;
     AnimSpriteComponent animation;
 

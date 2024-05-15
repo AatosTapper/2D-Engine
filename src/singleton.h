@@ -3,9 +3,9 @@
 // implements the static instance and a getter for it: S::instance()
 #define IMPL_SINGLETON_DISPATCHER(CLASS)    \
     static CLASS &instance()                \
-    {                                   \
+    {                                       \
         static CLASS instance;              \
-        return instance;                \
+        return instance;                    \
     }                                   
 
 // Same as above but also implements function get_base_instance() that returns the instance
@@ -17,6 +17,8 @@
         return dynamic_cast<BASE&>(instance());             \
     }
 
+// delete copying and assigning
+// IMPORTANT: class needs a constructor for this to work
 #define IMPL_NO_COPY(CLASS)                 \
     CLASS(CLASS const&) = delete;           \
     void operator=(CLASS const&) = delete;

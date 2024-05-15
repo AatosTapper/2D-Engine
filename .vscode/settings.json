@@ -89,6 +89,8 @@
         "xutility": "cpp",
         "__memory": "cpp",
         "filesystem": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "__tree": "cpp",
+        "set": "cpp"
     }
 }

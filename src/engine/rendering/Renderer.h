@@ -34,7 +34,7 @@ public:
     void clear_queues();
     void set_shader(Ptr<Shader> shader);
     void set_view_proj_matrix(const glm::mat4 &vp_mat);
-    void queue_sprite(std::tuple<Ref<const QuadMesh>, glm::mat4> sprite);
+    void queue_sprite(std::tuple<Ref<const QuadMeshComponent>, glm::mat4> sprite);
     void draw_frame();
 
 private:
@@ -43,13 +43,13 @@ private:
     
     Shader *selected_shader;
     glm::mat4 selected_vpm;
-    std::vector<std::tuple<Ref<const QuadMesh>, glm::mat4>> sprite_queue;
+    std::vector<std::tuple<Ref<const QuadMeshComponent>, glm::mat4>> sprite_queue;
 
     uint32_t framebuffer{};
     uint32_t texture_color_buffer{};
     uint32_t texture_depth_buffer{};
     uint32_t rbo{};
-    QuadMesh screen_quad;
+    QuadMeshComponent screen_quad;
 
     void create_framebuffers();
     void delete_framebuffers();

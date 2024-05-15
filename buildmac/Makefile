@@ -513,6 +513,30 @@ src/engine/rendering/VertexBuffer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.s
 .PHONY : src/engine/rendering/VertexBuffer.cpp.s
 
+src/engine/systems/PhysicsSystem.o: src/engine/systems/PhysicsSystem.cpp.o
+.PHONY : src/engine/systems/PhysicsSystem.o
+
+# target to build an object file
+src/engine/systems/PhysicsSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.o
+.PHONY : src/engine/systems/PhysicsSystem.cpp.o
+
+src/engine/systems/PhysicsSystem.i: src/engine/systems/PhysicsSystem.cpp.i
+.PHONY : src/engine/systems/PhysicsSystem.i
+
+# target to preprocess a source file
+src/engine/systems/PhysicsSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.i
+.PHONY : src/engine/systems/PhysicsSystem.cpp.i
+
+src/engine/systems/PhysicsSystem.s: src/engine/systems/PhysicsSystem.cpp.s
+.PHONY : src/engine/systems/PhysicsSystem.s
+
+# target to generate assembly for a file
+src/engine/systems/PhysicsSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.s
+.PHONY : src/engine/systems/PhysicsSystem.cpp.s
+
 src/engine/systems/TimerSystem.o: src/engine/systems/TimerSystem.cpp.o
 .PHONY : src/engine/systems/TimerSystem.o
 
@@ -690,6 +714,9 @@ help:
 	@echo "... src/engine/rendering/VertexBuffer.o"
 	@echo "... src/engine/rendering/VertexBuffer.i"
 	@echo "... src/engine/rendering/VertexBuffer.s"
+	@echo "... src/engine/systems/PhysicsSystem.o"
+	@echo "... src/engine/systems/PhysicsSystem.i"
+	@echo "... src/engine/systems/PhysicsSystem.s"
 	@echo "... src/engine/systems/TimerSystem.o"
 	@echo "... src/engine/systems/TimerSystem.i"
 	@echo "... src/engine/systems/TimerSystem.s"

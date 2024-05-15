@@ -27,7 +27,7 @@ static constexpr uint32_t indices[] = {
     1, 2, 3    // second triangle
 };
 
-QuadMesh::QuadMesh(float width, float height)
+QuadMeshComponent::QuadMeshComponent(float width, float height)
 {
     transform.scale_x = width;
     transform.scale_y = height;

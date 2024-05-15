@@ -16,13 +16,13 @@ class VertexArray;
 class VertexBuffer;
 class IndexBuffer;
 
-class QuadMesh
+class QuadMeshComponent
 {
 public:
-    QuadMesh(float width, float height);
-    QuadMesh(float size) : QuadMesh(size, size) {}
-    QuadMesh() : QuadMesh(1.0f, 1.0f) {} // inits with default dimensions of 1.0f 
-    virtual ~QuadMesh() {}
+    QuadMeshComponent(float width, float height);
+    QuadMeshComponent(float size) : QuadMeshComponent(size, size) {}
+    QuadMeshComponent() : QuadMeshComponent(1.0f, 1.0f) {} // inits with default dimensions of 1.0f 
+    virtual ~QuadMeshComponent() {}
     
     Transform2DComponent transform;
     
@@ -37,7 +37,7 @@ private:
     VertexBuffer *vbo;  
 };
 
-class SpriteComponent : public QuadMesh
+class SpriteComponent : public QuadMeshComponent
 {
 public:
     ~SpriteComponent() override {}

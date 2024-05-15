@@ -4,10 +4,12 @@
 #include <stdexcept>
 
 #include "engine/systems/TimerSystem.h"
+#include "engine/systems/PhysicsSystem.h"
 
 Scene::Scene()
 {
     add_system(&TimerSystem::get_base_instance());
+    add_system(&PhysicsSystem::get_base_instance());
 }
 
 void Scene::add_entity(std::unique_ptr<Entity> obj)
