@@ -4,4 +4,4 @@
 
 // this file sets up a test level for stuff
 
-Scene *load_test_level();
+Scene *create_test_level();

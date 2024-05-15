@@ -14,8 +14,7 @@ public:
     Ptr<Scene> get_current_scene() const;
 
     IMPL_SINGLETON_DISPATCHER(SceneManager)
-    SceneManager(SceneManager const&) = delete;
-    void operator=(SceneManager const&) = delete;
+    IMPL_NO_COPY(SceneManager)
 
 private:
     SceneManager() {}

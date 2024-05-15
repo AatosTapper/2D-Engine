@@ -14,7 +14,6 @@ public:
     
     Transform2DComponent transform;
     BoxCollider2DComponent collider;
-    SpriteComponent sprite;
     AnimSpriteComponent animation;
 
     void update_components() override;

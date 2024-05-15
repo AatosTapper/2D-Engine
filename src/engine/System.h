@@ -1,5 +1,7 @@
 #pragma once
 
+#include "singleton.h"
+
 class System
 {
 public:
@@ -7,12 +9,10 @@ public:
 
     virtual void update() = 0; // override this to implement custom logic
 
+    IMPL_NO_COPY(System)
+
 protected:
     System() {}
-public:
-    // deleting these to enforce singleton pattern
-    System(System const&) = delete;
-    void operator=(System const&) = delete;
 };
 
 /*

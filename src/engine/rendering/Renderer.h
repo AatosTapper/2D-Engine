@@ -27,6 +27,7 @@ public:
     ~Renderer();
 
     IMPL_SINGLETON_DISPATCHER(Renderer)
+    IMPL_NO_COPY(Renderer)
 
     void init();
     void start_frame();

@@ -10,15 +10,17 @@
 
 // Use like this:
 
-// Engine::set_window(...);
-// Engine::run();
+// Engine::instance().set_window(...);
+// Engine::instance().run();
 
 class Engine
 {
 public:
+    Engine() {}
     void init();
 
     IMPL_SINGLETON_DISPATCHER(Engine)
+    IMPL_NO_COPY(Engine)
 
     void set_camera(Camera *_camera);
 

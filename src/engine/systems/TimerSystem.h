@@ -61,11 +61,13 @@ using TimerRef = std::shared_ptr<const Timer>;
 class TimerSystem : public System
 {
 public:
+    TimerSystem() {}
     void update() override;
 
     [[nodiscard]] TimerRef set_timer(uint32_t ticks);
     
     IMPL_VIRTUAL_SINGLETON_DISPATCHER(TimerSystem, System)
+    IMPL_NO_COPY(TimerSystem)
 
 private:
     std::vector<std::shared_ptr<Timer>> timer_storage; // timer slots aren't cleared but they are reused

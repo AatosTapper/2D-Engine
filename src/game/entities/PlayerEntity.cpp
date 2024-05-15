@@ -18,8 +18,6 @@ void PlayerEntity::update_components()
 
 void PlayerEntity::on_attach()
 {
-    sprite.get_texture()->filter_nearest();
-
     animation.push_folder_as_frames("../res/animations/test_anim");
 }
 

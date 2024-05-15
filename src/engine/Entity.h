@@ -9,7 +9,7 @@
 
 using Bitflag = uint64_t;
 
-// Flags for gameobjects, represented with each bit being a single flag like this: 0000 0011 0001 1010
+// Flags for entities, represented with each bit being a single flag like this: 0000 0011 0001 1010
 // Add new ones like this: NEW_FLAG = LAST_FLAG << 1
 // You can combine flags with bitwise OR like this: EntityFlags::NPC | EntityFlags::FRIENDLY | etc
 enum EntityFlags : Bitflag

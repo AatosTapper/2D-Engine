@@ -6,10 +6,11 @@
 #include "game/entities/PlayerEntity.h"
 #include "engine/Engine.h"
 
-Scene *load_test_level()
+Scene *create_test_level()
 {
     Scene *scene = new Scene();
 
+    // all images can share the same texture with this
     std::shared_ptr<Texture> rock_bro = std::make_shared<Texture>("../res/textures/rock.png");
 
     auto image = CREATE_ENTITY(ImageEntity);
@@ -35,7 +36,6 @@ Scene *load_test_level()
     scene->add_entity(std::move(image3));
     
     auto player = CREATE_ENTITY(PlayerEntity);
-    player->sprite.add_texture(rock_bro);
     scene->add_entity(std::move(player));
 
     return scene;

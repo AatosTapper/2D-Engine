@@ -1,10 +1,10 @@
 #pragma once
 
 // implements the static instance and a getter for it: S::instance()
-#define IMPL_SINGLETON_DISPATCHER(S)    \
-    static S &instance()                \
+#define IMPL_SINGLETON_DISPATCHER(CLASS)    \
+    static CLASS &instance()                \
     {                                   \
-        static S instance;              \
+        static CLASS instance;              \
         return instance;                \
     }                                   
 
@@ -15,4 +15,8 @@
     static BASE &get_base_instance()                        \
     {                                                       \
         return dynamic_cast<BASE&>(instance());             \
-    }                                                       
+    }
+
+#define IMPL_NO_COPY(CLASS)                 \
+    CLASS(CLASS const&) = delete;           \
+    void operator=(CLASS const&) = delete;
