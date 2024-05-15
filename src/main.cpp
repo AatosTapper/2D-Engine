@@ -4,10 +4,7 @@
 #include "engine/Window.h"
 #include "engine/Engine.h"
 #include "engine/Scene.h"
-#include "engine/gameobjects/ImageGameObject.h"
 #include "engine/SceneManager.h"
-
-#include "game/gameobjects/PlayerGameObject.h"
 
 #include "settings.h"
 #include "Ref.h"
@@ -21,12 +18,10 @@ int main()
     
     Camera camera(Engine::instance().get_window()->get_aspect_ratio(), Settings::CAM_FOV, Settings::CAM_PROJECTION);
     camera.back(20.0f);
+    
     Engine::instance().set_camera(&camera);
-
     SceneManager::instance().load_scene("TestLevel");
-
     Engine::instance().run();
-
     SceneManager::instance().unload_current_scene();
     return 0;
 }

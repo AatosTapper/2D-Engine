@@ -93,7 +93,7 @@ my_sprite.transform.x = 5.0;
 etc.
 
 ---------------------------------------------------------------------
-Then in the update_components() function of a GameObject, 
+Then in the update_components() function of a Entity, 
 send the sprite and a transform matrix to renderer:
 ---------------------------------------------------------------------
 

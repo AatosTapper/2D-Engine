@@ -685,7 +685,7 @@ CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__hash_table \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__node_handle \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/optional \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/GameObject.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Entity.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__ios/fpos.h \
@@ -919,16 +919,12 @@ CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.o: \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/gtc/type_ptr.inl \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/System.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/ImageGameObject.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../GameObject.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/SpriteComponent.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/entities/ImageEntity.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/TransformComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/TransformComponent.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/../components/ColliderComponent.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/gameobjects/PlayerGameObject.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/ColliderComponent.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/entities/PlayerEntity.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/AnimSpriteComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/TimerSystem.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/singleton.h \

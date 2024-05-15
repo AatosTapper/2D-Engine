@@ -321,29 +321,29 @@ src/engine/components/TransformComponent.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.s
 .PHONY : src/engine/components/TransformComponent.cpp.s
 
-src/engine/gameobjects/ImageGameObject.o: src/engine/gameobjects/ImageGameObject.cpp.o
-.PHONY : src/engine/gameobjects/ImageGameObject.o
+src/engine/entities/ImageEntity.o: src/engine/entities/ImageEntity.cpp.o
+.PHONY : src/engine/entities/ImageEntity.o
 
 # target to build an object file
-src/engine/gameobjects/ImageGameObject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o
-.PHONY : src/engine/gameobjects/ImageGameObject.cpp.o
+src/engine/entities/ImageEntity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o
+.PHONY : src/engine/entities/ImageEntity.cpp.o
 
-src/engine/gameobjects/ImageGameObject.i: src/engine/gameobjects/ImageGameObject.cpp.i
-.PHONY : src/engine/gameobjects/ImageGameObject.i
+src/engine/entities/ImageEntity.i: src/engine/entities/ImageEntity.cpp.i
+.PHONY : src/engine/entities/ImageEntity.i
 
 # target to preprocess a source file
-src/engine/gameobjects/ImageGameObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.i
-.PHONY : src/engine/gameobjects/ImageGameObject.cpp.i
+src/engine/entities/ImageEntity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.i
+.PHONY : src/engine/entities/ImageEntity.cpp.i
 
-src/engine/gameobjects/ImageGameObject.s: src/engine/gameobjects/ImageGameObject.cpp.s
-.PHONY : src/engine/gameobjects/ImageGameObject.s
+src/engine/entities/ImageEntity.s: src/engine/entities/ImageEntity.cpp.s
+.PHONY : src/engine/entities/ImageEntity.s
 
 # target to generate assembly for a file
-src/engine/gameobjects/ImageGameObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.s
-.PHONY : src/engine/gameobjects/ImageGameObject.cpp.s
+src/engine/entities/ImageEntity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.s
+.PHONY : src/engine/entities/ImageEntity.cpp.s
 
 src/engine/rendering/Camera.o: src/engine/rendering/Camera.cpp.o
 .PHONY : src/engine/rendering/Camera.o
@@ -561,29 +561,29 @@ src/engine/utils/Random.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/utils/Random.cpp.s
 .PHONY : src/engine/utils/Random.cpp.s
 
-src/game/gameobjects/PlayerGameObject.o: src/game/gameobjects/PlayerGameObject.cpp.o
-.PHONY : src/game/gameobjects/PlayerGameObject.o
+src/game/entities/PlayerEntity.o: src/game/entities/PlayerEntity.cpp.o
+.PHONY : src/game/entities/PlayerEntity.o
 
 # target to build an object file
-src/game/gameobjects/PlayerGameObject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o
-.PHONY : src/game/gameobjects/PlayerGameObject.cpp.o
+src/game/entities/PlayerEntity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o
+.PHONY : src/game/entities/PlayerEntity.cpp.o
 
-src/game/gameobjects/PlayerGameObject.i: src/game/gameobjects/PlayerGameObject.cpp.i
-.PHONY : src/game/gameobjects/PlayerGameObject.i
+src/game/entities/PlayerEntity.i: src/game/entities/PlayerEntity.cpp.i
+.PHONY : src/game/entities/PlayerEntity.i
 
 # target to preprocess a source file
-src/game/gameobjects/PlayerGameObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.i
-.PHONY : src/game/gameobjects/PlayerGameObject.cpp.i
+src/game/entities/PlayerEntity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.i
+.PHONY : src/game/entities/PlayerEntity.cpp.i
 
-src/game/gameobjects/PlayerGameObject.s: src/game/gameobjects/PlayerGameObject.cpp.s
-.PHONY : src/game/gameobjects/PlayerGameObject.s
+src/game/entities/PlayerEntity.s: src/game/entities/PlayerEntity.cpp.s
+.PHONY : src/game/entities/PlayerEntity.s
 
 # target to generate assembly for a file
-src/game/gameobjects/PlayerGameObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.s
-.PHONY : src/game/gameobjects/PlayerGameObject.cpp.s
+src/game/entities/PlayerEntity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.s
+.PHONY : src/game/entities/PlayerEntity.cpp.s
 
 src/game/scenes/TestLevel.o: src/game/scenes/TestLevel.cpp.o
 .PHONY : src/game/scenes/TestLevel.o
@@ -666,9 +666,9 @@ help:
 	@echo "... src/engine/components/TransformComponent.o"
 	@echo "... src/engine/components/TransformComponent.i"
 	@echo "... src/engine/components/TransformComponent.s"
-	@echo "... src/engine/gameobjects/ImageGameObject.o"
-	@echo "... src/engine/gameobjects/ImageGameObject.i"
-	@echo "... src/engine/gameobjects/ImageGameObject.s"
+	@echo "... src/engine/entities/ImageEntity.o"
+	@echo "... src/engine/entities/ImageEntity.i"
+	@echo "... src/engine/entities/ImageEntity.s"
 	@echo "... src/engine/rendering/Camera.o"
 	@echo "... src/engine/rendering/Camera.i"
 	@echo "... src/engine/rendering/Camera.s"
@@ -696,9 +696,9 @@ help:
 	@echo "... src/engine/utils/Random.o"
 	@echo "... src/engine/utils/Random.i"
 	@echo "... src/engine/utils/Random.s"
-	@echo "... src/game/gameobjects/PlayerGameObject.o"
-	@echo "... src/game/gameobjects/PlayerGameObject.i"
-	@echo "... src/game/gameobjects/PlayerGameObject.s"
+	@echo "... src/game/entities/PlayerEntity.o"
+	@echo "... src/game/entities/PlayerEntity.i"
+	@echo "... src/game/entities/PlayerEntity.s"
 	@echo "... src/game/scenes/TestLevel.o"
 	@echo "... src/game/scenes/TestLevel.i"
 	@echo "... src/game/scenes/TestLevel.s"

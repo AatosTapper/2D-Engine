@@ -10,18 +10,18 @@ Scene::Scene()
     add_system(&TimerSystem::get_base_instance());
 }
 
-void Scene::add_game_object(std::unique_ptr<GameObject> obj)
+void Scene::add_entity(std::unique_ptr<Entity> obj)
 {
     assert(obj && "Cannot add an invalid game object to a scene");
-    const GameObject::id_t id = obj->get_id();
+    const Entity::id_t id = obj->get_id();
 
-    game_object_storage[id] = std::move(obj);
-    if (std::find(current_game_objects.begin(), current_game_objects.end(), id) == current_game_objects.end()) 
+    entity_storage[id] = std::move(obj);
+    if (std::find(current_entities.begin(), current_entities.end(), id) == current_entities.end()) 
     {
-        current_game_objects.push_back(id);
+        current_entities.push_back(id);
     }
 
-    game_object_storage.at(id)->on_attach();
+    entity_storage.at(id)->on_attach();
 }
 
 void Scene::add_system(Ptr<System> system)
@@ -35,30 +35,30 @@ void Scene::add_system(Ptr<System> system)
     game_systems.push_back(system);
 }
 
-std::optional<Ptr<GameObject>> Scene::get_game_object(GameObject::id_t id) const
+std::optional<Ptr<Entity>> Scene::get_entity(Entity::id_t id) const
 {
-    if (game_object_storage.find(id) == game_object_storage.end())
+    if (entity_storage.find(id) == entity_storage.end())
     {
         return std::nullopt;
     }
-    return Ptr<GameObject>(game_object_storage.at(id).get());
+    return Ptr<Entity>(entity_storage.at(id).get());
 }
 
-std::vector<Ptr<GameObject>> Scene::get_all_game_objects() const
+std::vector<Ptr<Entity>> Scene::get_all_entities() const
 {
-    std::vector<Ptr<GameObject>> output;
-    output.reserve(game_object_storage.size());
-    for (const auto &it : game_object_storage)
+    std::vector<Ptr<Entity>> output;
+    output.reserve(entity_storage.size());
+    for (const auto &it : entity_storage)
     {
         output.push_back(it.second.get());
     }
     return output;
 }
 
-std::vector<Ptr<GameObject>> Scene::get_all_game_objects_with_flags(ObjectFlags flag) const
+std::vector<Ptr<Entity>> Scene::get_all_entities_with_flags(EntityFlags flag) const
 {
-    std::vector<Ptr<GameObject>> output;
-    for (const auto &it : game_object_storage)
+    std::vector<Ptr<Entity>> output;
+    for (const auto &it : entity_storage)
     {
         if (it.second->has_flags(flag))
         {
@@ -68,10 +68,10 @@ std::vector<Ptr<GameObject>> Scene::get_all_game_objects_with_flags(ObjectFlags 
     return output;
 }
 
-std::vector<Ptr<GameObject>> Scene::get_all_game_objects_except_flags(ObjectFlags flag) const
+std::vector<Ptr<Entity>> Scene::get_all_entities_except_flags(EntityFlags flag) const
 {
-    std::vector<Ptr<GameObject>> output;
-    for (const auto &it : game_object_storage)
+    std::vector<Ptr<Entity>> output;
+    for (const auto &it : entity_storage)
     {
         if (!it.second->has_flags(flag))
         {
@@ -81,7 +81,7 @@ std::vector<Ptr<GameObject>> Scene::get_all_game_objects_except_flags(ObjectFlag
     return output;
 }
 
-void Scene::delete_game_object(GameObject::id_t id)
+void Scene::delete_entity(Entity::id_t id)
 {
     if (std::find(delete_queue.begin(), delete_queue.end(), id) == delete_queue.end()) 
     {
@@ -93,14 +93,14 @@ void Scene::update()
 {
     handle_deletions();
     
-    for (auto id : current_game_objects)
+    for (auto id : current_entities)
     {
-        game_object_storage.at(id)->on_update();
+        entity_storage.at(id)->on_update();
     }
 
-    for (auto id : current_game_objects)
+    for (auto id : current_entities)
     {
-        game_object_storage.at(id)->update_components();
+        entity_storage.at(id)->update_components();
     }
 
     for (auto system : game_systems)
@@ -114,16 +114,16 @@ void Scene::handle_deletions()
     // first run all on_destroy()s
     for (auto id : delete_queue)
     {
-        game_object_storage.at(id)->on_destroy();
+        entity_storage.at(id)->on_destroy();
     }
 
     // only after that can we delete them
     for (auto id : delete_queue)
     {   
-        game_object_storage.erase(id);
-        current_game_objects.erase(
-            std::remove(current_game_objects.begin(), current_game_objects.end(), id), 
-            current_game_objects.end()
+        entity_storage.erase(id);
+        current_entities.erase(
+            std::remove(current_entities.begin(), current_entities.end(), id), 
+            current_entities.end()
         );
     }
 

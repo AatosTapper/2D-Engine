@@ -16,7 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/AnimSpriteComponent.cpp" "CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.cpp" "CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/TransformComponent.cpp" "CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o.d"
-  "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/ImageGameObject.cpp" "CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o.d"
+  "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/entities/ImageEntity.cpp" "CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Camera.cpp" "CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/IndexBuffer.cpp" "CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Renderer.cpp" "CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o.d"
@@ -26,7 +26,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexBuffer.cpp" "CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/TimerSystem.cpp" "CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/utils/Random.cpp" "CMakeFiles/main.dir/src/engine/utils/Random.cpp.o" "gcc" "CMakeFiles/main.dir/src/engine/utils/Random.cpp.o.d"
-  "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/gameobjects/PlayerGameObject.cpp" "CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o" "gcc" "CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o.d"
+  "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/entities/PlayerEntity.cpp" "CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o" "gcc" "CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/scenes/TestLevel.cpp" "CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.o" "gcc" "CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/main.cpp" "CMakeFiles/main.dir/src/main.cpp.o" "gcc" "CMakeFiles/main.dir/src/main.cpp.o.d"
   )

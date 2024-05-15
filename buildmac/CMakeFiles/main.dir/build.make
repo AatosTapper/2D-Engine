@@ -167,19 +167,19 @@ CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.s"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/TransformComponent.cpp -o CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.s
 
-CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/ImageGameObject.cpp
-CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o -MF CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o.d -o CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/ImageGameObject.cpp
+CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/entities/ImageEntity.cpp
+CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o -MF CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o.d -o CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/entities/ImageEntity.cpp
 
-CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/ImageGameObject.cpp > CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.i
+CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/entities/ImageEntity.cpp > CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.i
 
-CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/gameobjects/ImageGameObject.cpp -o CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.s
+CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/entities/ImageEntity.cpp -o CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.s
 
 CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Camera.cpp
@@ -307,19 +307,19 @@ CMakeFiles/main.dir/src/engine/utils/Random.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/utils/Random.cpp.s"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/utils/Random.cpp -o CMakeFiles/main.dir/src/engine/utils/Random.cpp.s
 
-CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/gameobjects/PlayerGameObject.cpp
-CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o -MF CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o.d -o CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/gameobjects/PlayerGameObject.cpp
+CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/entities/PlayerEntity.cpp
+CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o -MF CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o.d -o CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/entities/PlayerEntity.cpp
 
-CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/gameobjects/PlayerGameObject.cpp > CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.i
+CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/entities/PlayerEntity.cpp > CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.i
 
-CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/gameobjects/PlayerGameObject.cpp -o CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.s
+CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/entities/PlayerEntity.cpp -o CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.s
 
 CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/scenes/TestLevel.cpp
@@ -372,7 +372,7 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.o" \
 "CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o" \
 "CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o" \
-"CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o" \
+"CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o" \
 "CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o" \
 "CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o" \
 "CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o" \
@@ -382,7 +382,7 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o" \
 "CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o" \
 "CMakeFiles/main.dir/src/engine/utils/Random.cpp.o" \
-"CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o" \
+"CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o" \
 "CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.o" \
 "CMakeFiles/main.dir/src/main.cpp.o" \
 "CMakeFiles/main.dir/dep/glad/glad.c.o"
@@ -397,7 +397,7 @@ main: CMakeFiles/main.dir/src/engine/Window.cpp.o
 main: CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.o
 main: CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o
 main: CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o
-main: CMakeFiles/main.dir/src/engine/gameobjects/ImageGameObject.cpp.o
+main: CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o
 main: CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o
 main: CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o
 main: CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o
@@ -407,7 +407,7 @@ main: CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.o
 main: CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o
 main: CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o
 main: CMakeFiles/main.dir/src/engine/utils/Random.cpp.o
-main: CMakeFiles/main.dir/src/game/gameobjects/PlayerGameObject.cpp.o
+main: CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o
 main: CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.o
 main: CMakeFiles/main.dir/src/main.cpp.o
 main: CMakeFiles/main.dir/dep/glad/glad.c.o
