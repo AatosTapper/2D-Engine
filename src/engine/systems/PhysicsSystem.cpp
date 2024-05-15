@@ -15,7 +15,7 @@ void PhysicsSystem::update()
         collision_update = [this]{ calc_collisions(); };
     }
 
-    for (uint32_t i = 0; i < substeps; i++)
+    for (uint32_t i = 0; i < iterations; i++)
     {
         collision_update();
         for (const auto &entity : entity_queue)

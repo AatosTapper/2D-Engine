@@ -25,14 +25,14 @@ public:
     void queue_entity(std::tuple<Ref<PhysicsComponent>, Ptr<const BoxCollider2DComponent>, Ref<Transform2DComponent>> entity);
 
     // run simulation in multiple substeps for better collision accuracy etc
-    void set_substeps(uint32_t new_substeps) { substeps = new_substeps; delta_time = Settings::UPDATE_TIME_MS / static_cast<double>(substeps); }
+    void set_iterations(uint32_t new_iterations) { iterations = new_iterations; delta_time = Settings::UPDATE_TIME_MS / static_cast<double>(iterations); }
 
     void update() override;
 
 private:
     std::vector<std::tuple<Ref<PhysicsComponent>, Ptr<const BoxCollider2DComponent>, Ref<Transform2DComponent>>> entity_queue;
-    uint32_t substeps = 2;
-    double delta_time = Settings::UPDATE_TIME_MS / static_cast<double>(substeps);
+    uint32_t iterations = 2;
+    double delta_time = Settings::UPDATE_TIME_MS / static_cast<double>(iterations);
 
     void calc_collisions() const;
     glm::vec2 calc_mt_vec(
