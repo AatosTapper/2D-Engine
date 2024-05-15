@@ -31,7 +31,7 @@ public:
 
 private:
     std::vector<std::tuple<Ref<PhysicsComponent>, Ptr<const BoxCollider2DComponent>, Ref<Transform2DComponent>>> entity_queue;
-    uint32_t iterations = 2;
+    uint32_t iterations = 64;
     double delta_time = Settings::UPDATE_TIME_MS / static_cast<double>(iterations);
 
     void calc_collisions() const;
