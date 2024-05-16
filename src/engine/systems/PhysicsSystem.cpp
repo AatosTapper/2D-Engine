@@ -9,19 +9,26 @@ void PhysicsSystem::queue_entity(std::tuple<Ref<PhysicsComponent>, Ptr<const Box
 
 void PhysicsSystem::update()
 {
-    std::function<void()> collision_update = []{};
-    if (entity_queue.size() >= 2)
+    // trying to optimize branch prediction
+    std::function<void()> solve_collisions = [this]
     {
-        collision_update = [this]{ calc_collisions(); };
-    }
-
-    for (uint32_t i = 0; i < iterations; i++)
-    {
-        collision_update();
+        calc_collisions(); 
         for (const auto &entity : entity_queue)
         {
-            integrate_forces(std::get<0>(entity), std::get<2>(entity));
+            integrate_forces(std::get<0>(entity), std::get<2>(entity), substep_delta_time);
         }
+    };
+    if (entity_queue.size() < 2) { solve_collisions = []{}; }
+
+    // initial force calculations don't benefit from substeps 
+    for (const auto &entity : entity_queue)
+    {
+        integrate_forces(std::get<0>(entity), std::get<2>(entity), Settings::UPDATE_TIME_MS);
+    }
+    // solve collisions with multiple iterations
+    for (uint32_t i = 0; i < iterations; i++)
+    {
+        solve_collisions();
     }
     entity_queue.clear();
 }
@@ -46,6 +53,7 @@ glm::vec2 PhysicsSystem::calc_mt_vec(
     const Ref<Transform2DComponent> pos_1, 
     const Ref<Transform2DComponent> pos_2) const
 {
+    return glm::vec2(0.0f);
     /*
     this is saved here so i don't need to write it again
 
@@ -74,19 +82,19 @@ glm::vec2 PhysicsSystem::calc_mt_vec(
     */
 }
 
-void PhysicsSystem::integrate_forces(const Ref<PhysicsComponent> physics, const Ref<Transform2DComponent> transform) const
+void PhysicsSystem::integrate_forces(const Ref<PhysicsComponent> physics, const Ref<Transform2DComponent> transform, const double h) const
 {
     // TODO: use Runge Kutta 4 integration to calculate the new velocity and apply it to the position
     
     // currently just euler's method
 
-    const float inverse_mass = 1.0 / physics.get().mass;
+    const float inverse_mass = 1.0f / physics.get().mass;
 
-    const glm::vec2 acceleration = physics.get().forces * inverse_mass;
+    const glm::vec2 acceleration = physics.get().get_forces() * inverse_mass;
     physics.get().velocity += acceleration;
 
-    transform.get().x += physics.get().velocity.x * delta_time;
-    transform.get().y += physics.get().velocity.y * delta_time;
+    transform.get().x += static_cast<double>(physics.get().velocity.x) * h;
+    transform.get().y += static_cast<double>(physics.get().velocity.y) * h;
 
-    physics.get().forces = { 0.0f, 0.0f };
+    physics.get().get_forces() = { 0.0f, 0.0f };
 }
