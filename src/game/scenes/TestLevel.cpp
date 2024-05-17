@@ -2,8 +2,10 @@
 
 #include <memory>
 
-#include "engine/entities/ImageEntity.h"
 #include "game/entities/PlayerEntity.h"
+
+#include "engine/entities/ImageEntity.h"
+#include "engine/entities/StaticEntity.h"
 #include "engine/Engine.h"
 
 Scene *create_test_level()
@@ -34,9 +36,22 @@ Scene *create_test_level()
     image3->transform.x = -5.0f;
     image3->transform.y = -4.0f;
     scene->add_entity(std::move(image3));
-    
+
     auto player = CREATE_ENTITY(PlayerEntity);
+    player->transform.y = 3.0f;
     scene->add_entity(std::move(player));
+
+    auto wall2 = CREATE_ENTITY(StaticEntity);
+    wall2->transform.x = 1.0f;
+    scene->add_entity(std::move(wall2));
+
+    auto wall1 = CREATE_ENTITY(StaticEntity);
+    wall1->transform.x = 3.0f;
+    scene->add_entity(std::move(wall1));
+
+    auto wall3 = CREATE_ENTITY(StaticEntity);
+    wall3->transform.x = -4.0f;
+    scene->add_entity(std::move(wall3));
 
     return scene;
 }

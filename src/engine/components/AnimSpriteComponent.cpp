@@ -7,12 +7,10 @@
 #include "engine/rendering/Renderer.h"
 #include "settings.h"
 
-static constexpr double global_update_time = 1.0 / Settings::UPDATES_PER_SEC;
-
 void AnimSpriteComponent::update(const glm::mat4 &parent_transform)
 {
     bool render = true;
-    elapsed_time += global_update_time;
+    elapsed_time += Settings::UPDATE_TIME_MS;
     while (elapsed_time >= frame_factor)
     {
         switch (playback_type)
@@ -158,6 +156,13 @@ void AnimSpriteComponent::end_animation()
         curr_direction = false;
         break;
     }
+}
+
+void AnimSpriteComponent::set_frame(uint32_t frame)
+{
+    assert(!frames.empty() && "Cannot access an empty animation");
+    const uint32_t position = std::min(static_cast<uint32_t>(frames.size() - 1), frame);
+    curr_frame = position;
 }
 
 void AnimSpriteComponent::set_fps(uint32_t new_fps)

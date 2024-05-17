@@ -15,4 +15,6 @@ namespace Settings
     constexpr bool CAM_PROJECTION = PROJ_3D;
 
     constexpr bool HDR = true;
+
+    constexpr uint32_t INITIAL_PHYSICS_ITERATIONS = 32; // this might be an overkill
 }

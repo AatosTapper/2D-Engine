@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o.d"
   "CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o"
   "CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o.d"
+  "CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.o"
+  "CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.o.d"
   "CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o"
   "CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o.d"
   "CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o"

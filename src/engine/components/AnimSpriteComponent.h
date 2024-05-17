@@ -44,6 +44,7 @@ public:
     void stop() { playback_type = PlaybackType::NOT_PLAYING; end_animation(); };
     void hide() { playback_type = PlaybackType::HIDDEN; }
 
+    void set_frame(uint32_t frame);
     void set_fps(uint32_t new_fps);
     void set_stop_behavior(StopBehavior behavior) { stop_behavior = behavior; }
 

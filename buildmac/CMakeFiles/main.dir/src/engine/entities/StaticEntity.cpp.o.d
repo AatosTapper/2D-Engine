@@ -1,6 +1,6 @@
-CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o: \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/entities/PlayerEntity.cpp \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/entities/PlayerEntity.h \
+CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.o: \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/entities/StaticEntity.cpp \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/entities/StaticEntity.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Entity.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__assert \
@@ -916,7 +916,11 @@ CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o: \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/gtc/../mat4x2.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/gtc/../mat4x3.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/gtc/type_ptr.inl \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/TransformComponent.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/AnimSpriteComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/ColliderComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/PhysicsComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/settings.h \
@@ -941,16 +945,8 @@ CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/year_month_weekday.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/file_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/literals.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/AnimSpriteComponent.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/TimerSystem.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/PhysicsSystem.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/System.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/singleton.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Engine.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Scene.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Window.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Renderer.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Shader.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/PhysicsSystem.h
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Shader.h

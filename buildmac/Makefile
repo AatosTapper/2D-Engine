@@ -345,6 +345,30 @@ src/engine/entities/ImageEntity.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.s
 .PHONY : src/engine/entities/ImageEntity.cpp.s
 
+src/engine/entities/StaticEntity.o: src/engine/entities/StaticEntity.cpp.o
+.PHONY : src/engine/entities/StaticEntity.o
+
+# target to build an object file
+src/engine/entities/StaticEntity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.o
+.PHONY : src/engine/entities/StaticEntity.cpp.o
+
+src/engine/entities/StaticEntity.i: src/engine/entities/StaticEntity.cpp.i
+.PHONY : src/engine/entities/StaticEntity.i
+
+# target to preprocess a source file
+src/engine/entities/StaticEntity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.i
+.PHONY : src/engine/entities/StaticEntity.cpp.i
+
+src/engine/entities/StaticEntity.s: src/engine/entities/StaticEntity.cpp.s
+.PHONY : src/engine/entities/StaticEntity.s
+
+# target to generate assembly for a file
+src/engine/entities/StaticEntity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.s
+.PHONY : src/engine/entities/StaticEntity.cpp.s
+
 src/engine/rendering/Camera.o: src/engine/rendering/Camera.cpp.o
 .PHONY : src/engine/rendering/Camera.o
 
@@ -693,6 +717,9 @@ help:
 	@echo "... src/engine/entities/ImageEntity.o"
 	@echo "... src/engine/entities/ImageEntity.i"
 	@echo "... src/engine/entities/ImageEntity.s"
+	@echo "... src/engine/entities/StaticEntity.o"
+	@echo "... src/engine/entities/StaticEntity.i"
+	@echo "... src/engine/entities/StaticEntity.s"
 	@echo "... src/engine/rendering/Camera.o"
 	@echo "... src/engine/rendering/Camera.i"
 	@echo "... src/engine/rendering/Camera.s"

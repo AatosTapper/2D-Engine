@@ -7,11 +7,14 @@
 #include "singleton.h"
 #include "Ref.h"
 #include "settings.h"
+#include "engine/Entity.h"
 
 #include <vector>
 #include <tuple>
 
 #define NULL_COLLIDER nullptr
+
+using ComponentTuple = std::tuple<Ref<PhysicsComponent>, Ptr<const BoxCollider2DComponent>, Ref<Transform2DComponent>>;
 
 class PhysicsSystem : public System
 {
@@ -22,7 +25,7 @@ public:
     IMPL_NO_COPY(PhysicsSystem)
 
     // params: { physics component, box collider (optional), parent transform 2D }
-    void queue_entity(std::tuple<Ref<PhysicsComponent>, Ptr<const BoxCollider2DComponent>, Ref<Transform2DComponent>> entity);
+    void queue_entity(ComponentTuple entity);
 
     // run simulation in multiple substeps for better collision accuracy etc
     void set_iterations(uint32_t new_iterations) { iterations = new_iterations; substep_delta_time = Settings::UPDATE_TIME_MS / static_cast<double>(iterations); }
@@ -30,8 +33,8 @@ public:
     void update() override;
 
 private:
-    std::vector<std::tuple<Ref<PhysicsComponent>, Ptr<const BoxCollider2DComponent>, Ref<Transform2DComponent>>> entity_queue;
-    uint32_t iterations = 8;
+    std::vector<ComponentTuple> entity_queue;
+    uint32_t iterations = Settings::INITIAL_PHYSICS_ITERATIONS;
     double substep_delta_time = Settings::UPDATE_TIME_MS / static_cast<double>(iterations);
 
     void calc_collisions() const;
@@ -41,5 +44,6 @@ private:
         const Ref<Transform2DComponent> pos_1, 
         const Ref<Transform2DComponent> pos_2) const;
 
+    void calc_collision_impulses(const ComponentTuple &ent1, const ComponentTuple &ent2) const;
     void integrate_forces(const Ref<PhysicsComponent> physics, const Ref<Transform2DComponent> transform, const double h) const;
 };
