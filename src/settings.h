@@ -16,5 +16,5 @@ namespace Settings
 
     constexpr bool HDR = true;
 
-    constexpr uint32_t INITIAL_PHYSICS_ITERATIONS = 32; // this might be an overkill
+    constexpr uint32_t INITIAL_PHYSICS_ITERATIONS = 16; // this might be an overkill
 }

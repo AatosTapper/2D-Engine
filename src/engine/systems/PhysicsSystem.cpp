@@ -35,22 +35,18 @@ void PhysicsSystem::calc_collisions() const
 {
     for (uint32_t i = 0; i < entity_queue.size() - 1; i++)
     {
-        if (std::get<1>(entity_queue.at(i)) == nullptr) continue; // checking for collider
+        if (std::get<1>(entity_queue.at(i)) == NULL_COLLIDER) continue; // checking for collider
 
         for (uint32_t j = i + 1; j < entity_queue.size(); j++)
         {
-            if (std::get<1>(entity_queue.at(j)) == nullptr) continue;
+            if (std::get<1>(entity_queue.at(j)) == NULL_COLLIDER) continue;
 
             calc_collision_impulses(entity_queue.at(i), entity_queue.at(j));            
         }
     }
 }
 
-glm::vec2 PhysicsSystem::calc_mt_vec(
-    const Ptr<const BoxCollider2DComponent> &col_1, 
-    const Ptr<const BoxCollider2DComponent> &col_2, 
-    const Ref<Transform2DComponent> pos_1, 
-    const Ref<Transform2DComponent> pos_2) const
+glm::vec2 PhysicsSystem::calc_mt_vec(const Ptr<const BoxCollider2DComponent> &col_1, const Ptr<const BoxCollider2DComponent> &col_2, const Ref<Transform2DComponent> pos_1, const Ref<Transform2DComponent> pos_2) const
 {
     glm::vec2 output(0.0f);
 
@@ -76,20 +72,20 @@ glm::vec2 PhysicsSystem::calc_mt_vec(
     }
 
     // Calculate the MTV for overlapping AABBs
-    const float absLeft = std::abs(left);
-    const float absRight = std::abs(right);
-    const float absBottom = std::abs(bottom);
-    const float absTop = std::abs(top);
+    const float abs_left = std::abs(left);
+    const float abs_right = std::abs(right);
+    const float abs_bottom = std::abs(bottom);
+    const float abs_top = std::abs(top);
 
-    if (absLeft < absRight && absLeft < absBottom && absLeft < absTop)
+    if (abs_left < abs_right && abs_left < abs_bottom && abs_left < abs_top)
     {
         output.x = right;
     }
-    else if (absRight < absLeft && absRight < absBottom && absRight < absTop)
+    else if (abs_right < abs_left && abs_right < abs_bottom && abs_right < abs_top)
     {
         output.x = left;
     }
-    else if (absBottom < absLeft && absBottom < absRight && absBottom < absTop)
+    else if (abs_bottom < abs_left && abs_bottom < abs_right && abs_bottom < abs_top)
     {
         output.y = top;
     }
@@ -114,7 +110,7 @@ void PhysicsSystem::calc_collision_impulses(const ComponentTuple &ent1, const Co
     const glm::vec2 collision_normal = glm::normalize(mtv);
     const float relative_velocity_along_normal = glm::dot(relative_velocity, collision_normal);
 
-    //if (relative_velocity_along_normal < 0.0f) return;
+    if (relative_velocity_along_normal < 0.0f) return;
 
     const float e = std::min(physics_1.get().restitution, physics_2.get().restitution);
     const float impulse_magnitude = -(1.0f + e) * relative_velocity_along_normal;
@@ -123,19 +119,21 @@ void PhysicsSystem::calc_collision_impulses(const ComponentTuple &ent1, const Co
     physics_2.get().forces -= impulse_magnitude * collision_normal;
 
     // correcting positions
-    const float percent = 0.005f;
-    const float slop = 0.001f;
-    const float inverse_mass_1 = 1.0f / physics_1.get().mass;
-    const float inverse_mass_2 = 1.0f / physics_2.get().mass;
-    const float correction_amount = std::max(glm::length(mtv) - slop, 0.0f) / (inverse_mass_1 + inverse_mass_2) * percent;
-    const glm::vec2 correction = collision_normal * correction_amount;
+    const float percent = std::max(0.5f / iterations, 0.01f);
+    const float slop = 0.04f;
+    const float penetration_depth = std::max(std::max(std::abs(mtv.x), std::abs(mtv.y)) - slop, 0.0f);
+    const float correction_amount = penetration_depth * percent * 0.1f;
+
+    const glm::vec2 correction = collision_normal * correction_amount / 2.0f;
 
     //std::cout << "X = " << collision_normal.x << "    Y = " << collision_normal.y << "\n";
+    const float mass_ratio_1 = physics_2.get().mass / (physics_1.get().mass + physics_2.get().mass);
+    const float mass_ratio_2 = physics_1.get().mass / (physics_1.get().mass + physics_2.get().mass);
 
-    transform_1.get().x -= inverse_mass_1 * correction.x;
-    transform_1.get().y -= inverse_mass_1 * correction.y;
-    transform_2.get().x += inverse_mass_2 * correction.x;
-    transform_2.get().y += inverse_mass_2 * correction.y;
+    transform_1.get().x -= correction.x * mass_ratio_1;
+    transform_1.get().y -= correction.y * mass_ratio_1;
+    transform_2.get().x += correction.x * mass_ratio_2;
+    transform_2.get().y += correction.y * mass_ratio_2;
 }
 
 void PhysicsSystem::integrate_forces(const Ref<PhysicsComponent> physics, const Ref<Transform2DComponent> transform, const double h) const

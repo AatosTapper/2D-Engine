@@ -18,7 +18,7 @@ void PlayerEntity::update_components()
     animation.update(transform.get_matrix());
     PhysicsSystem::instance().queue_entity({ physics, &collider, transform });
 
-    physics.mass = 15.0f;
+    physics.mass = 10.0f;
 }
 
 void PlayerEntity::on_attach()
