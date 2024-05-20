@@ -135,21 +135,24 @@ void PhysicsSystem::resolve_collision(const ComponentTuple &ent1, const Componen
     transform_2.get().y += correction.y * mass_ratio_2;
 }
 
-void PhysicsSystem::integrate_forces(const Ref<PhysicsComponent> physics, const Ref<Transform2DComponent> transform, const double h) const
+static inline glm::vec2 calc_euler_velocity(glm::vec2 velocity, const glm::vec2 &forces, float mass, float h)
+{
+    const glm::vec2 acceleration = forces / mass;
+    return velocity + acceleration * h;         // this is sus, not sure about it
+}
+
+void PhysicsSystem::integrate_forces(const Ref<PhysicsComponent> physics, const Ref<Transform2DComponent> transform, double h) const
 {
 #ifdef PHYSICS_SOLVER_EULER
 
-    const glm::vec2 acceleration = physics.get().forces / physics.get().mass;
-    physics.get().velocity += acceleration;
-
+    physics.get().velocity = calc_euler_velocity(physics.get().velocity, physics.get().forces, physics.get().mass, static_cast<float>(h));
     transform.get().x += static_cast<double>(physics.get().velocity.x) * h;
     transform.get().y += static_cast<double>(physics.get().velocity.y) * h;
-
-    physics.get().forces = { 0.0f, 0.0f };
-
-#elif defined(PHYSICS_SOLVER_RK4)
     
-    static_assert(false, "PHYSICS_SOLVER_RK4");
+#elif defined(PHYSICS_SOLVER_RK4)
+
+    // TODO :(
 
 #endif
+    physics.get().forces = { 0.0f, 0.0f };
 }

@@ -16,7 +16,7 @@ namespace Settings
 
     constexpr bool HDR = true;
 
-    constexpr uint32_t INITIAL_PHYSICS_ITERATIONS = 16; // this might be an overkill
+    constexpr uint32_t INITIAL_PHYSICS_ITERATIONS = 16;
     #define PHYSICS_SOLVER_EULER 
-    //#define PHYSICS_SOLVER_RK4
+    #define PHYSICS_SOLVER_RK4
 }

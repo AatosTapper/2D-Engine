@@ -37,22 +37,22 @@ void PlayerEntity::on_update()
 
     if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
     {
-        physics.forces.y += 2.0f;
+        physics.forces.y += 38.0f;
     }
 
     if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
     {
-        physics.forces.y -= 2.0f;
+        physics.forces.y -= 38.0f;
     }
 
     if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
     {
-        physics.forces.x -= 2.0f;
+        physics.forces.x -= 38.0f;
     }
 
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
     {
-        physics.forces.x += 2.0f;
+        physics.forces.x += 38.0f;
     }
 }
 

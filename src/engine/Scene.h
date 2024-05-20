@@ -3,7 +3,7 @@
 #include <vector>
 #include <unordered_map>
 #include <memory>
-#include <optional> // google this if you intend to use "get_game_object()""
+#include <optional> // google this if you intend to use "get_entity()"
 
 #include "engine/Entity.h"
 #include "engine/System.h"
