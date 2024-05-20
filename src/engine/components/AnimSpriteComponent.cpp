@@ -10,69 +10,69 @@
 void AnimSpriteComponent::update(const glm::mat4 &parent_transform)
 {
     bool render = true;
-    elapsed_time += Settings::UPDATE_TIME_MS;
-    while (elapsed_time >= frame_factor)
+    m_elapsed_time += Settings::UPDATE_TIME_MS;
+    while (m_elapsed_time >= m_frame_factor)
     {
-        switch (playback_type)
+        switch (m_playback_type)
         {
         case PlaybackType::HIDDEN: { render = false; } break;
         case PlaybackType::NOT_PLAYING: break;
         case PlaybackType::ONE_SHOT: 
         {
-            if (curr_frame < frames.size() - 1)
+            if (m_curr_frame < m_frames.size() - 1)
             {
-                curr_frame++;
+                m_curr_frame++;
                 break;
             }
             end_animation();
         } break;
         case PlaybackType::LOOP: 
         {
-            curr_frame++;
-            curr_frame = curr_frame % (frames.size() - 1);
+            m_curr_frame++;
+            m_curr_frame = m_curr_frame % (m_frames.size() - 1);
         } break;
         case PlaybackType::BOOMERANG: 
         {
-            if (curr_frame < frames.size() - 1 && curr_direction == true)
+            if (m_curr_frame < m_frames.size() - 1 && m_curr_direction == true)
             {
-                curr_frame++;
-                if (curr_frame == frames.size() - 1)
+                m_curr_frame++;
+                if (m_curr_frame == m_frames.size() - 1)
                 {
-                    curr_direction = false;
+                    m_curr_direction = false;
                 }
                 break;
             }
-            else if (curr_frame > 0 && curr_direction == false)
+            else if (m_curr_frame > 0 && m_curr_direction == false)
             {
-                curr_frame--;
-                if (curr_frame == 0)
+                m_curr_frame--;
+                if (m_curr_frame == 0)
                 {
-                    curr_direction = true;
+                    m_curr_direction = true;
                 }
                 break;
             }
         } break;
         case PlaybackType::REVERSE_ONE_SHOT: 
         {
-            if (curr_frame > 0)
+            if (m_curr_frame > 0)
             {
-                curr_frame--;
+                m_curr_frame--;
                 break;
             }
             end_animation();
         } break;
         case PlaybackType::REVERSE_LOOP: 
         {
-            if (curr_frame > 0)
+            if (m_curr_frame > 0)
             {
-                curr_frame--;
+                m_curr_frame--;
                 break;
             }
-            curr_frame = static_cast<uint32_t>(frames.size()) - 1;
+            m_curr_frame = static_cast<uint32_t>(m_frames.size()) - 1;
         } break;
         }
 
-        elapsed_time -= frame_factor;
+        m_elapsed_time -= m_frame_factor;
     }
     if (render)
     {
@@ -82,7 +82,7 @@ void AnimSpriteComponent::update(const glm::mat4 &parent_transform)
 
 void AnimSpriteComponent::push_folder_as_frames(const std::string &folder)
 {
-    if (frames.size() == 0) { playback_type = PlaybackType::NOT_PLAYING; }
+    if (m_frames.size() == 0) { m_playback_type = PlaybackType::NOT_PLAYING; }
     // find how many frames are stored in the directory
     auto dir_iter = std::filesystem::directory_iterator(folder);
     uint32_t file_count = 0;
@@ -113,60 +113,60 @@ void AnimSpriteComponent::push_folder_as_frames(const std::string &folder)
 
 void AnimSpriteComponent::push_frame(const std::string &filepath)
 {
-    if (frames.size() == 0) { playback_type = PlaybackType::NOT_PLAYING; }
-    frames.push_back(std::make_shared<Texture>(filepath));
-    auto &added_frame = frames.at(frames.size() - 1);
-    filter_nearest ? added_frame->filter_nearest() : added_frame->filter_linear();
+    if (m_frames.size() == 0) { m_playback_type = PlaybackType::NOT_PLAYING; }
+    m_frames.push_back(std::make_shared<Texture>(filepath));
+    auto &added_frame = m_frames.at(m_frames.size() - 1);
+    m_filter_nearest ? added_frame->filter_nearest() : added_frame->filter_linear();
 }
 
 void AnimSpriteComponent::push_frame(std::shared_ptr<Texture> &frame)
 {
-    if (frames.size() == 0) { playback_type = PlaybackType::NOT_PLAYING; }
-    filter_nearest ? frame->filter_nearest() : frame->filter_linear();
-    frames.push_back(frame);
+    if (m_frames.size() == 0) { m_playback_type = PlaybackType::NOT_PLAYING; }
+    m_filter_nearest ? frame->filter_nearest() : frame->filter_linear();
+    m_frames.push_back(frame);
 }
 
 void AnimSpriteComponent::play(PlaybackType type)
 { 
-    if (frames.size() < 2)
+    if (m_frames.size() < 2)
     {
         std::runtime_error("Cannot play an animation with less than two frames.");
     }
     end_animation();
-    playback_type = type; 
+    m_playback_type = type; 
 
     if (type == PlaybackType::REVERSE_LOOP || type == PlaybackType::REVERSE_ONE_SHOT)
     {
-        curr_frame = static_cast<uint32_t>(frames.size()) - 1;
+        m_curr_frame = static_cast<uint32_t>(m_frames.size()) - 1;
     }
 }
 
 void AnimSpriteComponent::end_animation()
 {
-    playback_type = PlaybackType::NOT_PLAYING;
-    switch (stop_behavior)
+    m_playback_type = PlaybackType::NOT_PLAYING;
+    switch (m_stop_behavior)
     {
     case StopBehavior::RESET:
-        curr_frame = 0;
-        curr_direction = true;
+        m_curr_frame = 0;
+        m_curr_direction = true;
         break;
     case StopBehavior::STAY: break;
     case StopBehavior::END:
-        curr_frame = static_cast<uint32_t>(frames.size()) - 1;
-        curr_direction = false;
+        m_curr_frame = static_cast<uint32_t>(m_frames.size()) - 1;
+        m_curr_direction = false;
         break;
     }
 }
 
 void AnimSpriteComponent::set_frame(uint32_t frame)
 {
-    assert(!frames.empty() && "Cannot access an empty animation");
-    const uint32_t position = std::min(static_cast<uint32_t>(frames.size() - 1), frame);
-    curr_frame = position;
+    assert(!m_frames.empty() && "Cannot access an empty animation");
+    const uint32_t position = std::min(static_cast<uint32_t>(m_frames.size() - 1), frame);
+    m_curr_frame = position;
 }
 
 void AnimSpriteComponent::set_fps(uint32_t new_fps)
 {
-    fps = new_fps;
-    frame_factor = 1.0 / static_cast<double>(fps);
+    m_fps = new_fps;
+    m_frame_factor = 1.0 / static_cast<double>(m_fps);
 }

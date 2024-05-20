@@ -16,7 +16,7 @@ public:
     void filter_linear();  // normal filtering
 
 private:
-    unsigned int m_id;
+    unsigned int m_id = 0;
     bool m_freed;
 
 public:

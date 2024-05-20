@@ -10,8 +10,8 @@ public:
     Window(int width, int height);
     ~Window();
 
-    GLFWwindow *get_glfw_window() const { return window; }
-    bool is_open() const { return !glfwWindowShouldClose(window); }
+    GLFWwindow *get_glfw_window() const { return m_window; }
+    bool is_open() const { return !glfwWindowShouldClose(m_window); }
     void end_frame();
 
     [[nodiscard]] bool did_resize() const;
@@ -23,5 +23,5 @@ public:
     void reset_resize_flag() const;
 
 private:
-    GLFWwindow *window;
+    GLFWwindow *m_window = nullptr;
 };

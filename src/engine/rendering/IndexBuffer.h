@@ -14,7 +14,7 @@ public:
     unsigned int get_elements() const { return m_elements; }
 
 private:
-    unsigned int m_id;
-    unsigned int m_elements;
+    unsigned int m_id = 0;
+    unsigned int m_elements = 0;
     bool m_freed;
 };

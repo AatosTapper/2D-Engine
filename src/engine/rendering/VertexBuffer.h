@@ -15,6 +15,6 @@ public:
     unsigned int get_id() const { return m_id; }
 
 private:
-    unsigned int m_id;
+    unsigned int m_id = 0;
     bool m_freed;
 };

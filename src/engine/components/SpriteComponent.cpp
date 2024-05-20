@@ -49,23 +49,23 @@ QuadMeshComponent::QuadMeshComponent(float width, float height)
         vao_memory->add_buffer(*vbo_memory, layout);
     }
 
-    vao = vao_memory.get();
-    vbo = vbo_memory.get();
-    ebo = ebo_memory.get();
+    m_vao = vao_memory.get();
+    m_vbo = vbo_memory.get();
+    m_ebo = ebo_memory.get();
 }
 
 void SpriteComponent::add_texture(const std::string &filepath)
 {
-    texture = std::make_shared<Texture>(filepath);
+    m_texture = std::make_shared<Texture>(filepath);
 }
 
 void SpriteComponent::add_texture(std::shared_ptr<Texture> &ptr)
 {
-    texture = ptr;
+    m_texture = ptr;
 }
 
 std::shared_ptr<Texture> SpriteComponent::get_texture() const
 {
-    assert(texture && "Cannot get a texture that isn't initialized yet");
-    return texture;
+    assert(m_texture && "Cannot get a texture that isn't initialized yet");
+    return m_texture;
 }

@@ -26,15 +26,15 @@ public:
     
     Transform2DComponent transform;
     
-    [[nodiscard]] VertexArray *get_vao() const { return vao; }
-    [[nodiscard]] IndexBuffer *get_ebo() const { return ebo; }
+    [[nodiscard]] VertexArray *get_vao() const { return m_vao; }
+    [[nodiscard]] IndexBuffer *get_ebo() const { return m_ebo; }
 
     virtual std::shared_ptr<Texture> get_texture() const { assert(false); return nullptr; };
 
 private:
-    VertexArray *vao;
-    IndexBuffer *ebo;
-    VertexBuffer *vbo;  
+    VertexArray *m_vao = nullptr;
+    IndexBuffer *m_ebo = nullptr;
+    VertexBuffer *m_vbo = nullptr;  
 };
 
 class SpriteComponent : public QuadMeshComponent
@@ -47,7 +47,7 @@ public:
     std::shared_ptr<Texture> get_texture() const override; // also checks if the texture exists yet
 
 private:
-    std::shared_ptr<Texture> texture = nullptr;
+    std::shared_ptr<Texture> m_texture = nullptr;
 };
 
 /*

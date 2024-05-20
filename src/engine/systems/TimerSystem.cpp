@@ -6,7 +6,7 @@ TimerRef TimerSystem::set_timer(uint32_t ticks)
 {
     auto timer = std::make_shared<Timer>(ticks);
     bool found_slot = false;
-    for (auto &slot : timer_storage)
+    for (auto &slot : m_timer_storage)
     {
         if (slot == nullptr)
         {
@@ -17,7 +17,7 @@ TimerRef TimerSystem::set_timer(uint32_t ticks)
     }
     if (!found_slot)
     {
-        timer_storage.push_back(timer);
+        m_timer_storage.push_back(timer);
     }
 
     return timer;
@@ -25,7 +25,7 @@ TimerRef TimerSystem::set_timer(uint32_t ticks)
 
 void TimerSystem::update()
 {
-    for (auto &timer : timer_storage)
+    for (auto &timer : m_timer_storage)
     {
         if (timer == nullptr) continue;
 

@@ -20,5 +20,5 @@ public:
 private:
     SceneManager() {}
 
-    Scene *current_scene = nullptr;
+    Scene *m_current_scene = nullptr;
 };

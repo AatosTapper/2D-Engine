@@ -8,7 +8,7 @@ void SceneManager::load_scene(const std::string &scene_name)
 {
     if (scene_name == "TestLevel")
     {
-        current_scene = create_test_level();
+        m_current_scene = create_test_level();
     }
     // add new scenes here
     else
@@ -19,14 +19,14 @@ void SceneManager::load_scene(const std::string &scene_name)
 
 void SceneManager::unload_current_scene()
 {
-    if (current_scene)
+    if (m_current_scene)
     {
-        delete current_scene;
-        current_scene = nullptr;
+        delete m_current_scene;
+        m_current_scene = nullptr;
     }
 }
 
 Ptr<Scene> SceneManager::get_current_scene() const
 {
-    return Ptr<Scene>(current_scene);
+    return Ptr<Scene>(m_current_scene);
 }

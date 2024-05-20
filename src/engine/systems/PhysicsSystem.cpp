@@ -4,44 +4,44 @@
 
 void PhysicsSystem::queue_entity(ComponentTuple entity)
 {
-    entity_queue.push_back(entity);
+    m_entity_queue.push_back(entity);
 }
 
 void PhysicsSystem::update()
 {
     // initial force calculations don't benefit from substeps 
-    for (const auto &entity : entity_queue)
+    for (const auto &entity : m_entity_queue)
     {
         integrate_forces(std::get<0>(entity), std::get<2>(entity), Settings::UPDATE_TIME_MS / 2.0);
     }
 
-    if (entity_queue.size() >= 2)
+    if (m_entity_queue.size() >= 2)
     {
         // solve collisions with multiple iterations
-        for (uint32_t i = 0; i < iterations; i++)
+        for (uint32_t i = 0; i < m_iterations; i++)
         {
             calc_collisions(); 
-            for (const auto &entity : entity_queue)
+            for (const auto &entity : m_entity_queue)
             {
-                integrate_forces(std::get<0>(entity), std::get<2>(entity), substep_delta_time / 2.0);
+                integrate_forces(std::get<0>(entity), std::get<2>(entity), m_substep_delta_time / 2.0);
             }
         }
     }
 
-    entity_queue.clear();
+    m_entity_queue.clear();
 }
 
 void PhysicsSystem::calc_collisions() const
 {
-    for (uint32_t i = 0; i < entity_queue.size() - 1; i++)
+    for (uint32_t i = 0; i < m_entity_queue.size() - 1; i++)
     {
-        if (std::get<1>(entity_queue.at(i)) == NULL_COLLIDER) continue; // checking for collider
+        if (std::get<1>(m_entity_queue.at(i)) == NULL_COLLIDER) continue; // checking for collider
 
-        for (uint32_t j = i + 1; j < entity_queue.size(); j++)
+        for (uint32_t j = i + 1; j < m_entity_queue.size(); j++)
         {
-            if (std::get<1>(entity_queue.at(j)) == NULL_COLLIDER) continue;
+            if (std::get<1>(m_entity_queue.at(j)) == NULL_COLLIDER) continue;
 
-            resolve_collision(entity_queue.at(i), entity_queue.at(j));            
+            resolve_collision(m_entity_queue.at(i), m_entity_queue.at(j));            
         }
     }
 }
@@ -119,7 +119,7 @@ void PhysicsSystem::resolve_collision(const ComponentTuple &ent1, const Componen
     physics_2.get().forces -= impulse_magnitude * collision_normal;
 
     // correcting positions
-    const float percent = std::max(0.4f / iterations, 0.01f);
+    const float percent = std::max(0.4f / m_iterations, 0.01f);
     const float slop = 0.04f;
     const float penetration_depth = std::max(std::max(std::abs(mtv.x), std::abs(mtv.y)) - slop, 0.0f);
     const float correction_amount = penetration_depth * percent * 0.1f;
@@ -138,7 +138,7 @@ void PhysicsSystem::resolve_collision(const ComponentTuple &ent1, const Componen
 static inline glm::vec2 calc_euler_velocity(glm::vec2 velocity, const glm::vec2 &forces, float mass, float h)
 {
     const glm::vec2 acceleration = forces / mass;
-    return velocity + acceleration * h;         // this is sus, not sure about it
+    return velocity + acceleration;         // this is sus, not sure about it
 }
 
 void PhysicsSystem::integrate_forces(const Ref<PhysicsComponent> physics, const Ref<Transform2DComponent> transform, double h) const

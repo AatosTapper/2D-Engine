@@ -22,44 +22,44 @@ static void log_frametime(double frametime)
 
 void Engine::init()
 {
-    window = std::make_unique<Window>(Settings::SCR_WIDTH, Settings::SCR_HEIGHT);
+    m_window = std::make_unique<Window>(Settings::SCR_WIDTH, Settings::SCR_HEIGHT);
 }
 
 void Engine::set_camera(Camera *_camera)
 {
     assert(_camera);
-    camera = _camera;
+    m_camera = _camera;
 }
 
 Ptr<Window> Engine::get_window()
 {
-    return window.get();
+    return m_window.get();
 }
 
 Ptr<Camera> Engine::get_camera()
 {
-    return camera;
+    return m_camera;
 }
 
 void Engine::render()
 {
     Renderer::instance().start_frame();
-    Renderer::instance().set_view_proj_matrix(camera->get_vp_matrix());
+    Renderer::instance().set_view_proj_matrix(m_camera->get_vp_matrix());
     Renderer::instance().draw_frame();
-    window->end_frame();
+    m_window->end_frame();
 }
 
 void Engine::update_logic()
 {
     Renderer::instance().clear_queues();
     SceneManager::instance().get_current_scene()->update();
-    camera->update(window->get_aspect_ratio());
+    m_camera->update(m_window->get_aspect_ratio());
 }
 
 void Engine::run()
 {
-    assert(window && "Cannot run game without a window selected");
-    assert(camera && "Cannot run game without a camera selected");
+    assert(m_window && "Cannot run game without a window selected");
+    assert(m_camera && "Cannot run game without a camera selected");
     assert(SceneManager::instance().get_current_scene() && "Cannot run game without a scene selected");
     
     Renderer::instance().init();
@@ -71,7 +71,7 @@ void Engine::run()
     double update_time = 1.0 / Settings::UPDATES_PER_SEC;
     double fps_log_accumulator = 0.0;
 
-    while (window->is_open())
+    while (m_window->is_open())
     {   
         double frame_start_time = glfwGetTime();
         double delta_time = frame_start_time - last_update;

@@ -25,7 +25,7 @@ class Entity
 public:
     using id_t = uint64_t;
 
-    [[nodiscard]] id_t get_id() const { return id; }
+    [[nodiscard]] id_t get_id() const { return m_id; }
     
     // flags
     constexpr void set_flags(EntityFlags flag) { flags |= flag; }
@@ -41,8 +41,7 @@ public:
     virtual void update_components() {}; // after all entities are updated in the gameloop    
     
 private:
-    const id_t id;
-    Bitflag flags{0};
+    const id_t m_id;
 
     id_t create_id()
     {
@@ -51,8 +50,10 @@ private:
     }
 
 public:
-    Entity() : id(create_id()) {}
+    Entity() : m_id(create_id()) {}
     virtual ~Entity() {}
+
+    Bitflag flags = 0;
 };
 
 

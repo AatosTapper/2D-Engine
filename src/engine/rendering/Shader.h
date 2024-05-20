@@ -27,7 +27,7 @@ public:
     void set_mat4f(const std::string &name, const glm::mat4 &value) const;
 
 private:
-    unsigned int m_id;
+    unsigned int m_id = 0;
     bool m_freed;
 
     std::string m_read_shader(const std::string &filename) const;

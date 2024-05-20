@@ -28,16 +28,16 @@ Window::Window(int width, int height)
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
 
-    window = glfwCreateWindow(width, height, "2D-Engine", NULL, NULL);
-    if (window == NULL)
+    m_window = glfwCreateWindow(width, height, "2D-Engine", NULL, NULL);
+    if (m_window == NULL)
     {
         std::cout << "Failed to create GLFW window\n";
         glfwTerminate();
         assert(false);
     }
 
-    glfwMakeContextCurrent(window);
-    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+    glfwMakeContextCurrent(m_window);
+    glfwSetFramebufferSizeCallback(m_window, framebuffer_size_callback);
 
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {
@@ -46,7 +46,7 @@ Window::Window(int width, int height)
     }
 
     int fb_width = 0, fb_height = 0;
-    glfwGetFramebufferSize(window, &fb_width, &fb_height);
+    glfwGetFramebufferSize(m_window, &fb_width, &fb_height);
     glViewport(0, 0, fb_width, fb_height);
 }
 
@@ -58,16 +58,16 @@ Window::~Window()
 void Window::end_frame()
 {   
     // closes the window if user presses ESC
-    check_for_key_close(window);
+    check_for_key_close(m_window);
     // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
-    glfwSwapBuffers(window);
+    glfwSwapBuffers(m_window);
     glfwPollEvents();
 }
 
 glm::vec2 Window::get_dimensions() const
 {
     int fb_width = 0, fb_height = 0;
-    glfwGetFramebufferSize(window, &fb_width, &fb_height);
+    glfwGetFramebufferSize(m_window, &fb_width, &fb_height);
 
     return glm::vec2((float)fb_width, (float)fb_height);
 }

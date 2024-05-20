@@ -70,5 +70,5 @@ public:
     IMPL_NO_COPY(TimerSystem)
 
 private:
-    std::vector<std::shared_ptr<Timer>> timer_storage; // timer slots aren't cleared but they are reused
+    std::vector<std::shared_ptr<Timer>> m_timer_storage; // timer slots aren't cleared but they are reused
 };

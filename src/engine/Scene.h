@@ -27,11 +27,11 @@ public:
     void update();
 
 private:
-    std::unordered_map<Entity::id_t, std::unique_ptr<Entity>> entity_storage;
-    std::vector<Entity::id_t> current_entities;
-    std::vector<Entity::id_t> delete_queue;
+    std::unordered_map<Entity::id_t, std::unique_ptr<Entity>> m_entity_storage;
+    std::vector<Entity::id_t> m_current_entities;
+    std::vector<Entity::id_t> m_delete_queue;
 
-    std::vector<Ptr<System>> game_systems;
+    std::vector<Ptr<System>> m_game_systems;
 
     void handle_deletions();
 };

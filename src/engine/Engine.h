@@ -30,8 +30,8 @@ public:
     Ptr<Camera> get_camera();
 
 private:
-    std::unique_ptr<Window> window = nullptr;
-    Camera *camera = nullptr;
+    std::unique_ptr<Window> m_window = nullptr;
+    Camera *m_camera = nullptr;
 
     void render();
     void update_logic();
