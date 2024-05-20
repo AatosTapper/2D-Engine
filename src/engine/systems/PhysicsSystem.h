@@ -39,6 +39,6 @@ private:
 
     void calc_collisions() const;
     glm::vec2 calc_mt_vec(const Ptr<const BoxCollider2DComponent> &col_1, const Ptr<const BoxCollider2DComponent> &col_2, const Ref<Transform2DComponent> pos_1, const Ref<Transform2DComponent> pos_2) const;
-    void calc_collision_impulses(const ComponentTuple &ent1, const ComponentTuple &ent2) const;
+    void resolve_collision(const ComponentTuple &ent1, const ComponentTuple &ent2) const;
     void integrate_forces(const Ref<PhysicsComponent> physics, const Ref<Transform2DComponent> transform, const double h) const;
 };

@@ -23,5 +23,6 @@ int main()
     SceneManager::instance().load_scene("TestLevel");
     Engine::instance().run();
     SceneManager::instance().unload_current_scene();
+
     return 0;
 }

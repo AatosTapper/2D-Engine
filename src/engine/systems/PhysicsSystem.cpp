@@ -41,7 +41,7 @@ void PhysicsSystem::calc_collisions() const
         {
             if (std::get<1>(entity_queue.at(j)) == NULL_COLLIDER) continue;
 
-            calc_collision_impulses(entity_queue.at(i), entity_queue.at(j));            
+            resolve_collision(entity_queue.at(i), entity_queue.at(j));            
         }
     }
 }
@@ -97,7 +97,7 @@ glm::vec2 PhysicsSystem::calc_mt_vec(const Ptr<const BoxCollider2DComponent> &co
     return output;
 }
 
-void PhysicsSystem::calc_collision_impulses(const ComponentTuple &ent1, const ComponentTuple &ent2) const
+void PhysicsSystem::resolve_collision(const ComponentTuple &ent1, const ComponentTuple &ent2) const
 {
     const auto [physics_1, collider_1, transform_1] = ent1;
     const auto [physics_2, collider_2, transform_2] = ent2;
@@ -119,14 +119,13 @@ void PhysicsSystem::calc_collision_impulses(const ComponentTuple &ent1, const Co
     physics_2.get().forces -= impulse_magnitude * collision_normal;
 
     // correcting positions
-    const float percent = std::max(0.5f / iterations, 0.01f);
+    const float percent = std::max(0.4f / iterations, 0.01f);
     const float slop = 0.04f;
     const float penetration_depth = std::max(std::max(std::abs(mtv.x), std::abs(mtv.y)) - slop, 0.0f);
     const float correction_amount = penetration_depth * percent * 0.1f;
 
-    const glm::vec2 correction = collision_normal * correction_amount / 2.0f;
+    const glm::vec2 correction = collision_normal * correction_amount;
 
-    //std::cout << "X = " << collision_normal.x << "    Y = " << collision_normal.y << "\n";
     const float mass_ratio_1 = physics_2.get().mass / (physics_1.get().mass + physics_2.get().mass);
     const float mass_ratio_2 = physics_1.get().mass / (physics_1.get().mass + physics_2.get().mass);
 
@@ -138,6 +137,8 @@ void PhysicsSystem::calc_collision_impulses(const ComponentTuple &ent1, const Co
 
 void PhysicsSystem::integrate_forces(const Ref<PhysicsComponent> physics, const Ref<Transform2DComponent> transform, const double h) const
 {
+#ifdef PHYSICS_SOLVER_EULER
+
     const glm::vec2 acceleration = physics.get().forces / physics.get().mass;
     physics.get().velocity += acceleration;
 
@@ -145,4 +146,10 @@ void PhysicsSystem::integrate_forces(const Ref<PhysicsComponent> physics, const 
     transform.get().y += static_cast<double>(physics.get().velocity.y) * h;
 
     physics.get().forces = { 0.0f, 0.0f };
+
+#elif defined(PHYSICS_SOLVER_RK4)
+    
+    static_assert(false, "PHYSICS_SOLVER_RK4");
+
+#endif
 }

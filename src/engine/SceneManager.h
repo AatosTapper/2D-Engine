@@ -9,6 +9,7 @@
 class SceneManager
 {
 public:
+    ~SceneManager() { unload_current_scene(); }
     void load_scene(const std::string &scene_name);
     void unload_current_scene();
     Ptr<Scene> get_current_scene() const;
