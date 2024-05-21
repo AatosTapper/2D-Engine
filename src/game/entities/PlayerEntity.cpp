@@ -34,7 +34,7 @@ void PlayerEntity::on_update()
     {
         animation.play(AnimSpriteComponent::PlaybackType::ONE_SHOT);
     }
-    constexpr float speed = 3.0f;
+    constexpr float speed = 30.0f;
     if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
     {
         physics.forces.y += speed;

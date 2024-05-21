@@ -113,7 +113,7 @@ void PhysicsSystem::resolve_collision(const ComponentTuple &ent1, const Componen
     if (relative_velocity_along_normal < 0.0f) return;
 
     const float e = std::min(physics_1.get().restitution, physics_2.get().restitution);
-    const float impulse_magnitude = -(1.0f + e) * relative_velocity_along_normal;
+    const float impulse_magnitude = -(1.0f + e) * relative_velocity_along_normal / m_substep_delta_time / 2.0f;
     
     physics_1.get().forces += impulse_magnitude * collision_normal;
     physics_2.get().forces -= impulse_magnitude * collision_normal;
@@ -138,16 +138,16 @@ void PhysicsSystem::resolve_collision(const ComponentTuple &ent1, const Componen
 static inline glm::vec2 calc_euler_velocity(glm::vec2 velocity, const glm::vec2 &forces, float mass, float h)
 {
     const glm::vec2 acceleration = forces / mass;
-    return velocity + acceleration;         // this is sus, not sure about it
+    return velocity + acceleration * h;         // this is sus, not sure about it
 }
 
 void PhysicsSystem::integrate_forces(const Ref<PhysicsComponent> physics, const Ref<Transform2DComponent> transform, double h) const
 {
 #ifdef PHYSICS_SOLVER_EULER
 
-    physics.get().velocity = calc_euler_velocity(physics.get().velocity, physics.get().forces, physics.get().mass, static_cast<float>(h));
     transform.get().x += static_cast<double>(physics.get().velocity.x) * h;
     transform.get().y += static_cast<double>(physics.get().velocity.y) * h;
+    physics.get().velocity = calc_euler_velocity(physics.get().velocity, physics.get().forces, physics.get().mass, static_cast<float>(h));
     
 #elif defined(PHYSICS_SOLVER_RK4)
 

@@ -22,6 +22,9 @@
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\entities\ImageEntity.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\entities\StaticEntity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\Camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -106,6 +109,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\entities\ImageEntity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\entities\StaticEntity.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\Camera.h">

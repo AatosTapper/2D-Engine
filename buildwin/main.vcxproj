@@ -339,6 +339,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\components\TransformComponent.h" />
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\entities\ImageEntity.cpp" />
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\entities\ImageEntity.h" />
+    <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\entities\StaticEntity.cpp" />
+    <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\entities\StaticEntity.h" />
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\Camera.cpp" />
     <ClInclude Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\Camera.h" />
     <ClCompile Include="C:\Users\gr277128\Documents\GitHub\2D-Engine\src\engine\rendering\IndexBuffer.cpp" />
