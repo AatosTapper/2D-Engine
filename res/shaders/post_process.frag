@@ -25,8 +25,8 @@ float get_brightness(vec4 col)
 
 const float near = 0.1;
 const float far = 1000.0;
-const float fog_density = 0.003;
-const vec3 fog_color = vec3(0.92, 0.96, 0.99);
+const float fog_density = 0.006;
+const vec3 fog_color = vec3(0.1, 0.12, 0.14);
 
 float linearize_depth(float d)
 {

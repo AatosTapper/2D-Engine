@@ -11,18 +11,20 @@
 class Entity
 {
 public:
+    Entity() : m_id(create_id()) {}
+    virtual ~Entity() {}
     using id_t = uint64_t;
 
     [[nodiscard]] id_t get_id() const { return m_id; }
     
     // flags
-    constexpr void set_flags(EntityFlags flag) { flags |= flag; }
-    constexpr void remove_flags(EntityFlags flag) { flags &= ~flag; }
-    [[nodiscard]] constexpr bool has_flags(EntityFlags flag) const { return 0 != (flags & flag); }
+    constexpr void set_flags(EntityFlags flag) { m_flags |= flag; }
+    constexpr void remove_flags(EntityFlags flag) { m_flags &= ~flag; }
+    [[nodiscard]] constexpr bool has_flags(EntityFlags flag) const { return 0 != (m_flags & flag); }
 
-    constexpr void set_state_flags(EntityStateFlags flag) { state_flags |= flag; }
-    constexpr void remove_state_flags(EntityStateFlags flag) { state_flags &= ~flag; }
-    [[nodiscard]] constexpr bool has_state_flags(EntityStateFlags flag) const { return 0 != (state_flags & flag); }
+    constexpr void set_state_flags(EntityStateFlags flag) { m_state_flags |= flag; }
+    constexpr void remove_state_flags(EntityStateFlags flag) { m_state_flags &= ~flag; }
+    [[nodiscard]] constexpr bool has_state_flags(EntityStateFlags flag) const { return 0 != (m_state_flags & flag); }
 
     // overridable functions
     virtual void on_attach() {}  // is ran when entity is added to a scene
@@ -34,19 +36,14 @@ public:
     
 private:
     const id_t m_id;
+    Bitflag m_flags = 0u;
+    Bitflag m_state_flags = 0u;
 
     id_t create_id()
     {
         static id_t cur_id = 0u;
         return cur_id++;
     }
-
-public:
-    Entity() : m_id(create_id()) {}
-    virtual ~Entity() {}
-
-    Bitflag flags = 0u;
-    Bitflag state_flags = 0u;
 };
 
 

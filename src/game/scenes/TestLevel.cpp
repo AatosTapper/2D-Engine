@@ -18,15 +18,19 @@ Scene *create_test_level()
     auto image = CREATE_ENTITY(ImageEntity);
     image->sprite.add_texture(rock_bro);
     image->transform.scale = 4.0f;
-    image->transform.z = -60.0f;
+    image->transform.z = -90.0f;
+    image->transform.rotation_rad_x = 0.9f;
+    image->transform.rotation_rad_y = 0.2f;
     scene->add_entity(std::move(image));
 
     auto image2 = CREATE_ENTITY(ImageEntity);
     image2->sprite.add_texture(rock_bro);
     image2->transform.scale = 4.0f;
-    image2->transform.z = -30.0f;
+    image2->transform.z = -40.0f;
     image2->transform.x = 4.0f;
     image2->transform.y = 4.0f;
+    image2->transform.rotation_rad_z = -0.7f;
+    image2->transform.rotation_rad_y = -0.3f;
     scene->add_entity(std::move(image2));
 
     auto image3 = CREATE_ENTITY(ImageEntity);
@@ -35,6 +39,9 @@ Scene *create_test_level()
     image3->transform.z = -10.0f;
     image3->transform.x = -5.0f;
     image3->transform.y = -4.0f;
+    image3->transform.rotation_rad_x = 0.4f;
+    image3->transform.rotation_rad_y = 0.4f;
+    image3->transform.rotation_rad_z = 0.3f;
     scene->add_entity(std::move(image3));
 
     auto player = CREATE_ENTITY(PlayerEntity);
@@ -54,6 +61,8 @@ Scene *create_test_level()
     auto wall3 = CREATE_ENTITY(StaticEntity);
     wall3->transform.x = -4.0f;
     wall3->transform.y = -3.0f;
+    wall3->transform.scale_x = 1.6f;
+    wall3->collider.width = 1.6f;
     scene->add_entity(std::move(wall3));
 
     return scene;

@@ -10,10 +10,8 @@ using Bitflag = uint64_t;
 
 enum EntityFlags : Bitflag
 {
-    PLAYER   = 1u,
-    NPC      = PLAYER << 1,
-    FRIENDLY = NPC << 1,
-    HOSTILE  = FRIENDLY << 1
+    PLAYER = 1u,
+    NPC    = PLAYER << 1,
 };
 
 enum EntityStateFlags : Bitflag

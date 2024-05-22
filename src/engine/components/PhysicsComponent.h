@@ -15,10 +15,10 @@ public:
     float restitution = 1.0f;   // range 1.0f to 2.0f
 
     // flags
-    constexpr void set_flags(PhysicsFlags flag) { flags |= flag; }
-    constexpr void remove_flags(PhysicsFlags flag) { flags &= ~flag; }
-    [[nodiscard]] constexpr bool has_flags(PhysicsFlags flag) const { return 0 != (flags & flag); }
+    constexpr void set_flags(PhysicsFlags flag) { m_flags |= flag; }
+    constexpr void remove_flags(PhysicsFlags flag) { m_flags &= ~flag; }
+    [[nodiscard]] constexpr bool has_flags(PhysicsFlags flag) const { return 0 != (m_flags & flag); }
 
 private:
-    Bitflag flags = 0u;
+    Bitflag m_flags = 0u;
 };
