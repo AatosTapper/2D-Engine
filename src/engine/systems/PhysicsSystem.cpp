@@ -165,12 +165,10 @@ void PhysicsSystem::resolve_collision(const ComponentTuple &ent1, const Componen
     if (collision_normal.y < 0.0f)
     {
         entity1.get()->set_state_flags(EntityStateFlags::ON_GROUND);
-        entity2.get()->remove_state_flags(EntityStateFlags::ON_GROUND);
     }
     else if (collision_normal.y > 0.0f)
     {
         entity2.get()->set_state_flags(EntityStateFlags::ON_GROUND);
-        entity1.get()->remove_state_flags(EntityStateFlags::ON_GROUND);
     }
 }
 
