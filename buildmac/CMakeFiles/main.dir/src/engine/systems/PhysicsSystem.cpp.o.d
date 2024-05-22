@@ -943,4 +943,5 @@ CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/file_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/literals.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Flags.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Entity.h

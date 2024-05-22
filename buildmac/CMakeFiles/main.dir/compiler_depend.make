@@ -1024,6 +1024,7 @@ CMakeFiles/main.dir/src/engine/Engine.cpp.o: /Users/aatostapper/Documents/Dev/Op
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec3.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec4.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vector_relational.hpp \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Flags.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Engine.h \
@@ -1975,6 +1976,7 @@ CMakeFiles/main.dir/src/engine/Scene.cpp.o: /Users/aatostapper/Documents/Dev/Ope
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec3.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec4.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vector_relational.hpp \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Flags.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Entity.h \
@@ -2904,6 +2906,7 @@ CMakeFiles/main.dir/src/engine/SceneManager.cpp.o: /Users/aatostapper/Documents/
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec3.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec4.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vector_relational.hpp \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Flags.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Entity.h \
@@ -7051,6 +7054,7 @@ CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o: /Users/aatostapper/Do
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec3.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec4.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vector_relational.hpp \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Flags.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Entity.h \
@@ -8002,6 +8006,7 @@ CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.o: /Users/aatostapper/D
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec3.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec4.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vector_relational.hpp \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Flags.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Entity.h \
@@ -10263,6 +10268,7 @@ CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o: /Users/aatostapper/Docu
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec3.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec4.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vector_relational.hpp \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Flags.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Engine.h \
@@ -14429,6 +14435,7 @@ CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.o: /Users/aatostapper/D
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec3.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec4.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vector_relational.hpp \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Flags.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Entity.h \
@@ -16920,6 +16927,7 @@ CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o: /Users/aatostapper/Doc
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec3.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec4.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vector_relational.hpp \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Flags.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Engine.h \
@@ -17876,6 +17884,7 @@ CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.o: /Users/aatostapper/Document
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec3.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec4.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vector_relational.hpp \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Flags.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Engine.h \
@@ -18832,6 +18841,7 @@ CMakeFiles/main.dir/src/main.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-E
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec3.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vec4.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/vector_relational.hpp \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Flags.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/config.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Engine.h \
@@ -20253,6 +20263,8 @@ CMakeFiles/main.dir/src/main.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-E
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/month.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__algorithm/ranges_none_of.h:
+
+/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Flags.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__chrono/time_point.h:
 

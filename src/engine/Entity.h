@@ -3,22 +3,10 @@
 #include <iostream>
 #include <memory>
 #include "config.h"
+#include "Flags.h"
 
 #define CREATE_ENTITY(T) std::make_unique<T>()
 #define CREATE_ENTITY_WITH_ARGS(T, args) std::make_unique<T>(args)
-
-using Bitflag = uint64_t;
-
-// Flags for entities, represented with each bit being a single flag like this: 0000 0011 0001 1010
-// Add new ones like this: NEW_FLAG = LAST_FLAG << 1
-// You can combine flags with bitwise OR like this: EntityFlags::NPC | EntityFlags::FRIENDLY | etc
-enum EntityFlags : Bitflag
-{
-    PLAYER      = 1u,
-    NPC         = PLAYER << 1,
-    FRIENDLY    = NPC << 1,
-    HOSTILE     = FRIENDLY << 1
-};
 
 class Entity
 {
@@ -31,6 +19,10 @@ public:
     constexpr void set_flags(EntityFlags flag) { flags |= flag; }
     constexpr void remove_flags(EntityFlags flag) { flags &= ~flag; }
     [[nodiscard]] constexpr bool has_flags(EntityFlags flag) const { return 0 != (flags & flag); }
+
+    constexpr void set_state_flags(EntityStateFlags flag) { state_flags |= flag; }
+    constexpr void remove_state_flags(EntityStateFlags flag) { state_flags &= ~flag; }
+    [[nodiscard]] constexpr bool has_state_flags(EntityStateFlags flag) const { return 0 != (state_flags & flag); }
 
     // overridable functions
     virtual void on_attach() {}  // is ran when entity is added to a scene
@@ -53,7 +45,8 @@ public:
     Entity() : m_id(create_id()) {}
     virtual ~Entity() {}
 
-    Bitflag flags = 0;
+    Bitflag flags = 0u;
+    Bitflag state_flags = 0u;
 };
 
 

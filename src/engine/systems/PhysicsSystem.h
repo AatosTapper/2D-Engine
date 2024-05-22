@@ -14,7 +14,7 @@
 
 #define NULL_COLLIDER nullptr
 
-using ComponentTuple = std::tuple<Ref<PhysicsComponent>, Ptr<const BoxCollider2DComponent>, Ref<Transform2DComponent>>;
+using ComponentTuple = std::tuple<Ptr<Entity>, Ref<PhysicsComponent>, Ptr<const BoxCollider2DComponent>, Ref<Transform2DComponent>>;
 
 class PhysicsSystem : public System
 {
@@ -24,7 +24,7 @@ public:
     IMPL_VIRTUAL_SINGLETON_DISPATCHER(PhysicsSystem, System)
     IMPL_NO_COPY(PhysicsSystem)
 
-    // params: { physics component, box collider (optional), parent transform 2D }
+    // params: { &entity, physics component, &box collider (optional), parent transform 2D }
     void queue_entity(ComponentTuple entity);
 
     // run simulation in multiple substeps for better collision accuracy etc
@@ -41,4 +41,5 @@ private:
     glm::vec2 calc_mt_vec(const Ptr<const BoxCollider2DComponent> &col_1, const Ptr<const BoxCollider2DComponent> &col_2, const Ref<Transform2DComponent> pos_1, const Ref<Transform2DComponent> pos_2) const;
     void resolve_collision(const ComponentTuple &ent1, const ComponentTuple &ent2) const;
     void integrate_forces(const Ref<PhysicsComponent> physics, const Ref<Transform2DComponent> transform, double h) const;
+    void add_gravity(const Ref<PhysicsComponent> physics) const;
 };

@@ -31,6 +31,12 @@ public:
         END                 // jump to the last frame even if stopped in the middle
     };
 
+    enum class RestartBehavior : uint8_t
+    {
+        IGNORE,             // keep playing from the current frame
+        RESTART             // start again
+    };
+
     void update(const glm::mat4 &parent_transform); // call every frame in update_components() function
 
     // Pass in a folder that contains all of the animation images. (It also can't have anything else)
@@ -58,6 +64,7 @@ private:
     double m_elapsed_time = 0.0f;
     PlaybackType m_playback_type = PlaybackType::HIDDEN;
     StopBehavior m_stop_behavior = StopBehavior::RESET;
+    RestartBehavior m_restart_behavior = RestartBehavior::IGNORE;
     bool m_filter_nearest;
     bool m_curr_direction = true; // used for boomerang true: forward, false: backward
 

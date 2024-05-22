@@ -939,6 +939,7 @@ CMakeFiles/main.dir/src/main.cpp.o: \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Engine.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Scene.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Entity.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Flags.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/System.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/singleton.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h \

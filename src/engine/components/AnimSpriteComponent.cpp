@@ -127,13 +127,20 @@ void AnimSpriteComponent::push_frame(std::shared_ptr<Texture> &frame)
 }
 
 void AnimSpriteComponent::play(PlaybackType type)
-{ 
+{
     if (m_frames.size() < 2)
     {
         std::runtime_error("Cannot play an animation with less than two frames.");
     }
+    if ((m_playback_type != PlaybackType::NOT_PLAYING) && (m_playback_type != PlaybackType::HIDDEN))
+    {
+        if (m_restart_behavior == RestartBehavior::IGNORE)
+        {
+            return;
+        }
+    }
     end_animation();
-    m_playback_type = type; 
+    m_playback_type = type;
 
     if (type == PlaybackType::REVERSE_LOOP || type == PlaybackType::REVERSE_ONE_SHOT)
     {

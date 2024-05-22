@@ -916,6 +916,7 @@ CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o: \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/gtc/../mat4x2.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/gtc/../mat4x3.hpp \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/gtc/type_ptr.inl \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Flags.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/TransformComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.h \

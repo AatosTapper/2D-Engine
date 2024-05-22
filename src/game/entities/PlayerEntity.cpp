@@ -16,9 +16,10 @@ void PlayerEntity::update_components()
     //glm::mat4 full_transform = transform.get_matrix() * sprite.transform.get_matrix();
     //Renderer::instance().queue_sprite({ &sprite, full_transform });
     animation.update(transform.get_matrix());
-    PhysicsSystem::instance().queue_entity({ physics, &collider, transform });
+    PhysicsSystem::instance().queue_entity({ this, physics, &collider, transform });
 
-    physics.mass = 10.0f;
+    physics.mass = 6.0f;
+    physics.set_flags(PhysicsFlags::HAS_GRAVITY);
 }
 
 void PlayerEntity::on_attach()
@@ -30,20 +31,7 @@ void PlayerEntity::on_update()
 {
     auto window = Engine::instance().get_window()->get_glfw_window();
 
-    if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS)
-    {
-        animation.play(AnimSpriteComponent::PlaybackType::ONE_SHOT);
-    }
-    constexpr float speed = 30.0f;
-    if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-    {
-        physics.forces.y += speed;
-    }
-
-    if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-    {
-        physics.forces.y -= speed;
-    }
+    constexpr float speed = 90.0f;
 
     if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
     {
@@ -53,6 +41,11 @@ void PlayerEntity::on_update()
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
     {
         physics.forces.x += speed;
+    }
+
+    if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS && has_state_flags(EntityStateFlags::ON_GROUND))
+    {
+        physics.forces.y += 8000.0f;
     }
 }
 

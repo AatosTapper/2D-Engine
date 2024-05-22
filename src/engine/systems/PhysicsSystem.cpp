@@ -12,7 +12,13 @@ void PhysicsSystem::update()
     // initial force calculations don't benefit from substeps 
     for (const auto &entity : m_entity_queue)
     {
-        integrate_forces(std::get<0>(entity), std::get<2>(entity), Settings::UPDATE_TIME_MS / 2.0);
+        if (std::get<1>(entity).get().has_flags(PhysicsFlags::HAS_GRAVITY))
+        {
+            add_gravity(std::get<1>(entity));
+        }
+        integrate_forces(std::get<1>(entity), std::get<3>(entity), Settings::UPDATE_TIME_MS / 2.0);
+
+        std::get<0>(entity).get()->remove_state_flags(EntityStateFlags::ON_GROUND);
     }
 
     if (m_entity_queue.size() >= 2)
@@ -23,7 +29,7 @@ void PhysicsSystem::update()
             calc_collisions(); 
             for (const auto &entity : m_entity_queue)
             {
-                integrate_forces(std::get<0>(entity), std::get<2>(entity), m_substep_delta_time / 2.0);
+                integrate_forces(std::get<1>(entity), std::get<3>(entity), m_substep_delta_time / 2.0);
             }
         }
     }
@@ -35,11 +41,11 @@ void PhysicsSystem::calc_collisions() const
 {
     for (uint32_t i = 0; i < m_entity_queue.size() - 1; i++)
     {
-        if (std::get<1>(m_entity_queue.at(i)) == NULL_COLLIDER) continue; // checking for collider
+        if (std::get<2>(m_entity_queue.at(i)) == NULL_COLLIDER) continue; // checking for collider
 
         for (uint32_t j = i + 1; j < m_entity_queue.size(); j++)
         {
-            if (std::get<1>(m_entity_queue.at(j)) == NULL_COLLIDER) continue;
+            if (std::get<2>(m_entity_queue.at(j)) == NULL_COLLIDER) continue;
 
             resolve_collision(m_entity_queue.at(i), m_entity_queue.at(j));            
         }
@@ -99,46 +105,84 @@ glm::vec2 PhysicsSystem::calc_mt_vec(const Ptr<const BoxCollider2DComponent> &co
 
 void PhysicsSystem::resolve_collision(const ComponentTuple &ent1, const ComponentTuple &ent2) const
 {
-    const auto [physics_1, collider_1, transform_1] = ent1;
-    const auto [physics_2, collider_2, transform_2] = ent2;
+    const auto [entity1, physics_1, collider_1, transform_1] = ent1;
+    const auto [entity2, physics_2, collider_2, transform_2] = ent2;
 
+    if (physics_1.get().has_flags(PhysicsFlags::STATIC) && physics_2.get().has_flags(PhysicsFlags::STATIC))
+    {   // bro whatchu even doin here
+        return;
+    }
     const glm::vec2 mtv = calc_mt_vec(collider_1, collider_2, transform_1, transform_2);
-
-    if (mtv.x == 0.0f && mtv.y == 0.0f) return;
-    
-    const glm::vec2 relative_velocity = physics_1.get().velocity - physics_2.get().velocity;
-    const glm::vec2 collision_normal = glm::normalize(mtv);
+    if (mtv.x == 0.0f && mtv.y == 0.0f) 
+    {
+        return;
+    }
+    const glm::vec2 relative_velocity          = physics_1.get().velocity - physics_2.get().velocity;
+    const glm::vec2 collision_normal           = glm::normalize(mtv);
     const float relative_velocity_along_normal = glm::dot(relative_velocity, collision_normal);
-
-    if (relative_velocity_along_normal < 0.0f) return;
-
+    if (relative_velocity_along_normal < 0.0f) 
+    {
+        return;
+    }
     const float e = std::min(physics_1.get().restitution, physics_2.get().restitution);
-    const float impulse_magnitude = -(1.0f + e) * relative_velocity_along_normal / m_substep_delta_time / 2.0f;
-    
-    physics_1.get().forces += impulse_magnitude * collision_normal;
-    physics_2.get().forces -= impulse_magnitude * collision_normal;
+    const float impulse_magnitude = -(1.0f + e) * relative_velocity_along_normal / static_cast<float>(m_substep_delta_time) / 2.0f;
 
     // correcting positions
-    const float percent = std::max(0.4f / m_iterations, 0.01f);
-    const float slop = 0.04f;
+    const float percent           = std::max(0.35f / m_iterations, 0.01f);
+    const float slop              = 0.04f;
     const float penetration_depth = std::max(std::max(std::abs(mtv.x), std::abs(mtv.y)) - slop, 0.0f);
     const float correction_amount = penetration_depth * percent * 0.1f;
+    const glm::vec2 correction    = collision_normal * correction_amount;
 
-    const glm::vec2 correction = collision_normal * correction_amount;
+    // applying changes
+    if (physics_1.get().has_flags(PhysicsFlags::STATIC))
+    {
+        physics_2.get().forces -= impulse_magnitude * collision_normal * 2.0f;
+        transform_2.get().x    += correction.x;
+        transform_2.get().y    += correction.y;
+    }
+    else if (physics_2.get().has_flags(PhysicsFlags::STATIC))
+    {
+        physics_1.get().forces += impulse_magnitude * collision_normal * 2.0f;
+        transform_1.get().x    -= correction.x;
+        transform_1.get().y    -= correction.y;
+    }
+    else
+    {
+        physics_1.get().forces += impulse_magnitude * collision_normal;
+        physics_2.get().forces -= impulse_magnitude * collision_normal;
 
-    const float mass_ratio_1 = physics_2.get().mass / (physics_1.get().mass + physics_2.get().mass);
-    const float mass_ratio_2 = physics_1.get().mass / (physics_1.get().mass + physics_2.get().mass);
+        const float mass_ratio_1 = physics_2.get().mass / (physics_1.get().mass + physics_2.get().mass);
+        const float mass_ratio_2 = physics_1.get().mass / (physics_1.get().mass + physics_2.get().mass);
 
-    transform_1.get().x -= correction.x * mass_ratio_1;
-    transform_1.get().y -= correction.y * mass_ratio_1;
-    transform_2.get().x += correction.x * mass_ratio_2;
-    transform_2.get().y += correction.y * mass_ratio_2;
+        transform_1.get().x -= correction.x * mass_ratio_1;
+        transform_1.get().y -= correction.y * mass_ratio_1;
+        transform_2.get().x += correction.x * mass_ratio_2;
+        transform_2.get().y += correction.y * mass_ratio_2;
+    }
+
+    // setting flags
+    if (collision_normal.y < 0.0f)
+    {
+        entity1.get()->set_state_flags(EntityStateFlags::ON_GROUND);
+        entity2.get()->remove_state_flags(EntityStateFlags::ON_GROUND);
+    }
+    else if (collision_normal.y > 0.0f)
+    {
+        entity2.get()->set_state_flags(EntityStateFlags::ON_GROUND);
+        entity1.get()->remove_state_flags(EntityStateFlags::ON_GROUND);
+    }
 }
 
-static inline glm::vec2 calc_euler_velocity(glm::vec2 velocity, const glm::vec2 &forces, float mass, float h)
+void PhysicsSystem::add_gravity(const Ref<PhysicsComponent> physics) const
+{
+    physics.get().temp_acc.y -= Settings::GRAVITY_STRENGTH * static_cast<float>(Settings::UPDATE_TIME_MS);
+}
+
+static inline glm::vec2 calc_euler_velocity(glm::vec2 velocity, glm::vec2 temp_acceleration, const glm::vec2 &forces, float mass, float h)
 {
     const glm::vec2 acceleration = forces / mass;
-    return velocity + acceleration * h;         // this is sus, not sure about it
+    return velocity + temp_acceleration + acceleration * h; // this is sus, not sure about it
 }
 
 void PhysicsSystem::integrate_forces(const Ref<PhysicsComponent> physics, const Ref<Transform2DComponent> transform, double h) const
@@ -147,12 +191,13 @@ void PhysicsSystem::integrate_forces(const Ref<PhysicsComponent> physics, const 
 
     transform.get().x += static_cast<double>(physics.get().velocity.x) * h;
     transform.get().y += static_cast<double>(physics.get().velocity.y) * h;
-    physics.get().velocity = calc_euler_velocity(physics.get().velocity, physics.get().forces, physics.get().mass, static_cast<float>(h));
+    physics.get().velocity = calc_euler_velocity(physics.get().velocity, physics.get().temp_acc, physics.get().forces, physics.get().mass, static_cast<float>(h));
     
 #elif defined(PHYSICS_SOLVER_RK4)
 
     // TODO :(
 
 #endif
-    physics.get().forces = { 0.0f, 0.0f };
+    physics.get().forces   = { 0.0f, 0.0f };
+    physics.get().temp_acc = { 0.0f, 0.0f };
 }

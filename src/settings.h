@@ -16,7 +16,8 @@ namespace Settings
 
     constexpr bool HDR = true;
 
-    constexpr uint32_t INITIAL_PHYSICS_ITERATIONS = 16;
-    #define PHYSICS_SOLVER_EULER 
+    constexpr uint32_t INITIAL_PHYSICS_ITERATIONS = 32;
+    #define PHYSICS_SOLVER_EULER
     #define PHYSICS_SOLVER_RK4
+    constexpr float GRAVITY_STRENGTH = 20.0f;
 }

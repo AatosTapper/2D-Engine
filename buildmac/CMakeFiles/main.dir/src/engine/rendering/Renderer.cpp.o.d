@@ -924,6 +924,7 @@ CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cstdarg \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Flags.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/System.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Window.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Camera.h \
