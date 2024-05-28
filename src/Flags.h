@@ -16,7 +16,8 @@ enum EntityFlags : Bitflag
 
 enum EntityStateFlags : Bitflag
 {
-    ON_GROUND = 1u
+    ON_GROUND = 1u,
+    IS_SUPPORTING = ON_GROUND << 1
 };
 
 enum PhysicsFlags : Bitflag

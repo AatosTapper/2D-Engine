@@ -15,10 +15,6 @@
 int main()
 {
     Engine::instance().init();
-    
-    Camera camera(Engine::instance().get_window()->get_aspect_ratio(), Settings::CAM_FOV, Settings::CAM_PROJECTION);
-    camera.back(20.0f);
-    Engine::instance().set_camera(&camera);
 
     SceneManager::instance().load_scene("TestLevel");
     Engine::instance().run();

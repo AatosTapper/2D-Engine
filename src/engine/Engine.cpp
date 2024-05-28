@@ -23,12 +23,8 @@ static void log_frametime(double frametime)
 void Engine::init()
 {
     m_window = std::make_unique<Window>(Settings::SCR_WIDTH, Settings::SCR_HEIGHT);
-}
-
-void Engine::set_camera(Camera *_camera)
-{
-    assert(_camera);
-    m_camera = _camera;
+    m_camera = std::make_unique<Camera>(Engine::instance().get_window()->get_aspect_ratio(), Settings::CAM_FOV, Settings::CAM_PROJECTION);
+    m_camera->back(Settings::CAM_START_DIST);
 }
 
 Ptr<Window> Engine::get_window()
@@ -38,7 +34,7 @@ Ptr<Window> Engine::get_window()
 
 Ptr<Camera> Engine::get_camera()
 {
-    return m_camera;
+    return m_camera.get();
 }
 
 void Engine::render()

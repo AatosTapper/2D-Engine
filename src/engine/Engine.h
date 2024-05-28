@@ -22,8 +22,6 @@ public:
     IMPL_SINGLETON_DISPATCHER(Engine)
     IMPL_NO_COPY(Engine)
 
-    void set_camera(Camera *_camera);
-
     void run();
 
     Ptr<Window> get_window();
@@ -31,7 +29,7 @@ public:
 
 private:
     std::unique_ptr<Window> m_window = nullptr;
-    Camera *m_camera = nullptr;
+    std::unique_ptr<Camera> m_camera = nullptr;
 
     void render();
     void update_logic();

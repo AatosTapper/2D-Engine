@@ -20,7 +20,8 @@ void PhysicsSystem::update()
 
         if (std::get<0>(entity) != nullptr) // checking for entity
         {
-            std::get<0>(entity).get()->remove_state_flags(EntityStateFlags::ON_GROUND);
+            std::get<0>(entity)->remove_state_flags(EntityStateFlags::ON_GROUND);
+            std::get<0>(entity)->remove_state_flags(EntityStateFlags::IS_SUPPORTING);
         }
     }
 
@@ -71,15 +72,15 @@ glm::vec2 PhysicsSystem::calc_mt_vec(const Ptr<const BoxCollider2DComponent> &co
 {
     glm::vec2 output(0.0f);
 
-    const float a_l = static_cast<float>(pos_1.get().x) - (col_1.get()->width);
-    const float a_r = static_cast<float>(pos_1.get().x) + (col_1.get()->width);
-    const float b_l = static_cast<float>(pos_2.get().x) - (col_2.get()->width);
-    const float b_r = static_cast<float>(pos_2.get().x) + (col_2.get()->width);
+    const float a_l = static_cast<float>(pos_1.get().x) - (col_1.get()->width * col_1.get()->scale);
+    const float a_r = static_cast<float>(pos_1.get().x) + (col_1.get()->width * col_1.get()->scale);
+    const float b_l = static_cast<float>(pos_2.get().x) - (col_2.get()->width * col_2.get()->scale);
+    const float b_r = static_cast<float>(pos_2.get().x) + (col_2.get()->width * col_2.get()->scale);
 
-    const float a_t = static_cast<float>(pos_1.get().y) + (col_1.get()->height);
-    const float a_b = static_cast<float>(pos_1.get().y) - (col_1.get()->height);
-    const float b_t = static_cast<float>(pos_2.get().y) + (col_2.get()->height);
-    const float b_b = static_cast<float>(pos_2.get().y) - (col_2.get()->height);
+    const float a_t = static_cast<float>(pos_1.get().y) + (col_1.get()->height * col_1.get()->scale);
+    const float a_b = static_cast<float>(pos_1.get().y) - (col_1.get()->height * col_1.get()->scale);
+    const float b_t = static_cast<float>(pos_2.get().y) + (col_2.get()->height * col_2.get()->scale);
+    const float b_b = static_cast<float>(pos_2.get().y) - (col_2.get()->height * col_2.get()->scale);
 
     const float left = b_l - a_r;
     const float right = b_r - a_l;
@@ -201,13 +202,18 @@ void PhysicsSystem::resolve_collision(const ComponentTuple &ent1, const Componen
     }
 
     // setting flags
-    if (collision_normal.y < 0.0f)
+    if (collision_normal.x == 0)
     {
-        entity1.get()->set_state_flags(EntityStateFlags::ON_GROUND);
-    }
-    else if (collision_normal.y > 0.0f)
-    {
-        entity2.get()->set_state_flags(EntityStateFlags::ON_GROUND);
+        if (collision_normal.y < 0.0f)
+        {
+            entity1->set_state_flags(EntityStateFlags::ON_GROUND);
+            entity2->set_state_flags(EntityStateFlags::IS_SUPPORTING);
+        }
+        else
+        {
+            entity2->set_state_flags(EntityStateFlags::ON_GROUND);
+            entity1->set_state_flags(EntityStateFlags::IS_SUPPORTING);
+        }
     }
 }
 

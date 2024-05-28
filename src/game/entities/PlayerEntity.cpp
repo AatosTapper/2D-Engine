@@ -11,8 +11,11 @@ PlayerEntity::PlayerEntity()
     set_flags(PLAYER);
     animation.set_fps(60); // optional because 60 is the default but this allows anything
 
-    physics.mass = 2.5f;
+    physics.mass = 3.0f;
     physics.set_flags(PhysicsFlags::HAS_GRAVITY);
+
+    transform.scale = 0.8f;
+    collider.scale = 0.8f;
 }
 
 void PlayerEntity::update_components()
@@ -21,7 +24,7 @@ void PlayerEntity::update_components()
     //Renderer::instance().queue_sprite({ &sprite, full_transform });
     animation.update(transform.get_matrix());
     PhysicsSystem::instance().queue_entity({ this, physics, &collider, transform });
-    CameraControllerSystem::instance().update_target(&transform);
+    CameraControllerSystem::instance().update_target(&transform, physics.velocity, true);
 }
 
 void PlayerEntity::on_attach()
@@ -47,7 +50,7 @@ void PlayerEntity::on_update()
 
     if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS && has_state_flags(EntityStateFlags::ON_GROUND))
     {
-        physics.forces.y += 4000.0f;
+        physics.forces.y += 3000.0f;
     }
 }
 

@@ -53,12 +53,12 @@ Scene *create_test_level()
 
     auto wall2 = CREATE_ENTITY(StaticEntity);
     wall2->transform.x = 1.0f;
-    wall2->transform.y = -3.0f;
+    wall2->transform.y = -2.5f;
     scene->add_entity(std::move(wall2));
 
     auto wall1 = CREATE_ENTITY(StaticEntity);
     wall1->transform.x = 6.0f;
-    wall1->transform.y = -3.0f;
+    wall1->transform.y = -2.0f;
     scene->add_entity(std::move(wall1));
 
     auto wall3 = CREATE_ENTITY(StaticEntity);
@@ -67,6 +67,13 @@ Scene *create_test_level()
     wall3->transform.scale_x = 1.6f;
     wall3->collider.width = 1.6f;
     scene->add_entity(std::move(wall3));
+
+    auto floor = CREATE_ENTITY(StaticEntity);
+    floor->transform.x = 18.0f;
+    floor->transform.y = -2.0f;
+    floor->transform.scale_x = 10.0f;
+    floor->collider.width = 10.0f;
+    scene->add_entity(std::move(floor));
 
     return scene;
 }
