@@ -1,13 +1,5 @@
 #pragma once
 
-/* 
-
-
-    THIS FILE IS FOR LOGGING AND OTHER DEBUGGING STUFF
-
-
-*/
-
 #ifndef SILENCE_TEXT
 
 #include <iostream>
