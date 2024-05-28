@@ -7,7 +7,7 @@
 
 void StaticEntity::on_attach() 
 {
-    animation.set_fps(10);
+    animation.set_fps(6);
     animation.push_folder_as_frames("../res/animations/test_anim");
     animation.set_frame(1);
     animation.play(AnimSpriteComponent::PlaybackType::LOOP);

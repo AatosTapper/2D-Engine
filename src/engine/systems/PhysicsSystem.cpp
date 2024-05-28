@@ -18,7 +18,10 @@ void PhysicsSystem::update()
         }
         integrate_forces(std::get<1>(entity), std::get<3>(entity), Settings::UPDATE_TIME_MS / 2.0);
 
-        std::get<0>(entity).get()->remove_state_flags(EntityStateFlags::ON_GROUND);
+        if (std::get<0>(entity) != nullptr) // checking for entity
+        {
+            std::get<0>(entity).get()->remove_state_flags(EntityStateFlags::ON_GROUND);
+        }
     }
 
     if (m_entity_queue.size() >= 2)
@@ -41,12 +44,20 @@ void PhysicsSystem::calc_collisions() const
 {
     for (uint32_t i = 0; i < m_entity_queue.size() - 1; i++)
     {
+        if (std::get<0>(m_entity_queue.at(i)) == nullptr) // checking for entity
+        {
+            continue;
+        }
         if (std::get<2>(m_entity_queue.at(i)) == NULL_COLLIDER) // checking for collider
         {
             continue;
         }
         for (uint32_t j = i + 1; j < m_entity_queue.size(); j++)
         {
+            if (std::get<0>(m_entity_queue.at(j)) == nullptr)
+            {
+                continue;
+            }
             if (std::get<2>(m_entity_queue.at(j)) == NULL_COLLIDER) 
             {
                 continue;

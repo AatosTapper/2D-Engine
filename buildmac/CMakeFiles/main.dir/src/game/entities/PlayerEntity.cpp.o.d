@@ -1076,4 +1076,5 @@ CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o: \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Window.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Renderer.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Shader.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/PhysicsSystem.h
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/PhysicsSystem.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/CameraControllerSystem.h

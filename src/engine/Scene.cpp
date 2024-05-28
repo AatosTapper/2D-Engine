@@ -5,6 +5,7 @@
 
 #include "engine/systems/TimerSystem.h"
 #include "engine/systems/PhysicsSystem.h"
+#include "engine/systems/CameraControllerSystem.h"
 
 Scene::Scene()
 {

@@ -4,11 +4,15 @@
 #include "engine/Engine.h"
 #include "engine/rendering/Renderer.h"
 #include "engine/systems/PhysicsSystem.h"
+#include "engine/systems/CameraControllerSystem.h"
 
 PlayerEntity::PlayerEntity()
 {
     set_flags(PLAYER);
     animation.set_fps(60); // optional because 60 is the default but this allows anything
+
+    physics.mass = 2.5f;
+    physics.set_flags(PhysicsFlags::HAS_GRAVITY);
 }
 
 void PlayerEntity::update_components()
@@ -17,9 +21,7 @@ void PlayerEntity::update_components()
     //Renderer::instance().queue_sprite({ &sprite, full_transform });
     animation.update(transform.get_matrix());
     PhysicsSystem::instance().queue_entity({ this, physics, &collider, transform });
-
-    physics.mass = 2.5f;
-    physics.set_flags(PhysicsFlags::HAS_GRAVITY);
+    CameraControllerSystem::instance().update_target(&transform);
 }
 
 void PlayerEntity::on_attach()

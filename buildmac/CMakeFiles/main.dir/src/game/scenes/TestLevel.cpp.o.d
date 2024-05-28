@@ -1076,4 +1076,5 @@ CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.o: \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/entities/ImageEntity.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/entities/StaticEntity.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Engine.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Window.h
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Window.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/CameraControllerSystem.h

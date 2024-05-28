@@ -33,6 +33,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.o.d"
   "CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o"
   "CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o.d"
+  "CMakeFiles/main.dir/src/engine/systems/CameraControllerSystem.cpp.o"
+  "CMakeFiles/main.dir/src/engine/systems/CameraControllerSystem.cpp.o.d"
   "CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.o"
   "CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.o.d"
   "CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o"

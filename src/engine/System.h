@@ -2,6 +2,8 @@
 
 #include "singleton.h"
 
+#include <tuple>
+
 class System
 {
 public:

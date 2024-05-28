@@ -537,6 +537,30 @@ src/engine/rendering/VertexBuffer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.s
 .PHONY : src/engine/rendering/VertexBuffer.cpp.s
 
+src/engine/systems/CameraControllerSystem.o: src/engine/systems/CameraControllerSystem.cpp.o
+.PHONY : src/engine/systems/CameraControllerSystem.o
+
+# target to build an object file
+src/engine/systems/CameraControllerSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/CameraControllerSystem.cpp.o
+.PHONY : src/engine/systems/CameraControllerSystem.cpp.o
+
+src/engine/systems/CameraControllerSystem.i: src/engine/systems/CameraControllerSystem.cpp.i
+.PHONY : src/engine/systems/CameraControllerSystem.i
+
+# target to preprocess a source file
+src/engine/systems/CameraControllerSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/CameraControllerSystem.cpp.i
+.PHONY : src/engine/systems/CameraControllerSystem.cpp.i
+
+src/engine/systems/CameraControllerSystem.s: src/engine/systems/CameraControllerSystem.cpp.s
+.PHONY : src/engine/systems/CameraControllerSystem.s
+
+# target to generate assembly for a file
+src/engine/systems/CameraControllerSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/CameraControllerSystem.cpp.s
+.PHONY : src/engine/systems/CameraControllerSystem.cpp.s
+
 src/engine/systems/PhysicsSystem.o: src/engine/systems/PhysicsSystem.cpp.o
 .PHONY : src/engine/systems/PhysicsSystem.o
 
@@ -741,6 +765,9 @@ help:
 	@echo "... src/engine/rendering/VertexBuffer.o"
 	@echo "... src/engine/rendering/VertexBuffer.i"
 	@echo "... src/engine/rendering/VertexBuffer.s"
+	@echo "... src/engine/systems/CameraControllerSystem.o"
+	@echo "... src/engine/systems/CameraControllerSystem.i"
+	@echo "... src/engine/systems/CameraControllerSystem.s"
 	@echo "... src/engine/systems/PhysicsSystem.o"
 	@echo "... src/engine/systems/PhysicsSystem.i"
 	@echo "... src/engine/systems/PhysicsSystem.s"

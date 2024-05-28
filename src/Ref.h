@@ -14,6 +14,7 @@ template<typename T>
 class Ptr
 {   
 public:
+    constexpr Ptr() : pointer(nullptr) {}
     constexpr Ptr(T *ptr) : pointer(ptr) {}
     constexpr Ptr(const Ptr &other) : pointer(other.pointer) {}
     template<typename U> constexpr Ptr(const Ptr<U> &other) : pointer(other.get()) {}

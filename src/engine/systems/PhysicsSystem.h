@@ -24,7 +24,7 @@ public:
     IMPL_VIRTUAL_SINGLETON_DISPATCHER(PhysicsSystem, System)
     IMPL_NO_COPY(PhysicsSystem)
 
-    // params: { &entity, physics component, &box collider (optional), parent transform 2D }
+    // params: { *entity (optional), physics component, *box collider (optional), transform 2D }
     void queue_entity(ComponentTuple entity);
 
     // run simulation in multiple substeps for better collision accuracy etc

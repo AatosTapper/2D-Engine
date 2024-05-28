@@ -7,10 +7,13 @@
 #include "engine/entities/ImageEntity.h"
 #include "engine/entities/StaticEntity.h"
 #include "engine/Engine.h"
+#include "engine/systems/CameraControllerSystem.h"
 
 Scene *create_test_level()
 {
     Scene *scene = new Scene();
+
+    scene->add_system(&CameraControllerSystem::get_base_instance());
 
     // all images can share the same texture with this
     std::shared_ptr<Texture> rock_bro = std::make_shared<Texture>("../res/textures/rock.png");
