@@ -41,12 +41,16 @@ void PhysicsSystem::calc_collisions() const
 {
     for (uint32_t i = 0; i < m_entity_queue.size() - 1; i++)
     {
-        if (std::get<2>(m_entity_queue.at(i)) == NULL_COLLIDER) continue; // checking for collider
-
+        if (std::get<2>(m_entity_queue.at(i)) == NULL_COLLIDER) // checking for collider
+        {
+            continue;
+        }
         for (uint32_t j = i + 1; j < m_entity_queue.size(); j++)
         {
-            if (std::get<2>(m_entity_queue.at(j)) == NULL_COLLIDER) continue;
-
+            if (std::get<2>(m_entity_queue.at(j)) == NULL_COLLIDER) 
+            {
+                continue;
+            }
             resolve_collision(m_entity_queue.at(i), m_entity_queue.at(j));            
         }
     }
@@ -127,6 +131,21 @@ void PhysicsSystem::resolve_collision(const ComponentTuple &ent1, const Componen
     const float e = std::min(physics_1.get().restitution, physics_2.get().restitution);
     const float impulse_magnitude = -(1.0f + e) * relative_velocity_along_normal / static_cast<float>(m_substep_delta_time) / 2.0f;
 
+    // friction
+    const glm::vec2 friction_direction          = { -collision_normal.y, collision_normal.x };
+    const float relative_velocity_along_surface = glm::dot(relative_velocity, friction_direction);
+    const float friction_amount                 = impulse_magnitude * (physics_1.get().friction + physics_2.get().friction) / 2.0f;
+    const glm::vec2 kinetic_friction            = glm::sign(relative_velocity_along_surface) * friction_direction * friction_amount;
+    const glm::vec2 static_friction             = kinetic_friction * 1.5f; // very rough approximation
+
+    const float kinetic_friction_treshold = 1e-1F * 2;
+    const float static_friction_treshold = 1e-2F;
+    const glm::vec2 friction_force = std::abs(relative_velocity_along_surface) > kinetic_friction_treshold
+        ? kinetic_friction
+        : std::abs(relative_velocity_along_surface) > static_friction_treshold
+            ? static_friction
+            : glm::vec2(0.0f);
+
     // correcting positions
     const float percent           = std::max(0.35f / m_iterations, 0.01f);
     const float slop              = 0.04f;
@@ -134,23 +153,32 @@ void PhysicsSystem::resolve_collision(const ComponentTuple &ent1, const Componen
     const float correction_amount = penetration_depth * percent * 0.1f;
     const glm::vec2 correction    = collision_normal * correction_amount;
 
+    // Debugging print statements
+    //std::cout << "Friction Direction: " << friction_direction.x << ", " << friction_direction.y << std::endl;
+    //std::cout << "Relative Velocity Along Surface: " << relative_velocity_along_surface << std::endl;
+    //std::cout << "Friction Force: " << friction_force.x << ", " << friction_force.y << std::endl;
+
     // applying changes
     if (physics_1.get().has_flags(PhysicsFlags::STATIC))
     {
         physics_2.get().forces -= impulse_magnitude * collision_normal * 2.0f;
+        physics_2.get().forces -= friction_force;
         transform_2.get().x    += correction.x;
         transform_2.get().y    += correction.y;
     }
     else if (physics_2.get().has_flags(PhysicsFlags::STATIC))
     {
         physics_1.get().forces += impulse_magnitude * collision_normal * 2.0f;
+        physics_1.get().forces += friction_force;
         transform_1.get().x    -= correction.x;
         transform_1.get().y    -= correction.y;
     }
     else
     {
         physics_1.get().forces += impulse_magnitude * collision_normal;
+        physics_1.get().forces += friction_force;
         physics_2.get().forces -= impulse_magnitude * collision_normal;
+        physics_2.get().forces -= friction_force;
 
         const float mass_ratio_1 = physics_2.get().mass / (physics_1.get().mass + physics_2.get().mass);
         const float mass_ratio_2 = physics_1.get().mass / (physics_1.get().mass + physics_2.get().mass);
@@ -177,7 +205,7 @@ void PhysicsSystem::add_gravity(const Ref<PhysicsComponent> physics) const
     physics.get().temp_acc.y -= Settings::GRAVITY_STRENGTH * static_cast<float>(Settings::UPDATE_TIME_MS);
 }
 
-static inline glm::vec2 calc_euler_velocity(glm::vec2 velocity, glm::vec2 temp_acceleration, const glm::vec2 &forces, float mass, float h)
+static inline glm::vec2 calc_euler_velocity(const glm::vec2 &velocity, const glm::vec2 &temp_acceleration, const glm::vec2 &forces, float mass, float h)
 {
     const glm::vec2 acceleration = forces / mass;
     return velocity + temp_acceleration + acceleration * h; // this is sus, not sure about it
@@ -187,8 +215,8 @@ void PhysicsSystem::integrate_forces(const Ref<PhysicsComponent> physics, const 
 {
 #ifdef PHYSICS_SOLVER_EULER
 
-    transform.get().x += static_cast<double>(physics.get().velocity.x) * h;
-    transform.get().y += static_cast<double>(physics.get().velocity.y) * h;
+    transform.get().x      += static_cast<double>(physics.get().velocity.x) * h;
+    transform.get().y      += static_cast<double>(physics.get().velocity.y) * h;
     physics.get().velocity = calc_euler_velocity(physics.get().velocity, physics.get().temp_acc, physics.get().forces, physics.get().mass, static_cast<float>(h));
     
 #elif defined(PHYSICS_SOLVER_RK4)

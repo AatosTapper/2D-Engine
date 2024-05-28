@@ -91,6 +91,7 @@
         "filesystem": "cpp",
         "random": "cpp",
         "__tree": "cpp",
-        "set": "cpp"
+        "set": "cpp",
+        "execution": "cpp"
     }
 }

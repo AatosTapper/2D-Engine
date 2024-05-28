@@ -18,7 +18,7 @@ void PlayerEntity::update_components()
     animation.update(transform.get_matrix());
     PhysicsSystem::instance().queue_entity({ this, physics, &collider, transform });
 
-    physics.mass = 6.0f;
+    physics.mass = 2.5f;
     physics.set_flags(PhysicsFlags::HAS_GRAVITY);
 }
 
@@ -31,7 +31,7 @@ void PlayerEntity::on_update()
 {
     auto window = Engine::instance().get_window()->get_glfw_window();
 
-    constexpr float speed = 90.0f;
+    constexpr float speed = 70.0f;
 
     if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
     {
@@ -45,7 +45,7 @@ void PlayerEntity::on_update()
 
     if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS && has_state_flags(EntityStateFlags::ON_GROUND))
     {
-        physics.forces.y += 8000.0f;
+        physics.forces.y += 4000.0f;
     }
 }
 

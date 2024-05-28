@@ -445,7 +445,7 @@ main: CMakeFiles/main.dir/src/main.cpp.o
 main: CMakeFiles/main.dir/dep/glad/glad.c.o
 main: CMakeFiles/main.dir/build.make
 main: /opt/homebrew/lib/libglfw.3.4.dylib
-main: /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/OpenGL.framework
+main: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework
 main: CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
