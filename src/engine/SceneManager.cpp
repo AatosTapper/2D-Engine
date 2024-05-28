@@ -6,6 +6,7 @@
 
 void SceneManager::load_scene(const std::string &scene_name)
 {
+    unload_current_scene();
     if (scene_name == "TestLevel")
     {
         m_current_scene = create_test_level();
