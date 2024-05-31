@@ -1,10 +1,10 @@
 #include "config.h"
 
-#include "engine/rendering/Camera.h"
-#include "engine/Window.h"
-#include "engine/Engine.h"
-#include "engine/Scene.h"
-#include "engine/SceneManager.h"
+#include "rendering/Camera.h"
+#include "Window.h"
+#include "Engine.h"
+#include "Scene.h"
+#include "SceneManager.h"
 
 #include "settings.h"
 #include "Ref.h"
@@ -16,7 +16,7 @@ int main()
 {
     Engine::instance().init();
 
-    SceneManager::instance().load_scene("TestLevel");
+    SceneManager::instance().load_scene("test_level");
     Engine::instance().run();
     SceneManager::instance().unload_current_scene();
 

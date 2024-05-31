@@ -1,6 +1,6 @@
 #pragma once
 
-#include "engine/rendering/Camera.h"
+#include "rendering/Camera.h"
 #include "config.h"
 
 namespace Settings

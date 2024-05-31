@@ -69,318 +69,150 @@ include CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main.dir/flags.make
 
-CMakeFiles/main.dir/src/engine/Engine.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/engine/Engine.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Engine.cpp
-CMakeFiles/main.dir/src/engine/Engine.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/engine/Engine.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/Engine.cpp.o -MF CMakeFiles/main.dir/src/engine/Engine.cpp.o.d -o CMakeFiles/main.dir/src/engine/Engine.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Engine.cpp
-
-CMakeFiles/main.dir/src/engine/Engine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/Engine.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Engine.cpp > CMakeFiles/main.dir/src/engine/Engine.cpp.i
-
-CMakeFiles/main.dir/src/engine/Engine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/Engine.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Engine.cpp -o CMakeFiles/main.dir/src/engine/Engine.cpp.s
-
-CMakeFiles/main.dir/src/engine/Scene.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/engine/Scene.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Scene.cpp
-CMakeFiles/main.dir/src/engine/Scene.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/engine/Scene.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/Scene.cpp.o -MF CMakeFiles/main.dir/src/engine/Scene.cpp.o.d -o CMakeFiles/main.dir/src/engine/Scene.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Scene.cpp
-
-CMakeFiles/main.dir/src/engine/Scene.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/Scene.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Scene.cpp > CMakeFiles/main.dir/src/engine/Scene.cpp.i
-
-CMakeFiles/main.dir/src/engine/Scene.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/Scene.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Scene.cpp -o CMakeFiles/main.dir/src/engine/Scene.cpp.s
-
-CMakeFiles/main.dir/src/engine/SceneManager.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/engine/SceneManager.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/SceneManager.cpp
-CMakeFiles/main.dir/src/engine/SceneManager.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/engine/SceneManager.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/SceneManager.cpp.o -MF CMakeFiles/main.dir/src/engine/SceneManager.cpp.o.d -o CMakeFiles/main.dir/src/engine/SceneManager.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/SceneManager.cpp
-
-CMakeFiles/main.dir/src/engine/SceneManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/SceneManager.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/SceneManager.cpp > CMakeFiles/main.dir/src/engine/SceneManager.cpp.i
-
-CMakeFiles/main.dir/src/engine/SceneManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/SceneManager.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/SceneManager.cpp -o CMakeFiles/main.dir/src/engine/SceneManager.cpp.s
-
-CMakeFiles/main.dir/src/engine/Window.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/engine/Window.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Window.cpp
-CMakeFiles/main.dir/src/engine/Window.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/engine/Window.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/Window.cpp.o -MF CMakeFiles/main.dir/src/engine/Window.cpp.o.d -o CMakeFiles/main.dir/src/engine/Window.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Window.cpp
-
-CMakeFiles/main.dir/src/engine/Window.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/Window.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Window.cpp > CMakeFiles/main.dir/src/engine/Window.cpp.i
-
-CMakeFiles/main.dir/src/engine/Window.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/Window.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Window.cpp -o CMakeFiles/main.dir/src/engine/Window.cpp.s
-
-CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/AnimSpriteComponent.cpp
-CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.o -MF CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.o.d -o CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/AnimSpriteComponent.cpp
-
-CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/AnimSpriteComponent.cpp > CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.i
-
-CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/AnimSpriteComponent.cpp -o CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.s
-
-CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.cpp
-CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o -MF CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o.d -o CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.cpp
-
-CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.cpp > CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.i
-
-CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/SpriteComponent.cpp -o CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.s
-
-CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/TransformComponent.cpp
-CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o -MF CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o.d -o CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/TransformComponent.cpp
-
-CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/TransformComponent.cpp > CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.i
-
-CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/TransformComponent.cpp -o CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.s
-
-CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/entities/ImageEntity.cpp
-CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o -MF CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o.d -o CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/entities/ImageEntity.cpp
-
-CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/entities/ImageEntity.cpp > CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.i
-
-CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/entities/ImageEntity.cpp -o CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.s
-
-CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/entities/StaticEntity.cpp
-CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.o -MF CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.o.d -o CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/entities/StaticEntity.cpp
-
-CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/entities/StaticEntity.cpp > CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.i
-
-CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/entities/StaticEntity.cpp -o CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.s
-
-CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Camera.cpp
-CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o -MF CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o.d -o CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Camera.cpp
-
-CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Camera.cpp > CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.i
-
-CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Camera.cpp -o CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.s
-
-CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/IndexBuffer.cpp
-CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o -MF CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o.d -o CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/IndexBuffer.cpp
-
-CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/IndexBuffer.cpp > CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.i
-
-CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/IndexBuffer.cpp -o CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.s
-
-CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Renderer.cpp
-CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o -MF CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o.d -o CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Renderer.cpp
-
-CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Renderer.cpp > CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.i
-
-CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Renderer.cpp -o CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.s
-
-CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Shader.cpp
-CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.o -MF CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.o.d -o CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Shader.cpp
-
-CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Shader.cpp > CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.i
-
-CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Shader.cpp -o CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.s
-
-CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.cpp
-CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.o -MF CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.o.d -o CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.cpp
-
-CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.cpp > CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.i
-
-CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Texture.cpp -o CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.s
-
-CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexArray.cpp
-CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.o -MF CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.o.d -o CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexArray.cpp
-
-CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexArray.cpp > CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.i
-
-CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexArray.cpp -o CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.s
-
-CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexBuffer.cpp
-CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o -MF CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o.d -o CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexBuffer.cpp
-
-CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexBuffer.cpp > CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.i
-
-CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/VertexBuffer.cpp -o CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.s
-
-CMakeFiles/main.dir/src/engine/systems/CameraControllerSystem.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/engine/systems/CameraControllerSystem.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/CameraControllerSystem.cpp
-CMakeFiles/main.dir/src/engine/systems/CameraControllerSystem.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/main.dir/src/engine/systems/CameraControllerSystem.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/systems/CameraControllerSystem.cpp.o -MF CMakeFiles/main.dir/src/engine/systems/CameraControllerSystem.cpp.o.d -o CMakeFiles/main.dir/src/engine/systems/CameraControllerSystem.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/CameraControllerSystem.cpp
-
-CMakeFiles/main.dir/src/engine/systems/CameraControllerSystem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/systems/CameraControllerSystem.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/CameraControllerSystem.cpp > CMakeFiles/main.dir/src/engine/systems/CameraControllerSystem.cpp.i
-
-CMakeFiles/main.dir/src/engine/systems/CameraControllerSystem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/systems/CameraControllerSystem.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/CameraControllerSystem.cpp -o CMakeFiles/main.dir/src/engine/systems/CameraControllerSystem.cpp.s
-
-CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/PhysicsSystem.cpp
-CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.o -MF CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.o.d -o CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/PhysicsSystem.cpp
-
-CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/PhysicsSystem.cpp > CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.i
-
-CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/PhysicsSystem.cpp -o CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.s
-
-CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/TimerSystem.cpp
-CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o -MF CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o.d -o CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/TimerSystem.cpp
-
-CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/TimerSystem.cpp > CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.i
-
-CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/systems/TimerSystem.cpp -o CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.s
-
-CMakeFiles/main.dir/src/engine/utils/Random.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/engine/utils/Random.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/utils/Random.cpp
-CMakeFiles/main.dir/src/engine/utils/Random.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/main.dir/src/engine/utils/Random.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/engine/utils/Random.cpp.o -MF CMakeFiles/main.dir/src/engine/utils/Random.cpp.o.d -o CMakeFiles/main.dir/src/engine/utils/Random.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/utils/Random.cpp
-
-CMakeFiles/main.dir/src/engine/utils/Random.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/engine/utils/Random.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/utils/Random.cpp > CMakeFiles/main.dir/src/engine/utils/Random.cpp.i
-
-CMakeFiles/main.dir/src/engine/utils/Random.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/engine/utils/Random.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/utils/Random.cpp -o CMakeFiles/main.dir/src/engine/utils/Random.cpp.s
-
-CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/entities/PlayerEntity.cpp
-CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o -MF CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o.d -o CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/entities/PlayerEntity.cpp
-
-CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/entities/PlayerEntity.cpp > CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.i
-
-CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/entities/PlayerEntity.cpp -o CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.s
-
-CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/scenes/TestLevel.cpp
-CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.o"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.o -MF CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.o.d -o CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/scenes/TestLevel.cpp
-
-CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/scenes/TestLevel.cpp > CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.i
-
-CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/game/scenes/TestLevel.cpp -o CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.s
+CMakeFiles/main.dir/src/Engine.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/Engine.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Engine.cpp
+CMakeFiles/main.dir/src/Engine.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/Engine.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Engine.cpp.o -MF CMakeFiles/main.dir/src/Engine.cpp.o.d -o CMakeFiles/main.dir/src/Engine.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Engine.cpp
+
+CMakeFiles/main.dir/src/Engine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/Engine.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Engine.cpp > CMakeFiles/main.dir/src/Engine.cpp.i
+
+CMakeFiles/main.dir/src/Engine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Engine.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Engine.cpp -o CMakeFiles/main.dir/src/Engine.cpp.s
+
+CMakeFiles/main.dir/src/Scene.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/Scene.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Scene.cpp
+CMakeFiles/main.dir/src/Scene.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/Scene.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Scene.cpp.o -MF CMakeFiles/main.dir/src/Scene.cpp.o.d -o CMakeFiles/main.dir/src/Scene.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Scene.cpp
+
+CMakeFiles/main.dir/src/Scene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/Scene.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Scene.cpp > CMakeFiles/main.dir/src/Scene.cpp.i
+
+CMakeFiles/main.dir/src/Scene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Scene.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Scene.cpp -o CMakeFiles/main.dir/src/Scene.cpp.s
+
+CMakeFiles/main.dir/src/SceneManager.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/SceneManager.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/SceneManager.cpp
+CMakeFiles/main.dir/src/SceneManager.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/SceneManager.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/SceneManager.cpp.o -MF CMakeFiles/main.dir/src/SceneManager.cpp.o.d -o CMakeFiles/main.dir/src/SceneManager.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/SceneManager.cpp
+
+CMakeFiles/main.dir/src/SceneManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/SceneManager.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/SceneManager.cpp > CMakeFiles/main.dir/src/SceneManager.cpp.i
+
+CMakeFiles/main.dir/src/SceneManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/SceneManager.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/SceneManager.cpp -o CMakeFiles/main.dir/src/SceneManager.cpp.s
+
+CMakeFiles/main.dir/src/Window.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/Window.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Window.cpp
+CMakeFiles/main.dir/src/Window.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/Window.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Window.cpp.o -MF CMakeFiles/main.dir/src/Window.cpp.o.d -o CMakeFiles/main.dir/src/Window.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Window.cpp
+
+CMakeFiles/main.dir/src/Window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/Window.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Window.cpp > CMakeFiles/main.dir/src/Window.cpp.i
+
+CMakeFiles/main.dir/src/Window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Window.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Window.cpp -o CMakeFiles/main.dir/src/Window.cpp.s
+
+CMakeFiles/main.dir/src/components/AnimSpriteComponent.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/components/AnimSpriteComponent.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/components/AnimSpriteComponent.cpp
+CMakeFiles/main.dir/src/components/AnimSpriteComponent.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/src/components/AnimSpriteComponent.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/components/AnimSpriteComponent.cpp.o -MF CMakeFiles/main.dir/src/components/AnimSpriteComponent.cpp.o.d -o CMakeFiles/main.dir/src/components/AnimSpriteComponent.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/components/AnimSpriteComponent.cpp
+
+CMakeFiles/main.dir/src/components/AnimSpriteComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/components/AnimSpriteComponent.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/components/AnimSpriteComponent.cpp > CMakeFiles/main.dir/src/components/AnimSpriteComponent.cpp.i
+
+CMakeFiles/main.dir/src/components/AnimSpriteComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/components/AnimSpriteComponent.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/components/AnimSpriteComponent.cpp -o CMakeFiles/main.dir/src/components/AnimSpriteComponent.cpp.s
+
+CMakeFiles/main.dir/src/components/SpriteComponent.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/components/SpriteComponent.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/components/SpriteComponent.cpp
+CMakeFiles/main.dir/src/components/SpriteComponent.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/components/SpriteComponent.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/components/SpriteComponent.cpp.o -MF CMakeFiles/main.dir/src/components/SpriteComponent.cpp.o.d -o CMakeFiles/main.dir/src/components/SpriteComponent.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/components/SpriteComponent.cpp
+
+CMakeFiles/main.dir/src/components/SpriteComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/components/SpriteComponent.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/components/SpriteComponent.cpp > CMakeFiles/main.dir/src/components/SpriteComponent.cpp.i
+
+CMakeFiles/main.dir/src/components/SpriteComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/components/SpriteComponent.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/components/SpriteComponent.cpp -o CMakeFiles/main.dir/src/components/SpriteComponent.cpp.s
+
+CMakeFiles/main.dir/src/components/TransformComponent.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/components/TransformComponent.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/components/TransformComponent.cpp
+CMakeFiles/main.dir/src/components/TransformComponent.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/src/components/TransformComponent.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/components/TransformComponent.cpp.o -MF CMakeFiles/main.dir/src/components/TransformComponent.cpp.o.d -o CMakeFiles/main.dir/src/components/TransformComponent.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/components/TransformComponent.cpp
+
+CMakeFiles/main.dir/src/components/TransformComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/components/TransformComponent.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/components/TransformComponent.cpp > CMakeFiles/main.dir/src/components/TransformComponent.cpp.i
+
+CMakeFiles/main.dir/src/components/TransformComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/components/TransformComponent.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/components/TransformComponent.cpp -o CMakeFiles/main.dir/src/components/TransformComponent.cpp.s
+
+CMakeFiles/main.dir/src/entities/ImageEntity.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/entities/ImageEntity.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/entities/ImageEntity.cpp
+CMakeFiles/main.dir/src/entities/ImageEntity.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/src/entities/ImageEntity.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/entities/ImageEntity.cpp.o -MF CMakeFiles/main.dir/src/entities/ImageEntity.cpp.o.d -o CMakeFiles/main.dir/src/entities/ImageEntity.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/entities/ImageEntity.cpp
+
+CMakeFiles/main.dir/src/entities/ImageEntity.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/entities/ImageEntity.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/entities/ImageEntity.cpp > CMakeFiles/main.dir/src/entities/ImageEntity.cpp.i
+
+CMakeFiles/main.dir/src/entities/ImageEntity.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/entities/ImageEntity.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/entities/ImageEntity.cpp -o CMakeFiles/main.dir/src/entities/ImageEntity.cpp.s
+
+CMakeFiles/main.dir/src/entities/PlayerEntity.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/entities/PlayerEntity.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/entities/PlayerEntity.cpp
+CMakeFiles/main.dir/src/entities/PlayerEntity.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/src/entities/PlayerEntity.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/entities/PlayerEntity.cpp.o -MF CMakeFiles/main.dir/src/entities/PlayerEntity.cpp.o.d -o CMakeFiles/main.dir/src/entities/PlayerEntity.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/entities/PlayerEntity.cpp
+
+CMakeFiles/main.dir/src/entities/PlayerEntity.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/entities/PlayerEntity.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/entities/PlayerEntity.cpp > CMakeFiles/main.dir/src/entities/PlayerEntity.cpp.i
+
+CMakeFiles/main.dir/src/entities/PlayerEntity.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/entities/PlayerEntity.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/entities/PlayerEntity.cpp -o CMakeFiles/main.dir/src/entities/PlayerEntity.cpp.s
+
+CMakeFiles/main.dir/src/entities/StaticEntity.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/entities/StaticEntity.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/entities/StaticEntity.cpp
+CMakeFiles/main.dir/src/entities/StaticEntity.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/main.dir/src/entities/StaticEntity.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/entities/StaticEntity.cpp.o -MF CMakeFiles/main.dir/src/entities/StaticEntity.cpp.o.d -o CMakeFiles/main.dir/src/entities/StaticEntity.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/entities/StaticEntity.cpp
+
+CMakeFiles/main.dir/src/entities/StaticEntity.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/entities/StaticEntity.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/entities/StaticEntity.cpp > CMakeFiles/main.dir/src/entities/StaticEntity.cpp.i
+
+CMakeFiles/main.dir/src/entities/StaticEntity.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/entities/StaticEntity.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/entities/StaticEntity.cpp -o CMakeFiles/main.dir/src/entities/StaticEntity.cpp.s
 
 CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/main.cpp
 CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.cpp.o -MF CMakeFiles/main.dir/src/main.cpp.o.d -o CMakeFiles/main.dir/src/main.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/main.cpp
 
 CMakeFiles/main.dir/src/main.cpp.i: cmake_force
@@ -390,6 +222,174 @@ CMakeFiles/main.dir/src/main.cpp.i: cmake_force
 CMakeFiles/main.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/main.cpp.s"
 	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/main.cpp -o CMakeFiles/main.dir/src/main.cpp.s
+
+CMakeFiles/main.dir/src/rendering/Camera.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/rendering/Camera.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/Camera.cpp
+CMakeFiles/main.dir/src/rendering/Camera.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/main.dir/src/rendering/Camera.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/rendering/Camera.cpp.o -MF CMakeFiles/main.dir/src/rendering/Camera.cpp.o.d -o CMakeFiles/main.dir/src/rendering/Camera.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/Camera.cpp
+
+CMakeFiles/main.dir/src/rendering/Camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/rendering/Camera.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/Camera.cpp > CMakeFiles/main.dir/src/rendering/Camera.cpp.i
+
+CMakeFiles/main.dir/src/rendering/Camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/rendering/Camera.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/Camera.cpp -o CMakeFiles/main.dir/src/rendering/Camera.cpp.s
+
+CMakeFiles/main.dir/src/rendering/IndexBuffer.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/rendering/IndexBuffer.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/IndexBuffer.cpp
+CMakeFiles/main.dir/src/rendering/IndexBuffer.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/main.dir/src/rendering/IndexBuffer.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/rendering/IndexBuffer.cpp.o -MF CMakeFiles/main.dir/src/rendering/IndexBuffer.cpp.o.d -o CMakeFiles/main.dir/src/rendering/IndexBuffer.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/IndexBuffer.cpp
+
+CMakeFiles/main.dir/src/rendering/IndexBuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/rendering/IndexBuffer.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/IndexBuffer.cpp > CMakeFiles/main.dir/src/rendering/IndexBuffer.cpp.i
+
+CMakeFiles/main.dir/src/rendering/IndexBuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/rendering/IndexBuffer.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/IndexBuffer.cpp -o CMakeFiles/main.dir/src/rendering/IndexBuffer.cpp.s
+
+CMakeFiles/main.dir/src/rendering/Renderer.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/rendering/Renderer.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/Renderer.cpp
+CMakeFiles/main.dir/src/rendering/Renderer.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/main.dir/src/rendering/Renderer.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/rendering/Renderer.cpp.o -MF CMakeFiles/main.dir/src/rendering/Renderer.cpp.o.d -o CMakeFiles/main.dir/src/rendering/Renderer.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/Renderer.cpp
+
+CMakeFiles/main.dir/src/rendering/Renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/rendering/Renderer.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/Renderer.cpp > CMakeFiles/main.dir/src/rendering/Renderer.cpp.i
+
+CMakeFiles/main.dir/src/rendering/Renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/rendering/Renderer.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/Renderer.cpp -o CMakeFiles/main.dir/src/rendering/Renderer.cpp.s
+
+CMakeFiles/main.dir/src/rendering/Shader.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/rendering/Shader.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/Shader.cpp
+CMakeFiles/main.dir/src/rendering/Shader.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/main.dir/src/rendering/Shader.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/rendering/Shader.cpp.o -MF CMakeFiles/main.dir/src/rendering/Shader.cpp.o.d -o CMakeFiles/main.dir/src/rendering/Shader.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/Shader.cpp
+
+CMakeFiles/main.dir/src/rendering/Shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/rendering/Shader.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/Shader.cpp > CMakeFiles/main.dir/src/rendering/Shader.cpp.i
+
+CMakeFiles/main.dir/src/rendering/Shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/rendering/Shader.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/Shader.cpp -o CMakeFiles/main.dir/src/rendering/Shader.cpp.s
+
+CMakeFiles/main.dir/src/rendering/Texture.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/rendering/Texture.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/Texture.cpp
+CMakeFiles/main.dir/src/rendering/Texture.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/main.dir/src/rendering/Texture.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/rendering/Texture.cpp.o -MF CMakeFiles/main.dir/src/rendering/Texture.cpp.o.d -o CMakeFiles/main.dir/src/rendering/Texture.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/Texture.cpp
+
+CMakeFiles/main.dir/src/rendering/Texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/rendering/Texture.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/Texture.cpp > CMakeFiles/main.dir/src/rendering/Texture.cpp.i
+
+CMakeFiles/main.dir/src/rendering/Texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/rendering/Texture.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/Texture.cpp -o CMakeFiles/main.dir/src/rendering/Texture.cpp.s
+
+CMakeFiles/main.dir/src/rendering/VertexArray.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/rendering/VertexArray.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/VertexArray.cpp
+CMakeFiles/main.dir/src/rendering/VertexArray.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/main.dir/src/rendering/VertexArray.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/rendering/VertexArray.cpp.o -MF CMakeFiles/main.dir/src/rendering/VertexArray.cpp.o.d -o CMakeFiles/main.dir/src/rendering/VertexArray.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/VertexArray.cpp
+
+CMakeFiles/main.dir/src/rendering/VertexArray.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/rendering/VertexArray.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/VertexArray.cpp > CMakeFiles/main.dir/src/rendering/VertexArray.cpp.i
+
+CMakeFiles/main.dir/src/rendering/VertexArray.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/rendering/VertexArray.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/VertexArray.cpp -o CMakeFiles/main.dir/src/rendering/VertexArray.cpp.s
+
+CMakeFiles/main.dir/src/rendering/VertexBuffer.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/rendering/VertexBuffer.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/VertexBuffer.cpp
+CMakeFiles/main.dir/src/rendering/VertexBuffer.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/main.dir/src/rendering/VertexBuffer.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/rendering/VertexBuffer.cpp.o -MF CMakeFiles/main.dir/src/rendering/VertexBuffer.cpp.o.d -o CMakeFiles/main.dir/src/rendering/VertexBuffer.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/VertexBuffer.cpp
+
+CMakeFiles/main.dir/src/rendering/VertexBuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/rendering/VertexBuffer.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/VertexBuffer.cpp > CMakeFiles/main.dir/src/rendering/VertexBuffer.cpp.i
+
+CMakeFiles/main.dir/src/rendering/VertexBuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/rendering/VertexBuffer.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/VertexBuffer.cpp -o CMakeFiles/main.dir/src/rendering/VertexBuffer.cpp.s
+
+CMakeFiles/main.dir/src/scenes/TestLevel.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/scenes/TestLevel.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/scenes/TestLevel.cpp
+CMakeFiles/main.dir/src/scenes/TestLevel.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/main.dir/src/scenes/TestLevel.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/scenes/TestLevel.cpp.o -MF CMakeFiles/main.dir/src/scenes/TestLevel.cpp.o.d -o CMakeFiles/main.dir/src/scenes/TestLevel.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/scenes/TestLevel.cpp
+
+CMakeFiles/main.dir/src/scenes/TestLevel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/scenes/TestLevel.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/scenes/TestLevel.cpp > CMakeFiles/main.dir/src/scenes/TestLevel.cpp.i
+
+CMakeFiles/main.dir/src/scenes/TestLevel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/scenes/TestLevel.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/scenes/TestLevel.cpp -o CMakeFiles/main.dir/src/scenes/TestLevel.cpp.s
+
+CMakeFiles/main.dir/src/systems/CameraControllerSystem.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/systems/CameraControllerSystem.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/systems/CameraControllerSystem.cpp
+CMakeFiles/main.dir/src/systems/CameraControllerSystem.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/main.dir/src/systems/CameraControllerSystem.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/systems/CameraControllerSystem.cpp.o -MF CMakeFiles/main.dir/src/systems/CameraControllerSystem.cpp.o.d -o CMakeFiles/main.dir/src/systems/CameraControllerSystem.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/systems/CameraControllerSystem.cpp
+
+CMakeFiles/main.dir/src/systems/CameraControllerSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/systems/CameraControllerSystem.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/systems/CameraControllerSystem.cpp > CMakeFiles/main.dir/src/systems/CameraControllerSystem.cpp.i
+
+CMakeFiles/main.dir/src/systems/CameraControllerSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/systems/CameraControllerSystem.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/systems/CameraControllerSystem.cpp -o CMakeFiles/main.dir/src/systems/CameraControllerSystem.cpp.s
+
+CMakeFiles/main.dir/src/systems/PhysicsSystem.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/systems/PhysicsSystem.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/systems/PhysicsSystem.cpp
+CMakeFiles/main.dir/src/systems/PhysicsSystem.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/main.dir/src/systems/PhysicsSystem.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/systems/PhysicsSystem.cpp.o -MF CMakeFiles/main.dir/src/systems/PhysicsSystem.cpp.o.d -o CMakeFiles/main.dir/src/systems/PhysicsSystem.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/systems/PhysicsSystem.cpp
+
+CMakeFiles/main.dir/src/systems/PhysicsSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/systems/PhysicsSystem.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/systems/PhysicsSystem.cpp > CMakeFiles/main.dir/src/systems/PhysicsSystem.cpp.i
+
+CMakeFiles/main.dir/src/systems/PhysicsSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/systems/PhysicsSystem.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/systems/PhysicsSystem.cpp -o CMakeFiles/main.dir/src/systems/PhysicsSystem.cpp.s
+
+CMakeFiles/main.dir/src/systems/TimerSystem.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/systems/TimerSystem.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/systems/TimerSystem.cpp
+CMakeFiles/main.dir/src/systems/TimerSystem.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/main.dir/src/systems/TimerSystem.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/systems/TimerSystem.cpp.o -MF CMakeFiles/main.dir/src/systems/TimerSystem.cpp.o.d -o CMakeFiles/main.dir/src/systems/TimerSystem.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/systems/TimerSystem.cpp
+
+CMakeFiles/main.dir/src/systems/TimerSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/systems/TimerSystem.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/systems/TimerSystem.cpp > CMakeFiles/main.dir/src/systems/TimerSystem.cpp.i
+
+CMakeFiles/main.dir/src/systems/TimerSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/systems/TimerSystem.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/systems/TimerSystem.cpp -o CMakeFiles/main.dir/src/systems/TimerSystem.cpp.s
+
+CMakeFiles/main.dir/src/utils/Random.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/utils/Random.cpp.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/utils/Random.cpp
+CMakeFiles/main.dir/src/utils/Random.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/buildmac/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/main.dir/src/utils/Random.cpp.o"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/utils/Random.cpp.o -MF CMakeFiles/main.dir/src/utils/Random.cpp.o.d -o CMakeFiles/main.dir/src/utils/Random.cpp.o -c /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/utils/Random.cpp
+
+CMakeFiles/main.dir/src/utils/Random.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/utils/Random.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/utils/Random.cpp > CMakeFiles/main.dir/src/utils/Random.cpp.i
+
+CMakeFiles/main.dir/src/utils/Random.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/utils/Random.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/utils/Random.cpp -o CMakeFiles/main.dir/src/utils/Random.cpp.s
 
 CMakeFiles/main.dir/dep/glad/glad.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/dep/glad/glad.c.o: /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glad/glad.c
@@ -407,57 +407,57 @@ CMakeFiles/main.dir/dep/glad/glad.c.s: cmake_force
 
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/src/engine/Engine.cpp.o" \
-"CMakeFiles/main.dir/src/engine/Scene.cpp.o" \
-"CMakeFiles/main.dir/src/engine/SceneManager.cpp.o" \
-"CMakeFiles/main.dir/src/engine/Window.cpp.o" \
-"CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.o" \
-"CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o" \
-"CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o" \
-"CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o" \
-"CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.o" \
-"CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o" \
-"CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o" \
-"CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o" \
-"CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.o" \
-"CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.o" \
-"CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.o" \
-"CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o" \
-"CMakeFiles/main.dir/src/engine/systems/CameraControllerSystem.cpp.o" \
-"CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.o" \
-"CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o" \
-"CMakeFiles/main.dir/src/engine/utils/Random.cpp.o" \
-"CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o" \
-"CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.o" \
+"CMakeFiles/main.dir/src/Engine.cpp.o" \
+"CMakeFiles/main.dir/src/Scene.cpp.o" \
+"CMakeFiles/main.dir/src/SceneManager.cpp.o" \
+"CMakeFiles/main.dir/src/Window.cpp.o" \
+"CMakeFiles/main.dir/src/components/AnimSpriteComponent.cpp.o" \
+"CMakeFiles/main.dir/src/components/SpriteComponent.cpp.o" \
+"CMakeFiles/main.dir/src/components/TransformComponent.cpp.o" \
+"CMakeFiles/main.dir/src/entities/ImageEntity.cpp.o" \
+"CMakeFiles/main.dir/src/entities/PlayerEntity.cpp.o" \
+"CMakeFiles/main.dir/src/entities/StaticEntity.cpp.o" \
 "CMakeFiles/main.dir/src/main.cpp.o" \
+"CMakeFiles/main.dir/src/rendering/Camera.cpp.o" \
+"CMakeFiles/main.dir/src/rendering/IndexBuffer.cpp.o" \
+"CMakeFiles/main.dir/src/rendering/Renderer.cpp.o" \
+"CMakeFiles/main.dir/src/rendering/Shader.cpp.o" \
+"CMakeFiles/main.dir/src/rendering/Texture.cpp.o" \
+"CMakeFiles/main.dir/src/rendering/VertexArray.cpp.o" \
+"CMakeFiles/main.dir/src/rendering/VertexBuffer.cpp.o" \
+"CMakeFiles/main.dir/src/scenes/TestLevel.cpp.o" \
+"CMakeFiles/main.dir/src/systems/CameraControllerSystem.cpp.o" \
+"CMakeFiles/main.dir/src/systems/PhysicsSystem.cpp.o" \
+"CMakeFiles/main.dir/src/systems/TimerSystem.cpp.o" \
+"CMakeFiles/main.dir/src/utils/Random.cpp.o" \
 "CMakeFiles/main.dir/dep/glad/glad.c.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
-main: CMakeFiles/main.dir/src/engine/Engine.cpp.o
-main: CMakeFiles/main.dir/src/engine/Scene.cpp.o
-main: CMakeFiles/main.dir/src/engine/SceneManager.cpp.o
-main: CMakeFiles/main.dir/src/engine/Window.cpp.o
-main: CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.o
-main: CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o
-main: CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o
-main: CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o
-main: CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.o
-main: CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o
-main: CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o
-main: CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o
-main: CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.o
-main: CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.o
-main: CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.o
-main: CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o
-main: CMakeFiles/main.dir/src/engine/systems/CameraControllerSystem.cpp.o
-main: CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.o
-main: CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o
-main: CMakeFiles/main.dir/src/engine/utils/Random.cpp.o
-main: CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o
-main: CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.o
+main: CMakeFiles/main.dir/src/Engine.cpp.o
+main: CMakeFiles/main.dir/src/Scene.cpp.o
+main: CMakeFiles/main.dir/src/SceneManager.cpp.o
+main: CMakeFiles/main.dir/src/Window.cpp.o
+main: CMakeFiles/main.dir/src/components/AnimSpriteComponent.cpp.o
+main: CMakeFiles/main.dir/src/components/SpriteComponent.cpp.o
+main: CMakeFiles/main.dir/src/components/TransformComponent.cpp.o
+main: CMakeFiles/main.dir/src/entities/ImageEntity.cpp.o
+main: CMakeFiles/main.dir/src/entities/PlayerEntity.cpp.o
+main: CMakeFiles/main.dir/src/entities/StaticEntity.cpp.o
 main: CMakeFiles/main.dir/src/main.cpp.o
+main: CMakeFiles/main.dir/src/rendering/Camera.cpp.o
+main: CMakeFiles/main.dir/src/rendering/IndexBuffer.cpp.o
+main: CMakeFiles/main.dir/src/rendering/Renderer.cpp.o
+main: CMakeFiles/main.dir/src/rendering/Shader.cpp.o
+main: CMakeFiles/main.dir/src/rendering/Texture.cpp.o
+main: CMakeFiles/main.dir/src/rendering/VertexArray.cpp.o
+main: CMakeFiles/main.dir/src/rendering/VertexBuffer.cpp.o
+main: CMakeFiles/main.dir/src/scenes/TestLevel.cpp.o
+main: CMakeFiles/main.dir/src/systems/CameraControllerSystem.cpp.o
+main: CMakeFiles/main.dir/src/systems/PhysicsSystem.cpp.o
+main: CMakeFiles/main.dir/src/systems/TimerSystem.cpp.o
+main: CMakeFiles/main.dir/src/utils/Random.cpp.o
 main: CMakeFiles/main.dir/dep/glad/glad.c.o
 main: CMakeFiles/main.dir/build.make
 main: /opt/homebrew/lib/libglfw.3.4.dylib

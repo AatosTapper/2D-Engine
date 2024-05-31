@@ -482,7 +482,7 @@ CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.o: \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/components/PhysicsComponent.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/settings.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Camera.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/util.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/eng_util.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__ios/fpos.h \

@@ -153,533 +153,245 @@ dep/glad/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/dep/glad/glad.c.s
 .PHONY : dep/glad/glad.c.s
 
-src/engine/Engine.o: src/engine/Engine.cpp.o
-.PHONY : src/engine/Engine.o
+src/Engine.o: src/Engine.cpp.o
+.PHONY : src/Engine.o
 
 # target to build an object file
-src/engine/Engine.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Engine.cpp.o
-.PHONY : src/engine/Engine.cpp.o
+src/Engine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Engine.cpp.o
+.PHONY : src/Engine.cpp.o
 
-src/engine/Engine.i: src/engine/Engine.cpp.i
-.PHONY : src/engine/Engine.i
+src/Engine.i: src/Engine.cpp.i
+.PHONY : src/Engine.i
 
 # target to preprocess a source file
-src/engine/Engine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Engine.cpp.i
-.PHONY : src/engine/Engine.cpp.i
+src/Engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Engine.cpp.i
+.PHONY : src/Engine.cpp.i
 
-src/engine/Engine.s: src/engine/Engine.cpp.s
-.PHONY : src/engine/Engine.s
+src/Engine.s: src/Engine.cpp.s
+.PHONY : src/Engine.s
 
 # target to generate assembly for a file
-src/engine/Engine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Engine.cpp.s
-.PHONY : src/engine/Engine.cpp.s
+src/Engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Engine.cpp.s
+.PHONY : src/Engine.cpp.s
 
-src/engine/Scene.o: src/engine/Scene.cpp.o
-.PHONY : src/engine/Scene.o
+src/Scene.o: src/Scene.cpp.o
+.PHONY : src/Scene.o
 
 # target to build an object file
-src/engine/Scene.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Scene.cpp.o
-.PHONY : src/engine/Scene.cpp.o
+src/Scene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Scene.cpp.o
+.PHONY : src/Scene.cpp.o
 
-src/engine/Scene.i: src/engine/Scene.cpp.i
-.PHONY : src/engine/Scene.i
+src/Scene.i: src/Scene.cpp.i
+.PHONY : src/Scene.i
 
 # target to preprocess a source file
-src/engine/Scene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Scene.cpp.i
-.PHONY : src/engine/Scene.cpp.i
+src/Scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Scene.cpp.i
+.PHONY : src/Scene.cpp.i
 
-src/engine/Scene.s: src/engine/Scene.cpp.s
-.PHONY : src/engine/Scene.s
+src/Scene.s: src/Scene.cpp.s
+.PHONY : src/Scene.s
 
 # target to generate assembly for a file
-src/engine/Scene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Scene.cpp.s
-.PHONY : src/engine/Scene.cpp.s
+src/Scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Scene.cpp.s
+.PHONY : src/Scene.cpp.s
 
-src/engine/SceneManager.o: src/engine/SceneManager.cpp.o
-.PHONY : src/engine/SceneManager.o
+src/SceneManager.o: src/SceneManager.cpp.o
+.PHONY : src/SceneManager.o
 
 # target to build an object file
-src/engine/SceneManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/SceneManager.cpp.o
-.PHONY : src/engine/SceneManager.cpp.o
+src/SceneManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/SceneManager.cpp.o
+.PHONY : src/SceneManager.cpp.o
 
-src/engine/SceneManager.i: src/engine/SceneManager.cpp.i
-.PHONY : src/engine/SceneManager.i
+src/SceneManager.i: src/SceneManager.cpp.i
+.PHONY : src/SceneManager.i
 
 # target to preprocess a source file
-src/engine/SceneManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/SceneManager.cpp.i
-.PHONY : src/engine/SceneManager.cpp.i
+src/SceneManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/SceneManager.cpp.i
+.PHONY : src/SceneManager.cpp.i
 
-src/engine/SceneManager.s: src/engine/SceneManager.cpp.s
-.PHONY : src/engine/SceneManager.s
+src/SceneManager.s: src/SceneManager.cpp.s
+.PHONY : src/SceneManager.s
 
 # target to generate assembly for a file
-src/engine/SceneManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/SceneManager.cpp.s
-.PHONY : src/engine/SceneManager.cpp.s
+src/SceneManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/SceneManager.cpp.s
+.PHONY : src/SceneManager.cpp.s
 
-src/engine/Window.o: src/engine/Window.cpp.o
-.PHONY : src/engine/Window.o
+src/Window.o: src/Window.cpp.o
+.PHONY : src/Window.o
 
 # target to build an object file
-src/engine/Window.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Window.cpp.o
-.PHONY : src/engine/Window.cpp.o
+src/Window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Window.cpp.o
+.PHONY : src/Window.cpp.o
 
-src/engine/Window.i: src/engine/Window.cpp.i
-.PHONY : src/engine/Window.i
+src/Window.i: src/Window.cpp.i
+.PHONY : src/Window.i
 
 # target to preprocess a source file
-src/engine/Window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Window.cpp.i
-.PHONY : src/engine/Window.cpp.i
+src/Window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Window.cpp.i
+.PHONY : src/Window.cpp.i
 
-src/engine/Window.s: src/engine/Window.cpp.s
-.PHONY : src/engine/Window.s
+src/Window.s: src/Window.cpp.s
+.PHONY : src/Window.s
 
 # target to generate assembly for a file
-src/engine/Window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/Window.cpp.s
-.PHONY : src/engine/Window.cpp.s
+src/Window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Window.cpp.s
+.PHONY : src/Window.cpp.s
 
-src/engine/components/AnimSpriteComponent.o: src/engine/components/AnimSpriteComponent.cpp.o
-.PHONY : src/engine/components/AnimSpriteComponent.o
+src/components/AnimSpriteComponent.o: src/components/AnimSpriteComponent.cpp.o
+.PHONY : src/components/AnimSpriteComponent.o
 
 # target to build an object file
-src/engine/components/AnimSpriteComponent.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.o
-.PHONY : src/engine/components/AnimSpriteComponent.cpp.o
+src/components/AnimSpriteComponent.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/components/AnimSpriteComponent.cpp.o
+.PHONY : src/components/AnimSpriteComponent.cpp.o
 
-src/engine/components/AnimSpriteComponent.i: src/engine/components/AnimSpriteComponent.cpp.i
-.PHONY : src/engine/components/AnimSpriteComponent.i
+src/components/AnimSpriteComponent.i: src/components/AnimSpriteComponent.cpp.i
+.PHONY : src/components/AnimSpriteComponent.i
 
 # target to preprocess a source file
-src/engine/components/AnimSpriteComponent.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.i
-.PHONY : src/engine/components/AnimSpriteComponent.cpp.i
+src/components/AnimSpriteComponent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/components/AnimSpriteComponent.cpp.i
+.PHONY : src/components/AnimSpriteComponent.cpp.i
 
-src/engine/components/AnimSpriteComponent.s: src/engine/components/AnimSpriteComponent.cpp.s
-.PHONY : src/engine/components/AnimSpriteComponent.s
+src/components/AnimSpriteComponent.s: src/components/AnimSpriteComponent.cpp.s
+.PHONY : src/components/AnimSpriteComponent.s
 
 # target to generate assembly for a file
-src/engine/components/AnimSpriteComponent.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/AnimSpriteComponent.cpp.s
-.PHONY : src/engine/components/AnimSpriteComponent.cpp.s
+src/components/AnimSpriteComponent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/components/AnimSpriteComponent.cpp.s
+.PHONY : src/components/AnimSpriteComponent.cpp.s
 
-src/engine/components/SpriteComponent.o: src/engine/components/SpriteComponent.cpp.o
-.PHONY : src/engine/components/SpriteComponent.o
+src/components/SpriteComponent.o: src/components/SpriteComponent.cpp.o
+.PHONY : src/components/SpriteComponent.o
 
 # target to build an object file
-src/engine/components/SpriteComponent.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.o
-.PHONY : src/engine/components/SpriteComponent.cpp.o
+src/components/SpriteComponent.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/components/SpriteComponent.cpp.o
+.PHONY : src/components/SpriteComponent.cpp.o
 
-src/engine/components/SpriteComponent.i: src/engine/components/SpriteComponent.cpp.i
-.PHONY : src/engine/components/SpriteComponent.i
+src/components/SpriteComponent.i: src/components/SpriteComponent.cpp.i
+.PHONY : src/components/SpriteComponent.i
 
 # target to preprocess a source file
-src/engine/components/SpriteComponent.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.i
-.PHONY : src/engine/components/SpriteComponent.cpp.i
+src/components/SpriteComponent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/components/SpriteComponent.cpp.i
+.PHONY : src/components/SpriteComponent.cpp.i
 
-src/engine/components/SpriteComponent.s: src/engine/components/SpriteComponent.cpp.s
-.PHONY : src/engine/components/SpriteComponent.s
+src/components/SpriteComponent.s: src/components/SpriteComponent.cpp.s
+.PHONY : src/components/SpriteComponent.s
 
 # target to generate assembly for a file
-src/engine/components/SpriteComponent.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/SpriteComponent.cpp.s
-.PHONY : src/engine/components/SpriteComponent.cpp.s
+src/components/SpriteComponent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/components/SpriteComponent.cpp.s
+.PHONY : src/components/SpriteComponent.cpp.s
 
-src/engine/components/TransformComponent.o: src/engine/components/TransformComponent.cpp.o
-.PHONY : src/engine/components/TransformComponent.o
+src/components/TransformComponent.o: src/components/TransformComponent.cpp.o
+.PHONY : src/components/TransformComponent.o
 
 # target to build an object file
-src/engine/components/TransformComponent.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.o
-.PHONY : src/engine/components/TransformComponent.cpp.o
+src/components/TransformComponent.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/components/TransformComponent.cpp.o
+.PHONY : src/components/TransformComponent.cpp.o
 
-src/engine/components/TransformComponent.i: src/engine/components/TransformComponent.cpp.i
-.PHONY : src/engine/components/TransformComponent.i
+src/components/TransformComponent.i: src/components/TransformComponent.cpp.i
+.PHONY : src/components/TransformComponent.i
 
 # target to preprocess a source file
-src/engine/components/TransformComponent.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.i
-.PHONY : src/engine/components/TransformComponent.cpp.i
+src/components/TransformComponent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/components/TransformComponent.cpp.i
+.PHONY : src/components/TransformComponent.cpp.i
 
-src/engine/components/TransformComponent.s: src/engine/components/TransformComponent.cpp.s
-.PHONY : src/engine/components/TransformComponent.s
+src/components/TransformComponent.s: src/components/TransformComponent.cpp.s
+.PHONY : src/components/TransformComponent.s
 
 # target to generate assembly for a file
-src/engine/components/TransformComponent.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/components/TransformComponent.cpp.s
-.PHONY : src/engine/components/TransformComponent.cpp.s
+src/components/TransformComponent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/components/TransformComponent.cpp.s
+.PHONY : src/components/TransformComponent.cpp.s
 
-src/engine/entities/ImageEntity.o: src/engine/entities/ImageEntity.cpp.o
-.PHONY : src/engine/entities/ImageEntity.o
+src/entities/ImageEntity.o: src/entities/ImageEntity.cpp.o
+.PHONY : src/entities/ImageEntity.o
 
 # target to build an object file
-src/engine/entities/ImageEntity.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.o
-.PHONY : src/engine/entities/ImageEntity.cpp.o
+src/entities/ImageEntity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/entities/ImageEntity.cpp.o
+.PHONY : src/entities/ImageEntity.cpp.o
 
-src/engine/entities/ImageEntity.i: src/engine/entities/ImageEntity.cpp.i
-.PHONY : src/engine/entities/ImageEntity.i
+src/entities/ImageEntity.i: src/entities/ImageEntity.cpp.i
+.PHONY : src/entities/ImageEntity.i
 
 # target to preprocess a source file
-src/engine/entities/ImageEntity.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.i
-.PHONY : src/engine/entities/ImageEntity.cpp.i
+src/entities/ImageEntity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/entities/ImageEntity.cpp.i
+.PHONY : src/entities/ImageEntity.cpp.i
 
-src/engine/entities/ImageEntity.s: src/engine/entities/ImageEntity.cpp.s
-.PHONY : src/engine/entities/ImageEntity.s
+src/entities/ImageEntity.s: src/entities/ImageEntity.cpp.s
+.PHONY : src/entities/ImageEntity.s
 
 # target to generate assembly for a file
-src/engine/entities/ImageEntity.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/entities/ImageEntity.cpp.s
-.PHONY : src/engine/entities/ImageEntity.cpp.s
+src/entities/ImageEntity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/entities/ImageEntity.cpp.s
+.PHONY : src/entities/ImageEntity.cpp.s
 
-src/engine/entities/StaticEntity.o: src/engine/entities/StaticEntity.cpp.o
-.PHONY : src/engine/entities/StaticEntity.o
+src/entities/PlayerEntity.o: src/entities/PlayerEntity.cpp.o
+.PHONY : src/entities/PlayerEntity.o
 
 # target to build an object file
-src/engine/entities/StaticEntity.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.o
-.PHONY : src/engine/entities/StaticEntity.cpp.o
+src/entities/PlayerEntity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/entities/PlayerEntity.cpp.o
+.PHONY : src/entities/PlayerEntity.cpp.o
 
-src/engine/entities/StaticEntity.i: src/engine/entities/StaticEntity.cpp.i
-.PHONY : src/engine/entities/StaticEntity.i
+src/entities/PlayerEntity.i: src/entities/PlayerEntity.cpp.i
+.PHONY : src/entities/PlayerEntity.i
 
 # target to preprocess a source file
-src/engine/entities/StaticEntity.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.i
-.PHONY : src/engine/entities/StaticEntity.cpp.i
+src/entities/PlayerEntity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/entities/PlayerEntity.cpp.i
+.PHONY : src/entities/PlayerEntity.cpp.i
 
-src/engine/entities/StaticEntity.s: src/engine/entities/StaticEntity.cpp.s
-.PHONY : src/engine/entities/StaticEntity.s
+src/entities/PlayerEntity.s: src/entities/PlayerEntity.cpp.s
+.PHONY : src/entities/PlayerEntity.s
 
 # target to generate assembly for a file
-src/engine/entities/StaticEntity.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/entities/StaticEntity.cpp.s
-.PHONY : src/engine/entities/StaticEntity.cpp.s
+src/entities/PlayerEntity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/entities/PlayerEntity.cpp.s
+.PHONY : src/entities/PlayerEntity.cpp.s
 
-src/engine/rendering/Camera.o: src/engine/rendering/Camera.cpp.o
-.PHONY : src/engine/rendering/Camera.o
+src/entities/StaticEntity.o: src/entities/StaticEntity.cpp.o
+.PHONY : src/entities/StaticEntity.o
 
 # target to build an object file
-src/engine/rendering/Camera.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.o
-.PHONY : src/engine/rendering/Camera.cpp.o
+src/entities/StaticEntity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/entities/StaticEntity.cpp.o
+.PHONY : src/entities/StaticEntity.cpp.o
 
-src/engine/rendering/Camera.i: src/engine/rendering/Camera.cpp.i
-.PHONY : src/engine/rendering/Camera.i
-
-# target to preprocess a source file
-src/engine/rendering/Camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.i
-.PHONY : src/engine/rendering/Camera.cpp.i
-
-src/engine/rendering/Camera.s: src/engine/rendering/Camera.cpp.s
-.PHONY : src/engine/rendering/Camera.s
-
-# target to generate assembly for a file
-src/engine/rendering/Camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Camera.cpp.s
-.PHONY : src/engine/rendering/Camera.cpp.s
-
-src/engine/rendering/IndexBuffer.o: src/engine/rendering/IndexBuffer.cpp.o
-.PHONY : src/engine/rendering/IndexBuffer.o
-
-# target to build an object file
-src/engine/rendering/IndexBuffer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.o
-.PHONY : src/engine/rendering/IndexBuffer.cpp.o
-
-src/engine/rendering/IndexBuffer.i: src/engine/rendering/IndexBuffer.cpp.i
-.PHONY : src/engine/rendering/IndexBuffer.i
+src/entities/StaticEntity.i: src/entities/StaticEntity.cpp.i
+.PHONY : src/entities/StaticEntity.i
 
 # target to preprocess a source file
-src/engine/rendering/IndexBuffer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.i
-.PHONY : src/engine/rendering/IndexBuffer.cpp.i
+src/entities/StaticEntity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/entities/StaticEntity.cpp.i
+.PHONY : src/entities/StaticEntity.cpp.i
 
-src/engine/rendering/IndexBuffer.s: src/engine/rendering/IndexBuffer.cpp.s
-.PHONY : src/engine/rendering/IndexBuffer.s
-
-# target to generate assembly for a file
-src/engine/rendering/IndexBuffer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/IndexBuffer.cpp.s
-.PHONY : src/engine/rendering/IndexBuffer.cpp.s
-
-src/engine/rendering/Renderer.o: src/engine/rendering/Renderer.cpp.o
-.PHONY : src/engine/rendering/Renderer.o
-
-# target to build an object file
-src/engine/rendering/Renderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.o
-.PHONY : src/engine/rendering/Renderer.cpp.o
-
-src/engine/rendering/Renderer.i: src/engine/rendering/Renderer.cpp.i
-.PHONY : src/engine/rendering/Renderer.i
-
-# target to preprocess a source file
-src/engine/rendering/Renderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.i
-.PHONY : src/engine/rendering/Renderer.cpp.i
-
-src/engine/rendering/Renderer.s: src/engine/rendering/Renderer.cpp.s
-.PHONY : src/engine/rendering/Renderer.s
+src/entities/StaticEntity.s: src/entities/StaticEntity.cpp.s
+.PHONY : src/entities/StaticEntity.s
 
 # target to generate assembly for a file
-src/engine/rendering/Renderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Renderer.cpp.s
-.PHONY : src/engine/rendering/Renderer.cpp.s
-
-src/engine/rendering/Shader.o: src/engine/rendering/Shader.cpp.o
-.PHONY : src/engine/rendering/Shader.o
-
-# target to build an object file
-src/engine/rendering/Shader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.o
-.PHONY : src/engine/rendering/Shader.cpp.o
-
-src/engine/rendering/Shader.i: src/engine/rendering/Shader.cpp.i
-.PHONY : src/engine/rendering/Shader.i
-
-# target to preprocess a source file
-src/engine/rendering/Shader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.i
-.PHONY : src/engine/rendering/Shader.cpp.i
-
-src/engine/rendering/Shader.s: src/engine/rendering/Shader.cpp.s
-.PHONY : src/engine/rendering/Shader.s
-
-# target to generate assembly for a file
-src/engine/rendering/Shader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Shader.cpp.s
-.PHONY : src/engine/rendering/Shader.cpp.s
-
-src/engine/rendering/Texture.o: src/engine/rendering/Texture.cpp.o
-.PHONY : src/engine/rendering/Texture.o
-
-# target to build an object file
-src/engine/rendering/Texture.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.o
-.PHONY : src/engine/rendering/Texture.cpp.o
-
-src/engine/rendering/Texture.i: src/engine/rendering/Texture.cpp.i
-.PHONY : src/engine/rendering/Texture.i
-
-# target to preprocess a source file
-src/engine/rendering/Texture.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.i
-.PHONY : src/engine/rendering/Texture.cpp.i
-
-src/engine/rendering/Texture.s: src/engine/rendering/Texture.cpp.s
-.PHONY : src/engine/rendering/Texture.s
-
-# target to generate assembly for a file
-src/engine/rendering/Texture.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/Texture.cpp.s
-.PHONY : src/engine/rendering/Texture.cpp.s
-
-src/engine/rendering/VertexArray.o: src/engine/rendering/VertexArray.cpp.o
-.PHONY : src/engine/rendering/VertexArray.o
-
-# target to build an object file
-src/engine/rendering/VertexArray.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.o
-.PHONY : src/engine/rendering/VertexArray.cpp.o
-
-src/engine/rendering/VertexArray.i: src/engine/rendering/VertexArray.cpp.i
-.PHONY : src/engine/rendering/VertexArray.i
-
-# target to preprocess a source file
-src/engine/rendering/VertexArray.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.i
-.PHONY : src/engine/rendering/VertexArray.cpp.i
-
-src/engine/rendering/VertexArray.s: src/engine/rendering/VertexArray.cpp.s
-.PHONY : src/engine/rendering/VertexArray.s
-
-# target to generate assembly for a file
-src/engine/rendering/VertexArray.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/VertexArray.cpp.s
-.PHONY : src/engine/rendering/VertexArray.cpp.s
-
-src/engine/rendering/VertexBuffer.o: src/engine/rendering/VertexBuffer.cpp.o
-.PHONY : src/engine/rendering/VertexBuffer.o
-
-# target to build an object file
-src/engine/rendering/VertexBuffer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.o
-.PHONY : src/engine/rendering/VertexBuffer.cpp.o
-
-src/engine/rendering/VertexBuffer.i: src/engine/rendering/VertexBuffer.cpp.i
-.PHONY : src/engine/rendering/VertexBuffer.i
-
-# target to preprocess a source file
-src/engine/rendering/VertexBuffer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.i
-.PHONY : src/engine/rendering/VertexBuffer.cpp.i
-
-src/engine/rendering/VertexBuffer.s: src/engine/rendering/VertexBuffer.cpp.s
-.PHONY : src/engine/rendering/VertexBuffer.s
-
-# target to generate assembly for a file
-src/engine/rendering/VertexBuffer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/rendering/VertexBuffer.cpp.s
-.PHONY : src/engine/rendering/VertexBuffer.cpp.s
-
-src/engine/systems/CameraControllerSystem.o: src/engine/systems/CameraControllerSystem.cpp.o
-.PHONY : src/engine/systems/CameraControllerSystem.o
-
-# target to build an object file
-src/engine/systems/CameraControllerSystem.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/CameraControllerSystem.cpp.o
-.PHONY : src/engine/systems/CameraControllerSystem.cpp.o
-
-src/engine/systems/CameraControllerSystem.i: src/engine/systems/CameraControllerSystem.cpp.i
-.PHONY : src/engine/systems/CameraControllerSystem.i
-
-# target to preprocess a source file
-src/engine/systems/CameraControllerSystem.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/CameraControllerSystem.cpp.i
-.PHONY : src/engine/systems/CameraControllerSystem.cpp.i
-
-src/engine/systems/CameraControllerSystem.s: src/engine/systems/CameraControllerSystem.cpp.s
-.PHONY : src/engine/systems/CameraControllerSystem.s
-
-# target to generate assembly for a file
-src/engine/systems/CameraControllerSystem.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/CameraControllerSystem.cpp.s
-.PHONY : src/engine/systems/CameraControllerSystem.cpp.s
-
-src/engine/systems/PhysicsSystem.o: src/engine/systems/PhysicsSystem.cpp.o
-.PHONY : src/engine/systems/PhysicsSystem.o
-
-# target to build an object file
-src/engine/systems/PhysicsSystem.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.o
-.PHONY : src/engine/systems/PhysicsSystem.cpp.o
-
-src/engine/systems/PhysicsSystem.i: src/engine/systems/PhysicsSystem.cpp.i
-.PHONY : src/engine/systems/PhysicsSystem.i
-
-# target to preprocess a source file
-src/engine/systems/PhysicsSystem.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.i
-.PHONY : src/engine/systems/PhysicsSystem.cpp.i
-
-src/engine/systems/PhysicsSystem.s: src/engine/systems/PhysicsSystem.cpp.s
-.PHONY : src/engine/systems/PhysicsSystem.s
-
-# target to generate assembly for a file
-src/engine/systems/PhysicsSystem.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/PhysicsSystem.cpp.s
-.PHONY : src/engine/systems/PhysicsSystem.cpp.s
-
-src/engine/systems/TimerSystem.o: src/engine/systems/TimerSystem.cpp.o
-.PHONY : src/engine/systems/TimerSystem.o
-
-# target to build an object file
-src/engine/systems/TimerSystem.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.o
-.PHONY : src/engine/systems/TimerSystem.cpp.o
-
-src/engine/systems/TimerSystem.i: src/engine/systems/TimerSystem.cpp.i
-.PHONY : src/engine/systems/TimerSystem.i
-
-# target to preprocess a source file
-src/engine/systems/TimerSystem.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.i
-.PHONY : src/engine/systems/TimerSystem.cpp.i
-
-src/engine/systems/TimerSystem.s: src/engine/systems/TimerSystem.cpp.s
-.PHONY : src/engine/systems/TimerSystem.s
-
-# target to generate assembly for a file
-src/engine/systems/TimerSystem.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/systems/TimerSystem.cpp.s
-.PHONY : src/engine/systems/TimerSystem.cpp.s
-
-src/engine/utils/Random.o: src/engine/utils/Random.cpp.o
-.PHONY : src/engine/utils/Random.o
-
-# target to build an object file
-src/engine/utils/Random.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/utils/Random.cpp.o
-.PHONY : src/engine/utils/Random.cpp.o
-
-src/engine/utils/Random.i: src/engine/utils/Random.cpp.i
-.PHONY : src/engine/utils/Random.i
-
-# target to preprocess a source file
-src/engine/utils/Random.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/utils/Random.cpp.i
-.PHONY : src/engine/utils/Random.cpp.i
-
-src/engine/utils/Random.s: src/engine/utils/Random.cpp.s
-.PHONY : src/engine/utils/Random.s
-
-# target to generate assembly for a file
-src/engine/utils/Random.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/engine/utils/Random.cpp.s
-.PHONY : src/engine/utils/Random.cpp.s
-
-src/game/entities/PlayerEntity.o: src/game/entities/PlayerEntity.cpp.o
-.PHONY : src/game/entities/PlayerEntity.o
-
-# target to build an object file
-src/game/entities/PlayerEntity.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.o
-.PHONY : src/game/entities/PlayerEntity.cpp.o
-
-src/game/entities/PlayerEntity.i: src/game/entities/PlayerEntity.cpp.i
-.PHONY : src/game/entities/PlayerEntity.i
-
-# target to preprocess a source file
-src/game/entities/PlayerEntity.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.i
-.PHONY : src/game/entities/PlayerEntity.cpp.i
-
-src/game/entities/PlayerEntity.s: src/game/entities/PlayerEntity.cpp.s
-.PHONY : src/game/entities/PlayerEntity.s
-
-# target to generate assembly for a file
-src/game/entities/PlayerEntity.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/game/entities/PlayerEntity.cpp.s
-.PHONY : src/game/entities/PlayerEntity.cpp.s
-
-src/game/scenes/TestLevel.o: src/game/scenes/TestLevel.cpp.o
-.PHONY : src/game/scenes/TestLevel.o
-
-# target to build an object file
-src/game/scenes/TestLevel.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.o
-.PHONY : src/game/scenes/TestLevel.cpp.o
-
-src/game/scenes/TestLevel.i: src/game/scenes/TestLevel.cpp.i
-.PHONY : src/game/scenes/TestLevel.i
-
-# target to preprocess a source file
-src/game/scenes/TestLevel.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.i
-.PHONY : src/game/scenes/TestLevel.cpp.i
-
-src/game/scenes/TestLevel.s: src/game/scenes/TestLevel.cpp.s
-.PHONY : src/game/scenes/TestLevel.s
-
-# target to generate assembly for a file
-src/game/scenes/TestLevel.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/game/scenes/TestLevel.cpp.s
-.PHONY : src/game/scenes/TestLevel.cpp.s
+src/entities/StaticEntity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/entities/StaticEntity.cpp.s
+.PHONY : src/entities/StaticEntity.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -705,6 +417,294 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/rendering/Camera.o: src/rendering/Camera.cpp.o
+.PHONY : src/rendering/Camera.o
+
+# target to build an object file
+src/rendering/Camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rendering/Camera.cpp.o
+.PHONY : src/rendering/Camera.cpp.o
+
+src/rendering/Camera.i: src/rendering/Camera.cpp.i
+.PHONY : src/rendering/Camera.i
+
+# target to preprocess a source file
+src/rendering/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rendering/Camera.cpp.i
+.PHONY : src/rendering/Camera.cpp.i
+
+src/rendering/Camera.s: src/rendering/Camera.cpp.s
+.PHONY : src/rendering/Camera.s
+
+# target to generate assembly for a file
+src/rendering/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rendering/Camera.cpp.s
+.PHONY : src/rendering/Camera.cpp.s
+
+src/rendering/IndexBuffer.o: src/rendering/IndexBuffer.cpp.o
+.PHONY : src/rendering/IndexBuffer.o
+
+# target to build an object file
+src/rendering/IndexBuffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rendering/IndexBuffer.cpp.o
+.PHONY : src/rendering/IndexBuffer.cpp.o
+
+src/rendering/IndexBuffer.i: src/rendering/IndexBuffer.cpp.i
+.PHONY : src/rendering/IndexBuffer.i
+
+# target to preprocess a source file
+src/rendering/IndexBuffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rendering/IndexBuffer.cpp.i
+.PHONY : src/rendering/IndexBuffer.cpp.i
+
+src/rendering/IndexBuffer.s: src/rendering/IndexBuffer.cpp.s
+.PHONY : src/rendering/IndexBuffer.s
+
+# target to generate assembly for a file
+src/rendering/IndexBuffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rendering/IndexBuffer.cpp.s
+.PHONY : src/rendering/IndexBuffer.cpp.s
+
+src/rendering/Renderer.o: src/rendering/Renderer.cpp.o
+.PHONY : src/rendering/Renderer.o
+
+# target to build an object file
+src/rendering/Renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rendering/Renderer.cpp.o
+.PHONY : src/rendering/Renderer.cpp.o
+
+src/rendering/Renderer.i: src/rendering/Renderer.cpp.i
+.PHONY : src/rendering/Renderer.i
+
+# target to preprocess a source file
+src/rendering/Renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rendering/Renderer.cpp.i
+.PHONY : src/rendering/Renderer.cpp.i
+
+src/rendering/Renderer.s: src/rendering/Renderer.cpp.s
+.PHONY : src/rendering/Renderer.s
+
+# target to generate assembly for a file
+src/rendering/Renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rendering/Renderer.cpp.s
+.PHONY : src/rendering/Renderer.cpp.s
+
+src/rendering/Shader.o: src/rendering/Shader.cpp.o
+.PHONY : src/rendering/Shader.o
+
+# target to build an object file
+src/rendering/Shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rendering/Shader.cpp.o
+.PHONY : src/rendering/Shader.cpp.o
+
+src/rendering/Shader.i: src/rendering/Shader.cpp.i
+.PHONY : src/rendering/Shader.i
+
+# target to preprocess a source file
+src/rendering/Shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rendering/Shader.cpp.i
+.PHONY : src/rendering/Shader.cpp.i
+
+src/rendering/Shader.s: src/rendering/Shader.cpp.s
+.PHONY : src/rendering/Shader.s
+
+# target to generate assembly for a file
+src/rendering/Shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rendering/Shader.cpp.s
+.PHONY : src/rendering/Shader.cpp.s
+
+src/rendering/Texture.o: src/rendering/Texture.cpp.o
+.PHONY : src/rendering/Texture.o
+
+# target to build an object file
+src/rendering/Texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rendering/Texture.cpp.o
+.PHONY : src/rendering/Texture.cpp.o
+
+src/rendering/Texture.i: src/rendering/Texture.cpp.i
+.PHONY : src/rendering/Texture.i
+
+# target to preprocess a source file
+src/rendering/Texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rendering/Texture.cpp.i
+.PHONY : src/rendering/Texture.cpp.i
+
+src/rendering/Texture.s: src/rendering/Texture.cpp.s
+.PHONY : src/rendering/Texture.s
+
+# target to generate assembly for a file
+src/rendering/Texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rendering/Texture.cpp.s
+.PHONY : src/rendering/Texture.cpp.s
+
+src/rendering/VertexArray.o: src/rendering/VertexArray.cpp.o
+.PHONY : src/rendering/VertexArray.o
+
+# target to build an object file
+src/rendering/VertexArray.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rendering/VertexArray.cpp.o
+.PHONY : src/rendering/VertexArray.cpp.o
+
+src/rendering/VertexArray.i: src/rendering/VertexArray.cpp.i
+.PHONY : src/rendering/VertexArray.i
+
+# target to preprocess a source file
+src/rendering/VertexArray.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rendering/VertexArray.cpp.i
+.PHONY : src/rendering/VertexArray.cpp.i
+
+src/rendering/VertexArray.s: src/rendering/VertexArray.cpp.s
+.PHONY : src/rendering/VertexArray.s
+
+# target to generate assembly for a file
+src/rendering/VertexArray.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rendering/VertexArray.cpp.s
+.PHONY : src/rendering/VertexArray.cpp.s
+
+src/rendering/VertexBuffer.o: src/rendering/VertexBuffer.cpp.o
+.PHONY : src/rendering/VertexBuffer.o
+
+# target to build an object file
+src/rendering/VertexBuffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rendering/VertexBuffer.cpp.o
+.PHONY : src/rendering/VertexBuffer.cpp.o
+
+src/rendering/VertexBuffer.i: src/rendering/VertexBuffer.cpp.i
+.PHONY : src/rendering/VertexBuffer.i
+
+# target to preprocess a source file
+src/rendering/VertexBuffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rendering/VertexBuffer.cpp.i
+.PHONY : src/rendering/VertexBuffer.cpp.i
+
+src/rendering/VertexBuffer.s: src/rendering/VertexBuffer.cpp.s
+.PHONY : src/rendering/VertexBuffer.s
+
+# target to generate assembly for a file
+src/rendering/VertexBuffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/rendering/VertexBuffer.cpp.s
+.PHONY : src/rendering/VertexBuffer.cpp.s
+
+src/scenes/TestLevel.o: src/scenes/TestLevel.cpp.o
+.PHONY : src/scenes/TestLevel.o
+
+# target to build an object file
+src/scenes/TestLevel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/scenes/TestLevel.cpp.o
+.PHONY : src/scenes/TestLevel.cpp.o
+
+src/scenes/TestLevel.i: src/scenes/TestLevel.cpp.i
+.PHONY : src/scenes/TestLevel.i
+
+# target to preprocess a source file
+src/scenes/TestLevel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/scenes/TestLevel.cpp.i
+.PHONY : src/scenes/TestLevel.cpp.i
+
+src/scenes/TestLevel.s: src/scenes/TestLevel.cpp.s
+.PHONY : src/scenes/TestLevel.s
+
+# target to generate assembly for a file
+src/scenes/TestLevel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/scenes/TestLevel.cpp.s
+.PHONY : src/scenes/TestLevel.cpp.s
+
+src/systems/CameraControllerSystem.o: src/systems/CameraControllerSystem.cpp.o
+.PHONY : src/systems/CameraControllerSystem.o
+
+# target to build an object file
+src/systems/CameraControllerSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/systems/CameraControllerSystem.cpp.o
+.PHONY : src/systems/CameraControllerSystem.cpp.o
+
+src/systems/CameraControllerSystem.i: src/systems/CameraControllerSystem.cpp.i
+.PHONY : src/systems/CameraControllerSystem.i
+
+# target to preprocess a source file
+src/systems/CameraControllerSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/systems/CameraControllerSystem.cpp.i
+.PHONY : src/systems/CameraControllerSystem.cpp.i
+
+src/systems/CameraControllerSystem.s: src/systems/CameraControllerSystem.cpp.s
+.PHONY : src/systems/CameraControllerSystem.s
+
+# target to generate assembly for a file
+src/systems/CameraControllerSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/systems/CameraControllerSystem.cpp.s
+.PHONY : src/systems/CameraControllerSystem.cpp.s
+
+src/systems/PhysicsSystem.o: src/systems/PhysicsSystem.cpp.o
+.PHONY : src/systems/PhysicsSystem.o
+
+# target to build an object file
+src/systems/PhysicsSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/systems/PhysicsSystem.cpp.o
+.PHONY : src/systems/PhysicsSystem.cpp.o
+
+src/systems/PhysicsSystem.i: src/systems/PhysicsSystem.cpp.i
+.PHONY : src/systems/PhysicsSystem.i
+
+# target to preprocess a source file
+src/systems/PhysicsSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/systems/PhysicsSystem.cpp.i
+.PHONY : src/systems/PhysicsSystem.cpp.i
+
+src/systems/PhysicsSystem.s: src/systems/PhysicsSystem.cpp.s
+.PHONY : src/systems/PhysicsSystem.s
+
+# target to generate assembly for a file
+src/systems/PhysicsSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/systems/PhysicsSystem.cpp.s
+.PHONY : src/systems/PhysicsSystem.cpp.s
+
+src/systems/TimerSystem.o: src/systems/TimerSystem.cpp.o
+.PHONY : src/systems/TimerSystem.o
+
+# target to build an object file
+src/systems/TimerSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/systems/TimerSystem.cpp.o
+.PHONY : src/systems/TimerSystem.cpp.o
+
+src/systems/TimerSystem.i: src/systems/TimerSystem.cpp.i
+.PHONY : src/systems/TimerSystem.i
+
+# target to preprocess a source file
+src/systems/TimerSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/systems/TimerSystem.cpp.i
+.PHONY : src/systems/TimerSystem.cpp.i
+
+src/systems/TimerSystem.s: src/systems/TimerSystem.cpp.s
+.PHONY : src/systems/TimerSystem.s
+
+# target to generate assembly for a file
+src/systems/TimerSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/systems/TimerSystem.cpp.s
+.PHONY : src/systems/TimerSystem.cpp.s
+
+src/utils/Random.o: src/utils/Random.cpp.o
+.PHONY : src/utils/Random.o
+
+# target to build an object file
+src/utils/Random.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/utils/Random.cpp.o
+.PHONY : src/utils/Random.cpp.o
+
+src/utils/Random.i: src/utils/Random.cpp.i
+.PHONY : src/utils/Random.i
+
+# target to preprocess a source file
+src/utils/Random.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/utils/Random.cpp.i
+.PHONY : src/utils/Random.cpp.i
+
+src/utils/Random.s: src/utils/Random.cpp.s
+.PHONY : src/utils/Random.s
+
+# target to generate assembly for a file
+src/utils/Random.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/utils/Random.cpp.s
+.PHONY : src/utils/Random.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -717,75 +717,75 @@ help:
 	@echo "... dep/glad/glad.o"
 	@echo "... dep/glad/glad.i"
 	@echo "... dep/glad/glad.s"
-	@echo "... src/engine/Engine.o"
-	@echo "... src/engine/Engine.i"
-	@echo "... src/engine/Engine.s"
-	@echo "... src/engine/Scene.o"
-	@echo "... src/engine/Scene.i"
-	@echo "... src/engine/Scene.s"
-	@echo "... src/engine/SceneManager.o"
-	@echo "... src/engine/SceneManager.i"
-	@echo "... src/engine/SceneManager.s"
-	@echo "... src/engine/Window.o"
-	@echo "... src/engine/Window.i"
-	@echo "... src/engine/Window.s"
-	@echo "... src/engine/components/AnimSpriteComponent.o"
-	@echo "... src/engine/components/AnimSpriteComponent.i"
-	@echo "... src/engine/components/AnimSpriteComponent.s"
-	@echo "... src/engine/components/SpriteComponent.o"
-	@echo "... src/engine/components/SpriteComponent.i"
-	@echo "... src/engine/components/SpriteComponent.s"
-	@echo "... src/engine/components/TransformComponent.o"
-	@echo "... src/engine/components/TransformComponent.i"
-	@echo "... src/engine/components/TransformComponent.s"
-	@echo "... src/engine/entities/ImageEntity.o"
-	@echo "... src/engine/entities/ImageEntity.i"
-	@echo "... src/engine/entities/ImageEntity.s"
-	@echo "... src/engine/entities/StaticEntity.o"
-	@echo "... src/engine/entities/StaticEntity.i"
-	@echo "... src/engine/entities/StaticEntity.s"
-	@echo "... src/engine/rendering/Camera.o"
-	@echo "... src/engine/rendering/Camera.i"
-	@echo "... src/engine/rendering/Camera.s"
-	@echo "... src/engine/rendering/IndexBuffer.o"
-	@echo "... src/engine/rendering/IndexBuffer.i"
-	@echo "... src/engine/rendering/IndexBuffer.s"
-	@echo "... src/engine/rendering/Renderer.o"
-	@echo "... src/engine/rendering/Renderer.i"
-	@echo "... src/engine/rendering/Renderer.s"
-	@echo "... src/engine/rendering/Shader.o"
-	@echo "... src/engine/rendering/Shader.i"
-	@echo "... src/engine/rendering/Shader.s"
-	@echo "... src/engine/rendering/Texture.o"
-	@echo "... src/engine/rendering/Texture.i"
-	@echo "... src/engine/rendering/Texture.s"
-	@echo "... src/engine/rendering/VertexArray.o"
-	@echo "... src/engine/rendering/VertexArray.i"
-	@echo "... src/engine/rendering/VertexArray.s"
-	@echo "... src/engine/rendering/VertexBuffer.o"
-	@echo "... src/engine/rendering/VertexBuffer.i"
-	@echo "... src/engine/rendering/VertexBuffer.s"
-	@echo "... src/engine/systems/CameraControllerSystem.o"
-	@echo "... src/engine/systems/CameraControllerSystem.i"
-	@echo "... src/engine/systems/CameraControllerSystem.s"
-	@echo "... src/engine/systems/PhysicsSystem.o"
-	@echo "... src/engine/systems/PhysicsSystem.i"
-	@echo "... src/engine/systems/PhysicsSystem.s"
-	@echo "... src/engine/systems/TimerSystem.o"
-	@echo "... src/engine/systems/TimerSystem.i"
-	@echo "... src/engine/systems/TimerSystem.s"
-	@echo "... src/engine/utils/Random.o"
-	@echo "... src/engine/utils/Random.i"
-	@echo "... src/engine/utils/Random.s"
-	@echo "... src/game/entities/PlayerEntity.o"
-	@echo "... src/game/entities/PlayerEntity.i"
-	@echo "... src/game/entities/PlayerEntity.s"
-	@echo "... src/game/scenes/TestLevel.o"
-	@echo "... src/game/scenes/TestLevel.i"
-	@echo "... src/game/scenes/TestLevel.s"
+	@echo "... src/Engine.o"
+	@echo "... src/Engine.i"
+	@echo "... src/Engine.s"
+	@echo "... src/Scene.o"
+	@echo "... src/Scene.i"
+	@echo "... src/Scene.s"
+	@echo "... src/SceneManager.o"
+	@echo "... src/SceneManager.i"
+	@echo "... src/SceneManager.s"
+	@echo "... src/Window.o"
+	@echo "... src/Window.i"
+	@echo "... src/Window.s"
+	@echo "... src/components/AnimSpriteComponent.o"
+	@echo "... src/components/AnimSpriteComponent.i"
+	@echo "... src/components/AnimSpriteComponent.s"
+	@echo "... src/components/SpriteComponent.o"
+	@echo "... src/components/SpriteComponent.i"
+	@echo "... src/components/SpriteComponent.s"
+	@echo "... src/components/TransformComponent.o"
+	@echo "... src/components/TransformComponent.i"
+	@echo "... src/components/TransformComponent.s"
+	@echo "... src/entities/ImageEntity.o"
+	@echo "... src/entities/ImageEntity.i"
+	@echo "... src/entities/ImageEntity.s"
+	@echo "... src/entities/PlayerEntity.o"
+	@echo "... src/entities/PlayerEntity.i"
+	@echo "... src/entities/PlayerEntity.s"
+	@echo "... src/entities/StaticEntity.o"
+	@echo "... src/entities/StaticEntity.i"
+	@echo "... src/entities/StaticEntity.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/rendering/Camera.o"
+	@echo "... src/rendering/Camera.i"
+	@echo "... src/rendering/Camera.s"
+	@echo "... src/rendering/IndexBuffer.o"
+	@echo "... src/rendering/IndexBuffer.i"
+	@echo "... src/rendering/IndexBuffer.s"
+	@echo "... src/rendering/Renderer.o"
+	@echo "... src/rendering/Renderer.i"
+	@echo "... src/rendering/Renderer.s"
+	@echo "... src/rendering/Shader.o"
+	@echo "... src/rendering/Shader.i"
+	@echo "... src/rendering/Shader.s"
+	@echo "... src/rendering/Texture.o"
+	@echo "... src/rendering/Texture.i"
+	@echo "... src/rendering/Texture.s"
+	@echo "... src/rendering/VertexArray.o"
+	@echo "... src/rendering/VertexArray.i"
+	@echo "... src/rendering/VertexArray.s"
+	@echo "... src/rendering/VertexBuffer.o"
+	@echo "... src/rendering/VertexBuffer.i"
+	@echo "... src/rendering/VertexBuffer.s"
+	@echo "... src/scenes/TestLevel.o"
+	@echo "... src/scenes/TestLevel.i"
+	@echo "... src/scenes/TestLevel.s"
+	@echo "... src/systems/CameraControllerSystem.o"
+	@echo "... src/systems/CameraControllerSystem.i"
+	@echo "... src/systems/CameraControllerSystem.s"
+	@echo "... src/systems/PhysicsSystem.o"
+	@echo "... src/systems/PhysicsSystem.i"
+	@echo "... src/systems/PhysicsSystem.s"
+	@echo "... src/systems/TimerSystem.o"
+	@echo "... src/systems/TimerSystem.i"
+	@echo "... src/systems/TimerSystem.s"
+	@echo "... src/utils/Random.o"
+	@echo "... src/utils/Random.i"
+	@echo "... src/utils/Random.s"
 .PHONY : help
 
 

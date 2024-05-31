@@ -372,8 +372,8 @@ CMakeFiles/main.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_ssize_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/strings.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep/glm/gtc/type_ptr.inl \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/rendering/Camera.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/util.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/rendering/Camera.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/eng_util.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__fwd/ios.h \
@@ -1029,9 +1029,9 @@ CMakeFiles/main.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__charconv/from_chars_integral.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__charconv/from_chars_result.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__charconv/to_chars.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Window.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Engine.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Scene.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Window.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Engine.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Scene.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/temp_value.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__split_buffer \
@@ -1040,9 +1040,9 @@ CMakeFiles/main.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__hash_table \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/ranges_iterator_traits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__node_handle \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/Entity.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Entity.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Flags.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/System.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/System.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/singleton.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Ref.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/functional \
@@ -1065,5 +1065,5 @@ CMakeFiles/main.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/unary_negate.h \
-  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/engine/SceneManager.h \
+  /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/SceneManager.h \
   /Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/settings.h

@@ -3,7 +3,7 @@
 
 ### Todo Features:
 - Level importer from image files
-- Physics stuff (friction, RK4)
+- Physics stuff (RK4)
 - Some state machine system for entity state flags
 - Input system for smarter key-press handling
 

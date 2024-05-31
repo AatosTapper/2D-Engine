@@ -1,5 +1,12 @@
 #pragma once
 
+// IF USED IN A CLASS, ACCESS IT'S VARIABLES LIKE THIS:
+
+// Classname::instance().my_member_function();
+// or
+// Classname::instance().my_member_variable = 4.2f;
+
+
 // implements the static instance and a getter for it: S::instance()
 #define IMPL_SINGLETON_DISPATCHER(CLASS)    \
     static CLASS &instance()                \
