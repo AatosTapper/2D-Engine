@@ -19,26 +19,20 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
 file(GLOB_RECURSE files
     "src/*.h"
     "src/*.cpp"
-    "src/engine/*.h"
-    "src/engine/*.cpp"
-    "src/engine/rendering/*.h"
-    "src/engine/rendering/*.cpp"
-    "src/engine/entities/*.h"
-    "src/engine/entities/*.cpp"
-    "src/engine/components/*.h"
-    "src/engine/components/*.cpp"
-    "src/engine/systems/*.h"
-    "src/engine/systems/*.cpp"
-    "src/engine/utils/*.h"
-    "src/engine/utils/*.cpp"
-    "src/game/entities/*.h"
-    "src/game/entities/*.cpp"
-    "src/game/components/*.h"
-    "src/game/components/*.cpp"
-    "src/game/systems/*.h"
-    "src/game/systems/*.cpp"
-    "src/game/scenes/*.h"
-    "src/game/scenes/*.cpp"
+    "src/*.h"
+    "src/*.cpp"
+    "src/rendering/*.h"
+    "src/rendering/*.cpp"
+    "src/entities/*.h"
+    "src/entities/*.cpp"
+    "src/components/*.h"
+    "src/components/*.cpp"
+    "src/systems/*.h"
+    "src/systems/*.cpp"
+    "src/utils/*.h"
+    "src/utils/*.cpp"
+    "src/scenes/*.h"
+    "src/scenes/*.cpp"
 )
 
 add_executable(main ${files} dep/glad/glad.c)
@@ -65,7 +59,7 @@ else () # windows (no linux here so else is enough)
     set(CMAKE_CXX_COMPILER "cl")
 
     target_compile_options(main PRIVATE 
-        "/W3" "/O2" "/DNDEBUG" "/Zi" "/Gy"
+        "/W3" "/O3" "/DNDEBUG" "/Zi" "/Gy"
     )
 endif()
 
