@@ -5,6 +5,7 @@
 #include "Engine.h"
 #include "Scene.h"
 #include "SceneManager.h"
+#include "ScriptEngine.h"
 
 #include "settings.h"
 #include "Ref.h"
@@ -14,6 +15,10 @@
 
 int main()
 {
+    auto lua = ScriptEngine::create_lua_state();
+    ScriptEngine::run_script(lua, "../src/scripts/test.lua");
+    lua["main"]();
+
     Engine::instance().init();
 
     SceneManager::instance().load_scene("test_level");

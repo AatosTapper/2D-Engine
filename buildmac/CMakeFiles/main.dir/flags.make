@@ -5,7 +5,7 @@
 # compile CXX with clang++
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep -I/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src -isystem /opt/homebrew/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks
+C_INCLUDES = -I/opt/homebrew/include/lua -I/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep -I/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src -isystem /opt/homebrew/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks
 
 C_FLAGSarm64 =  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -O3 -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion
 
@@ -13,7 +13,7 @@ C_FLAGS =  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep -I/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src -isystem /opt/homebrew/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks
+CXX_INCLUDES = -I/opt/homebrew/include/lua -I/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/dep -I/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src -isystem /opt/homebrew/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks
 
 CXX_FLAGSarm64 = -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -O3 -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion
 

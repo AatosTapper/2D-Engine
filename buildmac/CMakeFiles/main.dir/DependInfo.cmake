@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Engine.cpp" "CMakeFiles/main.dir/src/Engine.cpp.o" "gcc" "CMakeFiles/main.dir/src/Engine.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Scene.cpp" "CMakeFiles/main.dir/src/Scene.cpp.o" "gcc" "CMakeFiles/main.dir/src/Scene.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/SceneManager.cpp" "CMakeFiles/main.dir/src/SceneManager.cpp.o" "gcc" "CMakeFiles/main.dir/src/SceneManager.cpp.o.d"
+  "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/ScriptEngine.cpp" "CMakeFiles/main.dir/src/ScriptEngine.cpp.o" "gcc" "CMakeFiles/main.dir/src/ScriptEngine.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/Window.cpp" "CMakeFiles/main.dir/src/Window.cpp.o" "gcc" "CMakeFiles/main.dir/src/Window.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/components/AnimSpriteComponent.cpp" "CMakeFiles/main.dir/src/components/AnimSpriteComponent.cpp.o" "gcc" "CMakeFiles/main.dir/src/components/AnimSpriteComponent.cpp.o.d"
   "/Users/aatostapper/Documents/Dev/OpenGL/2D-Engine/src/components/SpriteComponent.cpp" "CMakeFiles/main.dir/src/components/SpriteComponent.cpp.o" "gcc" "CMakeFiles/main.dir/src/components/SpriteComponent.cpp.o.d"

@@ -20,7 +20,7 @@ void PhysicsSystem::update()
         }
         integrate_forces(std::get<1>(entity), std::get<3>(entity), Settings::UPDATE_TIME_MS / 2.0);
 
-        if (std::get<0>(entity) != nullptr) // checking for entity
+        if (std::get<0>(entity) != NULL_ENTITY) // checking for entity
         {
             std::get<0>(entity)->remove_state_flags(EntityStateFlags::ON_GROUND);
             std::get<0>(entity)->remove_state_flags(EntityStateFlags::IS_SUPPORTING);

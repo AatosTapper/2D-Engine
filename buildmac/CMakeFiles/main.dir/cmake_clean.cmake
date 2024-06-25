@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/Scene.cpp.o.d"
   "CMakeFiles/main.dir/src/SceneManager.cpp.o"
   "CMakeFiles/main.dir/src/SceneManager.cpp.o.d"
+  "CMakeFiles/main.dir/src/ScriptEngine.cpp.o"
+  "CMakeFiles/main.dir/src/ScriptEngine.cpp.o.d"
   "CMakeFiles/main.dir/src/Window.cpp.o"
   "CMakeFiles/main.dir/src/Window.cpp.o.d"
   "CMakeFiles/main.dir/src/components/AnimSpriteComponent.cpp.o"

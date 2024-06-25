@@ -41,6 +41,9 @@ if (CMAKE_SYSTEM_NAME MATCHES "Darwin")
     find_package(glfw3 REQUIRED)
     set(GLFW_LIB glfw)
 
+    find_package(Lua REQUIRED)
+    include_directories(${LUA_INCLUDE_DIR})
+
     set(CMAKE_CXX_COMPILER clang++) # seems a bit faster
 
     target_compile_options(main PRIVATE 
@@ -50,8 +53,10 @@ if (CMAKE_SYSTEM_NAME MATCHES "Darwin")
         -Wpedantic
         -Wconversion -Wsign-conversion
     )
-else () # windows (no linux here so else is enough)
+else () # windows
     set(GLFW_LIBRARY_DIR "C:/Program Files/glfw-3.4/glfw-3.4.bin.WIN64")
+
+    # TODO: fucking windows bullshit
 
     #find_package(glfw3 REQUIRED)
     set(GLFW_LIB glfw3dll)
@@ -70,4 +75,4 @@ target_link_directories(main PUBLIC ${GLFW_LIBRARY_DIR})
 
 find_package(OpenGL REQUIRED)
 
-target_link_libraries(main ${GLFW_LIB} OpenGL::GL)
+target_link_libraries(main ${GLFW_LIB} ${LUA_LIBRARIES} OpenGL::GL)

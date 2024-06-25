@@ -12,6 +12,7 @@ PlayerEntity::PlayerEntity()
     animation.set_fps(60); // optional because 60 is the default but this allows anything
 
     physics.mass = 3.0f;
+    physics.friction = 0.8f;
     physics.set_flags(PhysicsFlags::HAS_GRAVITY);
 
     transform.scale = 0.8f;

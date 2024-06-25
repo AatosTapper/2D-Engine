@@ -13,7 +13,7 @@ public:
     glm::vec2 temp_acc{0.0f};   // m^2/s (used for physics system internal calculations)
     float mass = 1.0f;          // kg
     float restitution = 1.3f;   // range 1.0f to 2.0f
-    float friction = 0.5f;      // range 0.0f to 1.0f
+    float friction = 0.6f;      // range 0.0f to 1.0f
 
     // flags
     constexpr void set_flags(PhysicsFlags flag) { m_flags |= flag; }

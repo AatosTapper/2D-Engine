@@ -225,6 +225,30 @@ src/SceneManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/SceneManager.cpp.s
 .PHONY : src/SceneManager.cpp.s
 
+src/ScriptEngine.o: src/ScriptEngine.cpp.o
+.PHONY : src/ScriptEngine.o
+
+# target to build an object file
+src/ScriptEngine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ScriptEngine.cpp.o
+.PHONY : src/ScriptEngine.cpp.o
+
+src/ScriptEngine.i: src/ScriptEngine.cpp.i
+.PHONY : src/ScriptEngine.i
+
+# target to preprocess a source file
+src/ScriptEngine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ScriptEngine.cpp.i
+.PHONY : src/ScriptEngine.cpp.i
+
+src/ScriptEngine.s: src/ScriptEngine.cpp.s
+.PHONY : src/ScriptEngine.s
+
+# target to generate assembly for a file
+src/ScriptEngine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ScriptEngine.cpp.s
+.PHONY : src/ScriptEngine.cpp.s
+
 src/Window.o: src/Window.cpp.o
 .PHONY : src/Window.o
 
@@ -726,6 +750,9 @@ help:
 	@echo "... src/SceneManager.o"
 	@echo "... src/SceneManager.i"
 	@echo "... src/SceneManager.s"
+	@echo "... src/ScriptEngine.o"
+	@echo "... src/ScriptEngine.i"
+	@echo "... src/ScriptEngine.s"
 	@echo "... src/Window.o"
 	@echo "... src/Window.i"
 	@echo "... src/Window.s"

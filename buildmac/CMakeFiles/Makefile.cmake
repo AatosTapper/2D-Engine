@@ -28,6 +28,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/Compiler/Clang.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/Compiler/GNU.cmake"
+  "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/FindLua.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/FindOpenGL.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/FindPackageMessage.cmake"
